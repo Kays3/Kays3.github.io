@@ -28,8 +28,8 @@ redirect_from:
     <a class="atlas-card" href="https://github.com/Kays3/entacmea-research" target="_blank" rel="noopener noreferrer" aria-label="Open the Entacmaea research repository">
       <figure><img src="/images/aka-island-reef.jpg" alt="Sea turtle swimming across a coral reef at Aka Island, Okinawa" loading="lazy"><figcaption><span>Coral reef genomics</span><small>Entacmaea research ↗</small></figcaption></figure>
     </a>
-    <a class="atlas-card" href="https://github.com/Kays3/entacmea-research" target="_blank" rel="noopener noreferrer" aria-label="Open the Entacmaea research repository">
-      <figure><img src="/images/research/aka-island-coral-turtle.png" alt="Sea turtle resting among coral at Aka Island, Okinawa" loading="lazy"><figcaption><span>Ocean acidification</span><small>Entacmaea research ↗</small></figcaption></figure>
+    <a class="atlas-card" href="https://github.com/Kays3/TE_Ocean_Acidification" target="_blank" rel="noopener noreferrer" aria-label="Open the TE Ocean Acidification repository">
+      <figure><img src="/images/research/aka-island-coral-turtle.png" alt="Sea turtle resting among coral at Aka Island, Okinawa" loading="lazy"><figcaption><span>Ocean acidification</span><small>TE Ocean Acidification ↗</small></figcaption></figure>
     </a>
     <a class="atlas-card atlas-card--map" href="https://github.com/Kays3/Ancient_intelligence" target="_blank" rel="noopener noreferrer" aria-label="Open the Ancient Intelligence repository">
       <figure><img src="/images/interests/ohara-octopus-map-1904.jpg" alt="Kisaburo Ohara's 1904 satirical map of Europe and Asia" loading="lazy"><figcaption><span>Population history</span><small>Ancient Intelligence ↗</small></figcaption></figure>
