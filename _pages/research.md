@@ -1,5 +1,5 @@
 ---
-title: "Research & Pathology"
+title: "Research & People"
 permalink: /research/
 author_profile: true
 ---
