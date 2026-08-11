@@ -15,7 +15,7 @@ redirect_from:
       <p>I am a physician-scientist and postdoctoral researcher at Hokkaido University. My training spans medicine at Nazarbayev University, a PhD in Genetics at SOKENDAI, and general-practice experience in Kazakhstan, where I assessed acute and chronic illness and worked across multidisciplinary care.</p>
       <p>My work follows a bed-to-bench-to-code workflow: define a clinically meaningful problem, connect it to molecular or morphological evidence, and build a transparent computational analysis. I focus on digital pathology, genomics, polygenic risk, machine learning, and bioinformatics, informed by work in primary care, infectious diseases, and palliative-care research.</p>
     </div>
-    <p class="home-atlas__links"><a href="/research/">Research &amp; Pathology</a><span aria-hidden="true">·</span><a href="/publications/">Publications</a><span aria-hidden="true">·</span><a href="/cv/">CV</a><span aria-hidden="true">·</span><a href="/contact/">Contact</a></p>
+    <p class="home-atlas__links"><a href="/research/">Research &amp; People</a><span aria-hidden="true">·</span><a href="/publications/">Publications</a><span aria-hidden="true">·</span><a href="/cv/">CV</a><span aria-hidden="true">·</span><a href="/contact/">Contact</a></p>
   </header>
 
   <section class="work-image-section" aria-labelledby="work-images-title">
