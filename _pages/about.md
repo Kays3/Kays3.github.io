@@ -48,7 +48,7 @@ redirect_from:
     </div>
   </section>
 
-  <p class="home-atlas__note">Clinical relevance defines the question. Reproducible computation makes the evidence inspectable.</p>
+  <p class="home-atlas__note">Yesterday I was clever, so I wanted to change the world. Today I am wise so I am changing myself.</p>
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
     <div class="section-heading"><h2 id="visitor-tracker-title">Visitor locations worldwide</h2></div>
