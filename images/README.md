@@ -9,5 +9,10 @@
 - `collaborations/oita-glocal-seminar-2026.jpg`: seminar group photograph from Oita University's Research Center for GLOBAL and LOCAL Infectious Diseases, published with the [46th Glocal Infectious Diseases Research Seminar report](https://www.oita-glocal.jp/2026/05/3162/) and supplied by Kaisar Dauyey for use on this site.
 - `collaborations/field-collaborators.jpg`: field-team photograph supplied by Kaisar Dauyey through a Google-hosted image URL for use on this site.
 - `collaborations/oist-saeki-kakujo-2023.jpg`: photograph from the [OIST SEED program visit by Saeki Kakujo High School](https://www.oist.jp/outreach/update/seed-program-saeki-kakujo-oita-students-visited-oist), © Okinawa Institute of Science and Technology Graduate University, used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- `clinical/almaty-oita-yamaoka-visit-2024.jpg`: Kazakhstan-Japan infectious-disease research exchange photograph supplied directly by Kaisar Dauyey for use on this site.
+- `clinical/dauyey-argandykov-clinical.jpg`: clinical portrait of Kaisar Dauyey and Dr. Argandykov supplied directly by Kaisar Dauyey for use on this site.
+- `research/marine/stichodactyla-ocellaris.jpg`: underwater photograph of ocellaris clownfish and a *Stichodactyla* sea anemone supplied directly by Kaisar Dauyey.
+- `research/marine/entacmaea-tomato-clownfish.jpg`: underwater photograph of tomato clownfish and an *Entacmaea* sea anemone supplied directly by Kaisar Dauyey.
+- `research/marine/aka-jima-ocellaris-1.jpg` and `aka-jima-ocellaris-2.jpg`: underwater field photographs from Aka Island supplied directly by Kaisar Dauyey.
 
 These images are used only on the repository owner's personal academic website.

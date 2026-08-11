@@ -1,38 +1,47 @@
 ---
-title: "Research"
+title: "Research & Pathology"
 permalink: /research/
 author_profile: true
 ---
 
-<p class="page-intro">My research connects computation with biological questions at several scales—from molecular programs inside single cells and tissue architecture to adaptation across populations and ecosystems.</p>
+<p class="page-intro">I work across clinical medicine, tissue imaging, genomics, and computational biology. The organizing principle is translational: start with a clinically or biologically meaningful question, identify the right evidence, and build an analysis whose assumptions and limitations remain visible.</p>
 
 <div class="topic-stack">
-  <article class="topic-row"><div class="topic-row__number">01</div><div><p class="eyebrow">Cells</p><h2>Foundation models for biology</h2><p>I apply transformer-based models to single-cell data, with emphasis on donor-aware experimental design, held-out evaluation, in silico perturbation, and biological interpretation. The aim is not merely to fit models, but to make their evidence and limitations legible.</p><div class="tag-row"><span>Geneformer</span><span>single-cell RNA-seq</span><span>spatial validation</span></div></div></article>
-  <article class="topic-row topic-row--pathology" id="digital-pathology"><div class="topic-row__number">02</div><div><p class="eyebrow">Tissues</p><h2>Digital pathology & tissue intelligence</h2><p>I am developing an interest in computational pathology: linking whole-slide morphology with spatial and molecular profiles, while emphasizing interpretable models, robust external validation, and endpoints that remain meaningful to clinical and biological collaborators.</p><div class="tag-row"><span>whole-slide imaging</span><span>spatial biology</span><span>multimodal learning</span><span>interpretable AI</span></div></div></article>
-  <article class="topic-row"><div class="topic-row__number">03</div><div><p class="eyebrow">Genomes</p><h2>Evolution, adaptation, and mobile DNA</h2><p>My evolutionary work includes ancient human genomics and the study of transposable elements in coral-reef fish. I am interested in how genomic variation—and the tools used to interpret it—can illuminate adaptation across time and changing environments.</p><div class="tag-row"><span>ancient DNA</span><span>polygenic scores</span><span>transposable elements</span><span>ocean acidification</span></div></div></article>
-  <article class="topic-row"><div class="topic-row__number">04</div><div><p class="eyebrow">Systems</p><h2>Reproducible scientific workflows</h2><p>I build analysis systems with explicit contracts: documented inputs and outputs, restartable stages, portable environments, validation checks, and honest limitations. Good research software should support scientific reasoning rather than hide it.</p><div class="tag-row"><span>workflow design</span><span>validation</span><span>portable environments</span><span>open science</span></div></div></article>
-  <article class="topic-row"><div class="topic-row__number">05</div><div><p class="eyebrow">Translation</p><h2>Computational and clinical genomics</h2><p>My collaborations span immune-cell expression, computational neuroimaging, microbial genomics, antimicrobial resistance, cancer genetics, and palliative-care research—grounded in a medical background and a computational toolkit.</p><div class="tag-row"><span>transcriptomics</span><span>microbial genomics</span><span>neuroimaging</span><span>clinical research</span></div></div></article>
+  <article class="topic-row topic-row--pathology" id="digital-pathology"><div class="topic-row__number">01</div><div><p class="eyebrow">Tissue to model</p><h2>Digital Pathology & Whole Slide Image Analysis</h2><p>I am developing computational pathology workflows that connect H&amp;E morphology and whole-slide images with spatial transcriptomics and single-cell reference data. Priorities include interpretable representations, donor-aware evaluation, external validation, and endpoints that remain meaningful to pathologists and clinical collaborators.</p><div class="tag-row"><span>whole-slide imaging</span><span>spatial biology</span><span>image segmentation</span><span>multimodal learning</span><span>interpretable AI</span></div></div></article>
+  <article class="topic-row" id="polygenic-risk"><div class="topic-row__number">02</div><div><p class="eyebrow">Genome to risk</p><h2>Polygenic Risk Score Pipelines</h2><p>My genomic work includes reproducible polygenic-score comparisons across ancient and present-day populations. I focus on transparent variant handling, ancestry-aware interpretation, sensitivity analysis, and the limits of transporting effect estimates across populations and time.</p><div class="tag-row"><span>polygenic scores</span><span>population genomics</span><span>ancient DNA</span><span>R</span><span>reproducibility</span></div><p><a class="text-link" href="https://github.com/Kays3/Ancient_intelligence">Open the Ancient Intelligence repository <span aria-hidden="true">↗</span></a></p></div></article>
+  <article class="topic-row" id="infectious-disease"><div class="topic-row__number">03</div><div><p class="eyebrow">Patient to pathogen</p><h2>Infectious Diseases & Host-Pathogen Dynamics</h2><p>My patient-oriented <em>Helicobacter pylori</em> work combines participant recruitment and consent, clinical data collection, culture-based microbiology, epidemiology, antimicrobial-resistance analysis, and manuscript development. The aim is to connect local clinical evidence with regional patterns that can inform surveillance and treatment decisions.</p><div class="tag-row"><span><em>H. pylori</em></span><span>antimicrobial resistance</span><span>clinical epidemiology</span><span>host-pathogen research</span><span>data quality</span></div><p><a class="text-link" href="https://doi.org/10.3389/fmicb.2026.1747006">Read the 2026 study <span aria-hidden="true">↗</span></a></p></div></article>
+  <article class="topic-row" id="clinical-systems"><div class="topic-row__number">04</div><div><p class="eyebrow">Care to evidence</p><h2>Clinical Medicine & Systems Integration</h2><p>General-practice experience informs how I define outcomes, interpret incomplete clinical data, and communicate uncertainty. My collaborative work spans primary care, infectious diseases, palliative care, cancer genetics, and immune-mediated disease, with an emphasis on analyses that fit real clinical workflows rather than idealized datasets.</p><div class="tag-row"><span>primary care</span><span>palliative care</span><span>clinical research</span><span>study design</span><span>multidisciplinary care</span></div></div></article>
+  <article class="topic-row"><div class="topic-row__number">05</div><div><p class="eyebrow">Model to mechanism</p><h2>Machine Learning & Bioinformatics</h2><p>I use Python, R, Linux, RNA-seq, genomic analysis, and transformer-based biological models to build restartable workflows with documented inputs, evaluation boundaries, and practical handoff. Computational performance matters, but biological interpretability and failure analysis matter more.</p><div class="tag-row"><span>Python</span><span>R</span><span>RNA-seq</span><span>Geneformer</span><span>workflow validation</span></div><p><a class="text-link" href="https://github.com/Kays3/geneformer-lung-tcell">Open the lung T-cell workflow <span aria-hidden="true">↗</span></a></p></div></article>
 </div>
 
-<section class="collaboration-section" aria-labelledby="collaboration-heading">
-  <p class="eyebrow">Collaboration & outreach</p>
-  <h2 id="collaboration-heading">Collaboration in practice</h2>
-  <p class="section-lead">The best computational work grows through exchange—with experimental scientists, field teams, students, and researchers who bring different questions to the same evidence.</p>
-
-  <div class="collaboration-grid">
-    <figure class="collaboration-card">
-      <img src="/images/collaborations/oita-glocal-seminar-2026.jpg" alt="Kaisar Dauyey with researchers and seminar participants at Oita University" loading="lazy">
-      <figcaption><span class="eyebrow">Oita University · 2026</span><strong>Research exchange</strong><span>After a seminar on AI and machine learning in single-cell RNA sequencing at the Research Center for GLOBAL and LOCAL Infectious Diseases.</span><a href="https://www.oita-glocal.jp/2026/05/3162/">Event page <span aria-hidden="true">↗</span></a></figcaption>
-    </figure>
-    <figure class="collaboration-card">
-      <img src="/images/collaborations/field-collaborators.jpg" alt="Kaisar Dauyey with an international field research team" loading="lazy">
-      <figcaption><span class="eyebrow">Field collaboration</span><strong>Working across disciplines</strong><span>Field research is shared work: careful sampling, practical problem-solving, and many kinds of expertise brought together.</span></figcaption>
-    </figure>
-    <figure class="collaboration-card">
-      <img src="/images/collaborations/oist-saeki-kakujo-2023.jpg" alt="Kaisar Dauyey and colleagues with Saeki Kakujo High School students at OIST" loading="lazy">
-      <figcaption><span class="eyebrow">OIST · 2023</span><strong>Science outreach</strong><span>With colleagues and Saeki Kakujo High School students during an OIST visit connecting scientific careers with marine research.</span><a href="https://www.oist.jp/outreach/update/seed-program-saeki-kakujo-oita-students-visited-oist">Visit story <span aria-hidden="true">↗</span></a></figcaption>
-    </figure>
+<section class="research-photo-section" aria-labelledby="environmental-genomics-title">
+  <div class="section-heading"><p class="eyebrow">Comparative and environmental genomics</p><h2 id="environmental-genomics-title">Reef systems as natural experiments</h2></div>
+  <p class="section-lead">My earlier and continuing work in coral-reef genomics examines adaptation, symbiosis, and transposable-element responses under environmental change. This comparative perspective complements the central clinical and pathology program.</p>
+  <div class="research-photo-grid">
+    <figure><img src="/images/research/marine/stichodactyla-ocellaris.jpg" alt="Ocellaris clownfish sheltering in a Stichodactyla sea anemone" loading="lazy"><figcaption><strong>Anemonefish symbiosis</strong><span><em>Stichodactyla</em> and ocellaris clownfish in a coral-reef habitat.</span></figcaption></figure>
+    <figure><img src="/images/research/marine/entacmaea-tomato-clownfish.jpg" alt="Tomato clownfish sheltering in an Entacmaea sea anemone" loading="lazy"><figcaption><strong>Host-associated ecology</strong><span>Tomato clownfish and <em>Entacmaea</em> in situ.</span></figcaption></figure>
+    <figure><img src="/images/research/marine/aka-jima-ocellaris-2.jpg" alt="Clownfish living among a purple sea anemone at Aka Island, Okinawa" loading="lazy"><figcaption><strong>Aka Island fieldwork</strong><span>Anemonefish habitat in the Kerama Islands, Okinawa.</span></figcaption></figure>
+    <figure><img src="/images/research/marine/aka-jima-ocellaris-1.jpg" alt="Clownfish among a large sea anemone at Aka Island, Okinawa" loading="lazy"><figcaption><strong>Environmental genomics</strong><span>Field context for questions about adaptation and changing oceans.</span></figcaption></figure>
   </div>
 </section>
 
-<div class="note-banner note-banner--compact"><div><p class="eyebrow">Approach</p><h2>Question first. Evidence visible.</h2></div><p>I use AI-assisted development where it is useful, while retaining human review, scientific validation, and transparent documentation.</p></div>
+<section class="collaboration-section" aria-labelledby="collaboration-heading">
+  <p class="eyebrow">Collaboration</p>
+  <h2 id="collaboration-heading">Research across clinical and scientific teams</h2>
+  <p class="section-lead">Effective translation depends on shared definitions, careful data collection, and communication across medicine, laboratory science, field biology, and computation.</p>
+
+  <div class="collaboration-grid">
+    <figure class="collaboration-card">
+      <img src="/images/clinical/almaty-oita-yamaoka-visit-2024.jpg" alt="Kazakhstan and Japan infectious-disease collaborators during Professor Yamaoka's 2024 visit" loading="lazy">
+      <figcaption><span class="eyebrow">Kazakhstan-Japan · 2024</span><strong>Infectious-disease collaboration</strong><span>Research exchange connecting clinical microbiology, epidemiology, and antimicrobial-resistance questions.</span></figcaption>
+    </figure>
+    <figure class="collaboration-card">
+      <img src="/images/collaborations/oita-glocal-seminar-2026.jpg" alt="Kaisar Dauyey with researchers and seminar participants at Oita University" loading="lazy">
+      <figcaption><span class="eyebrow">Oita University · 2026</span><strong>Computational research exchange</strong><span>Following a seminar on AI and machine learning in single-cell RNA sequencing.</span><a href="https://www.oita-glocal.jp/2026/05/3162/">Event page <span aria-hidden="true">↗</span></a></figcaption>
+    </figure>
+    <figure class="collaboration-card">
+      <img src="/images/collaborations/oist-saeki-kakujo-2023.jpg" alt="Kaisar Dauyey and colleagues with Saeki Kakujo High School students at OIST" loading="lazy">
+      <figcaption><span class="eyebrow">OIST · 2023</span><strong>Science outreach</strong><span>Connecting scientific careers, marine research, and international exchange.</span><a href="https://www.oist.jp/outreach/update/seed-program-saeki-kakujo-oita-students-visited-oist">Visit story <span aria-hidden="true">↗</span></a></figcaption>
+    </figure>
+  </div>
+</section>

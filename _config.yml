@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Kaisar Dauyey"
 title_separator          : "—"
 name                     : &name "Kaisar Dauyey"
-description              : &description "Computational biologist working across digital pathology, coral reef genomics, transposable elements, and ocean-acidification research."
+description              : &description "Physician-scientist connecting clinical medicine, digital pathology, genomics, and reproducible computational research."
 url                      : https://kays3.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "kaisar-dauyey-2025.jpg"
   name             : "Kaisar Dauyey"
   pronouns         : # example: "she/her"  
-  bio              : "Computational biologist working across tissue images, coral reef genomes, and changing environments."
+  bio              : "Physician-scientist connecting clinical medicine with pathology, genomics, and computation."
   location         : "Japan"
   employer         : "Hokkaido University"
   uri              : # URL
@@ -143,8 +143,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "research/digital-pathology-spatial-cover.jpg"
-og_description           : "Kaisar Dauyey — digital pathology, coral reef genomics, and transposable elements under ocean acidification."
+og_image                 : "clinical/almaty-oita-yamaoka-visit-2024.jpg"
+og_description           : "Kaisar Dauyey — physician-scientist working across clinical medicine, digital pathology, genomics, and computational research."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
