@@ -23,7 +23,7 @@ repository               : "Kays3/Kays3.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "kaisar-avatar.jpg"
+  avatar           : "kaisar-dauyey-2025.jpg"
   name             : "Kaisar Dauyey"
   pronouns         : # example: "she/her"  
   bio              : "Computational biologist building reproducible workflows across genomes, cells, and ecosystems."
@@ -143,7 +143,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "aka-island-reef.jpg"
+og_image                 : "research/aka-island-coral-turtle.png"
 og_description           : "Kaisar Dauyey — computational biology across genomes, cells, and ecosystems."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
