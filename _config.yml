@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Kaisar Dauyey"
 title_separator          : "—"
 name                     : &name "Kaisar Dauyey"
-description              : &description "Computational biologist working across single-cell genomics, biological AI, digital pathology, evolutionary genomics, and reproducible scientific software."
+description              : &description "Computational biologist working across digital pathology, coral reef genomics, transposable elements, and ocean-acidification research."
 url                      : https://kays3.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "kaisar-dauyey-2025.jpg"
   name             : "Kaisar Dauyey"
   pronouns         : # example: "she/her"  
-  bio              : "Computational biologist connecting genomes, cells, tissue images, and ecosystems."
+  bio              : "Computational biologist working across tissue images, coral reef genomes, and changing environments."
   location         : "Japan"
   employer         : "Hokkaido University"
   uri              : # URL
@@ -144,7 +144,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : "research/digital-pathology-spatial-cover.jpg"
-og_description           : "Kaisar Dauyey — computational biology across genomes, cells, tissue images, and ecosystems."
+og_description           : "Kaisar Dauyey — digital pathology, coral reef genomics, and transposable elements under ocean acidification."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
