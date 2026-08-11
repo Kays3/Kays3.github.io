@@ -1,64 +1,36 @@
 ---
-layout: archive
-title: "CV"
+title: "Curriculum vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<p class="page-intro">A compact academic record. Links point to public institutional records and research outputs; a downloadable full CV can be added when available.</p>
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Appointments
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<div class="timeline">
+  <div class="timeline-item"><div class="timeline-date">Current</div><div><h3>Postdoctoral researcher</h3><p>Hokkaido University · Faculty of Advanced Life Science</p><p>Computational biology, single-cell and spatial analysis, biological foundation models, and reproducible research software.</p></div></div>
+</div>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Education & research training
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<div class="timeline">
+  <div class="timeline-item"><div class="timeline-date">2024</div><div><h3>Doctor of Science</h3><p>The Graduate University for Advanced Studies (SOKENDAI), Department of Genetics</p><p><a href="https://ir.soken.ac.jp/records/2000266">Thesis: <em>Deciphering Intelligence in Ancient Humans and Adaptation in Coral Reef Fish</em></a></p></div></div>
+  <div class="timeline-item"><div class="timeline-date">2021–22</div><div><h3>Research stay</h3><p>Marine Climate Change Unit, Okinawa Institute of Science and Technology</p><p>Environmental DNA sampling, research snorkeling, and coral-reef fish genomics under ocean acidification.</p></div></div>
+  <div class="timeline-item"><div class="timeline-date">2018</div><div><h3>Research internship</h3><p>The University of Queensland, Australia</p><p>Immune and inflammatory disease research.</p></div></div>
+  <div class="timeline-item"><div class="timeline-date">Earlier</div><div><h3>Graduate medical degree</h3><p>Nazarbayev University School of Medicine, Kazakhstan</p></div></div>
+</div>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Methods
+
+<div class="tag-cloud" aria-label="Research methods and tools"><span>Python</span><span>R</span><span>Linux</span><span>Jupyter</span><span>Git/GitHub</span><span>single-cell RNA-seq</span><span>spatial transcriptomics</span><span>Geneformer</span><span>machine learning</span><span>evolutionary genomics</span><span>transposable elements</span><span>computational neuroimaging</span><span>workflow validation</span><span>scientific documentation</span></div>
+
+## Selected activities
+
+- Biological foundation-model workflows with donor-disjoint evaluation and in silico perturbation.
+- Genomic analysis of mobile DNA and adaptation in coral-reef fish exposed to ocean acidification.
+- Ancient-genome analysis spanning Jomon and Afanasievo individuals.
+- Clinical and population-health collaborations in Kazakhstan.
+- Open, inspectable research workflows designed for reuse and review.
