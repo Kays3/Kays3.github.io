@@ -52,6 +52,6 @@ redirect_from:
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
     <div class="section-heading"><h2 id="visitor-tracker-title">Visitor locations worldwide</h2></div>
-    <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=uv06ZsEhcXi4JFEBBxbw_zHPelSVTdhjNcfHKCqpRwI"></script>
+    <a href='https://mapmyvisitors.com/web/1c7ga' title='Visit tracker'><img src='https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff'/></a>
   </section>
 </main>
