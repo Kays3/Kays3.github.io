@@ -21,9 +21,9 @@ redirect_from:
   <section class="work-image-section" aria-labelledby="work-images-title">
     <div class="section-heading"><p class="eyebrow">Clinical and computational practice</p><h2 id="work-images-title">Bedside, bench, and code</h2></div>
     <div class="work-image-grid">
-      <a class="work-image-card work-image-card--portrait" href="/cv/">
-        <figure><img src="/images/clinical/dauyey-argandykov-clinical.jpg" alt="Kaisar Dauyey and Dr. Argandykov wearing clinical coats and scrubs" fetchpriority="high"><figcaption><strong>Clinical medicine</strong><span>Clinical training and practice in Kazakhstan, with Dr. Argandykov.</span></figcaption></figure>
-      </a>
+      <article class="work-image-card work-image-card--graduation">
+        <figure><a href="/cv/"><img src="/images/clinical/nazarbayev-md-graduates-2019.jpg" alt="Nazarbayev University School of Medicine's first MD graduating class in 2019" fetchpriority="high"></a><figcaption><strong><a href="/cv/">MD graduation · 2019</a></strong><span>Nazarbayev University School of Medicine’s first MD graduating class.</span><span class="photo-credit">Photo: <a href="https://www.instagram.com/androbaza/">Andrey Yershov (@androbaza)</a>.</span></figcaption></figure>
+      </article>
       <a class="work-image-card" href="https://doi.org/10.3389/fmicb.2026.1747006">
         <figure><img src="/images/clinical/almaty-oita-yamaoka-visit-2024.jpg" alt="Kazakhstan and Japan infectious-disease collaborators during Professor Yamaoka's 2024 visit" loading="lazy"><figcaption><strong>Infectious-disease research</strong><span>Kazakhstan-Japan research exchange with Professor Yoshio Yamaoka, 2024.</span></figcaption></figure>
       </a>

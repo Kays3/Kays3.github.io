@@ -182,11 +182,15 @@ html[data-theme="dark"] .masthead {
 .work-image-card figure { border: 1px solid var(--kd-line); margin: 0; padding: 0.35rem; }
 .work-image-card img { aspect-ratio: 16 / 10; display: block; filter: saturate(0.9) contrast(0.98); object-fit: cover; transition: filter 180ms ease, transform 180ms ease; width: 100%; }
 .work-image-card--portrait img { object-position: center 30%; }
+.work-image-card--graduation img { background: #050505; object-fit: contain; }
 .work-image-card figcaption { display: flex; flex-direction: column; min-height: 4.7rem; padding: 0.7rem 0.5rem 0.4rem; }
 .work-image-card figcaption strong { color: var(--kd-ink); font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1rem; }
 .work-image-card figcaption span { color: var(--kd-muted); font-size: 0.75rem; line-height: 1.5; margin-top: 0.2rem; }
-.work-image-card:hover figure, .work-image-card:focus-visible figure { border-color: var(--kd-coral); }
-.work-image-card:hover img, .work-image-card:focus-visible img { filter: saturate(1) contrast(1); transform: translateY(-2px); }
+.work-image-card figure > a { display: block; }
+.page__content .work-image-card figcaption strong a { color: var(--kd-ink); text-decoration: none; }
+.page__content .work-image-card .photo-credit a { color: var(--kd-ocean); text-decoration: underline; }
+.work-image-card:hover figure, .work-image-card:focus-visible figure, .work-image-card:focus-within figure { border-color: var(--kd-coral); }
+.work-image-card:hover img, .work-image-card:focus-visible img, .work-image-card:focus-within img { filter: saturate(1) contrast(1); transform: translateY(-2px); }
 .work-image-card:focus-visible { outline: 2px solid var(--kd-coral); outline-offset: 3px; }
 .featured-work { margin: 0 0 2rem; }
 .featured-work-grid { border-bottom: 3px double var(--kd-line); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -286,7 +290,9 @@ html[data-theme="dark"] .masthead {
 .project-card--with-media { overflow: hidden; }
 .project-card__media img { aspect-ratio: 16 / 9; display: block; object-fit: cover; width: 100%; }
 .project-card--portrait .project-card__media img { object-position: center 28%; }
+.project-card--graduation .project-card__media img { background: #050505; object-fit: contain; }
 .project-card__media figcaption { background: rgba(7, 45, 54, 0.76); border-radius: 999px; bottom: 0.65rem; color: #fff; font-size: 0.68rem; left: 0.7rem; padding: 0.38rem 0.65rem; position: absolute; }
+.page__content .project-card__media figcaption a { color: #fff; text-decoration: underline; }
 
 .research-photo-section { margin: 4.5rem 0 3.5rem; }
 .research-photo-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
