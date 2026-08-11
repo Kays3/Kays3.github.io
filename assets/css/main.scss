@@ -193,7 +193,7 @@ html[data-theme="dark"] .masthead {
 
 .home-hero__copy h1 {
   color: #fff;
-  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  font-size: clamp(2.25rem, 4.3vw, 4rem);
   line-height: 1.02;
   margin: 0 0 1.4rem;
   max-width: 9.2em;
@@ -347,7 +347,11 @@ html[data-theme="dark"] .masthead {
 .page__content .contact-list a { color: white; }
 .contact-note { color: var(--kd-muted); font-size: 0.84rem !important; margin: 1.25rem 0 0 !important; }
 
-.page__footer { border-top-color: var(--kd-line); }
+.page__footer {
+  border-top-color: var(--kd-line);
+  bottom: auto;
+  position: relative;
+}
 
 @media screen and (min-width: 64em) {
   .page { float: right; padding-left: 2.25rem; padding-right: 0; width: calc(100% - 235px); }
