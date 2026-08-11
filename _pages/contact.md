@@ -12,7 +12,7 @@ author_profile: true
     <div><span>Email</span><strong>k.dauyey.bio.nu [at] gmail [dot] com</strong></div>
     <div><span>Code</span><strong><a href="https://github.com/Kays3">github.com/Kays3</a></strong></div>
     <div><span>Research ID</span><strong><a href="https://orcid.org/0000-0003-0533-9778">ORCID 0000-0003-0533-9778</a></strong></div>
-    <div><span>Institution</span><strong><a href="https://researchers.general.hokudai.ac.jp/search/detail.html?lang=en&amp;systemId=bce7b807b3392304520e17560c007669">Hokkaido University profile</a></strong></div>
+    <div><span>Laboratory</span><strong><a href="https://altair.sci.hokudai.ac.jp/infmcb/index-e.html">Laboratory of Mathematical Biology</a></strong></div>
   </div>
 </section>
 
