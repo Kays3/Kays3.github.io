@@ -9,39 +9,42 @@ redirect_from:
 
 <main class="home-atlas" aria-labelledby="home-title">
   <header class="home-atlas__header">
-    <p class="eyebrow">Computational biology · Hokkaido University</p>
-    <h1 id="home-title">From tissue slides to coral reefs.</h1>
-    <p class="home-atlas__lead">I am a computational biologist interested in digital pathology, coral reef genomics, and the role of transposable elements in adaptation to ocean acidification.</p>
-    <p class="home-atlas__links"><a href="/research/">Research</a><span aria-hidden="true">·</span><a href="/publications/">Publications</a><span aria-hidden="true">·</span><a href="/cv/">CV</a></p>
+    <p class="eyebrow">Physician-scientist · Clinical medicine · Computational biology</p>
+    <h1 id="home-title">From bedside questions to tissue, genomes, and code.</h1>
+    <div class="home-atlas__bio">
+      <p>I am a physician-scientist and postdoctoral researcher at Hokkaido University. My training spans medicine at Nazarbayev University, a PhD in Genetics at SOKENDAI, and general-practice experience in Kazakhstan, where I assessed acute and chronic illness and worked across multidisciplinary care.</p>
+      <p>My work follows a bed-to-bench-to-code workflow: define a clinically meaningful problem, connect it to molecular or morphological evidence, and build a transparent computational analysis. I focus on digital pathology, genomics, polygenic risk, machine learning, and bioinformatics, informed by work in primary care, infectious diseases, and palliative-care research.</p>
+    </div>
+    <p class="home-atlas__links"><a href="/research/">Research &amp; Pathology</a><span aria-hidden="true">·</span><a href="/publications/">Publications</a><span aria-hidden="true">·</span><a href="/cv/">CV</a><span aria-hidden="true">·</span><a href="/contact/">Contact</a></p>
   </header>
 
-  <div class="atlas-strip" aria-label="Selected projects and repositories">
-    <a class="atlas-card" href="https://github.com/Kays3/geneformer-lung-tcell" target="_blank" rel="noopener noreferrer" aria-label="Open the Geneformer lung T-cell repository">
-      <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial pathology tissue sections colored by T-cell identity and dysfunction scores" fetchpriority="high"><figcaption><span>Digital pathology</span><small>Geneformer lung T-cell ↗</small></figcaption></figure>
-    </a>
-    <a class="atlas-card" href="https://github.com/Kays3/geneformer-lung-tcell" target="_blank" rel="noopener noreferrer" aria-label="Open the Geneformer lung T-cell repository">
-      <figure><img src="/images/projects/geneformer-tcell-perturbation.jpg" alt="Illustration of an in silico T-cell perturbation workflow" loading="lazy"><figcaption><span>In silico perturbation</span><small>Geneformer lung T-cell ↗</small></figcaption></figure>
-    </a>
-    <a class="atlas-card" href="https://github.com/Kays3/geneformer-lung-tcell" target="_blank" rel="noopener noreferrer" aria-label="Open the Geneformer lung T-cell repository">
-      <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embeddings separated by lung cell type and disease" loading="lazy"><figcaption><span>Single-cell embeddings</span><small>Geneformer lung T-cell ↗</small></figcaption></figure>
-    </a>
-    <a class="atlas-card" href="https://github.com/Kays3/entacmea-research" target="_blank" rel="noopener noreferrer" aria-label="Open the Entacmaea research repository">
-      <figure><img src="/images/aka-island-reef.jpg" alt="Sea turtle swimming across a coral reef at Aka Island, Okinawa" loading="lazy"><figcaption><span>Coral reef genomics</span><small>Entacmaea research ↗</small></figcaption></figure>
-    </a>
-    <a class="atlas-card" href="https://github.com/Kays3/TE_Ocean_Acidification" target="_blank" rel="noopener noreferrer" aria-label="Open the TE Ocean Acidification repository">
-      <figure><img src="/images/research/aka-island-coral-turtle.png" alt="Sea turtle resting among coral at Aka Island, Okinawa" loading="lazy"><figcaption><span>Ocean acidification</span><small>TE Ocean Acidification ↗</small></figcaption></figure>
-    </a>
-    <a class="atlas-card atlas-card--map" href="https://github.com/Kays3/Ancient_intelligence" target="_blank" rel="noopener noreferrer" aria-label="Open the Ancient Intelligence repository">
-      <figure><img src="/images/interests/ohara-octopus-map-1904.jpg" alt="Kisaburo Ohara's 1904 satirical map of Europe and Asia" loading="lazy"><figcaption><span>Population history</span><small>Ancient Intelligence ↗</small></figcaption></figure>
-    </a>
-  </div>
-
-  <section class="research-ledger" aria-labelledby="research-interests-title">
-    <div class="research-ledger__heading"><p class="eyebrow">Research interests</p><h2 id="research-interests-title">Three connected questions</h2></div>
-    <article><span class="research-ledger__number">I</span><h3>Digital pathology</h3><p>Connecting H&amp;E morphology with spatial and single-cell signals through interpretable computational models.</p></article>
-    <article><span class="research-ledger__number">II</span><h3>Coral reef genomics</h3><p>Studying how reef organisms encode adaptation across populations, generations, and changing environments.</p></article>
-    <article><span class="research-ledger__number">III</span><h3>Transposable elements & ocean acidification</h3><p>Tracing mobile-DNA activity in coral-reef fish exposed to developmental and intergenerational CO₂ conditions.</p></article>
+  <section class="work-image-section" aria-labelledby="work-images-title">
+    <div class="section-heading"><p class="eyebrow">Clinical and computational practice</p><h2 id="work-images-title">Bedside, bench, and code</h2></div>
+    <div class="work-image-grid">
+      <a class="work-image-card work-image-card--portrait" href="/cv/">
+        <figure><img src="/images/clinical/dauyey-argandykov-clinical.jpg" alt="Kaisar Dauyey and Dr. Argandykov wearing clinical coats and scrubs" fetchpriority="high"><figcaption><strong>Clinical medicine</strong><span>Clinical training and practice in Kazakhstan, with Dr. Argandykov.</span></figcaption></figure>
+      </a>
+      <a class="work-image-card" href="https://doi.org/10.3389/fmicb.2026.1747006">
+        <figure><img src="/images/clinical/almaty-oita-yamaoka-visit-2024.jpg" alt="Kazakhstan and Japan infectious-disease collaborators during Professor Yamaoka's 2024 visit" loading="lazy"><figcaption><strong>Infectious-disease research</strong><span>Kazakhstan-Japan research exchange with Professor Yoshio Yamaoka, 2024.</span></figcaption></figure>
+      </a>
+      <a class="work-image-card" href="/research/#digital-pathology">
+        <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Whole-slide tissue sections mapped with spatial T-cell identity and dysfunction scores" loading="lazy"><figcaption><strong>Digital pathology</strong><span>Whole-slide morphology linked with spatial molecular evidence.</span></figcaption></figure>
+      </a>
+      <a class="work-image-card" href="https://github.com/Kays3/geneformer-lung-tcell">
+        <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embeddings of lung cells organized by cell type and disease" loading="lazy"><figcaption><strong>Computational research</strong><span>Single-cell foundation models, evaluation, and interpretable workflows.</span></figcaption></figure>
+      </a>
+    </div>
   </section>
 
-  <p class="home-atlas__note">Across these areas, I value reproducible workflows, visible evidence, and tools that make biological reasoning easier to inspect.</p>
+  <section class="featured-work" aria-labelledby="featured-work-title">
+    <div class="section-heading"><p class="eyebrow">Featured research</p><h2 id="featured-work-title">Four translational workflows</h2></div>
+    <div class="featured-work-grid">
+      <article class="featured-work-card"><span>01</span><h3>Digital Pathology &amp; WSI Analysis</h3><p>Linking whole-slide morphology with spatial and single-cell measurements through interpretable, externally testable models.</p><a href="/research/#digital-pathology">Research focus <span aria-hidden="true">→</span></a></article>
+      <article class="featured-work-card"><span>02</span><h3>Polygenic Risk Score Pipelines</h3><p>Building reproducible PRS workflows for population and ancient-genome comparisons while making transferability limits explicit.</p><a href="/research/#polygenic-risk">Research focus <span aria-hidden="true">→</span></a></article>
+      <article class="featured-work-card"><span>03</span><h3>Infectious Diseases &amp; Host-Pathogen Dynamics</h3><p>Integrating clinical recruitment, microbiology, epidemiology, and antimicrobial-resistance analysis in <em>H. pylori</em> research.</p><a href="/research/#infectious-disease">Research focus <span aria-hidden="true">→</span></a></article>
+      <article class="featured-work-card"><span>04</span><h3>Clinical Medicine &amp; Systems Integration</h3><p>Turning problems from primary care and multidisciplinary medicine into structured data, reproducible analyses, and usable evidence.</p><a href="/research/#clinical-systems">Research focus <span aria-hidden="true">→</span></a></article>
+    </div>
+  </section>
+
+  <p class="home-atlas__note">Clinical relevance defines the question. Reproducible computation makes the evidence inspectable.</p>
 </main>
