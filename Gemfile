@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'csv'
+gem 'kramdown-parser-gfm'
 
 group :jekyll_plugins do
   gem 'jekyll', '~> 3.9'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
+  gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
   gem 'jekyll-redirect-from'
   gem 'jemoji'
