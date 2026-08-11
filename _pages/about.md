@@ -10,17 +10,17 @@ redirect_from:
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero__copy">
     <p class="eyebrow">Computational biology · Hokkaido University</p>
-    <h1 id="home-title">From genomes and cells to organisms and ecosystems.</h1>
-    <p class="home-hero__lead">I develop computational approaches for biological discovery—combining single-cell genomics, foundation models, digital pathology, evolutionary analysis, and carefully engineered scientific workflows.</p>
-    <a class="focus-pill" href="/research/#digital-pathology"><span class="focus-pill__cells" aria-hidden="true"></span><span><strong>Developing interest</strong> Digital pathology & tissue intelligence</span></a>
+    <h1 id="home-title">From tissue architecture to cells, signals, and clinical insight.</h1>
+    <p class="home-hero__lead">I develop computational approaches that connect H&amp;E morphology, spatial transcriptomics, single-cell states, and interpretable AI—turning complex tissue data into testable biological and clinical evidence.</p>
+    <a class="focus-pill" href="/research/#digital-pathology"><span class="focus-pill__cells" aria-hidden="true"></span><span><strong>Research direction</strong> Digital pathology & tissue intelligence</span></a>
     <div class="cta-row">
       <a class="kd-button kd-button--primary" href="/research/">Explore my research</a>
       <a class="kd-button" href="/publications/">View publications</a>
     </div>
   </div>
   <figure class="home-hero__image">
-    <img src="/images/aka-island-reef.jpg" alt="A sea turtle moving across a coral reef in clear blue water at Aka Island" fetchpriority="high">
-    <figcaption>Aka Island · Keramashoto National Park, Okinawa</figcaption>
+    <img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial pathology tissue sections colored by T-cell identity and dysfunction scores" fetchpriority="high">
+    <figcaption>Spatial pathology · SCLC tissue · GSE263196</figcaption>
   </figure>
 </section>
 
