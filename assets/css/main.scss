@@ -197,6 +197,11 @@ html[data-theme="dark"] .masthead {
 .featured-work-card p { color: var(--kd-muted); font-size: 0.84rem !important; line-height: 1.7; }
 .page__content .featured-work-card a { color: var(--kd-ocean); font-size: 0.75rem; font-weight: 800; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; }
 .page__content .featured-work-card a:hover { color: var(--kd-coral); }
+.page__content .featured-work-card__image { border: 1px solid var(--kd-line); display: block; margin: 1rem 0; overflow: hidden; }
+.featured-work-card__image img { aspect-ratio: 16 / 8; display: block; object-fit: cover; transition: transform 180ms ease; width: 100%; }
+.featured-work-card__image:hover img { transform: scale(1.02); }
+.featured-work-card__links { display: flex; flex-wrap: wrap; gap: 0.55rem 1rem; margin-bottom: 0 !important; }
+.featured-work-card__links a { white-space: nowrap; }
 .home-atlas__note { color: var(--kd-muted); font-size: 0.86rem !important; font-style: italic; line-height: 1.7; margin: 0 !important; max-width: 45rem; }
 
 .note-banner {
