@@ -14,5 +14,6 @@
 - `research/marine/stichodactyla-ocellaris.jpg`: underwater photograph of ocellaris clownfish and a *Stichodactyla* sea anemone supplied directly by Kaisar Dauyey.
 - `research/marine/entacmaea-tomato-clownfish.jpg`: underwater photograph of tomato clownfish and an *Entacmaea* sea anemone supplied directly by Kaisar Dauyey.
 - `research/marine/aka-jima-ocellaris-1.jpg` and `aka-jima-ocellaris-2.jpg`: underwater field photographs from Aka Island supplied directly by Kaisar Dauyey.
+- `projects/pets/digital-pathology-cat.jpg`, `polygenic-risk-cat.mp4`, `polygenic-risk-cat-poster.png`, `infectious-disease-cat.gif`, `clinical-systems-cats.jpg`, `genomics-cats.jpg`, and `marine-science-cat.jpg`: personal cat photographs and short clips supplied directly by Kaisar Dauyey for the homepage “Pet projects” analogy. The HEIC originals for the genomics and marine cards were converted to browser-compatible JPEGs; the polygenic-risk poster is a still frame from the supplied clip.
 
 These images are used only on the repository owner's personal academic website.
