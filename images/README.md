@@ -10,7 +10,7 @@
 - `collaborations/field-collaborators.jpg`: field-team photograph supplied by Kaisar Dauyey through a Google-hosted image URL for use on this site.
 - `collaborations/oist-saeki-kakujo-2023.jpg`: photograph from the [OIST SEED program visit by Saeki Kakujo High School](https://www.oist.jp/outreach/update/seed-program-saeki-kakujo-oita-students-visited-oist), © Okinawa Institute of Science and Technology Graduate University, used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - `clinical/almaty-oita-yamaoka-visit-2024.jpg`: Kazakhstan-Japan infectious-disease research exchange photograph supplied directly by Kaisar Dauyey for use on this site.
-- `clinical/dauyey-argandykov-clinical.jpg`: clinical portrait of Kaisar Dauyey and Dr. Argandykov supplied directly by Kaisar Dauyey for use on this site.
+- `clinical/nazarbayev-md-graduates-2019.jpg`: photograph of Nazarbayev University School of Medicine’s first MD graduating class in 2019, supplied by Kaisar Dauyey for use on this site. Photo by [Andrey Yershov (@androbaza)](https://www.instagram.com/androbaza/).
 - `research/marine/stichodactyla-ocellaris.jpg`: underwater photograph of ocellaris clownfish and a *Stichodactyla* sea anemone supplied directly by Kaisar Dauyey.
 - `research/marine/entacmaea-tomato-clownfish.jpg`: underwater photograph of tomato clownfish and an *Entacmaea* sea anemone supplied directly by Kaisar Dauyey.
 - `research/marine/aka-jima-ocellaris-1.jpg` and `aka-jima-ocellaris-2.jpg`: underwater field photographs from Aka Island supplied directly by Kaisar Dauyey.
