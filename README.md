@@ -1,5 +1,35 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Kaisar Dauyey — academic website
+
+Personal academic website for Kaisar Dauyey, built with [AcademicPages](https://academicpages.github.io/) and hosted on GitHub Pages.
+
+## Local preview
+
+Use Ruby 3.1, which matches the stable GitHub Pages toolchain used by this template.
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open `http://localhost:4000`.
+
+## Content
+
+- Site settings and profile links: `_config.yml`
+- Navigation: `_data/navigation.yml`
+- Main pages: `_pages/`
+- Custom visual system: `assets/css/main.scss`
+- Images and provenance: `images/README.md`
+
+The site is deployed from the `master` branch at <https://kays3.github.io/>.
+
+## Credits
+
+The theme retains the AcademicPages and Minimal Mistakes licenses and attribution. All biographical copy and styling in this repository are original to this site.
+
+<!-- Upstream template documentation retained below for maintainers. -->
+
+## AcademicPages upstream notes
 
 ![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
 
