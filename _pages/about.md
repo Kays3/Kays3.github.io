@@ -15,10 +15,25 @@ redirect_from:
     <p class="home-atlas__links"><a href="/research/">Research</a><span aria-hidden="true">·</span><a href="/publications/">Publications</a><span aria-hidden="true">·</span><a href="/cv/">CV</a></p>
   </header>
 
-  <div class="atlas-strip" aria-label="Research imagery">
-    <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial pathology tissue sections colored by T-cell identity and dysfunction scores" fetchpriority="high"><figcaption>Tissue & spatial data</figcaption></figure>
-    <figure><img src="/images/aka-island-reef.jpg" alt="Sea turtle swimming across a coral reef at Aka Island, Okinawa" loading="lazy"><figcaption>Coral reef genomics</figcaption></figure>
-    <figure><img src="/images/research/aka-island-coral-turtle.png" alt="Sea turtle resting among coral at Aka Island, Okinawa" loading="lazy"><figcaption>Ocean acidification & mobile DNA</figcaption></figure>
+  <div class="atlas-strip" aria-label="Selected projects and repositories">
+    <a class="atlas-card" href="https://github.com/Kays3/geneformer-lung-tcell" target="_blank" rel="noopener noreferrer" aria-label="Open the Geneformer lung T-cell repository">
+      <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial pathology tissue sections colored by T-cell identity and dysfunction scores" fetchpriority="high"><figcaption><span>Digital pathology</span><small>Geneformer lung T-cell ↗</small></figcaption></figure>
+    </a>
+    <a class="atlas-card" href="https://github.com/Kays3/geneformer-lung-tcell" target="_blank" rel="noopener noreferrer" aria-label="Open the Geneformer lung T-cell repository">
+      <figure><img src="/images/projects/geneformer-tcell-perturbation.jpg" alt="Illustration of an in silico T-cell perturbation workflow" loading="lazy"><figcaption><span>In silico perturbation</span><small>Geneformer lung T-cell ↗</small></figcaption></figure>
+    </a>
+    <a class="atlas-card" href="https://github.com/Kays3/geneformer-lung-tcell" target="_blank" rel="noopener noreferrer" aria-label="Open the Geneformer lung T-cell repository">
+      <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embeddings separated by lung cell type and disease" loading="lazy"><figcaption><span>Single-cell embeddings</span><small>Geneformer lung T-cell ↗</small></figcaption></figure>
+    </a>
+    <a class="atlas-card" href="https://github.com/Kays3/entacmea-research" target="_blank" rel="noopener noreferrer" aria-label="Open the Entacmaea research repository">
+      <figure><img src="/images/aka-island-reef.jpg" alt="Sea turtle swimming across a coral reef at Aka Island, Okinawa" loading="lazy"><figcaption><span>Coral reef genomics</span><small>Entacmaea research ↗</small></figcaption></figure>
+    </a>
+    <a class="atlas-card" href="https://github.com/Kays3/entacmea-research" target="_blank" rel="noopener noreferrer" aria-label="Open the Entacmaea research repository">
+      <figure><img src="/images/research/aka-island-coral-turtle.png" alt="Sea turtle resting among coral at Aka Island, Okinawa" loading="lazy"><figcaption><span>Ocean acidification</span><small>Entacmaea research ↗</small></figcaption></figure>
+    </a>
+    <a class="atlas-card atlas-card--map" href="https://github.com/Kays3/Ancient_intelligence" target="_blank" rel="noopener noreferrer" aria-label="Open the Ancient Intelligence repository">
+      <figure><img src="/images/interests/ohara-octopus-map-1904.jpg" alt="Kisaburo Ohara's 1904 satirical map of Europe and Asia" loading="lazy"><figcaption><span>Population history</span><small>Ancient Intelligence ↗</small></figcaption></figure>
+    </a>
   </div>
 
   <section class="research-ledger" aria-labelledby="research-interests-title">
