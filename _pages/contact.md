@@ -7,7 +7,7 @@ author_profile: true
 <section class="contact-panel">
   <p class="eyebrow">Collaborate</p>
   <h2>Questions are welcome—especially the interdisciplinary ones.</h2>
-  <p>I am open to conversations around biological foundation models, single-cell and spatial transcriptomics, reproducible scientific workflows, evolutionary genomics, and computational approaches that bridge biological and clinical research.</p>
+  <p>I am open to conversations around biological foundation models, single-cell and spatial transcriptomics, digital pathology, reproducible scientific workflows, evolutionary genomics, and computational approaches that bridge biological and clinical research.</p>
   <div class="contact-list">
     <div><span>Email</span><strong>k.dauyey.bio.nu [at] gmail [dot] com</strong></div>
     <div><span>Code</span><strong><a href="https://github.com/Kays3">github.com/Kays3</a></strong></div>

@@ -11,7 +11,7 @@ redirect_from:
 ## Appointments
 
 <div class="timeline">
-  <div class="timeline-item"><div class="timeline-date">Current</div><div><h3>Postdoctoral researcher</h3><p>Hokkaido University · Faculty of Advanced Life Science</p><p>Computational biology, single-cell and spatial analysis, biological foundation models, and reproducible research software.</p></div></div>
+<div class="timeline-item"><div class="timeline-date">Current</div><div><h3>Postdoctoral researcher</h3><p>Hokkaido University · Faculty of Advanced Life Science</p><p>Computational biology, single-cell and spatial analysis, biological foundation models, reproducible research software, and a developing interest in digital pathology.</p></div></div>
 </div>
 
 ## Education & research training
@@ -25,7 +25,7 @@ redirect_from:
 
 ## Methods
 
-<div class="tag-cloud" aria-label="Research methods and tools"><span>Python</span><span>R</span><span>Linux</span><span>Jupyter</span><span>Git/GitHub</span><span>single-cell RNA-seq</span><span>spatial transcriptomics</span><span>Geneformer</span><span>machine learning</span><span>evolutionary genomics</span><span>transposable elements</span><span>computational neuroimaging</span><span>workflow validation</span><span>scientific documentation</span></div>
+<div class="tag-cloud" aria-label="Research methods and interests"><span>Python</span><span>R</span><span>Linux</span><span>Jupyter</span><span>Git/GitHub</span><span>single-cell RNA-seq</span><span>spatial transcriptomics</span><span>Geneformer</span><span>machine learning</span><span>digital pathology</span><span>whole-slide imaging</span><span>evolutionary genomics</span><span>transposable elements</span><span>computational neuroimaging</span><span>workflow validation</span><span>scientific documentation</span></div>
 
 ## Selected activities
 
