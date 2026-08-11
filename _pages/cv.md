@@ -33,6 +33,7 @@ redirect_from:
 
 ## Medical credentials
 
+- ECFMG Certified — valid through 2029.
 - Certificate of General Medical Practice, Republic of Kazakhstan — valid through September 2030.
 - USMLE Step 1 — Pass, 2021.
 - USMLE Step 2 CK — Pass, 2022.
