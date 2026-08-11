@@ -49,4 +49,114 @@ redirect_from:
   </section>
 
   <p class="home-atlas__note">Clinical relevance defines the question. Reproducible computation makes the evidence inspectable.</p>
+
+  <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
+    <div class="section-heading"><h2 id="visitor-tracker-title">Visitor locations worldwide</h2></div>
+    <div id="visitor-map" style="height: 400px; border-radius: 8px; margin: 20px 0;"></div>
+    <div id="visitor-stats" style="margin-top: 20px; padding: 15px; background: #f5f5f5; border-radius: 8px;">
+      <p><strong>Total visitors tracked:</strong> <span id="visitor-count">0</span></p>
+      <p><strong>Unique countries:</strong> <span id="country-count">0</span></p>
+    </div>
+  </section>
 </main>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function() {
+  const STORAGE_KEY = 'visitor_data';
+  const API_KEY = 'db76222f9d4d41'; // ip-api.com free tier key
+  
+  async function getVisitorLocation() {
+    try {
+      const response = await fetch(`https://ipinfo.io/json?token=YOUR_IPINFO_TOKEN`).catch(() => 
+        fetch('https://ip-api.com/json/?fields=lat,lon,country,city,countryCode')
+      );
+      return await response.json();
+    } catch (error) {
+      console.log('Geolocation unavailable');
+      return null;
+    }
+  }
+  
+  function loadVisitorData() {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored ? JSON.parse(stored) : { visits: [], totalCount: 0 };
+  }
+  
+  function saveVisitorData(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+  
+  function aggregateByLocation(visits) {
+    const aggregated = {};
+    visits.forEach(visit => {
+      const key = `${visit.lat},${visit.lon}`;
+      if (!aggregated[key]) {
+        aggregated[key] = {
+          lat: visit.lat,
+          lon: visit.lon,
+          country: visit.country,
+          city: visit.city,
+          count: 0
+        };
+      }
+      aggregated[key].count++;
+    });
+    return Object.values(aggregated);
+  }
+  
+  async function initializeMap() {
+    const map = L.map('visitor-map').setView([20, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+    
+    let data = loadVisitorData();
+    const location = await getVisitorLocation();
+    
+    if (location && location.lat && location.lon) {
+      const visit = {
+        lat: parseFloat(location.lat),
+        lon: parseFloat(location.lon),
+        country: location.country || 'Unknown',
+        city: location.city || 'Unknown',
+        timestamp: new Date().toISOString()
+      };
+      data.visits.push(visit);
+      data.totalCount = (data.totalCount || 0) + 1;
+      saveVisitorData(data);
+    }
+    
+    const locations = aggregateByLocation(data.visits);
+    const countries = new Set(locations.map(l => l.country));
+    
+    document.getElementById('visitor-count').textContent = data.totalCount;
+    document.getElementById('country-count').textContent = countries.size;
+    
+    locations.forEach(location => {
+      const color = location.count > 5 ? '#d63031' : location.count > 2 ? '#fdcb6e' : '#0984e3';
+      const radius = Math.sqrt(location.count) * 3;
+      
+      L.circleMarker([location.lat, location.lon], {
+        radius: radius,
+        fillColor: color,
+        color: color,
+        weight: 2,
+        opacity: 0.8,
+        fillOpacity: 0.6
+      }).bindPopup(`
+        <strong>${location.city}, ${location.country}</strong><br>
+        Visitors: ${location.count}
+      `).addTo(map);
+    });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeMap);
+  } else {
+    initializeMap();
+  }
+})();
+</script>
