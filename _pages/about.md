@@ -1,7 +1,7 @@
 ---
 permalink: /
 title:
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
@@ -52,6 +52,6 @@ redirect_from:
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
     <div class="section-heading"><h2 id="visitor-tracker-title">Visitor locations worldwide</h2></div>
-    <a href='https://mapmyvisitors.com/web/1c7ga' title='Visit tracker'><img src='https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff'/></a>
+    <a href="https://mapmyvisitors.com/web/1c7ga" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff" alt="Map showing the countries and regions from which this website has been visited" width="300" loading="lazy"></a>
   </section>
 </main>

@@ -51,6 +51,8 @@ function updateNav() {
     if (breaks.length < 1) {
       $btn.addClass('hidden');
       $btn.removeClass('close');
+      $btn.attr('aria-expanded', 'false');
+      $btn.attr('aria-label', 'Open navigation menu');
       $hlinks.addClass('hidden');
     }
   }
@@ -81,6 +83,9 @@ screen.orientation.addEventListener("change", function () {
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  const isOpen = !$hlinks.hasClass('hidden');
+  $(this).attr('aria-expanded', isOpen ? 'true' : 'false');
+  $(this).attr('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
 });
 
 updateNav();

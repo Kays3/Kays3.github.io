@@ -2,6 +2,7 @@
 title: "Featured projects"
 permalink: /projects/
 author_profile: true
+published: false
 ---
 
 <p class="page-intro">Four project templates show how I connect clinical questions with tissue, genomic, epidemiological, and computational evidence.</p>
