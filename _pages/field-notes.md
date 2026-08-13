@@ -2,6 +2,7 @@
 title: "Field notes"
 permalink: /field-notes/
 author_profile: true
+published: false
 ---
 
 <p class="page-intro">The questions in a dataset begin in real places. Field experience in Okinawa continues to shape how I think about environmental genomics, sampling, and the organisms behind the matrices.</p>
