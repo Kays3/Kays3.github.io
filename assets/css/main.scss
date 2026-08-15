@@ -390,14 +390,14 @@ html[data-theme="dark"] .masthead {
   border-radius: 30px;
   display: grid;
   gap: 0;
-  grid-template-columns: minmax(0, 1.08fr) minmax(20rem, 0.92fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
   margin: 0 0 4.5rem;
   min-height: 38rem;
   overflow: hidden;
 }
 .about-hero__content { display: flex; flex-direction: column; justify-content: center; padding: clamp(2rem, 5vw, 4.5rem); }
 .about-hero__content h1 {
-  font-size: clamp(3rem, 6.1vw, 5.5rem);
+  font-size: clamp(3rem, 4.4vw, 4.1rem);
   line-height: 0.98;
   margin: 0 0 1.45rem;
   max-width: 9.5em;
@@ -437,7 +437,7 @@ html[data-theme="dark"] .masthead {
 .page__content .about-button--quiet { border-color: var(--kd-line); }
 .about-hero__media { background: var(--kd-ocean-deep); display: grid; margin: 0; min-height: 100%; overflow: hidden; position: relative; }
 .about-hero__media::after { background: linear-gradient(180deg, transparent 45%, rgba(7, 45, 54, 0.88)); content: ""; inset: 0; pointer-events: none; position: absolute; }
-.about-hero__media img { filter: saturate(0.78) contrast(1.04); height: 100%; object-fit: cover; width: 100%; }
+.about-hero__media img { filter: saturate(0.78) contrast(1.04); height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; }
 .about-hero__media figcaption { bottom: 0; color: #fff; display: flex; flex-direction: column; left: 0; padding: 2rem; position: absolute; right: 0; z-index: 1; }
 .about-hero__media figcaption span { color: rgba(255,255,255,0.72); font-size: 0.67rem; letter-spacing: 0.11em; text-transform: uppercase; }
 .about-hero__media figcaption strong { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.35rem; margin-top: 0.35rem; }
@@ -475,7 +475,7 @@ html[data-theme="dark"] .masthead {
 .about-more > p { color: var(--kd-muted); font-size: 0.86rem !important; line-height: 1.65; margin: 0 !important; }
 
 @media screen and (max-width: 78em) {
-  .about-hero { grid-template-columns: 1fr; }
+  .about-hero { grid-template-columns: 1fr; height: auto; }
   .about-hero__media { min-height: 26rem; }
   .about-more { align-items: start; grid-template-columns: 1fr 1fr; }
   .about-more .about-button { justify-self: start; }
