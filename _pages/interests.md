@@ -1,10 +1,10 @@
 ---
 title: "Interests"
 permalink: /interests/
-author_profile: true
+author_profile: false
 ---
 
-<p class="page-intro">A home for earlier research and long-running scholarly interests that continue to shape how I think: marine biology in Okinawa, the interpretation of ancient genomes, and the history carried by maps.</p>
+<p class="page-intro">A home for earlier research and long-running scholarly interests that continue to shape how I think: marine biology in Okinawa, the interpretation of ancient genomes, and the critical reading of historical sources.</p>
 
 <section class="research-photo-section" aria-labelledby="marine-biology-title">
   <div class="section-heading"><p class="eyebrow">Marine biology &amp; environmental genomics</p><h2 id="marine-biology-title">From reef organisms to genomic questions</h2></div>
@@ -48,26 +48,21 @@ author_profile: true
 </section>
 
 <section class="research-photo-section" aria-labelledby="history-title">
-  <div class="section-heading"><p class="eyebrow">History &amp; cartography</p><h2 id="history-title">Maps as records—and arguments</h2></div>
-  <p class="section-lead">Beyond the lab, I am interested in historical cartography and the visual culture of conflict, especially the Russo-Japanese War and the ways maps turn geopolitics into memorable symbols.</p>
-
-  <figure class="history-map">
-    <img src="/images/interests/ohara-octopus-map-1904.jpg" alt="Kisaburō Ohara's 1904 satirical map of Europe and Asia, depicting Russia as an octopus" loading="lazy">
-    <figcaption><strong><em>A Humorous Diplomatic Atlas of Europe and Asia</em></strong> · Kisaburō Ohara, 1904 · Persuasive Cartography: The PJ Mode Collection, Cornell University Library · Public domain. <a href="https://digital.library.cornell.edu/catalog/ss:3293791">View the collection record <span aria-hidden="true">↗</span></a></figcaption>
-  </figure>
+  <div class="section-heading"><p class="eyebrow">History &amp; visual culture</p><h2 id="history-title">Reading conflict through historical sources</h2></div>
+  <p class="section-lead">Beyond the lab, I am interested in the Russo-Japanese War as a meeting point of Japan, Russia, empire, technology, and modernity—and in how surviving sources frame power, threat, and national identity.</p>
 
   <div class="interest-grid">
     <article class="interest-card">
-      <p class="eyebrow">Historical cartography</p>
-      <h2>The Russo-Japanese War through maps</h2>
-      <p>I am drawn to the Russo-Japanese War as a meeting point of Japan, Russia, empire, technology, and modernity. Maps from the period reveal not only geography, but also how people understood power, threat, and national identity.</p>
+      <p class="eyebrow">Modern history</p>
+      <h2>The Russo-Japanese War</h2>
+      <p>The conflict offers a concentrated view of changing military technology, imperial competition, diplomacy, and the emergence of modern political identities in East Asia.</p>
     </article>
-    <article class="interest-card interest-card--map">
-      <p class="eyebrow">Visual culture</p>
-      <h2>Persuasive images</h2>
-      <p>Ohara's map is an anti-Russian satirical work, not a neutral geographic record. Its “Black Octopus” transforms political claims into a striking visual metaphor—an example of how illustration can compress a complicated conflict into a persuasive story.</p>
+    <article class="interest-card">
+      <p class="eyebrow">Critical interpretation</p>
+      <h2>Sources are arguments</h2>
+      <p>Historical documents and visual sources are not neutral records. I am interested in how their authors compress complicated events into persuasive stories—and in reading those choices within their original political context.</p>
     </article>
   </div>
 
-  <aside class="history-context"><strong>Reading historical images critically.</strong> The map is presented here as a primary source in the history of propaganda and persuasive cartography. Its imagery and viewpoint reflect the politics of 1904 rather than a present-day position.</aside>
+  <aside class="history-context"><strong>Context before conclusion.</strong> Historical sources reflect the viewpoints and political conditions of their time; they are most useful when their authorship, audience, and purpose remain explicit.</aside>
 </section>

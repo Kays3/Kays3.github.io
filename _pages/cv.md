@@ -11,7 +11,7 @@ redirect_from:
 ## Current appointment
 
 <div class="timeline">
-  <div class="timeline-item"><div class="timeline-date">2026–</div><div><h3>Postdoctoral Research Fellow</h3><p>Hokkaido University · Japan</p><p>Biomedical data analysis, genomics, bioinformatics, digital pathology, and translational medicine.</p></div></div>
+  <div class="timeline-item"><div class="timeline-date">2026–</div><div><h3>Postdoctoral Research Fellow</h3><p>Hokkaido University · Japan</p><p>Biomedical data analysis, genomics, bioinformatics, whole-slide imaging, and translational medicine.</p></div></div>
 </div>
 
 ## Clinical practice and research
@@ -40,7 +40,7 @@ redirect_from:
 
 ## Methods and domains
 
-<div class="tag-cloud" aria-label="Clinical and research methods"><span>patient assessment</span><span>outpatient care</span><span>clinical documentation</span><span>participant recruitment</span><span>informed consent</span><span>clinical data quality</span><span>digital pathology</span><span>whole-slide imaging</span><span>Python</span><span>R</span><span>RNA-seq</span><span>genomics</span><span>bioinformatics</span><span>machine learning</span><span>polygenic scores</span><span>statistical analysis</span><span>study design</span><span>manuscript preparation</span></div>
+<div class="tag-cloud" aria-label="Clinical and research methods"><span>patient assessment</span><span>outpatient care</span><span>clinical documentation</span><span>participant recruitment</span><span>informed consent</span><span>clinical data quality</span><span>whole-slide imaging</span><span>spatial biology</span><span>Python</span><span>R</span><span>RNA-seq</span><span>genomics</span><span>bioinformatics</span><span>machine learning</span><span>polygenic scores</span><span>statistical analysis</span><span>study design</span><span>manuscript preparation</span></div>
 
 ## Languages
 

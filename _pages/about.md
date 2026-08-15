@@ -1,57 +1,111 @@
 ---
 permalink: /
 title:
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<main class="home-atlas" aria-labelledby="home-title">
-  <header class="home-atlas__header">
-    <p class="eyebrow">Physician-scientist · Clinical medicine · Computational biology</p>
-    <h1 id="home-title">From bedside questions to tissue, genomes, and code.</h1>
-    <div class="home-atlas__bio">
-      <p>I am a physician-scientist and postdoctoral researcher at Hokkaido University. My training spans medicine at Nazarbayev University, a PhD in Genetics at SOKENDAI, and general-practice experience in Kazakhstan, where I assessed acute and chronic illness and worked across multidisciplinary care.</p>
-      <p>My work follows a bed-to-bench-to-code workflow: define a clinically meaningful problem, connect it to molecular or morphological evidence, and build a transparent computational analysis. I focus on digital pathology, genomics, polygenic risk, machine learning, and bioinformatics, informed by work in primary care, infectious diseases, and palliative-care research.</p>
-    </div>
-    <p class="home-atlas__links"><a href="/research/">Research &amp; People</a><span aria-hidden="true">·</span><a href="/publications/">Publications</a><span aria-hidden="true">·</span><a href="/cv/">CV</a><span aria-hidden="true">·</span><a href="/contact/">Contact</a></p>
-  </header>
+<main class="about-visual" aria-labelledby="home-title">
+  <section class="about-hero">
+    <div class="about-hero__content">
+      <div class="about-hero__identity">
+        <img src="/images/kaisar-dauyey-2025.jpg" alt="Portrait of Kaisar Dauyey" fetchpriority="high">
+        <p class="eyebrow">Physician-scientist · Hokkaido University</p>
+      </div>
+      <h1 id="home-title">From bedside questions to tissue, genomes, and code.</h1>
+      <p class="about-hero__lead">I connect clinical medicine with tissue imaging, genomics, and reproducible computational biology—building analyses whose assumptions, limits, and biological meaning remain visible.</p>
 
-  <section class="work-image-section" aria-labelledby="work-images-title">
-    <div class="section-heading"><p class="eyebrow">Clinical and computational practice</p><h2 id="work-images-title">Bedside, bench, and code</h2></div>
-    <div class="work-image-grid">
-      <article class="work-image-card work-image-card--graduation">
-        <figure><a href="/cv/"><img src="/images/clinical/nazarbayev-md-graduates-2019.jpg" alt="Nazarbayev University School of Medicine's first MD graduating class in 2019" fetchpriority="high"></a><figcaption><strong><a href="/cv/">MD graduation · 2019</a></strong><span>Nazarbayev University School of Medicine’s first MD graduating class.</span><span class="photo-credit">Photo: <a href="https://www.instagram.com/androbaza/">Andrey Yershov (@androbaza)</a>.</span></figcaption></figure>
+      <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">
+        <div><dt>Current</dt><dd>Postdoctoral researcher · Hokkaido University</dd></div>
+        <div><dt>Training</dt><dd>MD · Nazarbayev University</dd></div>
+        <div><dt>Doctorate</dt><dd>PhD in Genetics · SOKENDAI</dd></div>
+      </dl>
+
+      <div class="about-hero__actions">
+        <a class="about-button about-button--primary" href="/research/">Research <span aria-hidden="true">→</span></a>
+        <a class="about-button" href="/cv/">View CV</a>
+        <a class="about-button about-button--quiet" href="/publications/">Publications</a>
+      </div>
+    </div>
+
+    <figure class="about-hero__media">
+      <img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Whole-slide tissue sections overlaid with spatial T-cell identity and dysfunction scores" fetchpriority="high">
+      <figcaption><span>Tissue → cell state → interpretable model</span><strong>Tissue context for predicted T-cell states</strong></figcaption>
+    </figure>
+  </section>
+
+  <section class="about-perturbation" aria-labelledby="perturbation-title">
+    <div class="about-perturbation__intro">
+      <div><p class="eyebrow">Geneformer · Current focus</p><h2 id="perturbation-title">In silico gene perturbation</h2></div>
+      <p>Geneformer enables counterfactual tests of how modeled gene deletion or overexpression changes a cell's representation. In SCLC T cells, I use these predicted shifts to prioritize hypotheses about disease-associated cell states.</p>
+    </div>
+    <figure>
+      <img src="/images/research/geneformer-in-silico-perturbation.png" alt="Diagram showing a T cell, its ranked genes, deletion or overexpression of one model input, and the predicted shift between SCLC and normal cell states" loading="lazy">
+      <figcaption><strong>Model perturbation, not laboratory gene editing.</strong> The edit is applied to the model input, and the predicted cell-state shift is a hypothesis generator that requires experimental validation. <a href="https://github.com/Kays3/geneformer-lung-tcell">View the Geneformer workflow <span aria-hidden="true">↗</span></a></figcaption>
+    </figure>
+  </section>
+
+  <section class="about-story" aria-labelledby="story-title">
+    <div class="section-heading">
+      <p class="eyebrow">Three scales of inquiry</p>
+      <h2 id="story-title">Clinical questions, viewed through complementary evidence</h2>
+    </div>
+
+    <div class="about-story__grid">
+      <a class="about-story__card" href="/research/#digital-pathology">
+        <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial molecular measurements aligned with whole-slide tissue morphology" loading="lazy"><figcaption><span>01 · Tissue</span><strong>Tissue context</strong><small>Relate predicted T-cell states to spatial and morphological evidence.</small></figcaption></figure>
+      </a>
+      <a class="about-story__card" href="https://github.com/Kays3/geneformer-lung-tcell">
+        <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" loading="lazy"><figcaption><span>02 · Cells</span><strong>Computational genomics</strong><small>Model cell states with donor-aware, testable workflows.</small></figcaption></figure>
+      </a>
+      <a class="about-story__card" href="/research/#marine-genomics">
+        <figure><img src="/images/research/marine/stichodactyla-ocellaris.jpg" alt="Ocellaris clownfish sheltering in a Stichodactyla sea anemone" loading="lazy"><figcaption><span>03 · Environment</span><strong>Comparative biology</strong><small>Study adaptation and symbiosis under environmental change.</small></figcaption></figure>
+      </a>
+    </div>
+  </section>
+
+  <section class="about-focus" aria-labelledby="focus-title">
+    <div class="section-heading">
+      <p class="eyebrow">Selected research</p>
+      <h2 id="focus-title">A focused translational program</h2>
+      <p class="section-lead">The homepage highlights three current directions; the Research page preserves the complete program and its supporting publications.</p>
+    </div>
+
+    <div class="about-focus__grid">
+      <article class="about-focus__card">
+        <span class="about-focus__number">01</span>
+        <p class="eyebrow">Model to counterfactual</p>
+        <h3>Geneformer In Silico Perturbation</h3>
+        <p>Testing how modeled gene deletion or overexpression shifts SCLC T-cell representations, with donor-aware evaluation and a clear boundary between model predictions and laboratory validation.</p>
+        <div class="tag-row"><span>Geneformer</span><span>gene perturbation</span><span>T-cell states</span></div>
+        <a class="text-link" href="https://github.com/Kays3/geneformer-lung-tcell">View workflow <span aria-hidden="true">↗</span></a>
       </article>
-      <a class="work-image-card" href="https://doi.org/10.3389/fmicb.2026.1747006">
-        <figure><img src="/images/clinical/almaty-oita-yamaoka-visit-2024.jpg" alt="Kazakhstan and Japan infectious-disease collaborators during Professor Yamaoka's 2024 visit" loading="lazy"><figcaption><strong>Infectious-disease research</strong><span>Kazakhstan-Japan research exchange with Professor Yoshio Yamaoka, 2024.</span></figcaption></figure>
-      </a>
-      <a class="work-image-card" href="/research/#digital-pathology">
-        <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Whole-slide tissue sections mapped with spatial T-cell identity and dysfunction scores" loading="lazy"><figcaption><strong>Digital pathology</strong><span>Whole-slide morphology linked with spatial molecular evidence.</span></figcaption></figure>
-      </a>
-      <a class="work-image-card" href="https://github.com/Kays3/geneformer-lung-tcell">
-        <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embeddings of lung cells organized by cell type and disease" loading="lazy"><figcaption><strong>Computational research</strong><span>Single-cell foundation models, evaluation, and interpretable workflows.</span></figcaption></figure>
-      </a>
+
+      <article class="about-focus__card">
+        <span class="about-focus__number">02</span>
+        <p class="eyebrow">Patient to pathogen</p>
+        <h3>Infectious Disease &amp; Clinical Evidence</h3>
+        <p>Integrating clinical recruitment, microbiology, epidemiology, and antimicrobial-resistance analysis into evidence that fits real care settings.</p>
+        <div class="tag-row"><span><em>H. pylori</em></span><span>AMR</span><span>epidemiology</span></div>
+        <a class="text-link" href="/research/#infectious-disease">Research focus <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="about-focus__card">
+        <span class="about-focus__number">03</span>
+        <p class="eyebrow">Genome to mechanism</p>
+        <h3>Genomics &amp; Reproducible Computation</h3>
+        <p>Building restartable workflows for population genomics, transcriptomics, and biological foundation models with explicit evaluation boundaries.</p>
+        <div class="tag-row"><span>Python</span><span>R</span><span>single-cell</span></div>
+        <a class="text-link" href="/research/#machine-learning">Research focus <span aria-hidden="true">→</span></a>
+      </article>
     </div>
   </section>
 
-  <section class="featured-work" aria-labelledby="featured-work-title">
-    <div class="section-heading"><p class="eyebrow">Pet projects</p><h2 id="featured-work-title">Six translational workflows</h2><p class="featured-work__intro">Six research programs, each paired with a feline counterpart from home.</p></div>
-    <div class="featured-work-grid">
-      <article class="featured-work-card featured-work-card--image"><span>01</span><h3>Digital Pathology &amp; WSI Analysis</h3><a class="featured-work-card__image featured-work-card__image--portrait" href="/research/#digital-pathology"><img src="/images/projects/pets/digital-pathology-cat.jpg" alt="Wide-eyed tabby cat resting with its paws crossed" loading="lazy"><span class="featured-work-card__analogy">Close inspection</span></a><p>Linking whole-slide morphology with spatial and single-cell measurements through interpretable, externally testable models.</p><a href="/research/#digital-pathology">Research focus <span aria-hidden="true">→</span></a></article>
-      <article class="featured-work-card featured-work-card--image"><span>02</span><h3>Polygenic Risk Score Pipelines</h3><a class="featured-work-card__image featured-work-card__image--portrait" href="/research/#polygenic-risk"><video autoplay loop muted playsinline preload="metadata" poster="/images/projects/pets/polygenic-risk-cat-poster.png" aria-label="Black-and-white cat resting and looking toward the camera"><source src="/images/projects/pets/polygenic-risk-cat.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)"></video><span class="featured-work-card__analogy">Many small signals</span></a><p>Building reproducible PRS workflows for population and ancient-genome comparisons while making transferability limits explicit.</p><a href="/research/#polygenic-risk">Research focus <span aria-hidden="true">→</span></a></article>
-      <article class="featured-work-card featured-work-card--image"><span>03</span><h3>Infectious Diseases &amp; Host-Pathogen Dynamics</h3><a class="featured-work-card__image featured-work-card__image--portrait" href="/research/#infectious-disease"><img src="/images/projects/pets/infectious-disease-cat.gif" alt="Black cat reclining on a patterned bedspread" loading="lazy"><span class="featured-work-card__analogy">Host and environment</span></a><p>Integrating clinical recruitment, microbiology, epidemiology, and antimicrobial-resistance analysis in <em>H. pylori</em> research.</p><a href="/research/#infectious-disease">Research focus <span aria-hidden="true">→</span></a></article>
-      <article class="featured-work-card featured-work-card--image"><span>04</span><h3>Clinical Medicine &amp; Systems Integration</h3><a class="featured-work-card__image" href="/research/#clinical-systems"><img src="/images/projects/pets/clinical-systems-cats.jpg" alt="Two cats interacting beside an exercise ball" loading="lazy"><span class="featured-work-card__analogy">Systems in interaction</span></a><p>Turning problems from primary care and multidisciplinary medicine into structured data, reproducible analyses, and usable evidence.</p><a href="/research/#clinical-systems">Research focus <span aria-hidden="true">→</span></a></article>
-      <article class="featured-work-card featured-work-card--image"><span>05</span><h3>Genomics &amp; Bioinformatics</h3><a class="featured-work-card__image" href="https://github.com/Kays3/geneformer-lung-tcell"><img src="/images/projects/pets/genomics-cats.jpg" alt="Two black cats sharing a chair and looking toward the camera" loading="lazy"><span class="featured-work-card__analogy">Different states, shared context</span></a><p>Combining population genomics, transcriptomics, and single-cell foundation models to study risk, cell state, and biological mechanism.</p><p class="featured-work-card__links"><a href="https://github.com/Kays3/geneformer-lung-tcell">Geneformer workflow <span aria-hidden="true">↗</span></a><a href="https://github.com/Kays3/Ancient_intelligence">Ancient genomics <span aria-hidden="true">↗</span></a></p></article>
-      <article class="featured-work-card featured-work-card--image"><span>06</span><h3>Marine Science &amp; Environmental Genomics</h3><a class="featured-work-card__image" href="https://github.com/Kays3/TE_Ocean_Acidification"><img src="/images/projects/pets/marine-science-cat.jpg" alt="Calico cat resting beside a bright blue coastal view" loading="lazy"><span class="featured-work-card__analogy">Organism and environment</span></a><p>Investigating coral-reef adaptation, anemonefish symbiosis, and transposable-element responses to ocean acidification.</p><p class="featured-work-card__links"><a href="https://github.com/Kays3/TE_Ocean_Acidification">Ocean acidification <span aria-hidden="true">↗</span></a><a href="https://github.com/Kays3/entacmea-research">Entacmaea genomics <span aria-hidden="true">↗</span></a></p></article>
-    </div>
-  </section>
-
-  <p class="home-atlas__note">Yesterday I was clever, so I wanted to change the world. Today I am wise so I am changing myself. &mdash; Rumi</p>
-
-  <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
-    <div class="section-heading"><h2 id="visitor-tracker-title">Visitor locations worldwide</h2></div>
-    <a href="https://mapmyvisitors.com/web/1c7ga" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff" alt="Map showing the countries and regions from which this website has been visited" width="300" loading="lazy"></a>
-  </section>
+  <aside class="about-more" aria-label="Additional research areas">
+    <div><p class="eyebrow">Additional directions</p><h2>Population risk, clinical systems, and marine genomics</h2></div>
+    <p>Earlier and continuing work provides comparative depth without competing with the central clinical and computational narrative.</p>
+    <a class="about-button" href="/interests/">Explore broader interests</a>
+  </aside>
 </main>
