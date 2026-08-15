@@ -10,10 +10,7 @@ redirect_from:
 <main class="about-visual" aria-labelledby="home-title">
   <section class="about-hero">
     <div class="about-hero__content">
-      <div class="about-hero__identity">
-        <img src="/images/kaisar-dauyey-2025.jpg" alt="Portrait of Kaisar Dauyey" fetchpriority="high">
-        <p class="eyebrow">Physician-scientist · Hokkaido University</p>
-      </div>
+      <p class="eyebrow">Physician-scientist · Hokkaido University</p>
       <h1 id="home-title">From bedside questions to tissue, genomes, and code.</h1>
       <p class="about-hero__lead">I connect clinical medicine with tissue imaging, genomics, and reproducible computational biology—building analyses whose assumptions, limits, and biological meaning remain visible.</p>
 
@@ -29,11 +26,6 @@ redirect_from:
         <a class="about-button about-button--quiet" href="/publications/">Publications</a>
       </div>
     </div>
-
-    <figure class="about-hero__media">
-      <img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Whole-slide tissue sections overlaid with spatial T-cell identity and dysfunction scores" fetchpriority="high">
-      <figcaption><span>Tissue → cell state → interpretable model</span><strong>Tissue context for predicted T-cell states</strong></figcaption>
-    </figure>
   </section>
 
   <section class="about-perturbation" aria-labelledby="perturbation-title">
