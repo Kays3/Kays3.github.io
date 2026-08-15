@@ -1,7 +1,7 @@
 ---
 title: "Featured projects"
 permalink: /projects/
-author_profile: true
+author_profile: false
 published: false
 ---
 

@@ -103,4 +103,11 @@ redirect_from:
     <p>Earlier and continuing work provides comparative depth without competing with the central clinical and computational narrative.</p>
     <a class="about-button" href="/interests/">Explore broader interests</a>
   </aside>
+
+  <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
+    <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">Visitors worldwide</h2></div>
+    <a href="https://mapmyvisitors.com/web/1c7ga" title="View visitor tracker" rel="noopener noreferrer">
+      <img src="https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff" alt="Map showing the countries and regions from which this website has been visited" width="300" loading="lazy" referrerpolicy="no-referrer">
+    </a>
+  </section>
 </main>
