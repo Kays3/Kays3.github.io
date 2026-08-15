@@ -30,18 +30,8 @@ author_profile: true
   <h2 id="collaboration-heading">Research across clinical and scientific teams</h2>
   <p class="section-lead">Effective translation depends on shared definitions, careful data collection, and communication across medicine, laboratory science, field biology, and computation.</p>
 
-  <div class="collaboration-grid">
-    <figure class="collaboration-card">
-      <img src="/images/clinical/almaty-oita-yamaoka-visit-2024.jpg" alt="Kazakhstan and Japan infectious-disease collaborators during Professor Yamaoka's 2024 visit" loading="lazy">
-      <figcaption><span class="eyebrow">Kazakhstan-Japan · 2024</span><strong>Infectious-disease collaboration</strong><span>Research exchange connecting clinical microbiology, epidemiology, and antimicrobial-resistance questions.</span></figcaption>
-    </figure>
-    <figure class="collaboration-card">
-      <img src="/images/collaborations/oita-glocal-seminar-2026.jpg" alt="Kaisar Dauyey with researchers and seminar participants at Oita University" loading="lazy">
-      <figcaption><span class="eyebrow">Oita University · 2026</span><strong>Computational research exchange</strong><span>Following a seminar on AI and machine learning in single-cell RNA sequencing.</span><a href="https://www.oita-glocal.jp/2026/05/3162/">Event page <span aria-hidden="true">↗</span></a></figcaption>
-    </figure>
-    <figure class="collaboration-card">
-      <img src="/images/collaborations/oist-saeki-kakujo-2023.jpg" alt="Kaisar Dauyey and colleagues with Saeki Kakujo High School students at OIST" loading="lazy">
-      <figcaption><span class="eyebrow">OIST · 2023</span><strong>Science outreach</strong><span>Connecting scientific careers, marine research, and international exchange.</span><a href="https://www.oist.jp/outreach/update/seed-program-saeki-kakujo-oita-students-visited-oist">Visit story <span aria-hidden="true">↗</span></a></figcaption>
-    </figure>
+  <div class="interest-grid">
+    <article class="interest-card"><p class="eyebrow">Clinical research</p><h2>Patient-centered evidence</h2><p>Connecting study design, microbiology, epidemiology, and analysis around questions that remain meaningful in real care settings.</p></article>
+    <article class="interest-card"><p class="eyebrow">Computational research</p><h2>Reproducible handoff</h2><p>Building workflows that collaborators can inspect, rerun, challenge, and extend across institutions and disciplines.</p></article>
   </div>
 </section>
