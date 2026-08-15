@@ -12,7 +12,7 @@ redirect_from:
     <div class="about-hero__content">
       <p class="eyebrow">Physician-scientist · Hokkaido University</p>
       <h1 id="home-title">From bedside questions to tissue, genomes, and code.</h1>
-      <p class="about-hero__lead">I connect clinical medicine with digital pathology, genomics, and reproducible computational biology—building analyses whose assumptions, limits, and biological meaning remain visible.</p>
+      <p class="about-hero__lead">I connect clinical medicine with tissue imaging, genomics, and reproducible computational biology—building analyses whose assumptions, limits, and biological meaning remain visible.</p>
 
       <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">
         <div><dt>Current</dt><dd>Postdoctoral researcher · Hokkaido University</dd></div>
@@ -29,7 +29,7 @@ redirect_from:
 
     <figure class="about-hero__media">
       <img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Whole-slide tissue sections overlaid with spatial T-cell identity and dysfunction scores" fetchpriority="high">
-      <figcaption><span>Tissue → cell state → interpretable model</span><strong>Digital pathology as a translational bridge</strong></figcaption>
+      <figcaption><span>Tissue → cell state → interpretable model</span><strong>Spatial tissue analysis as a translational bridge</strong></figcaption>
     </figure>
   </section>
 
@@ -41,7 +41,7 @@ redirect_from:
 
     <div class="about-story__grid">
       <a class="about-story__card" href="/research/#digital-pathology">
-        <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial molecular measurements aligned with whole-slide tissue morphology" loading="lazy"><figcaption><span>01 · Tissue</span><strong>Digital pathology</strong><small>Connect morphology with spatial and single-cell evidence.</small></figcaption></figure>
+        <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial molecular measurements aligned with whole-slide tissue morphology" loading="lazy"><figcaption><span>01 · Tissue</span><strong>Spatial tissue analysis</strong><small>Connect morphology with spatial and single-cell evidence.</small></figcaption></figure>
       </a>
       <a class="about-story__card" href="https://github.com/Kays3/geneformer-lung-tcell">
         <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" loading="lazy"><figcaption><span>02 · Cells</span><strong>Computational genomics</strong><small>Model cell states with donor-aware, testable workflows.</small></figcaption></figure>
@@ -63,7 +63,7 @@ redirect_from:
       <article class="about-focus__card">
         <span class="about-focus__number">01</span>
         <p class="eyebrow">Tissue to model</p>
-        <h3>Digital Pathology &amp; Spatial Biology</h3>
+        <h3>Whole-Slide Imaging &amp; Spatial Biology</h3>
         <p>Linking whole-slide morphology with spatial transcriptomics and single-cell references through interpretable, externally testable models.</p>
         <div class="tag-row"><span>WSI</span><span>spatial biology</span><span>Geneformer</span></div>
         <a class="text-link" href="/research/#digital-pathology">Research focus <span aria-hidden="true">→</span></a>
