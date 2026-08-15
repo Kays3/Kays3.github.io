@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 
 <p class="page-intro">Complete publication list through 2026, spanning infectious diseases, palliative care, clinical genetics, case-based medicine, rheumatology, computational neuroimaging, and population genomics. For identifiers and updates, see <a href="https://orcid.org/0000-0003-0533-9778">ORCID</a> or <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dauyey+K%5BAuthor%5D">PubMed</a>.</p>
