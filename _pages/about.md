@@ -10,7 +10,10 @@ redirect_from:
 <main class="about-visual" aria-labelledby="home-title">
   <section class="about-hero">
     <div class="about-hero__content">
-      <p class="eyebrow">Physician-scientist · Hokkaido University</p>
+      <div class="about-hero__identity">
+        <img src="/images/kaisar-dauyey-2025.jpg" alt="Portrait of Kaisar Dauyey" fetchpriority="high">
+        <p class="eyebrow">Physician-scientist · Hokkaido University</p>
+      </div>
       <h1 id="home-title">From bedside questions to tissue, genomes, and code.</h1>
       <p class="about-hero__lead">I connect clinical medicine with tissue imaging, genomics, and reproducible computational biology—building analyses whose assumptions, limits, and biological meaning remain visible.</p>
 
