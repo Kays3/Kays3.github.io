@@ -10,7 +10,10 @@ redirect_from:
 <main class="about-visual" aria-labelledby="home-title">
   <section class="about-hero">
     <div class="about-hero__content">
-      <p class="eyebrow">Physician-scientist · Hokkaido University</p>
+      <div class="about-hero__identity">
+        <img src="/images/kaisar-dauyey-2025.jpg" alt="Portrait of Kaisar Dauyey" fetchpriority="high">
+        <p class="eyebrow">Physician-scientist · Hokkaido University</p>
+      </div>
       <h1 id="home-title">From bedside questions to tissue, genomes, and code.</h1>
       <p class="about-hero__lead">I connect clinical medicine with tissue imaging, genomics, and reproducible computational biology—building analyses whose assumptions, limits, and biological meaning remain visible.</p>
 
@@ -29,7 +32,18 @@ redirect_from:
 
     <figure class="about-hero__media">
       <img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Whole-slide tissue sections overlaid with spatial T-cell identity and dysfunction scores" fetchpriority="high">
-      <figcaption><span>Tissue → cell state → interpretable model</span><strong>Spatial tissue analysis as a translational bridge</strong></figcaption>
+      <figcaption><span>Tissue → cell state → interpretable model</span><strong>Tissue context for predicted T-cell states</strong></figcaption>
+    </figure>
+  </section>
+
+  <section class="about-perturbation" aria-labelledby="perturbation-title">
+    <div class="about-perturbation__intro">
+      <div><p class="eyebrow">Geneformer · Current focus</p><h2 id="perturbation-title">In silico gene perturbation</h2></div>
+      <p>Geneformer enables counterfactual tests of how modeled gene deletion or overexpression changes a cell's representation. In SCLC T cells, I use these predicted shifts to prioritize hypotheses about disease-associated cell states.</p>
+    </div>
+    <figure>
+      <img src="/images/research/geneformer-in-silico-perturbation.png" alt="Diagram showing a T cell, its ranked genes, deletion or overexpression of one model input, and the predicted shift between SCLC and normal cell states" loading="lazy">
+      <figcaption><strong>Model perturbation, not laboratory gene editing.</strong> The edit is applied to the model input, and the predicted cell-state shift is a hypothesis generator that requires experimental validation. <a href="https://github.com/Kays3/geneformer-lung-tcell">View the Geneformer workflow <span aria-hidden="true">↗</span></a></figcaption>
     </figure>
   </section>
 
@@ -41,7 +55,7 @@ redirect_from:
 
     <div class="about-story__grid">
       <a class="about-story__card" href="/research/#digital-pathology">
-        <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial molecular measurements aligned with whole-slide tissue morphology" loading="lazy"><figcaption><span>01 · Tissue</span><strong>Spatial tissue analysis</strong><small>Connect morphology with spatial and single-cell evidence.</small></figcaption></figure>
+        <figure><img src="/images/research/digital-pathology-spatial-cover.jpg" alt="Spatial molecular measurements aligned with whole-slide tissue morphology" loading="lazy"><figcaption><span>01 · Tissue</span><strong>Tissue context</strong><small>Relate predicted T-cell states to spatial and morphological evidence.</small></figcaption></figure>
       </a>
       <a class="about-story__card" href="https://github.com/Kays3/geneformer-lung-tcell">
         <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" loading="lazy"><figcaption><span>02 · Cells</span><strong>Computational genomics</strong><small>Model cell states with donor-aware, testable workflows.</small></figcaption></figure>
@@ -62,11 +76,11 @@ redirect_from:
     <div class="about-focus__grid">
       <article class="about-focus__card">
         <span class="about-focus__number">01</span>
-        <p class="eyebrow">Tissue to model</p>
-        <h3>Whole-Slide Imaging &amp; Spatial Biology</h3>
-        <p>Linking whole-slide morphology with spatial transcriptomics and single-cell references through interpretable, externally testable models.</p>
-        <div class="tag-row"><span>WSI</span><span>spatial biology</span><span>Geneformer</span></div>
-        <a class="text-link" href="/research/#digital-pathology">Research focus <span aria-hidden="true">→</span></a>
+        <p class="eyebrow">Model to counterfactual</p>
+        <h3>Geneformer In Silico Perturbation</h3>
+        <p>Testing how modeled gene deletion or overexpression shifts SCLC T-cell representations, with donor-aware evaluation and a clear boundary between model predictions and laboratory validation.</p>
+        <div class="tag-row"><span>Geneformer</span><span>gene perturbation</span><span>T-cell states</span></div>
+        <a class="text-link" href="https://github.com/Kays3/geneformer-lung-tcell">View workflow <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="about-focus__card">
@@ -91,7 +105,7 @@ redirect_from:
 
   <aside class="about-more" aria-label="Additional research areas">
     <div><p class="eyebrow">Additional directions</p><h2>Population risk, clinical systems, and marine genomics</h2></div>
-    <p>Earlier and continuing work provides comparative depth without competing with the central clinical and pathology narrative.</p>
+    <p>Earlier and continuing work provides comparative depth without competing with the central clinical and computational narrative.</p>
     <a class="about-button" href="/interests/">Explore broader interests</a>
   </aside>
 </main>

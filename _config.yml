@@ -23,7 +23,7 @@ repository               : "Kays3/Kays3.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "kaisar-dauyey-2025.jpg"
+  avatar           :
   name             : "Kaisar Dauyey"
   pronouns         : # example: "she/her"  
   bio              : "Physician-scientist connecting clinical medicine with genomics and computational biology."
