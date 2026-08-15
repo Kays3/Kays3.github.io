@@ -4,7 +4,7 @@ permalink: /interests/
 author_profile: false
 ---
 
-<p class="page-intro">A home for earlier research and long-running scholarly interests that continue to shape how I think: marine biology in Okinawa, the interpretation of ancient genomes, and the critical reading of historical sources.</p>
+<p class="page-intro">A home for earlier research and long-running scholarly interests that continue to shape how I think: marine biology in Okinawa and the interpretation of ancient genomes.</p>
 
 <section class="research-photo-section" aria-labelledby="marine-biology-title">
   <div class="section-heading"><p class="eyebrow">Marine biology &amp; environmental genomics</p><h2 id="marine-biology-title">From reef organisms to genomic questions</h2></div>
@@ -45,24 +45,4 @@ author_profile: false
       <p><a class="text-link" href="https://ir.soken.ac.jp/records/2000266">Open the thesis record <span aria-hidden="true">↗</span></a></p>
     </article>
   </div>
-</section>
-
-<section class="research-photo-section" aria-labelledby="history-title">
-  <div class="section-heading"><p class="eyebrow">History &amp; visual culture</p><h2 id="history-title">Reading conflict through historical sources</h2></div>
-  <p class="section-lead">Beyond the lab, I am interested in the Russo-Japanese War as a meeting point of Japan, Russia, empire, technology, and modernity—and in how surviving sources frame power, threat, and national identity.</p>
-
-  <div class="interest-grid">
-    <article class="interest-card">
-      <p class="eyebrow">Modern history</p>
-      <h2>The Russo-Japanese War</h2>
-      <p>The conflict offers a concentrated view of changing military technology, imperial competition, diplomacy, and the emergence of modern political identities in East Asia.</p>
-    </article>
-    <article class="interest-card">
-      <p class="eyebrow">Critical interpretation</p>
-      <h2>Sources are arguments</h2>
-      <p>Historical documents and visual sources are not neutral records. I am interested in how their authors compress complicated events into persuasive stories—and in reading those choices within their original political context.</p>
-    </article>
-  </div>
-
-  <aside class="history-context"><strong>Context before conclusion.</strong> Historical sources reflect the viewpoints and political conditions of their time; they are most useful when their authorship, audience, and purpose remain explicit.</aside>
 </section>
