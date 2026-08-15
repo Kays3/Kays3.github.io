@@ -1,7 +1,7 @@
 ---
 title: "Field notes"
 permalink: /field-notes/
-author_profile: true
+author_profile: false
 published: false
 ---
 

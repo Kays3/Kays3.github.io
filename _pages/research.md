@@ -1,7 +1,7 @@
 ---
 title: "Research & People"
 permalink: /research/
-author_profile: true
+author_profile: false
 ---
 
 <p class="page-intro">I work across clinical medicine, tissue imaging, genomics, and computational biology. The organizing principle is translational: start with a clinically or biologically meaningful question, identify the right evidence, and build an analysis whose assumptions and limitations remain visible.</p>

@@ -355,7 +355,8 @@ html[data-theme="dark"] .masthead {
 }
 
 @media screen and (min-width: 64em) {
-  .page { float: right; padding-left: 2.25rem; padding-right: 0; width: calc(100% - 235px); }
+  #main > .page { float: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; width: 100%; }
+  #main > .sidebar + .page { float: right; padding-left: 2.25rem; width: calc(100% - 235px); }
 }
 
 @media screen and (max-width: 78em) {
@@ -474,6 +475,11 @@ html[data-theme="dark"] .masthead {
 }
 .about-more h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); margin: 0; }
 .about-more > p { color: var(--kd-muted); font-size: 0.86rem !important; line-height: 1.65; margin: 0 !important; }
+.visitor-tracker { border-top: 1px solid var(--kd-line); margin: 4rem auto 0; padding-top: 2rem; text-align: center; }
+.visitor-tracker .section-heading { margin-left: auto; margin-right: auto; }
+.visitor-tracker h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); margin-bottom: 1.2rem; }
+.page__content .visitor-tracker > a { display: inline-block; text-decoration: none; }
+.visitor-tracker img { border: 1px solid var(--kd-line); border-radius: 18px; display: block; height: auto; margin: 0 auto; max-width: 100%; width: 300px; }
 
 @media screen and (max-width: 62em) {
   .about-more { align-items: start; grid-template-columns: 1fr 1fr; }
