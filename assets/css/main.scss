@@ -351,7 +351,19 @@ html[data-theme="dark"] .masthead {
 .page__footer {
   border-top-color: var(--kd-line);
   bottom: auto;
+  color: var(--kd-ink);
   position: relative;
+}
+
+.page__footer a {
+  color: var(--kd-ocean-deep);
+}
+
+.page__footer .fas,
+.page__footer .fab,
+.page__footer .far,
+.page__footer .fal {
+  color: currentColor;
 }
 
 @media screen and (min-width: 64em) {
