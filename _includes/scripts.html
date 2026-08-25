@@ -1,4 +1,7 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
+{% if page.permalink == "/" %}
+<script src="{{ base_path }}/assets/js/perturbation-explainer.js" defer></script>
+{% endif %}
 
 {% include analytics.html %}
 

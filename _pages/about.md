@@ -35,12 +35,86 @@ redirect_from:
   <section class="about-perturbation" aria-labelledby="perturbation-title">
     <div class="about-perturbation__intro">
       <div><p class="eyebrow">Geneformer · Current focus</p><h2 id="perturbation-title">In silico gene perturbation</h2></div>
-      <p>I use Geneformer to ask a focused question. How does a predicted gene deletion or overexpression change the model of an SCLC T cell? The result helps me choose hypotheses worth testing.</p>
+      <p>Geneformer reads a cell as an ordered list of genes, with the most expressed gene first. Change one gene in that list and read the cell again. Would it now look more like another state?</p>
     </div>
-    <figure>
-      <img src="/images/research/geneformer-in-silico-perturbation.png" alt="Diagram showing a T cell, ranked genes, a change to one model input, and the predicted shift between SCLC and normal cell states" loading="lazy">
-      <figcaption><strong>This is a model test, not laboratory gene editing.</strong> I change the model input and measure the predicted shift in cell state. That shift can guide an experiment, but it cannot replace one. <a href="https://github.com/Kays3/geneformer-lung-tcell">View the Geneformer workflow <span aria-hidden="true">↗</span></a></figcaption>
-    </figure>
+
+    <div class="perturbation-lab" data-perturbation-lab>
+      <div class="perturbation-lab__topbar">
+        <p><strong>Try the model test.</strong> Choose a step or use the controls below.</p>
+        <div class="perturbation-lab__mode" aria-label="Choose a model edit">
+          <span>Model edit</span>
+          <button type="button" data-perturbation-mode="delete" aria-pressed="true">Delete TIGIT</button>
+          <button type="button" data-perturbation-mode="overexpress" aria-pressed="false">Overexpress TIGIT</button>
+        </div>
+      </div>
+
+      <div class="perturbation-lab__steps" role="tablist" aria-label="In silico perturbation steps">
+        <button type="button" role="tab" id="perturbation-step-1" aria-controls="perturbation-panel-1" aria-selected="true" tabindex="0" data-perturbation-step="1"><span>1</span>One T cell</button>
+        <button type="button" role="tab" id="perturbation-step-2" aria-controls="perturbation-panel-2" aria-selected="false" tabindex="-1" data-perturbation-step="2"><span>2</span>Rank its genes</button>
+        <button type="button" role="tab" id="perturbation-step-3" aria-controls="perturbation-panel-3" aria-selected="false" tabindex="-1" data-perturbation-step="3"><span>3</span>Edit one gene</button>
+        <button type="button" role="tab" id="perturbation-step-4" aria-controls="perturbation-panel-4" aria-selected="false" tabindex="-1" data-perturbation-step="4"><span>4</span>Measure the move</button>
+      </div>
+
+      <div class="perturbation-lab__workspace">
+        <section class="perturbation-lab__panel" role="tabpanel" id="perturbation-panel-1" aria-labelledby="perturbation-step-1" data-perturbation-panel="1">
+          <div class="cell-model" aria-hidden="true"><span class="cell-model__nucleus">nucleus</span><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="perturbation-lab__copy"><p class="eyebrow">Step 1</p><h3>Start with one SCLC T cell</h3><p>The model does not see a microscope image. It sees the genes active in that cell.</p></div>
+        </section>
+
+        <section class="perturbation-lab__panel" role="tabpanel" id="perturbation-panel-2" aria-labelledby="perturbation-step-2" data-perturbation-panel="2">
+          <ol class="gene-rank" aria-label="Genes ranked from most expressed to least expressed">
+            <li><span>CD3D</span><i style="--gene-level: 92%"></i></li>
+            <li><span>IL7R</span><i style="--gene-level: 72%"></i></li>
+            <li class="gene-rank__target"><span>TIGIT</span><i style="--gene-level: 54%"></i></li>
+            <li><span>GZMB</span><i style="--gene-level: 39%"></i></li>
+            <li><span>TOX</span><i style="--gene-level: 25%"></i></li>
+          </ol>
+          <div class="perturbation-lab__copy"><p class="eyebrow">Step 2</p><h3>Rank genes by expression</h3><p>CD3D leads this example. TIGIT sits in the middle of the ordered model input.</p></div>
+        </section>
+
+        <section class="perturbation-lab__panel" role="tabpanel" id="perturbation-panel-3" aria-labelledby="perturbation-step-3" data-perturbation-panel="3">
+          <div class="perturbation-lab__mode-view" data-perturbation-view="delete">
+            <ol class="gene-rank gene-rank--edited" aria-label="Ranked genes after TIGIT deletion">
+              <li><span>CD3D</span><i style="--gene-level: 92%"></i></li>
+              <li><span>IL7R</span><i style="--gene-level: 72%"></i></li>
+              <li class="gene-rank__deleted"><span>TIGIT</span><b aria-label="deleted">×</b></li>
+              <li class="gene-rank__moved"><span>GZMB</span><b aria-label="moves up">↑</b></li>
+              <li class="gene-rank__moved"><span>TOX</span><b aria-label="moves up">↑</b></li>
+            </ol>
+          </div>
+          <div class="perturbation-lab__mode-view" data-perturbation-view="overexpress">
+            <ol class="gene-rank gene-rank--edited" aria-label="Ranked genes after TIGIT overexpression">
+              <li class="gene-rank__target gene-rank__moved"><span>TIGIT</span><b aria-label="moves to the top">↑</b></li>
+              <li><span>CD3D</span><i style="--gene-level: 92%"></i></li>
+              <li><span>IL7R</span><i style="--gene-level: 72%"></i></li>
+              <li><span>GZMB</span><i style="--gene-level: 39%"></i></li>
+              <li><span>TOX</span><i style="--gene-level: 25%"></i></li>
+            </ol>
+          </div>
+          <div class="perturbation-lab__copy perturbation-lab__mode-view" data-perturbation-view="delete"><p class="eyebrow">Step 3 · Delete</p><h3>Remove TIGIT from the input</h3><p>Every gene below TIGIT moves up one place. The change happens only in the model input.</p></div>
+          <div class="perturbation-lab__copy perturbation-lab__mode-view" data-perturbation-view="overexpress"><p class="eyebrow">Step 3 · Overexpress</p><h3>Move TIGIT to the top</h3><p>TIGIT becomes the strongest signal in the model input. The laboratory cell does not change.</p></div>
+        </section>
+
+        <section class="perturbation-lab__panel" role="tabpanel" id="perturbation-panel-4" aria-labelledby="perturbation-step-4" data-perturbation-panel="4">
+          <div class="state-map perturbation-lab__mode-view" data-perturbation-view="delete" aria-label="Illustration of a predicted shift from the SCLC state toward the Normal state">
+            <span class="state-map__state state-map__state--sclc">SCLC</span><span class="state-map__arrow state-map__arrow--normal" aria-hidden="true"></span><span class="state-map__state state-map__state--normal">Normal</span>
+          </div>
+          <div class="state-map perturbation-lab__mode-view" data-perturbation-view="overexpress" aria-label="Illustration of a predicted shift away from the Normal state toward the SCLC state">
+            <span class="state-map__state state-map__state--normal">Normal</span><span class="state-map__arrow state-map__arrow--sclc" aria-hidden="true"></span><span class="state-map__state state-map__state--sclc">SCLC</span>
+          </div>
+          <div class="perturbation-lab__copy perturbation-lab__mode-view" data-perturbation-view="delete"><p class="eyebrow">Step 4 · Delete</p><h3>Measure the predicted shift</h3><p>Read the edited list again. This illustration moves toward the Normal reference state.</p></div>
+          <div class="perturbation-lab__copy perturbation-lab__mode-view" data-perturbation-view="overexpress"><p class="eyebrow">Step 4 · Overexpress</p><h3>Look for the opposite shift</h3><p>A stronger candidate should move in the opposite direction when TIGIT is overexpressed.</p></div>
+        </section>
+      </div>
+
+      <div class="perturbation-lab__controls">
+        <button type="button" data-perturbation-action="previous" disabled>Previous</button>
+        <span data-perturbation-status aria-live="polite">Step 1 of 4</span>
+        <button type="button" data-perturbation-action="next">Next</button>
+      </div>
+
+      <p class="perturbation-lab__note"><strong>This is a model test, not laboratory gene editing.</strong> The movement shown here explains the method. It is not a measured result. <a href="https://github.com/Kays3/geneformer-lung-tcell">View the Geneformer workflow <span aria-hidden="true">↗</span></a></p>
+    </div>
   </section>
 
   <section class="about-story" aria-labelledby="story-title">
