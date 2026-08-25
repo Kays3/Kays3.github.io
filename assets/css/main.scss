@@ -246,6 +246,21 @@ html[data-theme="dark"] .masthead {
 .research-publications li:last-child { border-bottom: 0; }
 .research-publications a { color: var(--kd-ocean); font-size: 0.9rem; font-weight: 700; text-decoration: none; }
 .research-publications a:hover { color: var(--kd-coral); text-decoration: underline; }
+.repo-snippet { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 16px; margin-top: 1.35rem; overflow: hidden; }
+.repo-snippet summary { color: var(--kd-ink); cursor: pointer; font-size: 0.86rem; font-weight: 800; list-style-position: inside; padding: 0.9rem 1rem; }
+.repo-snippet summary:hover { color: var(--kd-coral); }
+.repo-snippet summary:focus-visible { outline: 2px solid var(--kd-coral); outline-offset: -4px; }
+.repo-snippet[open] summary { border-bottom: 1px solid var(--kd-line); }
+.repo-snippet__body { padding: 1rem; }
+.repo-snippet__heading { align-items: center; display: flex; flex-wrap: wrap; gap: 0.4rem 0.7rem; margin-bottom: 0.65rem; }
+.repo-snippet__heading span { color: var(--kd-coral); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+.repo-snippet__heading code { background: transparent; color: var(--kd-muted); font-size: 0.75rem; padding: 0; }
+.topic-row .repo-snippet__body > p,
+.research-photo-section .repo-snippet__body > p { font-size: 0.82rem !important; line-height: 1.6; margin: 0 0 0.8rem !important; }
+.repo-snippet pre { background: #172b2e; border: 0; border-radius: 10px; color: #e7f1ef; font-size: 0.74rem; line-height: 1.6; margin: 0 0 0.85rem; overflow-x: auto; padding: 0.9rem; }
+.repo-snippet pre code { background: transparent; color: inherit; padding: 0; }
+.page__content .repo-snippet__source { color: var(--kd-ocean); font-size: 0.75rem; font-weight: 800; text-decoration: none; }
+.page__content .repo-snippet__source:hover { color: var(--kd-coral); }
 .collaboration-section { margin: 4.5rem 0 3.5rem; }
 .collaboration-section > h2 { font-size: clamp(2rem, 4vw, 3.1rem); margin: 0 0 0.8rem; }
 .section-lead { color: var(--kd-muted); font-size: 1rem !important; line-height: 1.75; margin: 0 0 1.8rem !important; max-width: 47rem; }
