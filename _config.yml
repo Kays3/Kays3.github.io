@@ -10,9 +10,9 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Kaisar Dauyey"
-title_separator          : "—"
+title_separator          : ":"
 name                     : &name "Kaisar Dauyey"
-description              : &description "Physician-scientist connecting clinical medicine, tissue imaging, genomics, and reproducible computational research."
+description              : &description "Physician scientist studying how clinical questions connect with tissue, genomes, and computational models."
 url                      : https://kays3.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           :
   name             : "Kaisar Dauyey"
   pronouns         : # example: "she/her"  
-  bio              : "Physician-scientist connecting clinical medicine with genomics and computational biology."
+  bio              : "Physician scientist connecting clinical medicine with genomics and computational biology."
   location         :
   employer         : "Hokkaido University"
   uri              : # URL
@@ -144,7 +144,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : "research/digital-pathology-spatial-cover.jpg"
-og_description           : "Kaisar Dauyey — physician-scientist working across clinical medicine, tissue imaging, genomics, and computational research."
+og_description           : "Kaisar Dauyey studies how clinical questions connect with tissue, genomes, and computational models."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
