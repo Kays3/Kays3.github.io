@@ -1,10 +1,11 @@
 ---
 title: "Publications"
+description: "Publications by Kaisar Dauyey in clinical medicine, genomics, infectious disease, and computational biology."
 permalink: /publications/
 author_profile: false
 ---
 
-<p class="page-intro">Complete publication list through 2026, spanning infectious diseases, palliative care, clinical genetics, case-based medicine, rheumatology, computational neuroimaging, and population genomics. For identifiers and updates, see <a href="https://orcid.org/0000-0003-0533-9778">ORCID</a> or <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dauyey+K%5BAuthor%5D">PubMed</a>.</p>
+<p class="page-intro">Here is my publication record through 2026. You can check the latest identifiers and updates on <a href="https://orcid.org/0000-0003-0533-9778">ORCID</a> or <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dauyey+K%5BAuthor%5D">PubMed</a>.</p>
 
 <div class="publication-list">
   <article class="publication-item"><div class="pub-year">2026</div><div><h2 class="pub-title"><a href="https://doi.org/10.3389/fmicb.2026.1747006">A single-center culture-based study of <em>Helicobacter pylori</em> in Kazakhstan with regional meta-analysis of prevalence and antibiotic resistance</a></h2><p class="pub-authors"><strong>Kaisar Dauyey</strong>, Gulnur Zhunussova, Jamilya Kaibullayeva, et al.</p><p class="pub-meta"><em>Frontiers in Microbiology</em>, 17 · <a href="https://doi.org/10.3389/fmicb.2026.1747006">DOI</a></p></div></article>

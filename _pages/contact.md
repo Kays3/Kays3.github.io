@@ -1,13 +1,14 @@
 ---
 title: "Contact"
+description: "Contact Kaisar Dauyey about research in clinical medicine, genomics, tissue imaging, and computational biology."
 permalink: /contact/
 author_profile: false
 ---
 
 <section class="contact-panel">
   <p class="eyebrow">Collaborate</p>
-  <h2>Questions are welcome—especially the interdisciplinary ones.</h2>
-  <p>I am open to collaborations that connect clinical medicine with tissue imaging, spatial biology, genomics, infectious-disease research, machine learning, and reproducible biomedical analysis.</p>
+  <h2>Bring me a question that crosses boundaries.</h2>
+  <p>I welcome serious collaborations in clinical medicine, genomics, tissue imaging, infectious disease, and computational biology.</p>
   <div class="contact-list">
     <div><span>Email</span><strong>k.dauyey.bio.nu [at] gmail [dot] com</strong></div>
     <div><span>Code</span><strong><a href="https://github.com/Kays3">github.com/Kays3</a></strong></div>
@@ -16,4 +17,4 @@ author_profile: false
   </div>
 </section>
 
-<p class="contact-note">For project inquiries, a short note about the biological question, data type, and hoped-for outcome is the most helpful place to start.</p>
+<p class="contact-note">Tell me the biological question, what data you have, and what you hope to learn. A short note is enough.</p>
