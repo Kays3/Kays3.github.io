@@ -11,7 +11,7 @@ author_profile: false
   <div class="section-heading"><p class="eyebrow">Marine biology and environmental genomics</p><h2 id="marine-biology-title">From reef organisms to genomic questions</h2></div>
   <p class="section-lead">My field work began with real organisms in a changing reef. During a research stay at OIST from 2021 to 2022, I learned coastal environmental DNA sampling and safe field methods. That experience still pushes me to trace every computational result back to its sample and environment.</p>
 
-  <figure class="field-figure"><img src="/images/research/aka-island-coral-turtle.png" alt="Sea turtle resting among coral on the reef at Aka Island, Okinawa" loading="eager"><figcaption><strong>Aka Island, Keramashoto National Park.</strong> A sea turtle among the reef, from my research and photography archive.</figcaption></figure>
+  <figure class="field-figure"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle resting among coral on the reef at Aka Island, Okinawa" width="1280" height="960" fetchpriority="high"><figcaption><strong>Aka Island, Keramashoto National Park.</strong> A sea turtle among the reef, from my research and photography archive.</figcaption></figure>
 
   <div class="interest-grid">
     <article class="interest-card">
