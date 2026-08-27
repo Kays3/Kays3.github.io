@@ -181,10 +181,9 @@ redirect_from:
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
     <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">Visitors worldwide</h2></div>
-    <iframe
-      src="https://www.ohayoworld.com/widgets/globe-widget.php?width=360&amp;ohayos=1&amp;lang=en"
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
-      title="OhayoWorld visitor globe"></iframe>
+    <div class="visitor-tracker__widget" aria-label="LiveTrafficFeed visitor globe">
+      <script src="https://cdn.livetrafficfeed.com/static/revolver-maps/live.js?c=ffffff&amp;cw=e63100&amp;l=1&amp;hi=10&amp;he=10&amp;root=0&amp;st=1&amp;s=326&amp;mv=a814544e2ee74d56" async></script>
+      <noscript><a href="https://livetrafficfeed.com/revolver-maps" rel="noopener noreferrer">Free Revolver Maps</a></noscript>
+    </div>
   </section>
 </main>
