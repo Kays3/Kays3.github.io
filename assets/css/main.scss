@@ -39,7 +39,7 @@
 ;
 
 /* Kaisar Dauyey — custom academic site
-   Field-atlas parchment, reef green, pathology plum, and weathered ink. */
+   Dark ocean, reef teal, pathology plum, and warm coral accents. */
 
 :root {
   --kd-ink: #2c342b;
@@ -66,19 +66,20 @@
 }
 
 html[data-theme="dark"] {
-  --kd-ink: #edf5f2;
-  --kd-muted: #abc0bb;
-  --kd-ocean: #59c0ce;
-  --kd-ocean-deep: #8edbe4;
-  --kd-forest: #84b69a;
-  --kd-coral: #f09a7f;
-  --kd-pathology: #e19abd;
-  --kd-pathology-soft: #3f2b39;
-  --kd-sand: #594e3f;
-  --kd-paper: #10282c;
-  --kd-surface: #17363a;
-  --kd-line: rgba(237, 245, 242, 0.15);
-  --kd-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
+  color-scheme: dark;
+  --kd-ink: #eef8f8;
+  --kd-muted: #a7c5c8;
+  --kd-ocean: #69d4dc;
+  --kd-ocean-deep: #9be8eb;
+  --kd-forest: #77c4ad;
+  --kd-coral: #ff9b7c;
+  --kd-pathology: #e9a3cf;
+  --kd-pathology-soft: #30233b;
+  --kd-sand: #735d46;
+  --kd-paper: #061b26;
+  --kd-surface: #0d2a36;
+  --kd-line: rgba(174, 225, 228, 0.18);
+  --kd-shadow: 0 22px 60px rgba(0, 8, 15, 0.38);
   --global-bg-color: var(--kd-paper);
   --global-text-color: var(--kd-ink);
   --global-link-color: var(--kd-ocean);
@@ -86,7 +87,7 @@ html[data-theme="dark"] {
   --global-link-color-visited: var(--kd-ocean);
   --global-masthead-link-color: var(--kd-ink);
   --global-border-color: var(--kd-line);
-  --global-footer-bg-color: #0b2023;
+  --global-footer-bg-color: #04131c;
 }
 
 body {
@@ -96,6 +97,13 @@ body {
     repeating-linear-gradient(0deg, transparent 0, transparent 7px, rgba(67, 57, 39, 0.012) 8px),
     var(--kd-paper);
   font-feature-settings: "kern" 1, "liga" 1;
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 10% 4%, rgba(34, 140, 157, 0.18), transparent 28rem),
+    radial-gradient(circle at 92% 12%, rgba(85, 59, 119, 0.16), transparent 32rem),
+    linear-gradient(180deg, #061b26 0%, #08212c 46%, #061923 100%);
 }
 
 h1, h2, h3, .page__title, .author__name {
@@ -127,7 +135,32 @@ h1, h2, h3, .page__title, .author__name {
 }
 
 html[data-theme="dark"] .masthead {
-  background: rgba(16, 40, 44, 0.9);
+  background: rgba(4, 21, 31, 0.9);
+}
+
+html[data-theme="dark"] .about-hero {
+  background: linear-gradient(145deg, rgba(30, 118, 134, 0.2), rgba(64, 42, 83, 0.2));
+}
+
+html[data-theme="dark"] .project-card--featured,
+html[data-theme="dark"] .publication-item--featured {
+  background: linear-gradient(145deg, rgba(31, 125, 142, 0.2), rgba(24, 70, 82, 0.08));
+}
+
+html[data-theme="dark"] .project-card--quiet,
+html[data-theme="dark"] .history-context {
+  background: rgba(22, 62, 72, 0.58);
+}
+
+@supports (content-visibility: auto) {
+  .about-perturbation,
+  .about-story,
+  .about-focus,
+  .collaboration-section,
+  .research-photo-section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 720px;
+  }
 }
 
 .masthead::after { background: var(--kd-line); }
@@ -393,6 +426,8 @@ html[data-theme="dark"] .masthead {
 }
 
 @media screen and (max-width: 46em) {
+  .greedy-nav .visible-links > li:not(.persist) { display: none; }
+  .masthead__menu-item--lg { max-width: 8rem; }
   .home-atlas__header h1 { font-size: clamp(2.35rem, 12vw, 3.4rem); }
   .home-atlas__bio, .work-image-grid, .featured-work-grid, .research-photo-grid { grid-template-columns: 1fr; }
   .featured-work-card, .featured-work-card:nth-child(even) { border-right: 0; min-height: 0; padding: 1.4rem 0; }
