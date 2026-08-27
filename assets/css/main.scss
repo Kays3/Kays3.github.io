@@ -608,8 +608,7 @@ html[data-theme="dark"] .state-map__state--sclc { color: #c2afff; }
 .visitor-tracker { border-top: 1px solid var(--kd-line); margin: 4rem auto 0; padding-top: 2rem; text-align: center; }
 .visitor-tracker .section-heading { margin-left: auto; margin-right: auto; }
 .visitor-tracker h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); margin-bottom: 1.2rem; }
-.page__content .visitor-tracker > a { display: inline-block; text-decoration: none; }
-.visitor-tracker img { border: 1px solid var(--kd-line); border-radius: 18px; display: block; height: auto; margin: 0 auto; max-width: 100%; width: 300px; }
+.visitor-tracker iframe { aspect-ratio: 360 / 430; border: 1px solid var(--kd-line); border-radius: 18px; display: block; margin: 0 auto; max-width: 360px; overflow: hidden; width: 100%; }
 
 @media screen and (max-width: 62em) {
   .about-more { align-items: start; grid-template-columns: 1fr 1fr; }

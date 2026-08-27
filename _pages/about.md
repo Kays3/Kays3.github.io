@@ -181,8 +181,10 @@ redirect_from:
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
     <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">Visitors worldwide</h2></div>
-    <a href="https://mapmyvisitors.com/web/1c7ga" title="View visitor tracker" rel="noopener noreferrer">
-      <img src="https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff" alt="Map showing the countries and regions from which this website has been visited" width="300" loading="lazy" referrerpolicy="no-referrer">
-    </a>
+    <iframe
+      src="https://www.ohayoworld.com/widgets/globe-widget.php?width=360&amp;ohayos=1&amp;lang=en"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="OhayoWorld visitor globe"></iframe>
   </section>
 </main>
