@@ -38,6 +38,12 @@ same_sign = np.sign(by_donor["mean"]) == overall_sign</code></pre><a class="repo
   <h2 id="collaboration-heading">Build the question together</h2>
   <p class="section-lead">I work best with collaborators who bring a clear biological question, a defined data source, or a clinical problem that needs careful analysis.</p>
 
+  <div class="interest-grid">
+    <article class="interest-card"><p class="eyebrow">Clinical research</p><h2>Evidence built around patients</h2><p>I keep the clinical question visible from study design through final analysis.</p></article>
+    <article class="interest-card"><p class="eyebrow">Computational research</p><h2>Work another person can rerun</h2><p>I build workflows that collaborators can inspect, question, and extend.</p></article>
+    <article class="interest-card"><p class="eyebrow">TE research</p><h2>Transposable elements in changing oceans</h2><p>I connect repeat annotation, transcriptomics, and regulatory context while keeping each claim tied to its evidence.</p><a class="text-link" href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence" rel="noopener noreferrer">Open the public TE evidence repo <span aria-hidden="true">↗</span></a></article>
+  </div>
+
   <div class="collaboration-grid">
     <figure class="collaboration-card"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island, Okinawa" loading="lazy"><figcaption><span class="eyebrow">Marine genomics</span><strong>Ocean acidification evidence</strong><span>Shareable figures and claim boundaries for transposable element research in reef fish.</span><a href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence" rel="noopener noreferrer">Open the public evidence repo <span aria-hidden="true">↗</span></a></figcaption></figure>
     <figure class="collaboration-card"><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish sheltering in an Entacmaea sea anemone" loading="lazy"><figcaption><span class="eyebrow">Comparative biology</span><strong>Reef systems and symbiosis</strong><span>Field grounded questions about adaptation, host relationships, and changing oceans.</span><a href="https://github.com/Kays3/entacmea-research" rel="noopener noreferrer">Explore the Entacmea work <span aria-hidden="true">↗</span></a></figcaption></figure>
