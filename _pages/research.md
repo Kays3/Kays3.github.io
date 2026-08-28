@@ -32,19 +32,6 @@ same_sign = np.sign(by_donor["mean"]) == overall_sign</code></pre><a class="repo
   <article class="topic-row" id="machine-learning"><div class="topic-row__number">05</div><div><p class="eyebrow">Model to mechanism</p><h2>Machine Learning and Bioinformatics</h2><p>I write workflows that another researcher can inspect and rerun. I document the inputs, the evaluation boundary, and the failures. Speed helps. Biological meaning matters more.</p><div class="tag-row"><span>Python</span><span>R</span><span>RNA sequencing</span><span>Geneformer</span><span>workflow validation</span></div><div class="research-publications"><p class="eyebrow">Related work</p><ul><li><a href="https://doi.org/10.1186/s12920-018-0376-4">Longitudinal expression profiling of CD4+ and CD8+ cells in giant cell arteritis</a></li><li><a href="https://doi.org/10.2174/1568026620666200211113824">Neuroclinical signatures after acute stroke using quantitative CT and multivariate modelling</a></li><li><a href="https://github.com/Kays3/geneformer-lung-tcell">Current Geneformer lung T cell workflow</a></li></ul></div></div></article>
 </div>
 
-<section class="research-photo-section" id="marine-genomics" aria-labelledby="environmental-genomics-title">
-  <div class="section-heading"><p class="eyebrow">Comparative and environmental genomics</p><h2 id="environmental-genomics-title">Reef systems as natural experiments</h2></div>
-  <p class="section-lead">My work in coral reef genomics asks how organisms adapt and live in symbiosis as their environment changes. It gives me a wider view of the same core problem: how context changes biology.</p>
-  <div class="research-photo-grid">
-    <figure><img src="/images/research/marine/stichodactyla-ocellaris.webp" alt="Ocellaris clownfish sheltering in a Stichodactyla sea anemone" loading="lazy"><figcaption><strong>Anemonefish symbiosis</strong><span><em>Stichodactyla</em> and ocellaris clownfish in a coral reef habitat.</span></figcaption></figure>
-    <figure><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish sheltering in an Entacmaea sea anemone" loading="lazy"><figcaption><strong>Host ecology</strong><span>Tomato clownfish and <em>Entacmaea</em> in situ.</span></figcaption></figure>
-    <figure><img src="/images/research/marine/aka-jima-ocellaris-2.webp" alt="Clownfish living among a purple sea anemone at Aka Island, Okinawa" loading="lazy"><figcaption><strong>Aka Island fieldwork</strong><span>Anemonefish habitat in the Kerama Islands, Okinawa.</span></figcaption></figure>
-    <figure><img src="/images/research/marine/aka-jima-ocellaris-1.webp" alt="Clownfish among a large sea anemone at Aka Island, Okinawa" loading="lazy"><figcaption><strong>Environmental genomics</strong><span>Field context for questions about adaptation and changing oceans.</span></figcaption></figure>
-  </div>
-  <details class="repo-snippet"><summary>See how I keep the research notebook traceable</summary><div class="repo-snippet__body"><div class="repo-snippet__heading"><span>Shell excerpt</span><code>entacmaea-research</code></div><p>Small helpers create dated research notes and convert older records without committing them automatically.</p><pre aria-label="Shell excerpt for maintaining the Entacmaea research notebook"><code>./scripts/newlog.sh
-./scripts/txt2md_git.sh</code></pre><a class="repo-snippet__source" href="https://github.com/Kays3/entacmea-research/blob/main/README.md#L51-L65">Read the source in GitHub <span aria-hidden="true">↗</span></a></div></details>
-</section>
-
 <section class="collaboration-section" aria-labelledby="collaboration-heading">
   <p class="eyebrow">Collaboration</p>
   <h2 id="collaboration-heading">Research across clinical and scientific teams</h2>
