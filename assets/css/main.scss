@@ -266,6 +266,9 @@ html[data-theme="dark"] .history-context {
 
 .topic-stack { border-top: 1px solid var(--kd-line); }
 .topic-row { display: grid; gap: 2rem; grid-template-columns: 4rem 1fr; padding: 2.5rem 0; border-bottom: 1px solid var(--kd-line); }
+.polygenic-score-image { max-width: 220px; margin: 0.75rem 0 1.25rem 4rem; }
+.polygenic-score-image img { display: block; width: 100%; height: auto; border-radius: 0.35rem; }
+.polygenic-score-image figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.4; margin-top: 0.4rem; }
 .topic-row__number { color: var(--kd-coral); font-family: Georgia, serif; font-size: 1.3rem; }
 .topic-row h2 { font-size: clamp(1.8rem, 3.2vw, 2.7rem); margin: 0 0 1rem; }
 .topic-row p:not(.eyebrow) { color: var(--kd-muted); font-size: 1.02rem !important; line-height: 1.75; max-width: 48rem; }
