@@ -3,7 +3,7 @@
 - `kaisar-dauyey-2025.jpg`: web-optimized copy of the portrait supplied directly by Kaisar Dauyey for use as his website avatar.
 - `kaisar-avatar.jpg`: GitHub profile image published by the repository owner at `avatars.githubusercontent.com/u/55186640` and retrieved on 2026-08-11; retained as an unused archive asset.
 - `aka-island-reef.jpg`: image published by the repository owner in the `Kays3/Kays3` profile README, identified there as “Coral reef snapshot at Aka Island, Keramashoto National Park,” and retrieved on 2026-08-11.
-- `research/aka-island-coral-turtle.png`: image from the repository owner's private `Kays3/TE_Ocean_Acidification` research repository (`archive/pre-2026/images/coral-aka-kame.png`), supplied for use on this site.
+- `research/aka-island-coral-turtle.png`: field context image supplied for use on this site.
 - `research/digital-pathology-spatial-cover.jpg`: web crop rendered from a one-page PDF supplied directly by Kaisar Dauyey, titled “Spatial T-cell and dysfunction scores in SCLC tissue.” The underlying Visium H&E tissue images are identified in the figure as NCBI GEO dataset GSE263196.
 - `research/geneformer-in-silico-perturbation.png`: explanatory diagram supplied directly by Kaisar Dauyey, showing how ranked Geneformer inputs are deleted or overexpressed to estimate model-predicted cell-state shifts.
 - `interests/ohara-octopus-map-1904.jpg`: web-optimized copy of Kisaburō Ohara's 1904 *A Humorous Diplomatic Atlas of Europe and Asia*, supplied directly by Kaisar Dauyey. The [Cornell University Library record](https://digital.library.cornell.edu/catalog/ss:3293791) identifies it as an anti-Russian satirical map from the Russo-Japanese War; the scan is marked public domain.
