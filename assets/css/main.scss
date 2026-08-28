@@ -269,6 +269,7 @@ html[data-theme="dark"] .history-context {
 .polygenic-score-image, .geneformer-image, .hpylori-image { float: none; display: inline-block; vertical-align: top; box-sizing: border-box; width: 180px; margin: 0.75rem 1.25rem 1.25rem 0; }
 .hpylori-image { width: 240px; }
 .topic-stack { clear: both; }
+.thumbnail-legend { clear: both; color: var(--kd-muted); font-size: 0.82rem; line-height: 1.5; margin: 0 0 1.25rem; }
 .polygenic-score-image img, .geneformer-image img { display: block; width: 180px; height: 120px; object-fit: cover; border-radius: 0.35rem; }
 .hpylori-image img { display: block; width: 100%; height: auto; border-radius: 0.35rem; }
 .polygenic-score-image figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.4; margin-top: 0.4rem; }
