@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "Research & People"
 description: "Research in clinical medicine, genomics, tissue imaging, infectious disease, and computational biology."
 permalink: /research/
 author_profile: false
