@@ -266,15 +266,15 @@ html[data-theme="dark"] .history-context {
 
 .topic-stack { border-top: 1px solid var(--kd-line); }
 .topic-row { display: grid; gap: 2rem; grid-template-columns: 4rem 1fr; padding: 2.5rem 0; border-bottom: 1px solid var(--kd-line); }
-.polygenic-score-image { float: left; width: 180px; margin: 0.75rem 2rem 1.25rem 0; }
-.geneformer-image { float: left; width: 180px; margin: 0.75rem 2rem 1.25rem 0; }
-.hpylori-image { float: none; width: min(360px, 100%); margin: 0.75rem auto 1.25rem; }
+.polygenic-score-image, .geneformer-image, .hpylori-image { float: none; display: inline-block; vertical-align: top; box-sizing: border-box; width: 180px; margin: 0.75rem 1.25rem 1.25rem 0; }
+.hpylori-image { width: 240px; }
+.topic-stack { clear: both; }
 .polygenic-score-image img, .geneformer-image img { display: block; width: 180px; height: 120px; object-fit: cover; border-radius: 0.35rem; }
 .hpylori-image img { display: block; width: 100%; height: auto; border-radius: 0.35rem; }
 .polygenic-score-image figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.4; margin-top: 0.4rem; }
 .geneformer-image figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.4; margin-top: 0.4rem; }
 .hpylori-image figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.4; margin-top: 0.4rem; }
-.interest-thumbnails { display: flex; gap: 1rem; margin: 1rem 0 1.25rem; }
+.interest-thumbnails { display: inline-flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0 1.25rem; vertical-align: top; }
 .interest-thumbnails a { display: block; width: 150px; color: var(--kd-ink); font-size: 0.78rem; font-weight: 600; text-decoration: none; }
 .interest-thumbnails img { display: block; width: 150px; height: 100px; object-fit: cover; border-radius: 0.35rem; margin-bottom: 0.35rem; }
 @media screen and (max-width: 46em) { .polygenic-score-image { float: none; margin-left: 0; } }
