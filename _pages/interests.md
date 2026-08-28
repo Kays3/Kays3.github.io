@@ -22,7 +22,6 @@ author_profile: false
     <article class="interest-card">
       <p class="eyebrow">Continuing questions</p>
       <h2>Adaptation and symbiosis</h2>
-      <div class="interest-thumbnails"><a href="https://github.com/Kays3/TE_Ocean_Acidification"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island for the TE Ocean Acidification project" loading="lazy"><span>TE Ocean Acidification</span></a><a href="https://github.com/Kays3/entacmea-research"><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish sheltering in an Entacmaea sea anemone for the Entacmea project" loading="lazy"><span>Entacmea genomics</span></a></div>
       <p>I continue to study how anemonefish relate to their hosts and how transposable elements respond to ocean acidification. These systems show how genomes meet a changing environment.</p>
       <p><a class="text-link" href="https://github.com/Kays3/TE_Ocean_Acidification">Ocean acidification project <span aria-hidden="true">↗</span></a><br><a class="text-link" href="https://github.com/Kays3/entacmea-research"><em>Entacmaea</em> genomics <span aria-hidden="true">↗</span></a></p>
     </article>
