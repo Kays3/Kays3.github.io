@@ -278,6 +278,9 @@ html[data-theme="dark"] .history-context {
 .interest-thumbnails { display: inline-flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0 1.25rem; vertical-align: top; }
 .interest-thumbnails a { display: block; width: 150px; color: var(--kd-ink); font-size: 0.78rem; font-weight: 600; text-decoration: none; }
 .interest-thumbnails img { display: block; width: 150px; height: 100px; object-fit: cover; border-radius: 0.35rem; margin-bottom: 0.35rem; }
+.interest-thumbnails span { display: block; color: var(--kd-muted); font-family: Georgia, serif; font-weight: 400; line-height: 1.4; }
+.interest-thumbnails strong { display: block; color: var(--kd-ink); font-family: inherit; font-size: 0.95rem; margin-bottom: 0.2rem; }
+.interest-thumbnails small { display: block; font-size: 0.78rem; }
 @media screen and (max-width: 46em) { .polygenic-score-image { float: none; margin-left: 0; } }
 @media screen and (max-width: 46em) { .geneformer-image { float: none; margin-left: 0; } }
 @media screen and (max-width: 46em) { .hpylori-image { float: none; margin-left: auto; margin-right: auto; } }
