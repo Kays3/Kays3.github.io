@@ -190,7 +190,7 @@ redirect_from:
           title="OhayoWorld visitor globe"></iframe>
       </div>
       <div class="visitor-tracker__widget" aria-label="LiveTrafficFeed visitor globe">
-        <script src="https://cdn.livetrafficfeed.com/static/revolver-maps/live.js?c=ffffff&amp;cw=e63100&amp;l=1&amp;hi=10&amp;he=10&amp;root=0&amp;st=1&amp;s=326&amp;mv=a814544e2ee74d56" async></script>
+        <script src="https://cdn.livetrafficfeed.com/static/revolver-maps/live.js?c=ffffff&amp;cw=e63100&amp;l=1&amp;hi=10&amp;he=10&amp;root=0&amp;st=1&amp;s=360&amp;mv=a814544e2ee74d56" async></script>
         <noscript><a href="https://livetrafficfeed.com/revolver-maps" rel="noopener noreferrer">Free Revolver Maps</a></noscript>
       </div>
     </div>
