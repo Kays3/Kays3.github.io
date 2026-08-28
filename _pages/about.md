@@ -25,7 +25,7 @@ redirect_from:
       </dl>
 
       <div class="about-hero__actions">
-        <a class="about-button about-button--primary" href="/research/">Research <span aria-hidden="true">→</span></a>
+        <a class="about-button about-button--primary" href="/research/">Research &amp; People <span aria-hidden="true">→</span></a>
         <a class="about-button" href="/cv/">View CV</a>
         <a class="about-button about-button--quiet" href="/publications/">Publications</a>
       </div>
