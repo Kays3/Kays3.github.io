@@ -33,6 +33,7 @@ same_sign = np.sign(by_donor["mean"]) == overall_sign</code></pre><a class="repo
 
 <section class="research-photo-section" id="marine-genomics" aria-labelledby="environmental-genomics-title">
   <div class="section-heading"><p class="eyebrow">Comparative and environmental genomics</p><h2 id="environmental-genomics-title">Reef systems as natural experiments</h2></div>
+  <div class="interest-thumbnails"><a href="https://github.com/Kays3/TE_Ocean_Acidification"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island for the TE Ocean Acidification project" loading="lazy"><span>TE Ocean Acidification</span></a><a href="https://github.com/Kays3/entacmea-research"><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish sheltering in an Entacmaea sea anemone for the Entacmea project" loading="lazy"><span>Entacmea genomics</span></a></div>
   <p class="section-lead">My work in coral reef genomics asks how organisms adapt and live in symbiosis as their environment changes. It gives me a wider view of the same core problem: how context changes biology.</p>
   <div class="research-photo-grid">
     <figure><img src="/images/research/marine/stichodactyla-ocellaris.webp" alt="Ocellaris clownfish sheltering in a Stichodactyla sea anemone" loading="lazy"><figcaption><strong>Anemonefish symbiosis</strong><span><em>Stichodactyla</em> and ocellaris clownfish in a coral reef habitat.</span></figcaption></figure>
