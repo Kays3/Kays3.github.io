@@ -277,6 +277,9 @@ html[data-theme="dark"] .history-context {
 .hpylori-image figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.4; margin-top: 0.4rem; }
 .interest-thumbnails { display: inline-flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0 1.25rem; vertical-align: top; }
 .interest-thumbnails a { display: block; width: 150px; color: var(--kd-ink); font-size: 0.78rem; font-weight: 600; text-decoration: none; }
+.interest-card { transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease; }
+.interest-card:has(.text-link):hover, .interest-card:has(.text-link):focus-within { transform: translateY(-3px); border-color: var(--kd-coral); box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.18); }
+.interest-card .text-link { display: inline-flex; align-items: center; gap: 0.25rem; }
 .interest-thumbnails img { display: block; width: 150px; height: 100px; object-fit: cover; border-radius: 0.35rem; margin-bottom: 0.35rem; }
 .interest-thumbnails span { display: block; color: var(--kd-muted); font-family: Georgia, serif; font-weight: 400; line-height: 1.4; }
 .interest-thumbnails strong { display: block; color: var(--kd-ink); font-family: inherit; font-size: 0.95rem; margin-bottom: 0.2rem; }
