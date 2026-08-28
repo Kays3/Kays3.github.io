@@ -180,7 +180,7 @@ redirect_from:
   </aside>
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
-    <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">Visitors worldwide</h2></div>
+    <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">All visitors worldwide</h2><p class="visitor-tracker__intro">These maps show cumulative visitor reach as well as current activity—not only visitors online right now.</p></div>
     <div class="visitor-tracker__grid">
       <div class="visitor-tracker__widget" aria-label="OhayoWorld visitor globe">
         <iframe

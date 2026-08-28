@@ -630,6 +630,7 @@ html[data-theme="dark"] .state-map__state--sclc { color: #c2afff; }
 .visitor-tracker { border-top: 1px solid var(--kd-line); margin: 4rem auto 0; padding-top: 2rem; text-align: center; }
 .visitor-tracker .section-heading { margin-left: auto; margin-right: auto; }
 .visitor-tracker h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); margin-bottom: 1.2rem; }
+.visitor-tracker__intro { color: var(--kd-muted); font-size: 0.88rem; margin: -0.5rem auto 1.4rem; max-width: 42rem; }
 .visitor-tracker__grid { align-items: stretch; display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 480px)); justify-content: center; }
 .visitor-tracker__widget { align-items: center; background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 18px; display: flex; justify-content: center; min-height: 573px; overflow: hidden; width: 100%; }
 .visitor-tracker__widget iframe { aspect-ratio: 360 / 430; border: 0; display: block; width: 100%; }
