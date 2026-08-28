@@ -266,9 +266,9 @@ html[data-theme="dark"] .history-context {
 
 .topic-stack { border-top: 1px solid var(--kd-line); }
 .topic-row { display: grid; gap: 2rem; grid-template-columns: 4rem 1fr; padding: 2.5rem 0; border-bottom: 1px solid var(--kd-line); }
-.polygenic-score-image { float: right; max-width: 220px; margin: 0.75rem 0 1.25rem 2rem; }
-.geneformer-image { float: right; max-width: 220px; margin: 0.75rem 0 1.25rem 2rem; }
-.hpylori-image { float: right; max-width: 220px; margin: 0.75rem 0 1.25rem 2rem; }
+.polygenic-score-image { float: left; max-width: 220px; margin: 0.75rem 2rem 1.25rem 0; }
+.geneformer-image { float: left; max-width: 220px; margin: 0.75rem 2rem 1.25rem 0; }
+.hpylori-image { float: left; max-width: 220px; margin: 0.75rem 2rem 1.25rem 0; }
 .polygenic-score-image img { display: block; width: 100%; height: auto; border-radius: 0.35rem; }
 .geneformer-image img { display: block; width: 100%; height: auto; border-radius: 0.35rem; }
 .hpylori-image img { display: block; width: 100%; height: auto; border-radius: 0.35rem; }
