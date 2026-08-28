@@ -23,7 +23,7 @@ author_profile: false
       <p class="eyebrow">Continuing questions</p>
       <h2>Adaptation and symbiosis</h2>
       <p>I continue to study how anemonefish relate to their hosts and how transposable elements respond to ocean acidification. These systems show how genomes meet a changing environment.</p>
-      <p><a class="text-link" href="https://github.com/Kays3/TE_Ocean_Acidification">Ocean acidification project <span aria-hidden="true">↗</span></a><br><a class="text-link" href="https://github.com/Kays3/entacmea-research"><em>Entacmaea</em> genomics <span aria-hidden="true">↗</span></a></p>
+      <p><a class="text-link" href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence">Ocean acidification evidence <span aria-hidden="true">↗</span></a><br><a class="text-link" href="https://github.com/Kays3/entacmea-research"><em>Entacmaea</em> genomics <span aria-hidden="true">↗</span></a></p>
     </article>
   </div>
 </section>
