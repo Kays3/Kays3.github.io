@@ -149,12 +149,17 @@ $(document).ready(function () {
 
   // If the user hasn't chosen a theme, follow the OS preference
   setTheme();
-  window.matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener("change", (e) => {
-          if (!localStorage.getItem("theme")) {
-            setTheme(e.matches ? "dark" : "light");
-          }
-        });
+  const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const handleColorSchemeChange = (e) => {
+    if (!localStorage.getItem("theme")) {
+      setTheme(e.matches ? "dark" : "light");
+    }
+  };
+  if (colorScheme.addEventListener) {
+    colorScheme.addEventListener("change", handleColorSchemeChange);
+  } else if (colorScheme.addListener) {
+    colorScheme.addListener(handleColorSchemeChange);
+  }
 
   // Enable the theme toggle
   $('#theme-toggle').on('click', function (event) {

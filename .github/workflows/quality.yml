@@ -32,6 +32,12 @@ jobs:
       - name: Install JavaScript dependencies
         run: npm ci
 
+      - name: Rebuild JavaScript bundle
+        run: npm run build:js
+
+      - name: Verify JavaScript bundle is committed
+        run: git diff --exit-code -- assets/js/main.min.js
+
       - name: Check JavaScript syntax
         run: |
           node --check assets/js/_main.js
