@@ -12,7 +12,7 @@ redirect_from:
   <section class="about-hero">
     <div class="about-hero__content">
       <div class="about-hero__identity">
-        <img src="/images/kaisar-dauyey-2025.webp" alt="Portrait of Kaisar Dauyey" width="918" height="940" fetchpriority="high">
+        <img src="/images/kaisar-dauyey-2025.webp" alt="Portrait of Kaisar Dauyey" width="918" height="940" fetchpriority="high" decoding="async">
         <p class="eyebrow">Physician scientist · Hokkaido University</p>
       </div>
       <h1 id="home-title">Clinical questions deserve evidence you can inspect.</h1>
@@ -125,13 +125,13 @@ redirect_from:
 
     <div class="about-story__grid">
       <a class="about-story__card" href="/research/#digital-pathology">
-        <figure><img src="/images/research/digital-pathology-spatial-cover.webp" alt="Spatial molecular measurements aligned with whole slide tissue morphology" loading="lazy"><figcaption><span>01 · Tissue</span><strong>Tissue context</strong><small>Test whether predicted T cell states make sense in the tissue around them.</small></figcaption></figure>
+        <figure><img src="/images/research/digital-pathology-spatial-cover.webp" alt="Spatial molecular measurements aligned with whole slide tissue morphology" loading="lazy" decoding="async"><figcaption><span>01 · Tissue</span><strong>Tissue context</strong><small>Test whether predicted T cell states make sense in the tissue around them.</small></figcaption></figure>
       </a>
       <a class="about-story__card" href="https://github.com/Kays3/geneformer-lung-tcell">
-        <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" loading="lazy"><figcaption><span>02 · Cells</span><strong>Computational genomics</strong><small>Model cell states while keeping each donor and assumption visible.</small></figcaption></figure>
+        <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" loading="lazy" decoding="async"><figcaption><span>02 · Cells</span><strong>Computational genomics</strong><small>Model cell states while keeping each donor and assumption visible.</small></figcaption></figure>
       </a>
       <a class="about-story__card" href="/research/#marine-genomics">
-        <figure><img src="/images/research/marine/stichodactyla-ocellaris.webp" alt="Ocellaris clownfish sheltering in a Stichodactyla sea anemone" loading="lazy"><figcaption><span>03 · Environment</span><strong>Comparative biology</strong><small>Study adaptation and symbiosis under environmental change.</small></figcaption></figure>
+        <figure><img src="/images/research/marine/stichodactyla-ocellaris.webp" alt="Ocellaris clownfish sheltering in a Stichodactyla sea anemone" loading="lazy" decoding="async"><figcaption><span>03 · Environment</span><strong>Comparative biology</strong><small>Study adaptation and symbiosis under environmental change.</small></figcaption></figure>
       </a>
     </div>
   </section>
