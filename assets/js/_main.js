@@ -28,8 +28,8 @@ function determineComputedTheme() {
 // Set the theme on page load or when explicitly called
 function setTheme(theme) {
   const use_theme = theme ||
-    localStorage.getItem("theme") ||
     $("html").attr("data-theme") ||
+    localStorage.getItem("theme") ||
     browserPref;
 
   if (use_theme === "dark") {

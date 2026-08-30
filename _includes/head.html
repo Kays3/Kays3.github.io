@@ -8,11 +8,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-  try {
-    if (localStorage.getItem("theme") === "light") {
-      document.documentElement.removeAttribute("data-theme");
-    }
-  } catch (error) {}
+  // Start every visit in the dark ocean theme; the toggle can still switch themes afterward.
+  document.documentElement.setAttribute("data-theme", "dark");
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
