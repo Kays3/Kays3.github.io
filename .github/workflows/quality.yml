@@ -1,0 +1,43 @@
+name: Site quality
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install JavaScript dependencies
+        run: npm ci
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/js/_main.js
+          node --check assets/js/theme.js
+          node --check assets/js/perturbation-explainer.js
+          node --check assets/js/plugins/jquery.greedy-navigation.js
+
+      - name: Check generated links
+        run: npx --yes linkinator _site --recurse --silent
