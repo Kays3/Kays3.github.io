@@ -180,19 +180,20 @@ redirect_from:
   </aside>
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
-    <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">All visitors worldwide</h2><p class="visitor-tracker__intro">These maps show cumulative visitor reach as well as current activity—not only visitors online right now.</p></div>
-    <div class="visitor-tracker__grid">
-      <div class="visitor-tracker__widget" aria-label="OhayoWorld visitor globe">
-        <iframe
-          src="https://www.ohayoworld.com/widgets/globe-widget.php?width=480&amp;ohayos=1&amp;lang=en"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          title="OhayoWorld visitor globe"></iframe>
-      </div>
-      <div class="visitor-tracker__widget" aria-label="LiveTrafficFeed visitor globe">
-        <script src="https://cdn.livetrafficfeed.com/static/revolver-maps/live.js?c=ffffff&amp;cw=e63100&amp;l=1&amp;hi=10&amp;he=10&amp;root=0&amp;st=1&amp;s=480&amp;mv=a814544e2ee74d56" async></script>
-        <noscript><a href="https://livetrafficfeed.com/revolver-maps" rel="noopener noreferrer">Free Revolver Maps</a></noscript>
-      </div>
-    </div>
+    <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">Total visitors</h2><p class="visitor-tracker__intro">A small local count of visits recorded by this browser.</p></div>
+    <div class="visitor-tracker__total" aria-live="polite"><strong id="visitor-count">0</strong><span>visits recorded</span></div>
+    <script>
+      (function () {
+        try {
+          const key = "kays3_total_visits";
+          const stored = Number.parseInt(localStorage.getItem(key) || "0", 10);
+          const visits = (Number.isFinite(stored) ? stored : 0) + 1;
+          localStorage.setItem(key, String(visits));
+          document.getElementById("visitor-count").textContent = visits.toLocaleString();
+        } catch (error) {
+          document.getElementById("visitor-count").textContent = "-";
+        }
+      }());
+    </script>
   </section>
 </main>
