@@ -24,8 +24,8 @@ author_profile: false
     </div>
 
     <div class="research-network__center">
-      <p class="eyebrow">Live site reach</p>
-      <h3>People are visiting now</h3>
+      <p class="eyebrow">People around the globe</p>
+      <h3>A global research community</h3>
       <div class="research-network__widget" aria-label="OhayoWorld visitor globe">
         <iframe src="https://www.ohayoworld.com/widgets/globe-widget.php?width=320&amp;ohayos=1&amp;lang=en" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="OhayoWorld visitor globe"></iframe>
       </div>
