@@ -14,7 +14,31 @@ author_profile: false
 <figure class="hpylori-image"><a href="https://github.com/Kays3/H.pylori"><img src="/images/research/h-pylori-almaty-resistance.png" alt="H. pylori antimicrobial resistance in Almaty, Kazakhstan, summarizing resistance rates and genomic markers" loading="lazy"></a><figcaption><em>H. pylori</em> resistance profile from Almaty. <a href="https://github.com/Kays3/H.pylori" rel="noopener noreferrer">Analysis repository</a> · <a href="https://doi.org/10.3389/fmicb.2026.1747006" rel="noopener noreferrer">Official paper</a>.</figcaption></figure>
 <div class="interest-thumbnails"><a href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island for the TE Ocean Acidification project" loading="lazy"><span><strong>TE Ocean Acidification</strong><small>Reef fieldwork tracking transposable-element responses to changing seawater chemistry.</small></span></a><a href="https://github.com/Kays3/entacmea-research"><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish sheltering in an Entacmaea sea anemone for the Entacmea project" loading="lazy"><span><strong>Entacmea genomics</strong><small>Anemonefish–host symbiosis and adaptation in a changing reef.</small></span></a></div>
 <p class="thumbnail-legend"><strong>Research thumbnails:</strong> Polygenic score population context · Geneformer perturbation map · <em>H. pylori</em> resistance in Almaty · TE Ocean Acidification reef fieldwork, tracking transposable-element responses to changing seawater chemistry · <em>Entacmea</em> genomics, exploring anemonefish–host symbiosis and adaptation.</p>
-<p class="network-link"><a class="about-button about-button--primary" href="/network/">Explore the visual research network <span aria-hidden="true">-&gt;</span></a></p>
+<section class="research-network" aria-labelledby="network-title">
+  <div class="section-heading"><p class="eyebrow">Projects and evidence</p><h2 id="network-title">One network, many scales</h2></div>
+  <div class="research-network__map">
+    <div class="research-network__nodes research-network__nodes--left">
+      <a class="research-network__node" href="https://github.com/Kays3/geneformer-lung-tcell"><img src="/images/research/digital-pathology-spatial-cover.webp" alt="Spatial T-cell measurements in SCLC tissue"><span><strong>Tissue context</strong><small>Geneformer lung T-cell workflow</small></span></a>
+      <a class="research-network__node" href="https://github.com/Kays3/Ancient_intelligence"><img src="/images/interests/ohara-octopus-map-1904.webp" alt="Historical map for ancient-genome research"><span><strong>Population genomics</strong><small>Ancient Intelligence</small></span></a>
+      <a class="research-network__node research-network__node--hpylori" href="https://github.com/Kays3/H.pylori"><img src="/images/research/h-pylori-almaty-resistance.png" alt="H. pylori antimicrobial resistance profile"><span><strong>Host and pathogen</strong><small>H. pylori analysis repository</small></span></a>
+    </div>
+
+    <div class="research-network__center">
+      <p class="eyebrow">Live site reach</p>
+      <h3>People are visiting now</h3>
+      <div class="research-network__widget" aria-label="OhayoWorld visitor globe">
+        <iframe src="https://www.ohayoworld.com/widgets/globe-widget.php?width=320&amp;ohayos=1&amp;lang=en" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="OhayoWorld visitor globe"></iframe>
+      </div>
+    </div>
+
+    <div class="research-network__nodes research-network__nodes--right">
+      <a class="research-network__node" href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island"><span><strong>Ocean change</strong><small>TE Ocean Acidification</small></span></a>
+      <a class="research-network__node" href="https://github.com/Kays3/entacmea-research"><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish in an Entacmaea anemone"><span><strong>Host ecology</strong><small>Entacmea research</small></span></a>
+      <a class="research-network__node" href="https://github.com/Kays3/TE_Anemonefish_Symbiosis"><img src="/images/research/marine/stichodactyla-ocellaris.webp" alt="Ocellaris clownfish in a Stichodactyla anemone"><span><strong>Symbiosis</strong><small>TE Anemonefish Symbiosis</small></span></a>
+    </div>
+  </div>
+  <p class="research-network__legend">Select an image to open the repository for that project. The photographs provide context and are not themselves experimental results.</p>
+</section>
 <div class="topic-stack">
   <article class="topic-row topic-row--pathology" id="digital-pathology"><div class="topic-row__number">01</div><div><p class="eyebrow">Model to counterfactual</p><h2>Geneformer In Silico Gene Perturbation</h2><p>I use Geneformer to predict how deletion or overexpression of one gene changes an SCLC T cell representation. The model can point to a candidate regulator. It cannot prove that the gene controls the cell. I test whether the signal holds across donors and whether tissue evidence supports it.</p><div class="tag-row"><span>Geneformer</span><span>in silico perturbation</span><span>T cell states</span><span>donor aware evaluation</span><span>hypothesis generation</span></div><details class="repo-snippet"><summary>See how I check donor consistency</summary><div class="repo-snippet__body"><div class="repo-snippet__heading"><span>Python excerpt</span><code>donor_consistency.py</code></div><p>The analysis groups predicted shifts by donor, then checks whether each donor points in the same direction as the full result.</p><pre aria-label="Python excerpt that checks donor consistency"><code>cells["shift"] = shifts
 by_donor = cells.groupby("individual")["shift"].agg(["mean", "count"])
