@@ -180,20 +180,7 @@ redirect_from:
   </aside>
 
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
-    <div class="section-heading"><p class="eyebrow">Site reach</p><h2 id="visitor-tracker-title">Total visitors</h2><p class="visitor-tracker__intro">A small local count of visits recorded by this browser.</p></div>
-    <div class="visitor-tracker__total" aria-live="polite"><strong id="visitor-count">0</strong><span>visits recorded</span></div>
-    <script>
-      (function () {
-        try {
-          const key = "kays3_total_visits";
-          const stored = Number.parseInt(localStorage.getItem(key) || "0", 10);
-          const visits = (Number.isFinite(stored) ? stored : 0) + 1;
-          localStorage.setItem(key, String(visits));
-          document.getElementById("visitor-count").textContent = visits.toLocaleString();
-        } catch (error) {
-          document.getElementById("visitor-count").textContent = "-";
-        }
-      }());
-    </script>
+    <div class="section-heading"><h2 id="visitor-tracker-title">Visitor locations worldwide</h2></div>
+    <a class="visitor-tracker__map" href="https://mapmyvisitors.com/web/1c7ga" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff" alt="Map showing visitor locations worldwide"></a>
   </section>
 </main>
