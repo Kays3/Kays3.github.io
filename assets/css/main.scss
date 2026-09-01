@@ -659,9 +659,8 @@ html[data-theme="dark"] .state-map__state--sclc { color: #c2afff; }
 .visitor-tracker .section-heading { margin-left: auto; margin-right: auto; }
 .visitor-tracker h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); margin-bottom: 1.2rem; }
 .visitor-tracker__intro { color: var(--kd-muted); font-size: 0.88rem; margin: -0.5rem auto 1.4rem; max-width: 42rem; }
-.visitor-tracker__total { align-items: baseline; background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 18px; display: flex; gap: 0.8rem; justify-content: center; margin: 0 auto; max-width: 28rem; padding: 1.5rem; }
-.visitor-tracker__total strong { color: var(--kd-ocean); font-family: Georgia, serif; font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1; }
-.visitor-tracker__total span { color: var(--kd-muted); font-size: 0.8rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
+.visitor-tracker__map { display: block; margin: 0 auto; max-width: 300px; }
+.visitor-tracker__map img { display: block; height: auto; width: 100%; }
 
 @media screen and (max-width: 62em) {
   .about-more { align-items: start; grid-template-columns: 1fr 1fr; }
