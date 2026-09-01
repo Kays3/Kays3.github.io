@@ -373,10 +373,12 @@ html[data-theme="dark"] .history-context {
 .research-photo-section { margin: 4.5rem 0 3.5rem; }
 .research-photo-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .research-photo-grid figure { border: 1px solid var(--kd-line); margin: 0; padding: 0.35rem; }
+.research-photo-grid figure > a { display: block; }
 .research-photo-grid img { aspect-ratio: 16 / 10; display: block; object-fit: cover; width: 100%; }
 .research-photo-grid figcaption { display: flex; flex-direction: column; min-height: 4.4rem; padding: 0.65rem 0.45rem 0.35rem; }
 .research-photo-grid figcaption strong { color: var(--kd-ink); font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1rem; }
 .research-photo-grid figcaption span { color: var(--kd-muted); font-size: 0.75rem; line-height: 1.5; margin-top: 0.2rem; }
+.research-photo-grid figure:hover, .research-photo-grid figure:focus-within { border-color: var(--kd-coral); }
 
 .timeline { border-left: 1px solid var(--kd-line); margin: 1.5rem 0 3rem 0.55rem; }
 .timeline-item { display: grid; gap: 1.5rem; grid-template-columns: 5.2rem 1fr; padding: 0 0 2rem 1.5rem; position: relative; }
@@ -393,6 +395,31 @@ html[data-theme="dark"] .history-context {
 .field-grid h2 { font-size: 1.55rem; margin: 0 0 0.8rem; }
 .field-grid p:not(.eyebrow) { color: var(--kd-muted); font-size: 0.92rem !important; line-height: 1.72; }
 .field-quote { border: 0; color: var(--kd-ocean-deep); font-family: Georgia, serif; font-size: clamp(1.55rem, 3.3vw, 2.4rem); line-height: 1.35; margin: 3.5rem 0; padding: 0; }
+
+.people-section { border-top: 3px double var(--kd-line); margin: 4.5rem 0 3.5rem; padding-top: 2rem; }
+.people-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.people-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 18px; padding: 1.25rem; }
+.people-card h3 { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.25rem; margin: 0 0 0.7rem; }
+.people-card p:not(.eyebrow) { color: var(--kd-muted); font-size: 0.86rem !important; line-height: 1.65; }
+
+.research-network { margin: 3rem 0 4rem; }
+.research-network__map { align-items: center; display: grid; gap: clamp(1rem, 3vw, 2.5rem); grid-template-columns: minmax(0, 1fr) minmax(15rem, 1.2fr) minmax(0, 1fr); }
+.research-network__nodes { display: grid; gap: 1rem; }
+.research-network__node { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 18px; color: inherit; display: block; overflow: hidden; text-decoration: none; transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease; }
+.research-network__node:hover, .research-network__node:focus-visible { border-color: var(--kd-coral); box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.18); transform: translateY(-3px); }
+.research-network__node:focus-visible { outline: 2px solid var(--kd-coral); outline-offset: 3px; }
+.research-network__node img { aspect-ratio: 16 / 9; display: block; object-fit: cover; width: 100%; }
+.research-network__node span { display: block; padding: 0.8rem 0.9rem 0.95rem; }
+.research-network__node strong { color: var(--kd-ink); display: block; font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1rem; }
+.research-network__node small { color: var(--kd-muted); display: block; font-size: 0.72rem; line-height: 1.45; margin-top: 0.25rem; }
+.research-network__center { background: linear-gradient(145deg, rgba(11, 102, 117, 0.14), rgba(63, 108, 86, 0.08)); border: 1px solid var(--kd-ocean); border-radius: 24px; padding: 1.25rem; text-align: center; }
+.research-network__center h3 { font-size: clamp(1.25rem, 2.4vw, 1.8rem); margin: 0 0 1rem; }
+.research-network__widgets { display: grid; gap: 0.7rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.research-network__widget { align-items: center; background: var(--kd-paper); border: 1px solid var(--kd-line); border-radius: 12px; display: flex; height: 190px; justify-content: center; overflow: hidden; }
+.research-network__widget iframe { border: 0; height: 100%; width: 100%; }
+.research-network__widget > script { display: block; max-width: 100%; }
+.research-network__widget > a { color: var(--kd-ocean); font-size: 0.75rem; }
+.research-network__legend { color: var(--kd-muted); font-size: 0.8rem !important; line-height: 1.6; margin: 1rem auto 0 !important; max-width: 54rem; text-align: center; }
 
 .history-map { display: block; margin: 0 0 3rem; }
 .history-map img { background: #e7deca; border: 1px solid rgba(90,69,40,0.2); border-radius: 24px; box-shadow: 0 22px 60px rgba(90,69,40,0.14); display: block; width: 100%; }
@@ -673,4 +700,7 @@ html[data-theme="dark"] .state-map__state--sclc { color: #c2afff; }
   .about-story__grid, .about-focus__grid, .about-more { grid-template-columns: 1fr; }
   .about-focus__card { border-right: 0; min-height: 0; padding: 1.5rem 0; }
   .about-focus__card .tag-row { margin-top: 1rem; }
+  .people-grid, .research-network__map { grid-template-columns: 1fr; }
+  .research-network__center { order: -1; }
+  .research-network__nodes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
