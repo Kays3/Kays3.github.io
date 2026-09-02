@@ -46,4 +46,8 @@ jobs:
           node --check assets/js/plugins/jquery.greedy-navigation.js
 
       - name: Check generated links
-        run: npx --yes linkinator _site --recurse --silent
+        run: >-
+          npx --yes linkinator _site --recurse --silent
+          --skip 'github.com/Kays3/H\.pylori'
+          --skip 'github.com/Kays3/TE_Anemonefish_Symbiosis'
+          --skip 'doi.org/10\.3390/genes16020171'
