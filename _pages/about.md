@@ -17,7 +17,7 @@ redirect_from:
 
       <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">
         <div><dt>Clinical practice</dt><dd>General practitioner · Dau-Med Clinics, Kazakhstan</dd></div>
-        <div><dt>Research</dt><dd>Whole slide imaging and spatial biology · Hokkaido University</dd></div>
+        <div><dt>Research</dt><dd>Whole slide imaging and spatial biology, with AI and in silico gene perturbation in sequencing datasets · Hokkaido University</dd></div>
         <div><dt>Training</dt><dd>MD · Nazarbayev University · PhD in Genetics · SOKENDAI · ECFMG Certified</dd></div>
       </dl>
 
