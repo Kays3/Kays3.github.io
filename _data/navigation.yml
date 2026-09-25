@@ -11,14 +11,17 @@ main:
   - title: "About"
     url: /
 
-  - title: "Research & People"
+  - title: "Family Medicine"
+    url: /family-medicine/
+
+  - title: "Pathology"
+    url: /pathology/
+
+  - title: "Research"
     url: /research/
 
   - title: "Publications"
     url: /publications/
-
-  - title: "Interests"
-    url: /interests/
 
   - title: "CV"
     url: /cv/

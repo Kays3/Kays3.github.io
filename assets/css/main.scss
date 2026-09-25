@@ -50,6 +50,8 @@
   --kd-coral: #8c5941;
   --kd-pathology: #7f5369;
   --kd-pathology-soft: #eadde2;
+  --kd-family: #3f6c56;
+  --kd-family-soft: #dfe9df;
   --kd-sand: #d8c7a5;
   --kd-paper: #f4efe1;
   --kd-surface: #ebe6d8;
@@ -75,6 +77,8 @@ html[data-theme="dark"] {
   --kd-coral: #ff9b7c;
   --kd-pathology: #e9a3cf;
   --kd-pathology-soft: #30233b;
+  --kd-family: #8fd4b0;
+  --kd-family-soft: #12332a;
   --kd-sand: #735d46;
   --kd-paper: #061b26;
   --kd-surface: #0d2a36;
@@ -198,33 +202,8 @@ html[data-theme="dark"] .history-context {
   text-transform: uppercase;
 }
 
-.home-atlas { margin: 0 0 4rem; }
-.home-atlas__header { border-bottom: 3px double var(--kd-line); padding: 0.7rem 0 2rem; position: relative; }
-.home-atlas__header::after { background: var(--kd-paper); bottom: -0.7rem; color: var(--kd-coral); content: "◆"; font-size: 0.72rem; left: 50%; padding: 0 0.65rem; position: absolute; transform: translateX(-50%); }
-.home-atlas__header h1 { font-size: clamp(2.55rem, 5.6vw, 4.7rem); line-height: 1.03; margin: 0 0 1.4rem; max-width: 13em; }
-.home-atlas__bio { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 58rem; }
-.home-atlas__bio p { color: var(--kd-muted); font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: clamp(1rem, 1.7vw, 1.16rem) !important; line-height: 1.7; margin: 0 !important; }
-.home-atlas__links { display: flex; font-size: 0.8rem !important; gap: 0.65rem; margin: 1rem 0 0 !important; text-transform: uppercase; letter-spacing: 0.08em; }
-.page__content .home-atlas__links a { color: var(--kd-ocean-deep); font-weight: 750; text-decoration: none; }
-.page__content .home-atlas__links a:hover { color: var(--kd-coral); }
 .section-heading { border-bottom: 1px solid var(--kd-line); margin-bottom: 1rem; padding-bottom: 1rem; }
 .section-heading h2 { font-size: clamp(1.8rem, 3.3vw, 2.7rem); margin: 0; }
-.work-image-section { margin: 3rem 0 4rem; }
-.work-image-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.page__content .work-image-card { color: inherit; display: block; text-decoration: none; }
-.work-image-card figure { border: 1px solid var(--kd-line); margin: 0; padding: 0.35rem; }
-.work-image-card img { aspect-ratio: 16 / 10; display: block; filter: saturate(0.9) contrast(0.98); object-fit: cover; transition: filter 180ms ease, transform 180ms ease; width: 100%; }
-.work-image-card--portrait img { object-position: center 30%; }
-.work-image-card--graduation img { background: #050505; object-fit: contain; }
-.work-image-card figcaption { display: flex; flex-direction: column; min-height: 4.7rem; padding: 0.7rem 0.5rem 0.4rem; }
-.work-image-card figcaption strong { color: var(--kd-ink); font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1rem; }
-.work-image-card figcaption span { color: var(--kd-muted); font-size: 0.75rem; line-height: 1.5; margin-top: 0.2rem; }
-.work-image-card figure > a { display: block; }
-.page__content .work-image-card figcaption strong a { color: var(--kd-ink); text-decoration: none; }
-.page__content .work-image-card .photo-credit a { color: var(--kd-ocean); text-decoration: underline; }
-.work-image-card:hover figure, .work-image-card:focus-visible figure, .work-image-card:focus-within figure { border-color: var(--kd-coral); }
-.work-image-card:hover img, .work-image-card:focus-visible img, .work-image-card:focus-within img { filter: saturate(1) contrast(1); transform: translateY(-2px); }
-.work-image-card:focus-visible { outline: 2px solid var(--kd-coral); outline-offset: 3px; }
 .featured-work { margin: 0 0 2rem; }
 .featured-work__intro { color: var(--kd-muted); font-size: 0.82rem !important; line-height: 1.6; margin: 0.65rem 0 0 !important; }
 .featured-work-grid { border-bottom: 3px double var(--kd-line); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -245,7 +224,6 @@ html[data-theme="dark"] .history-context {
 .featured-work-card__analogy { background: rgba(7, 45, 54, 0.78); bottom: 0.55rem; color: #fff; font-size: 0.62rem; left: 0.55rem; letter-spacing: 0.07em; padding: 0.35rem 0.55rem; position: absolute; text-transform: uppercase; }
 .featured-work-card__links { display: flex; flex-wrap: wrap; gap: 0.55rem 1rem; margin-bottom: 0 !important; }
 .featured-work-card__links a { white-space: nowrap; }
-.home-atlas__note { color: var(--kd-muted); font-size: 0.86rem !important; font-style: italic; line-height: 1.7; margin: 0 !important; max-width: 45rem; }
 
 .note-banner {
   align-items: end;
@@ -295,6 +273,9 @@ html[data-theme="dark"] .history-context {
 .topic-row--pathology { background: linear-gradient(90deg, var(--kd-pathology-soft), transparent 78%); border-left: 3px solid var(--kd-pathology); margin-left: -1rem; margin-right: -1rem; padding-left: calc(1rem - 3px); padding-right: 1rem; scroll-margin-top: 5.5rem; }
 .topic-row--pathology .topic-row__number,
 .topic-row--pathology .eyebrow { color: var(--kd-pathology); }
+.topic-row--family { background: linear-gradient(90deg, var(--kd-family-soft), transparent 78%); border-left: 3px solid var(--kd-family); margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; }
+.topic-row--family .topic-row__number,
+.topic-row--family .eyebrow { color: var(--kd-family); }
 .research-publications { border-top: 1px solid var(--kd-line); margin-top: 1.5rem; padding-top: 1.1rem; }
 .topic-row .research-publications .eyebrow { margin-bottom: 0.45rem; }
 .research-publications ul { list-style: none; margin: 0; padding: 0; }
@@ -320,17 +301,6 @@ html[data-theme="dark"] .history-context {
 .collaboration-section { margin: 4.5rem 0 3.5rem; }
 .collaboration-section > h2 { font-size: clamp(2rem, 4vw, 3.1rem); margin: 0 0 0.8rem; }
 .section-lead { color: var(--kd-muted); font-size: 1rem !important; line-height: 1.75; margin: 0 0 1.8rem !important; max-width: 47rem; }
-.collaboration-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.collaboration-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 22px; display: flex; flex-direction: column; margin: 0; overflow: hidden; }
-.collaboration-card > img { aspect-ratio: 4 / 3; display: block; object-fit: cover; width: 100%; }
-.collaboration-card:nth-child(2) > img,
-.collaboration-card:nth-child(3) > img { background: #dcebed; object-fit: contain; }
-.collaboration-card figcaption { display: flex; flex: 1; flex-direction: column; padding: 1.15rem; }
-.collaboration-card figcaption .eyebrow { display: block; }
-.collaboration-card figcaption strong { color: var(--kd-ink); display: block; font-family: Georgia, "Times New Roman", serif; font-size: 1.28rem; line-height: 1.25; margin-bottom: 0.55rem; }
-.collaboration-card figcaption > span:not(.eyebrow) { color: var(--kd-muted); display: block; font-size: 0.8rem; line-height: 1.6; }
-.page__content .collaboration-card figcaption a { color: var(--kd-ocean); font-size: 0.75rem; font-weight: 750; margin-top: auto; padding-top: 0.9rem; text-decoration: none; }
-.page__content .collaboration-card figcaption a:hover { color: var(--kd-coral); }
 .tag-row, .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.45rem; }
 .tag-row span, .tag-cloud span {
   background: var(--kd-surface);
@@ -470,19 +440,15 @@ html[data-theme="dark"] .history-context {
 }
 
 @media screen and (max-width: 78em) {
-  .collaboration-grid { grid-template-columns: 1fr 1fr; }
-  .collaboration-card:first-child { grid-column: 1 / -1; }
   .note-banner { align-items: start; grid-template-columns: 1fr; gap: 1rem; }
 }
 
 @media screen and (max-width: 46em) {
   .greedy-nav .visible-links > li:not(.persist) { display: none; }
   .masthead__menu-item--lg { max-width: 8rem; }
-  .home-atlas__header h1 { font-size: clamp(2.35rem, 12vw, 3.4rem); }
-  .home-atlas__bio, .work-image-grid, .featured-work-grid, .research-photo-grid { grid-template-columns: 1fr; }
+  .featured-work-grid, .research-photo-grid { grid-template-columns: 1fr; }
   .featured-work-card, .featured-work-card:nth-child(even) { border-right: 0; min-height: 0; padding: 1.4rem 0; }
-  .project-grid, .field-grid, .collaboration-grid, .interest-grid { grid-template-columns: 1fr; }
-  .collaboration-card:first-child { grid-column: auto; }
+  .project-grid, .field-grid, .interest-grid { grid-template-columns: 1fr; }
   .topic-row { gap: 0.75rem; grid-template-columns: 2.2rem 1fr; }
   .publication-item { gap: 0.7rem; grid-template-columns: 3rem 1fr; }
   .timeline-item { gap: 0.5rem; grid-template-columns: 4.2rem 1fr; padding-left: 1rem; }
@@ -629,7 +595,7 @@ html[data-theme="dark"] .state-map__state--sclc { color: #c2afff; }
 .page__content .about-story__card { color: inherit; text-decoration: none; }
 .about-story__card figure { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 22px; height: 100%; margin: 0; overflow: hidden; }
 .about-story__card img { aspect-ratio: 4 / 3; display: block; filter: saturate(0.8); object-fit: cover; transition: filter 180ms ease, transform 180ms ease; width: 100%; }
-.about-story__card:nth-child(2) img { object-fit: contain; padding: 0.7rem; }
+.about-story__card--contain img { object-fit: contain; padding: 0.7rem; }
 .about-story__card figcaption { display: flex; flex-direction: column; min-height: 9.5rem; padding: 1.2rem; }
 .about-story__card figcaption span { color: var(--kd-coral); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .about-story__card figcaption strong { color: var(--kd-ink); font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.35rem; margin: 0.55rem 0 0.35rem; }
@@ -662,9 +628,60 @@ html[data-theme="dark"] .state-map__state--sclc { color: #c2afff; }
 .visitor-tracker__map { display: block; margin: 0 auto; max-width: 300px; }
 .visitor-tracker__map img { display: block; height: auto; width: 100%; }
 
+/* Two passions: family medicine and pathology */
+.page__content .about-button--pathology { border-color: var(--kd-pathology); color: var(--kd-pathology); }
+.page__content .about-button--pathology:hover { background: var(--kd-pathology); border-color: var(--kd-pathology); color: var(--kd-paper); }
+.about-passions { margin: 0 0 4.5rem; }
+.about-passions__grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.passion-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 24px; border-top: 6px solid var(--kd-family); display: flex; flex-direction: column; padding: clamp(1.4rem, 2.6vw, 2rem); }
+.passion-card--family { --passion-accent: var(--kd-family); background: linear-gradient(180deg, var(--kd-family-soft), var(--kd-surface) 42%); }
+.passion-card--pathology { --passion-accent: var(--kd-pathology); background: linear-gradient(180deg, var(--kd-pathology-soft), var(--kd-surface) 42%); border-top-color: var(--kd-pathology); }
+.passion-card .eyebrow { color: var(--passion-accent); }
+.passion-card h3 { font-size: clamp(1.5rem, 2.6vw, 2.05rem); line-height: 1.15; margin: 0 0 0.9rem; }
+.passion-card > p:not(.eyebrow) { color: var(--kd-muted); font-size: 0.92rem !important; line-height: 1.72; margin: 0 0 1rem !important; }
+.passion-card__evidence { border-top: 1px solid var(--kd-line); color: var(--kd-ink); font-size: 0.82rem; line-height: 1.55; list-style: none; margin: auto 0 1.4rem; padding: 0.9rem 0 0; }
+.passion-card__evidence li { padding: 0.3rem 0 0.3rem 1.1rem; position: relative; }
+.passion-card__evidence li::before { color: var(--passion-accent); content: "◆"; font-size: 0.55rem; left: 0; position: absolute; top: 0.72rem; }
+.passion-card .about-button { align-self: flex-start; }
+.about-focus .section-heading .section-lead { margin-top: 0.9rem !important; margin-bottom: 0 !important; }
+
+/* Specialty pages */
+.specialty-hero { align-items: start; display: grid; gap: clamp(1.5rem, 3vw, 2.5rem); grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); margin: 0 0 4rem; }
+.specialty-hero__copy h2 { font-size: clamp(1.9rem, 3.4vw, 2.8rem); line-height: 1.12; margin: 0 0 1rem; }
+.specialty-hero__copy p:not(.eyebrow) { color: var(--kd-muted); font-size: 1rem !important; line-height: 1.75; }
+.specialty-hero--family .eyebrow, .specialty-bridge:not(.specialty-bridge--pathology) .eyebrow { color: var(--kd-family); }
+.specialty-hero--pathology .eyebrow, .specialty-bridge--pathology .eyebrow { color: var(--kd-pathology); }
+.specialty-facts { background: var(--kd-surface); border: 1px solid var(--kd-line); border-left: 4px solid var(--kd-family); border-radius: 0 20px 20px 0; margin: 0; padding: 1.2rem 1.4rem; }
+.specialty-facts > div { border-bottom: 1px solid var(--kd-line); padding: 0.7rem 0; }
+.specialty-facts > div:last-child { border-bottom: 0; }
+.specialty-facts dt { color: var(--kd-family); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.specialty-facts dd { color: var(--kd-ink); font-size: 0.84rem; line-height: 1.5; margin: 0.25rem 0 0; }
+.specialty-figure { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 20px; margin: 0; overflow: hidden; }
+.specialty-figure img { aspect-ratio: 16 / 10; display: block; object-fit: cover; width: 100%; }
+.specialty-figure figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.55; padding: 0.9rem 1.1rem; }
+.specialty-figure figcaption strong { color: var(--kd-ink); }
+.specialty-figure--wide { margin-top: 1.5rem; }
+.specialty-figure--wide img { aspect-ratio: auto; object-fit: contain; }
+.specialty-themes, .specialty-evidence { margin: 0 0 4rem; }
+.specialty-themes .interest-grid, .specialty-evidence .interest-grid { margin-top: 1.5rem; }
+.about-focus__grid--pathology { margin-top: 1.5rem; }
+.about-focus__grid--pathology .about-focus__number, .about-focus__grid--pathology .eyebrow { color: var(--kd-pathology); }
+.specialty-bridge { align-items: center; background: var(--kd-surface); border-left: 4px solid var(--kd-pathology); border-radius: 0 24px 24px 0; display: grid; gap: 1.6rem; grid-template-columns: 1.1fr 1.2fr auto; padding: clamp(1.5rem, 3vw, 2.4rem); }
+.specialty-bridge--pathology { border-left-color: var(--kd-family); }
+.specialty-bridge h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.15; margin: 0; }
+.specialty-bridge > p { color: var(--kd-muted); font-size: 0.88rem !important; line-height: 1.68; margin: 0 !important; }
+
+/* Publication tags */
+.pub-legend { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: -1.5rem 0 1.5rem !important; }
+.pub-tags { margin-top: 0.7rem; }
+.pub-legend .tag, .pub-tags .tag { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 999px; color: var(--kd-muted); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.02em; padding: 0.3rem 0.6rem; }
+.pub-legend .tag--family, .pub-tags .tag--family { background: var(--kd-family-soft); border-color: var(--kd-family); color: var(--kd-family); }
+.pub-legend .tag--pathology, .pub-tags .tag--pathology { background: var(--kd-pathology-soft); border-color: var(--kd-pathology); color: var(--kd-pathology); }
+
 @media screen and (max-width: 62em) {
-  .about-more { align-items: start; grid-template-columns: 1fr 1fr; }
-  .about-more .about-button { justify-self: start; }
+  .about-more, .specialty-bridge { align-items: start; grid-template-columns: 1fr 1fr; }
+  .about-more .about-button, .specialty-bridge .about-button { justify-self: start; }
+  .specialty-hero { grid-template-columns: 1fr; }
   .perturbation-lab__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .perturbation-lab__steps button:nth-child(2) { border-right: 0; }
   .perturbation-lab__steps button:nth-child(-n+2) { border-bottom: 1px solid var(--kd-line); }
@@ -695,7 +712,8 @@ html[data-theme="dark"] .state-map__state--sclc { color: #c2afff; }
   .state-map__state--sclc { left: 3%; }
   .state-map__state--normal { right: 3%; }
   .perturbation-lab__note { padding: 0.9rem 1rem; }
-  .about-story__grid, .about-focus__grid, .about-more { grid-template-columns: 1fr; }
+  .about-story__grid, .about-focus__grid, .about-more, .about-passions__grid, .specialty-bridge { grid-template-columns: 1fr; }
+  .specialty-facts { border-radius: 0 16px 16px 0; }
   .about-focus__card { border-right: 0; min-height: 0; padding: 1.5rem 0; }
   .about-focus__card .tag-row { margin-top: 1rem; }
   .people-grid, .research-network__map { grid-template-columns: 1fr; }
