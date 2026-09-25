@@ -5,38 +5,10 @@ permalink: /research/
 author_profile: false
 ---
 
-<p class="page-intro">My research follows the same loop as my clinical life. A question from <a href="/family-medicine/">family medicine</a>, an answer from <a href="/pathology/">pathology</a> or genomics, and a result that can return to the patient. I want every result to show its assumptions and limits.</p>
+<p class="page-intro">A question from <a href="/family-medicine/">family medicine</a>, an answer from <a href="/pathology/">pathology</a> or genomics, and a result that can return to the patient. Every result should show its assumptions and limits.</p>
 
 <p class="page-note">Related public engagement: <a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer">Oita Glocal feature</a> on science, education, and regional collaboration.</p>
 
-<figure class="polygenic-score-image"><a href="https://larskrutak.com/jomon-revival-interest-in-japans-indigenous-hunter-gatherers-grows/"><img src="https://camo.githubusercontent.com/c148f619c93a436837e6c22160d75a471b6afb99647906a6c52e7e9c874b2465/68747470733a2f2f66656174757265732e6a6170616e74696d65732e636f2e6a702f77702d636f6e74656e742f75706c6f6164732f323031392f31322f4a4f4d4f4e5f54524942455f30382d50312d7765622e6a7067" alt="Vintage Japanese population map illustrating ancestry and geographic context for polygenic score research" loading="lazy"></a><figcaption>Population context for polygenic score interpretation. <a href="https://larskrutak.com/jomon-revival-interest-in-japans-indigenous-hunter-gatherers-grows/" rel="noopener noreferrer">Image source</a>.</figcaption></figure>
-<figure class="geneformer-image"><a href="https://github.com/Kays3/geneformer-lung-tcell/blob/main/sclc_validation/primary_test_perturbation/figures/denoised/immune_cancer_bidirectional.png"><img src="https://raw.githubusercontent.com/Kays3/geneformer-lung-tcell/main/sclc_validation/primary_test_perturbation/figures/denoised/immune_cancer_bidirectional.png" alt="Geneformer bidirectional immune and cancer perturbation thumbnail" loading="lazy"></a><figcaption>Geneformer perturbation map for the model-to-counterfactual workflow.</figcaption></figure>
-<figure class="hpylori-image"><a href="https://github.com/Kays3/H.pylori"><img src="/images/research/h-pylori-almaty-resistance.png" alt="H. pylori antimicrobial resistance in Almaty, Kazakhstan, summarizing resistance rates and genomic markers" loading="lazy"></a><figcaption><em>H. pylori</em> resistance profile from Almaty. <a href="https://github.com/Kays3/H.pylori" rel="noopener noreferrer">Analysis repository</a> · <a href="https://doi.org/10.3389/fmicb.2026.1747006" rel="noopener noreferrer">Official paper</a>.</figcaption></figure>
-<div class="interest-thumbnails"><a href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island for the TE Ocean Acidification project" loading="lazy"><span><strong>TE Ocean Acidification</strong><small>Reef fieldwork tracking transposable-element responses to changing seawater chemistry.</small></span></a><a href="https://github.com/Kays3/entacmea-research"><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish sheltering in an Entacmaea sea anemone for the Entacmea project" loading="lazy"><span><strong>Entacmea genomics</strong><small>Anemonefish–host symbiosis and adaptation in a changing reef.</small></span></a></div>
-<p class="thumbnail-legend"><strong>Research thumbnails:</strong> Polygenic score population context · Geneformer perturbation map · <em>H. pylori</em> resistance in Almaty · TE Ocean Acidification reef fieldwork, tracking transposable-element responses to changing seawater chemistry · <em>Entacmea</em> genomics, exploring anemonefish–host symbiosis and adaptation.</p>
-<section class="research-network" aria-labelledby="network-title">
-  <div class="section-heading"><p class="eyebrow">Projects and evidence</p><h2 id="network-title">One network, many scales</h2></div>
-  <div class="research-network__map">
-    <div class="research-network__nodes research-network__nodes--left">
-      <a class="research-network__node" href="https://github.com/Kays3/geneformer-lung-tcell"><img src="/images/research/digital-pathology-spatial-cover.webp" alt="Spatial T-cell measurements in SCLC tissue"><span><strong>Tissue context</strong><small>Geneformer lung T-cell workflow</small></span></a>
-      <a class="research-network__node" href="https://github.com/Kays3/Ancient_intelligence"><img src="/images/interests/ohara-octopus-map-1904.webp" alt="Historical map for ancient-genome research"><span><strong>Population genomics</strong><small>Ancient Intelligence</small></span></a>
-      <a class="research-network__node research-network__node--hpylori" href="https://github.com/Kays3/H.pylori"><img src="/images/research/h-pylori-almaty-resistance.png" alt="H. pylori antimicrobial resistance profile"><span><strong>Host and pathogen</strong><small>H. pylori analysis repository</small></span></a>
-    </div>
-
-    <div class="research-network__center">
-      <div class="research-network__widget" aria-label="OhayoWorld visitor globe">
-        <iframe src="https://www.ohayoworld.com/widgets/globe-widget.php?width=320&amp;ohayos=1&amp;lang=en" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="OhayoWorld visitor globe"></iframe>
-      </div>
-    </div>
-
-    <div class="research-network__nodes research-network__nodes--right">
-      <a class="research-network__node" href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island"><span><strong>Ocean change</strong><small>TE Ocean Acidification</small></span></a>
-      <a class="research-network__node" href="https://github.com/Kays3/entacmea-research"><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish in an Entacmaea anemone"><span><strong>Host ecology</strong><small>Entacmea research</small></span></a>
-      <a class="research-network__node" href="https://github.com/Kays3/TE_Anemonefish_Symbiosis"><img src="/images/research/marine/stichodactyla-ocellaris.webp" alt="Ocellaris clownfish in a Stichodactyla anemone"><span><strong>Symbiosis</strong><small>TE Anemonefish Symbiosis</small></span></a>
-    </div>
-  </div>
-  <p class="research-network__legend">Select an image to open the repository for that project. The photographs provide context and are not themselves experimental results.</p>
-</section>
 <div class="topic-stack">
   <article class="topic-row topic-row--pathology" id="digital-pathology"><div class="topic-row__number">01</div><div><p class="eyebrow">Pathology · Tissue to model</p><h2>Digital Pathology and In Silico Gene Perturbation</h2><p>At Hokkaido University I work with whole slide images and spatial biology in small cell lung cancer. I use Geneformer to predict how deletion or overexpression of one gene changes an SCLC T cell representation. The model can point to a candidate regulator. It cannot prove that the gene controls the cell. I test whether the signal holds across donors and whether tissue evidence supports it.</p><div class="tag-row"><span>whole slide imaging</span><span>spatial biology</span><span>Geneformer</span><span>in silico perturbation</span><span>T cell states</span><span>donor aware evaluation</span></div><details class="repo-snippet"><summary>See how I check donor consistency</summary><div class="repo-snippet__body"><div class="repo-snippet__heading"><span>Python excerpt</span><code>donor_consistency.py</code></div><p>The analysis groups predicted shifts by donor, then checks whether each donor points in the same direction as the full result.</p><pre aria-label="Python excerpt that checks donor consistency"><code>cells["shift"] = shifts
 by_donor = cells.groupby("individual")["shift"].agg(["mean", "count"])
@@ -56,22 +28,9 @@ same_sign = np.sign(by_donor["mean"]) == overall_sign</code></pre><a class="repo
   <article class="topic-row" id="machine-learning"><div class="topic-row__number">05</div><div><p class="eyebrow">Model to mechanism</p><h2>Machine Learning and Bioinformatics</h2><p>I write workflows that another researcher can inspect and rerun. I document the inputs, the evaluation boundary, and the failures. Speed helps. Biological meaning matters more.</p><div class="tag-row"><span>Python</span><span>R</span><span>RNA sequencing</span><span>Geneformer</span><span>workflow validation</span></div><div class="research-publications"><p class="eyebrow">Related work</p><ul><li><a href="https://doi.org/10.1186/s12920-018-0376-4">Longitudinal expression profiling of CD4+ and CD8+ cells in giant cell arteritis</a></li><li><a href="https://doi.org/10.2174/1568026620666200211113824">Neuroclinical signatures after acute stroke using quantitative CT and multivariate modelling</a></li><li><a href="https://github.com/Kays3/geneformer-lung-tcell">Current Geneformer lung T cell workflow</a></li></ul></div></div></article>
 </div>
 
-<section class="collaboration-section" aria-labelledby="collaboration-heading">
-  <p class="eyebrow">Collaboration</p>
-  <h2 id="collaboration-heading">Research across clinical and scientific teams</h2>
-  <p class="section-lead">Good collaboration begins when everyone agrees on the question and what the data can answer.</p>
-
-  <div class="interest-grid">
-    <article class="interest-card"><p class="eyebrow">Infectious disease genomics</p><h2><em>H. pylori</em> host–pathogen dynamics</h2><p>Clinical isolates, antimicrobial-resistance markers, and epidemiology come together in a workflow designed for regional surveillance and treatment decisions.</p><p><a class="text-link" href="https://doi.org/10.3389/fmicb.2026.1747006">Read the Almaty study <span aria-hidden="true">↗</span></a></p></article>
-    <article class="interest-card"><p class="eyebrow">Family medicine</p><h2>Primary care to specialty evidence</h2><p>I collaborate across primary care, palliative care, rheumatology, oncology, and cardiology, translating real-world clinical questions into analyses that respect uncertainty and workflow.</p><p><a class="text-link" href="/family-medicine/">Why family medicine <span aria-hidden="true">→</span></a></p></article>
-    <article class="interest-card"><p class="eyebrow">Pathology</p><h2>Whole-slide image analysis</h2><p>Image analysis links tissue morphology with molecular states. Current work combines segmentation, spatial context, and interpretable machine-learning workflows for T-cell biology.</p><p><a class="text-link" href="/pathology/">Why pathology <span aria-hidden="true">→</span></a></p></article>
-    <article class="interest-card"><p class="eyebrow">Marine genomics</p><h2>Coral reefs as living laboratories</h2><p>Field observations of anemonefish, sea anemones, and changing reef environments inform questions about symbiosis, adaptation, and transposable elements.</p><p><a class="text-link" href="/interests/">Explore marine projects <span aria-hidden="true">↗</span></a></p></article>
-  </div>
-</section>
-
 <section class="people-section" aria-labelledby="people-title">
   <div class="section-heading"><p class="eyebrow">People and places</p><h2 id="people-title">Research is a team sport</h2></div>
-  <p class="section-lead">My work connects clinical collaborators, field researchers, computational scientists, and mentors across Kazakhstan, Japan, Australia, and the United States.</p>
+  <p class="section-lead">Collaborators and mentors across Kazakhstan, Japan, Australia, and the United States.</p>
   <div class="people-grid">
     <article class="people-card"><p class="eyebrow">Current base</p><h3>Hokkaido University</h3><p>Postdoctoral research in digital pathology, whole slide imaging, genomics, bioinformatics, and translational medicine.</p></article>
     <article class="people-card"><p class="eyebrow">Clinical and regional collaboration</p><h3>Kazakhstan and Japan</h3><p>Clinical research and infectious-disease partnerships connect patient questions with microbiology and epidemiology.</p></article>

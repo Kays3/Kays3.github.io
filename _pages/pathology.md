@@ -5,7 +5,7 @@ permalink: /pathology/
 author_profile: false
 ---
 
-<p class="page-intro">Pathology is where disease stops being a story and becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence, and to the responsibility that comes with reading it correctly.</p>
+<p class="page-intro">Pathology is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
 
 <section class="specialty-hero specialty-hero--pathology" aria-labelledby="pathology-why-title">
   <div class="specialty-hero__copy">
@@ -52,9 +52,9 @@ author_profile: false
   <p class="section-lead">My PhD in genetics and my current work with Geneformer give me tools most pathologists do not have yet. I use them to generate hypotheses about cell states, then hold those hypotheses to the standard of tissue evidence. A prediction is not a diagnosis.</p>
   <div class="interest-grid">
     <article class="interest-card"><p class="eyebrow">Immunopathology</p><h2>Expression profiling in vasculitis</h2><p>Longitudinal profiling of CD4+ and CD8+ cells in giant cell arteritis, from active disease to remission. My first exposure to reading immune cell states as a marker of tissue disease.</p><p><a class="text-link" href="https://doi.org/10.1186/s12920-018-0376-4">Read the study <span aria-hidden="true">↗</span></a></p></article>
-    <article class="interest-card"><p class="eyebrow">In silico perturbation</p><h2>Ask the model, then check the tissue</h2><p>Geneformer predicts how deleting or overexpressing one gene shifts a T cell representation in small cell lung cancer. I check that each donor points the same way, then look for the same signal in the spatial data. <a href="/#perturbation-title">A walkthrough is on the home page</a>.</p><p><a class="text-link" href="/research/#digital-pathology">Research detail <span aria-hidden="true">→</span></a></p></article>
+    <article class="interest-card"><p class="eyebrow">In silico perturbation</p><h2>Ask the model, then check the tissue</h2><p>Geneformer predicts how deleting or overexpressing one gene shifts a T cell representation in small cell lung cancer. I check that each donor points the same way, then look for the same signal in the spatial data.</p><p><a class="text-link" href="https://github.com/Kays3/geneformer-lung-tcell">View the workflow <span aria-hidden="true">↗</span></a></p></article>
   </div>
-  <figure class="specialty-figure specialty-figure--wide"><img src="/images/research/h-pylori-almaty-resistance.png" alt="Helicobacter pylori antimicrobial resistance in Almaty, Kazakhstan, summarising resistance rates and genomic markers" loading="lazy" decoding="async"><figcaption><strong>From patient to plate to policy.</strong> <em>H. pylori</em> resistance profile from Almaty. <a href="https://github.com/Kays3/H.pylori">Analysis repository</a>.</figcaption></figure>
+
 </section>
 
 <aside class="specialty-bridge specialty-bridge--pathology" aria-labelledby="pathology-bridge-title">

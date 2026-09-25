@@ -42,7 +42,6 @@ jobs:
         run: |
           node --check assets/js/_main.js
           node --check assets/js/theme.js
-          node --check assets/js/perturbation-explainer.js
           node --check assets/js/plugins/jquery.greedy-navigation.js
 
       - name: Check generated links
