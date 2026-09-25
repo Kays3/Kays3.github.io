@@ -39,24 +39,24 @@
 ;
 
 /* Kaisar Dauyey — custom academic site
-   Bright, light palette: white paper, teal accent, green for clinical practice, raspberry for diagnostic medicine. */
+   Classic, quiet palette: near-black ink, grey text, one navy accent, light grey surfaces. */
 
 :root {
-  --kd-ink: #1c2a31;
-  --kd-muted: #55666e;
-  --kd-ocean: #0b7c8c;
-  --kd-ocean-deep: #075f6c;
-  --kd-forest: #1f8a5b;
-  --kd-coral: #0b7c8c;
-  --kd-pathology: #b0397a;
-  --kd-pathology-soft: #fbe9f2;
-  --kd-family: #1f8a5b;
-  --kd-family-soft: #e4f6ec;
-  --kd-sand: #f3ead2;
+  --kd-ink: #1f2933;
+  --kd-muted: #5b6770;
+  --kd-ocean: #1f4e79;
+  --kd-ocean-deep: #163a5a;
+  --kd-forest: #1f4e79;
+  --kd-coral: #1f4e79;
+  --kd-pathology: #1f4e79;
+  --kd-pathology-soft: #f4f6f8;
+  --kd-family: #1f4e79;
+  --kd-family-soft: #f4f6f8;
+  --kd-sand: #f4f6f8;
   --kd-paper: #ffffff;
-  --kd-surface: #f2f8f9;
-  --kd-line: rgba(28, 42, 49, 0.14);
-  --kd-shadow: 0 6px 18px rgba(28, 42, 49, 0.08);
+  --kd-surface: #f4f6f8;
+  --kd-line: rgba(31, 41, 51, 0.16);
+  --kd-shadow: none;
   --global-bg-color: var(--kd-paper);
   --global-text-color: var(--kd-ink);
   --global-link-color: var(--kd-ocean);
@@ -64,7 +64,7 @@
   --global-link-color-visited: var(--kd-ocean);
   --global-masthead-link-color: var(--kd-ink);
   --global-border-color: var(--kd-line);
-  --global-footer-bg-color: #eef5f6;
+  --global-footer-bg-color: #f4f6f8;
 }
 
 body {
@@ -107,7 +107,7 @@ h1, h2, h3, .page__title, .author__name {
 
 .sidebar .author__avatar img {
   border: 0;
-  border-radius: 28px;
+  border-radius: 14px;
   box-shadow: 0 12px 32px rgba(7, 63, 75, 0.18);
   padding: 0;
 }
@@ -126,7 +126,7 @@ h1, h2, h3, .page__title, .author__name {
 }
 
 .eyebrow {
-  color: var(--kd-coral);
+  color: var(--kd-muted);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.72rem !important;
   font-weight: 750;
@@ -150,12 +150,6 @@ h1, h2, h3, .page__title, .author__name {
 .topic-row__number { color: var(--kd-coral); font-family: Georgia, serif; font-size: 1.3rem; }
 .topic-row h2 { font-size: clamp(1.8rem, 3.2vw, 2.7rem); margin: 0 0 1rem; }
 .topic-row p:not(.eyebrow) { color: var(--kd-muted); font-size: 1.02rem !important; line-height: 1.75; max-width: 48rem; }
-.topic-row--pathology { background: var(--kd-pathology-soft); border-left: 3px solid var(--kd-pathology); margin-left: -1rem; margin-right: -1rem; padding-left: calc(1rem - 3px); padding-right: 1rem; scroll-margin-top: 5.5rem; }
-.topic-row--pathology .topic-row__number,
-.topic-row--pathology .eyebrow { color: var(--kd-pathology); }
-.topic-row--family { background: var(--kd-family-soft); border-left: 3px solid var(--kd-family); margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; }
-.topic-row--family .topic-row__number,
-.topic-row--family .eyebrow { color: var(--kd-family); }
 .research-publications { border-top: 1px solid var(--kd-line); margin-top: 1.5rem; padding-top: 1.1rem; }
 .topic-row .research-publications .eyebrow { margin-bottom: 0.45rem; }
 .research-publications ul { list-style: none; margin: 0; padding: 0; }
@@ -198,10 +192,10 @@ h1, h2, h3, .page__title, .author__name {
 .page__content .pub-title a { color: var(--kd-ink); text-decoration: none; }
 .page__content .pub-title a:hover { color: var(--kd-ocean); text-decoration: none; }
 .pub-authors, .pub-meta { color: var(--kd-muted); font-size: 0.84rem !important; line-height: 1.6; margin: 0 0 0.35rem !important; }
-.source-note { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 18px; line-height: 1.7; margin-top: 2.5rem; padding: 1.4rem; }
+.source-note { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 10px; line-height: 1.7; margin-top: 2.5rem; padding: 1.4rem; }
 
 .project-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.project-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 22px; display: flex; flex-direction: column; min-height: 315px; padding: 1.55rem; }
+.project-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 12px; display: flex; flex-direction: column; min-height: 315px; padding: 1.55rem; }
 .project-card--featured { background: linear-gradient(145deg, rgba(11,102,117,0.14), rgba(63,108,86,0.08)); }
 .project-card--quiet { background: rgba(234,220,194,0.3); }
 .project-card h2 { font-size: 1.55rem; line-height: 1.25; margin: 0 0 0.9rem; }
@@ -246,26 +240,19 @@ h1, h2, h3, .page__title, .author__name {
 
 .people-section { border-top: 3px double var(--kd-line); margin: 4.5rem 0 3.5rem; padding-top: 2rem; }
 .people-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.people-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 18px; padding: 1.25rem; }
+.people-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 10px; padding: 1.25rem; }
 .people-card h3 { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.25rem; margin: 0 0 0.7rem; }
 .people-card p:not(.eyebrow) { color: var(--kd-muted); font-size: 0.86rem !important; line-height: 1.65; }
 
-.history-map { display: block; margin: 0 0 3rem; }
-.history-map img { background: #e7deca; border: 1px solid rgba(90,69,40,0.2); border-radius: 24px; box-shadow: 0 22px 60px rgba(90,69,40,0.14); display: block; width: 100%; }
-.history-map figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.6; padding: 0.85rem 0.25rem; }
-.page__content .history-map figcaption a { color: var(--kd-ocean); font-weight: 750; text-decoration: none; }
-.page__content .history-map figcaption a:hover { color: var(--kd-coral); }
 .interest-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.interest-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 22px; min-height: 270px; padding: 1.6rem; }
+.interest-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 12px; min-height: 270px; padding: 1.6rem; }
 .interest-card h2 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 0.9rem; }
 .interest-card p:not(.eyebrow) { color: var(--kd-muted); font-size: 0.94rem !important; line-height: 1.75; }
-.history-context { background: rgba(234,220,194,0.34); border-left: 4px solid var(--kd-coral); border-radius: 0 18px 18px 0; color: var(--kd-muted); font-size: 0.84rem; line-height: 1.7; margin: 2rem 0 3rem; padding: 1.25rem 1.4rem; }
-.history-context strong { color: var(--kd-ink); }
 
-.contact-panel { background: var(--kd-ocean-deep); border-radius: 28px; box-shadow: var(--kd-shadow); color: white; padding: clamp(2rem, 5vw, 4rem); }
+.contact-panel { background: var(--kd-ocean-deep); border-radius: 14px; box-shadow: var(--kd-shadow); color: white; padding: clamp(2rem, 5vw, 4rem); }
 .contact-panel h2 { color: white; font-size: clamp(2rem, 4.5vw, 3.6rem); line-height: 1.08; margin: 0 0 1.2rem; max-width: 13em; }
 .contact-panel > p:not(.eyebrow) { color: rgba(255,255,255,0.82); font-size: 1rem !important; line-height: 1.75; max-width: 44rem; }
-.contact-panel .eyebrow { color: #f3b19e; }
+.contact-panel .eyebrow { color: rgba(255,255,255,0.72); }
 .contact-list { border-top: 1px solid rgba(255,255,255,0.2); margin-top: 2rem; }
 .contact-list > div { align-items: baseline; border-bottom: 1px solid rgba(255,255,255,0.2); display: grid; gap: 1rem; grid-template-columns: 7rem 1fr; padding: 1rem 0; }
 .contact-list span { color: rgba(255,255,255,0.62); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
@@ -304,7 +291,6 @@ h1, h2, h3, .page__title, .author__name {
   .research-photo-grid { grid-template-columns: 1fr; }
   .project-grid, .field-grid, .interest-grid { grid-template-columns: 1fr; }
   .topic-row { gap: 0.75rem; grid-template-columns: 2.2rem 1fr; }
-  .topic-row--pathology, .topic-row--family { margin-left: 0; margin-right: 0; padding-left: 0.8rem; padding-right: 0.8rem; }
   .publication-item { gap: 0.7rem; grid-template-columns: 3rem 1fr; }
   .timeline-item { gap: 0.5rem; grid-template-columns: 4.2rem 1fr; padding-left: 1rem; }
   .contact-list > div { grid-template-columns: 1fr; gap: 0.3rem; }
@@ -319,7 +305,7 @@ h1, h2, h3, .page__title, .author__name {
 .about-hero {
   background: var(--kd-surface);
   border: 1px solid var(--kd-line);
-  border-radius: 30px;
+  border-radius: 14px;
   margin: 0 0 4.5rem;
   overflow: hidden;
 }
@@ -396,13 +382,11 @@ h1, h2, h3, .page__title, .author__name {
 .visitor-tracker__map img { display: block; height: auto; width: 100%; }
 
 /* Two passions: family medicine and pathology */
-.page__content .about-button--pathology { border-color: var(--kd-pathology); color: var(--kd-pathology); }
-.page__content .about-button--pathology:hover { background: var(--kd-pathology); border-color: var(--kd-pathology); color: var(--kd-paper); }
 .about-passions { margin: 0 0 4.5rem; }
 .about-passions__grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.passion-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 24px; border-top: 6px solid var(--kd-family); display: flex; flex-direction: column; padding: clamp(1.4rem, 2.6vw, 2rem); }
-.passion-card--family { --passion-accent: var(--kd-family); background: var(--kd-family-soft); }
-.passion-card--pathology { --passion-accent: var(--kd-pathology); background: var(--kd-pathology-soft); border-top-color: var(--kd-pathology); }
+.passion-card { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 12px; display: flex; flex-direction: column; padding: clamp(1.4rem, 2.6vw, 2rem); }
+.passion-card--family { --passion-accent: var(--kd-ocean); }
+.passion-card--pathology { --passion-accent: var(--kd-ocean); }
 .passion-card .eyebrow { color: var(--passion-accent); }
 .passion-card h3 { font-size: clamp(1.5rem, 2.6vw, 2.05rem); line-height: 1.15; margin: 0 0 0.9rem; }
 .passion-card > p:not(.eyebrow) { color: var(--kd-muted); font-size: 0.92rem !important; line-height: 1.72; margin: 0 0 1rem !important; }
@@ -416,32 +400,24 @@ h1, h2, h3, .page__title, .author__name {
 .specialty-hero { align-items: start; display: grid; gap: clamp(1.5rem, 3vw, 2.5rem); grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); margin: 0 0 4rem; }
 .specialty-hero__copy h2 { font-size: clamp(1.9rem, 3.4vw, 2.8rem); line-height: 1.12; margin: 0 0 1rem; }
 .specialty-hero__copy p:not(.eyebrow) { color: var(--kd-muted); font-size: 1rem !important; line-height: 1.75; }
-.specialty-hero--family .eyebrow, .specialty-bridge:not(.specialty-bridge--pathology) .eyebrow { color: var(--kd-family); }
-.specialty-hero--pathology .eyebrow, .specialty-bridge--pathology .eyebrow { color: var(--kd-pathology); }
 .specialty-facts { background: var(--kd-surface); border: 1px solid var(--kd-line); border-left: 4px solid var(--kd-family); border-radius: 0 20px 20px 0; margin: 0; padding: 1.2rem 1.4rem; }
 .specialty-facts > div { border-bottom: 1px solid var(--kd-line); padding: 0.7rem 0; }
 .specialty-facts > div:last-child { border-bottom: 0; }
 .specialty-facts dt { color: var(--kd-family); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .specialty-facts dd { color: var(--kd-ink); font-size: 0.84rem; line-height: 1.5; margin: 0.25rem 0 0; }
-.specialty-figure { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 20px; margin: 0; overflow: hidden; }
+.specialty-figure { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 12px; margin: 0; overflow: hidden; }
 .specialty-figure img { aspect-ratio: 16 / 10; display: block; object-fit: cover; width: 100%; }
 .specialty-figure figcaption { color: var(--kd-muted); font-size: 0.78rem; line-height: 1.55; padding: 0.9rem 1.1rem; }
 .specialty-figure figcaption strong { color: var(--kd-ink); }
 .specialty-themes, .specialty-evidence { margin: 0 0 4rem; }
 .specialty-themes .interest-grid, .specialty-evidence .interest-grid { margin-top: 1.5rem; }
 .about-focus__grid--pathology { margin-top: 1.5rem; }
-.about-focus__grid--pathology .about-focus__number, .about-focus__grid--pathology .eyebrow { color: var(--kd-pathology); }
 .specialty-bridge { align-items: center; background: var(--kd-surface); border-left: 4px solid var(--kd-pathology); border-radius: 0 24px 24px 0; display: grid; gap: 1.6rem; grid-template-columns: 1.1fr 1.2fr auto; padding: clamp(1.5rem, 3vw, 2.4rem); }
-.specialty-bridge--pathology { border-left-color: var(--kd-family); }
 .specialty-bridge h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.15; margin: 0; }
 .specialty-bridge > p { color: var(--kd-muted); font-size: 0.88rem !important; line-height: 1.68; margin: 0 !important; }
 
 /* Publication tags */
-.pub-legend { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: -1.5rem 0 1.5rem !important; }
 .pub-tags { margin-top: 0.7rem; }
-.pub-legend .tag, .pub-tags .tag { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 999px; color: var(--kd-muted); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.02em; padding: 0.3rem 0.6rem; }
-.pub-legend .tag--family, .pub-tags .tag--family { background: var(--kd-family-soft); border-color: var(--kd-family); color: var(--kd-family); }
-.pub-legend .tag--pathology, .pub-tags .tag--pathology { background: var(--kd-pathology-soft); border-color: var(--kd-pathology); color: var(--kd-pathology); }
 
 @media screen and (max-width: 62em) {
   .about-more, .specialty-bridge { align-items: start; grid-template-columns: 1fr 1fr; }
@@ -450,7 +426,7 @@ h1, h2, h3, .page__title, .author__name {
 }
 
 @media screen and (max-width: 46em) {
-  .about-hero { border-radius: 22px; margin-bottom: 3rem; min-height: 0; }
+  .about-hero { border-radius: 12px; margin-bottom: 3rem; min-height: 0; }
   .about-hero__content { padding: 1.6rem; }
   .about-hero__content h1 { font-size: clamp(2.55rem, 12vw, 3.7rem); }
   .about-hero__affiliations { grid-template-columns: 1fr; }
