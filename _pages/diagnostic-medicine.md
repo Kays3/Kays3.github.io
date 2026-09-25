@@ -1,15 +1,17 @@
 ---
-title: "Pathology"
-description: "Kaisar Dauyey on pathology: tissue, cells, molecules, and microbes as the place where disease finally shows itself, from whole slide imaging to molecular and microbiological diagnosis."
-permalink: /pathology/
+title: "Diagnostic Medicine"
+description: "Kaisar Dauyey on diagnostic medicine: tissue, cells, molecules, and microbes as the place where disease shows itself, from whole slide imaging to molecular and microbiological diagnosis."
+permalink: /diagnostic-medicine/
+redirect_from:
+  - /pathology/
 author_profile: false
 ---
 
-<p class="page-intro">Pathology is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
+<p class="page-intro">Diagnostic medicine is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
 
 <section class="specialty-hero specialty-hero--pathology" aria-labelledby="pathology-why-title">
   <div class="specialty-hero__copy">
-    <p class="eyebrow">Why pathology</p>
+    <p class="eyebrow">Diagnostic medicine</p>
     <h2 id="pathology-why-title">The diagnosis that every other specialty depends on</h2>
     <p>In the clinic I sent samples away and waited. Now I work on the other side of that wait. My postdoctoral research at Hokkaido University uses whole slide imaging and spatial biology to ask what the tissue around a cell says about its state, and whether a computational prediction survives contact with morphology.</p>
     <p>I am equally drawn to the molecular and microbiological sides of the field. A pathogenic <em>BRCA2</em> variant, a resistant <em>Helicobacter pylori</em> isolate, and a T cell dysfunction score on a slide are all the same kind of object to me: evidence a clinician can act on.</p>
@@ -18,7 +20,7 @@ author_profile: false
 </section>
 
 <section class="specialty-themes" aria-labelledby="pathology-themes-title">
-  <div class="section-heading"><p class="eyebrow">Three faces of pathology</p><h2 id="pathology-themes-title">Tissue, molecule, microbe</h2></div>
+  <div class="section-heading"><p class="eyebrow">Three kinds of evidence</p><h2 id="pathology-themes-title">Tissue, molecule, microbe</h2></div>
   <div class="about-focus__grid about-focus__grid--pathology">
     <article class="about-focus__card">
       <span class="about-focus__number">01</span>
@@ -49,7 +51,7 @@ author_profile: false
 
 <section class="specialty-evidence" aria-labelledby="pathology-evidence-title">
   <div class="section-heading"><p class="eyebrow">Method</p><h2 id="pathology-evidence-title">Computation in service of the slide</h2></div>
-  <p class="section-lead">My PhD in genetics and my current work with Geneformer give me tools most pathologists do not have yet. I use them to generate hypotheses about cell states, then hold those hypotheses to the standard of tissue evidence. A prediction is not a diagnosis.</p>
+  <p class="section-lead">My PhD in genetics and my current work with Geneformer give me tools that most diagnostic teams do not have yet. I use them to generate hypotheses about cell states, then hold those hypotheses to the standard of tissue evidence. A prediction is not a diagnosis.</p>
   <div class="interest-grid">
     <article class="interest-card"><p class="eyebrow">Immunopathology</p><h2>Expression profiling in vasculitis</h2><p>Longitudinal profiling of CD4+ and CD8+ cells in giant cell arteritis, from active disease to remission. My first exposure to reading immune cell states as a marker of tissue disease.</p><p><a class="text-link" href="https://doi.org/10.1186/s12920-018-0376-4">Read the study <span aria-hidden="true">↗</span></a></p></article>
     <article class="interest-card"><p class="eyebrow">In silico perturbation</p><h2>Ask the model, then check the tissue</h2><p>Geneformer predicts how deleting or overexpressing one gene shifts a T cell representation in small cell lung cancer. I check that each donor points the same way, then look for the same signal in the spatial data.</p><p><a class="text-link" href="https://github.com/Kays3/geneformer-lung-tcell">View the workflow <span aria-hidden="true">↗</span></a></p></article>
@@ -58,7 +60,7 @@ author_profile: false
 </section>
 
 <aside class="specialty-bridge specialty-bridge--pathology" aria-labelledby="pathology-bridge-title">
-  <div><p class="eyebrow">Where the two meet</p><h2 id="pathology-bridge-title">A pathologist who has sat on the other side of the desk</h2></div>
-  <p>I have explained biopsy results to patients and waited for cultures that would decide their treatment. That experience shapes how I think about turnaround, clarity, and what a report must say. My <a href="/family-medicine/">family medicine</a> practice and my pathology work are one commitment seen from two sides.</p>
-  <a class="about-button" href="/family-medicine/">Read about my family medicine work</a>
+  <div><p class="eyebrow">From laboratory to clinic</p><h2 id="pathology-bridge-title">A researcher who has sat on the other side of the desk</h2></div>
+  <p>I have explained biopsy results to patients and waited for cultures that would decide their treatment. That experience shapes how I think about turnaround, clarity, and what a report must say. My <a href="/clinical-practice/">clinical practice</a> and my diagnostic work are one commitment seen from two sides.</p>
+  <a class="about-button" href="/clinical-practice/">Read about my clinical practice</a>
 </aside>

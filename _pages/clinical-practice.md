@@ -1,20 +1,22 @@
 ---
-title: "Family Medicine"
-description: "Kaisar Dauyey on family medicine: whole-person primary care, continuity, undifferentiated problems, and evidence that returns to the clinic."
-permalink: /family-medicine/
+title: "Clinical Practice"
+description: "Kaisar Dauyey on clinical practice: whole-person primary care, continuity, undifferentiated problems, and evidence that returns to the clinic."
+permalink: /clinical-practice/
+redirect_from:
+  - /family-medicine/
 author_profile: false
 ---
 
-<p class="page-intro">Family medicine is where I meet the whole person first. Before a diagnosis has a name, before a specialist is involved, someone walks in with a worry. I love being the physician who hears it first and stays with it.</p>
+<p class="page-intro">General practice is where I meet the whole person first. Before a diagnosis has a name, before a specialist is involved, someone walks in with a worry. I love being the physician who hears it first and stays with it.</p>
 
 <section class="specialty-hero specialty-hero--family" aria-labelledby="family-why-title">
   <div class="specialty-hero__copy">
-    <p class="eyebrow">Why family medicine</p>
+    <p class="eyebrow">Clinical practice</p>
     <h2 id="family-why-title">Undifferentiated problems, long relationships, and care that fits real life</h2>
     <p>In general practice I saw adults with symptoms that did not yet belong to any specialty. Sorting them out means listening well, examining carefully, choosing the few tests that matter, and following up. It also means coordinating with other specialists so the patient does not carry that burden alone.</p>
     <p>That work taught me to respect uncertainty and to value continuity. A result that looks clean in a paper is only useful if it fits a ten minute visit, a family's circumstances, and the resources of the clinic.</p>
   </div>
-  <dl class="specialty-facts" aria-label="Family medicine training and credentials">
+  <dl class="specialty-facts" aria-label="Clinical training and credentials">
     <div><dt>Practice</dt><dd>General Practitioner · Dau-Med Clinics, Shymkent, Kazakhstan · 2025 to 2026</dd></div>
     <div><dt>Licence</dt><dd>Certificate of General Medical Practice, Republic of Kazakhstan</dd></div>
     <div><dt>Credentials</dt><dd>MD, Nazarbayev University · ECFMG Certified · USMLE Step 1 and Step 2 CK</dd></div>
@@ -45,7 +47,7 @@ author_profile: false
 </section>
 
 <aside class="specialty-bridge" aria-labelledby="family-bridge-title">
-  <div><p class="eyebrow">Where the two meet</p><h2 id="family-bridge-title">The clinic asks the question. Pathology answers it.</h2></div>
-  <p>Every patient I referred for a biopsy, a culture, or a genetic test was waiting on a pathologist. I want to understand both ends of that conversation. My interest in <a href="/pathology/">pathology</a> grew directly out of family medicine, not away from it.</p>
-  <a class="about-button" href="/pathology/">Read about my pathology work</a>
+  <div><p class="eyebrow">From clinic to laboratory</p><h2 id="family-bridge-title">Every question I referred out came back as a report.</h2></div>
+  <p>Every patient I sent for a biopsy, a culture, or a genetic test was waiting on a laboratory answer. I want to understand both ends of that conversation. My <a href="/diagnostic-medicine/">diagnostic and research work</a> grew directly out of practice, not away from it.</p>
+  <a class="about-button" href="/diagnostic-medicine/">Read about my diagnostic work</a>
 </aside>

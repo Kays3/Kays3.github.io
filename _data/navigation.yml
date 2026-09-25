@@ -11,11 +11,11 @@ main:
   - title: "About"
     url: /
 
-  - title: "Family Medicine"
-    url: /family-medicine/
+  - title: "Clinical Practice"
+    url: /clinical-practice/
 
-  - title: "Pathology"
-    url: /pathology/
+  - title: "Diagnostic Medicine"
+    url: /diagnostic-medicine/
 
   - title: "Research"
     url: /research/
