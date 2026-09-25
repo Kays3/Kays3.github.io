@@ -1,6 +1,7 @@
 # Image provenance
 
-- `kaisar-dauyey-2025.jpg`: web-optimized copy of the portrait supplied directly by Kaisar Dauyey for use as his website avatar.
+- `kaisar-dauyey-portrait.jpg` and `.webp`: web-sized copies of the professional portrait supplied directly by Kaisar Dauyey on 2026-09-25 for the home page and social previews.
+- `kaisar-dauyey-2025.jpg`: web-optimized copy of an earlier portrait supplied directly by Kaisar Dauyey; no longer used on the site.
 - `kaisar-avatar.jpg`: GitHub profile image published by the repository owner at `avatars.githubusercontent.com/u/55186640` and retrieved on 2026-08-11; retained as an unused archive asset.
 - `aka-island-reef.jpg`: image published by the repository owner in the `Kays3/Kays3` profile README, identified there as “Coral reef snapshot at Aka Island, Keramashoto National Park,” and retrieved on 2026-08-11.
 - `research/aka-island-coral-turtle.png`: field context image supplied for use on this site.

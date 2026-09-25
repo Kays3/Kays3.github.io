@@ -11,10 +11,7 @@ redirect_from:
 <main class="about-visual" aria-labelledby="home-title">
   <section class="about-hero">
     <div class="about-hero__content">
-      <div class="about-hero__identity">
-        <img src="/images/kaisar-dauyey-2025.webp" alt="Portrait of Kaisar Dauyey" width="918" height="940" fetchpriority="high" decoding="async">
-        <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
-      </div>
+      <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
       <h1 id="home-title">From the patient to the tissue, and back.</h1>
       <p class="about-hero__lead">I am a physician and translational researcher. I have cared for patients as a general practitioner, and I now study disease where it shows itself: in tissue, cells, molecules, and microbes. The best answers travel both ways.</p>
 
@@ -30,6 +27,12 @@ redirect_from:
         <a class="about-button about-button--quiet" href="/cv/">View CV</a>
       </div>
     </div>
+    <figure class="about-hero__portrait">
+      <picture>
+        <source srcset="/images/kaisar-dauyey-portrait.webp" type="image/webp">
+        <img src="/images/kaisar-dauyey-portrait.jpg" alt="Kaisar Dauyey, professional portrait" width="860" height="900" fetchpriority="high" decoding="async">
+      </picture>
+    </figure>
   </section>
 
   <section class="about-passions" aria-labelledby="passions-title">

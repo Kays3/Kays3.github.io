@@ -308,10 +308,11 @@ h1, h2, h3, .page__title, .author__name {
   margin: 0 0 4.5rem;
   overflow: hidden;
 }
+.about-hero { align-items: center; display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, 20rem); }
 .about-hero__content { padding: clamp(2rem, 4vw, 3.5rem); }
-.about-hero__identity { align-items: center; display: flex; gap: 0.85rem; margin: 0 0 1rem; }
-.about-hero__identity img { border: 3px solid rgba(255,255,255,0.9); border-radius: 50%; box-shadow: 0 8px 22px rgba(7,45,54,0.16); height: 3.5rem; object-fit: cover; width: 3.5rem; }
-.about-hero__identity .eyebrow { margin: 0; }
+.about-hero__content > .eyebrow { margin-bottom: 1rem !important; }
+.about-hero__portrait { align-self: stretch; margin: 0; min-height: 22rem; position: relative; }
+.about-hero__portrait img { display: block; height: 100%; inset: 0; object-fit: cover; object-position: center top; position: absolute; width: 100%; }
 .about-hero__content h1 {
   font-size: clamp(3rem, 4.4vw, 4.1rem);
   line-height: 0.98;
@@ -425,7 +426,9 @@ h1, h2, h3, .page__title, .author__name {
 }
 
 @media screen and (max-width: 46em) {
-  .about-hero { border-radius: 12px; margin-bottom: 3rem; min-height: 0; }
+  .about-hero { border-radius: 12px; grid-template-columns: 1fr; margin-bottom: 3rem; min-height: 0; }
+  .about-hero__portrait { align-self: auto; min-height: 0; order: -1; }
+  .about-hero__portrait img { aspect-ratio: 1 / 1; height: auto; max-height: 22rem; position: static; }
   .about-hero__content { padding: 1.6rem; }
   .about-hero__content h1 { font-size: clamp(2.55rem, 12vw, 3.7rem); }
   .about-hero__affiliations { grid-template-columns: 1fr; }
