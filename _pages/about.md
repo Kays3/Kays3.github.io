@@ -66,6 +66,24 @@ redirect_from:
     </div>
   </section>
 
+  <section class="about-story" aria-labelledby="story-title">
+    <div class="section-heading">
+      <p class="eyebrow">How I work</p>
+      <h2 id="story-title">One question, three scales</h2>
+    </div>
+    <div class="about-story__grid">
+      <a class="about-story__card" href="/clinical-practice/">
+        <figure><img src="/images/research/h-pylori-almaty-resistance.png" alt="Helicobacter pylori antimicrobial resistance summary from patients in Almaty, Kazakhstan" width="900" height="1157" loading="lazy" decoding="async"><figcaption><span>01 · Patient</span><strong>The clinic</strong><small>Start with the person and the question their symptoms raise. Recruit, consent, and document with care.</small></figcaption></figure>
+      </a>
+      <a class="about-story__card" href="/diagnostic-medicine/">
+        <figure><img src="/images/research/digital-pathology-spatial-cover.webp" alt="Spatial molecular measurements aligned with whole slide tissue morphology" width="950" height="950" loading="lazy" decoding="async"><figcaption><span>02 · Tissue</span><strong>The slide</strong><small>Test whether a predicted cell state makes sense in the tissue around it. Morphology is the referee.</small></figcaption></figure>
+      </a>
+      <a class="about-story__card about-story__card--contain" href="/research/#digital-pathology">
+        <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" width="1400" height="595" loading="lazy" decoding="async"><figcaption><span>03 · Genome</span><strong>The model</strong><small>Use genomics and computation to propose mechanisms, while keeping every donor and assumption visible.</small></figcaption></figure>
+      </a>
+    </div>
+  </section>
+
   <section class="about-focus" aria-labelledby="bridge-title">
     <div class="section-heading">
       <p class="eyebrow">From clinic to laboratory and back</p>

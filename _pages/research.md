@@ -3,11 +3,22 @@ title: "Research"
 description: "Research by Kaisar Dauyey across clinical practice, digital and molecular pathology, infectious disease, genomics, and computational biology."
 permalink: /research/
 author_profile: false
+accent: amber
 ---
 
 <p class="page-intro">A question from <a href="/clinical-practice/">the clinic</a>, an answer from <a href="/diagnostic-medicine/">tissue, molecules, or microbes</a>, and a result that can return to the patient. Every result should show its assumptions and limits.</p>
 
 <p class="page-note">Related public engagement: <a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer">Oita Glocal feature</a> on science, education, and regional collaboration.</p>
+
+<section class="research-photo-section" aria-labelledby="research-figures-title">
+  <div class="section-heading"><p class="eyebrow">Projects at a glance</p><h2 id="research-figures-title">Four questions, four kinds of evidence</h2></div>
+  <div class="research-photo-grid">
+    <figure class="is-contain"><a href="https://github.com/Kays3/geneformer-lung-tcell"><img src="/images/research/geneformer-in-silico-perturbation.png" alt="Diagram of Geneformer in silico gene perturbation" width="1926" height="1082" loading="lazy" decoding="async"></a><figcaption><strong>Tissue to model</strong><span>Geneformer perturbation in SCLC T cells. <a href="https://github.com/Kays3/geneformer-lung-tcell">Repository</a>.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://github.com/Kays3/H.pylori"><img src="/images/research/h-pylori-almaty-resistance.png" alt="H. pylori antimicrobial resistance profile from Almaty" width="900" height="1157" loading="lazy" decoding="async"></a><figcaption><strong>Clinic to microbe</strong><span><em>H. pylori</em> resistance in Almaty. <a href="https://github.com/Kays3/H.pylori">Repository</a>.</span></figcaption></figure>
+    <figure><a href="https://github.com/Kays3/Ancient_intelligence"><img src="/images/interests/ohara-octopus-map-1904.webp" alt="Kisaburo Ohara's 1904 satirical map of Europe and Asia" width="2400" height="1820" loading="lazy" decoding="async"></a><figcaption><strong>Genome to risk</strong><span>Polygenic scores across ancient and present day populations. Map: Ohara, 1904, public domain. <a href="https://github.com/Kays3/Ancient_intelligence">Repository</a>.</span></figcaption></figure>
+    <figure><a href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island, Okinawa" width="1280" height="960" loading="lazy" decoding="async"></a><figcaption><strong>Environment to genome</strong><span>Transposable elements under ocean acidification, Aka Island fieldwork. <a href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence">Repository</a>.</span></figcaption></figure>
+  </div>
+</section>
 
 <div class="topic-stack">
   <article class="topic-row topic-row--pathology" id="digital-pathology"><div class="topic-row__number">01</div><div><p class="eyebrow">Tissue to model</p><h2>Digital Pathology and In Silico Gene Perturbation</h2><p>At Hokkaido University I work with whole slide images and spatial biology in small cell lung cancer. I use Geneformer to predict how deletion or overexpression of one gene changes an SCLC T cell representation. The model can point to a candidate regulator. It cannot prove that the gene controls the cell. I test whether the signal holds across donors and whether tissue evidence supports it.</p><div class="tag-row"><span>whole slide imaging</span><span>spatial biology</span><span>Geneformer</span><span>in silico perturbation</span><span>T cell states</span><span>donor aware evaluation</span></div><details class="repo-snippet"><summary>See how I check donor consistency</summary><div class="repo-snippet__body"><div class="repo-snippet__heading"><span>Python excerpt</span><code>donor_consistency.py</code></div><p>The analysis groups predicted shifts by donor, then checks whether each donor points in the same direction as the full result.</p><pre aria-label="Python excerpt that checks donor consistency"><code>cells["shift"] = shifts
@@ -35,6 +46,11 @@ same_sign = np.sign(by_donor["mean"]) == overall_sign</code></pre><a class="repo
     <article class="people-card"><p class="eyebrow">Current base</p><h3>Hokkaido University</h3><p>Postdoctoral research in digital pathology, whole slide imaging, genomics, bioinformatics, and translational medicine.</p></article>
     <article class="people-card"><p class="eyebrow">Clinical and regional collaboration</p><h3>Kazakhstan and Japan</h3><p>Clinical research and infectious-disease partnerships connect patient questions with microbiology and epidemiology.</p></article>
     <article class="people-card"><p class="eyebrow">Field and methods</p><h3>OIST and international teams</h3><p>Marine fieldwork and computational collaborations keep samples, methods, and interpretation connected.</p></article>
+  </div>
+  <div class="research-photo-grid research-photo-grid--three">
+    <figure><a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer"><img src="/images/collaborations/oita-glocal-seminar-2026.jpg" alt="Group photograph from the 46th Glocal Infectious Diseases Research Seminar at Oita University in 2026" width="768" height="576" loading="lazy" decoding="async"></a><figcaption><strong>Oita, 2026</strong><span>46th Glocal Infectious Diseases Research Seminar, Oita University. <a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer">Seminar report</a>.</span></figcaption></figure>
+    <figure><a href="https://www.oist.jp/outreach/update/seed-program-saeki-kakujo-oita-students-visited-oist" rel="noopener noreferrer"><img src="/images/collaborations/oist-saeki-kakujo-2023.jpg" alt="Students from Saeki Kakujo High School visiting OIST in 2023" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption><strong>OIST, 2023</strong><span>SEED programme visit by Saeki Kakujo High School. Photo © OIST, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer">CC BY 4.0</a>.</span></figcaption></figure>
+    <figure><img src="/images/collaborations/field-collaborators.jpg" alt="Field research team on the coast" width="512" height="288" loading="lazy" decoding="async"><figcaption><strong>Field team</strong><span>Field research collaborators.</span></figcaption></figure>
   </div>
   <p><a class="text-link" href="/contact/">Start a research conversation <span aria-hidden="true">→</span></a></p>
 </section>

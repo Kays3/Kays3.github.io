@@ -5,6 +5,7 @@ permalink: /clinical-practice/
 redirect_from:
   - /family-medicine/
 author_profile: false
+accent: emerald
 ---
 
 <p class="page-intro">General practice is where I meet the whole person first. Before a diagnosis has a name, before a specialist is involved, someone walks in with a worry. I love being the physician who hears it first and stays with it.</p>
@@ -22,6 +23,14 @@ author_profile: false
     <div><dt>Credentials</dt><dd>MD, Nazarbayev University · ECFMG Certified · USMLE Step 1 and Step 2 CK</dd></div>
     <div><dt>Languages with patients</dt><dd>Kazakh and Russian, native · English, fluent · Japanese, JLPT N2</dd></div>
   </dl>
+</section>
+
+<section class="research-photo-section" aria-labelledby="clinical-photos-title">
+  <div class="section-heading"><p class="eyebrow">People and places</p><h2 id="clinical-photos-title">Where the clinical work happened</h2></div>
+  <div class="research-photo-grid">
+    <figure><img src="/images/clinical/nazarbayev-md-graduates-2019.jpg" alt="Nazarbayev University School of Medicine's first MD graduating class in 2019" width="1136" height="757" loading="lazy" decoding="async"><figcaption><strong>MD class of 2019</strong><span>Nazarbayev University School of Medicine's first graduating class, Astana. Photo: <a href="https://www.instagram.com/androbaza/" rel="noopener noreferrer">Andrey Yershov</a>.</span></figcaption></figure>
+    <figure><img src="/images/clinical/almaty-oita-yamaoka-visit-2024.jpg" alt="Kazakhstan and Japan infectious disease research collaborators meeting in Almaty in 2024" width="1600" height="1200" loading="lazy" decoding="async"><figcaption><strong>Almaty, 2024</strong><span>Kazakhstan and Japan infectious disease research exchange during the <em>H. pylori</em> patient study.</span></figcaption></figure>
+  </div>
 </section>
 
 <section class="specialty-themes" aria-labelledby="family-themes-title">

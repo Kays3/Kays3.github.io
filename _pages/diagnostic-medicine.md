@@ -5,6 +5,7 @@ permalink: /diagnostic-medicine/
 redirect_from:
   - /pathology/
 author_profile: false
+accent: magenta
 ---
 
 <p class="page-intro">Diagnostic medicine is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
@@ -57,6 +58,15 @@ author_profile: false
     <article class="interest-card"><p class="eyebrow">In silico perturbation</p><h2>Ask the model, then check the tissue</h2><p>Geneformer predicts how deleting or overexpressing one gene shifts a T cell representation in small cell lung cancer. I check that each donor points the same way, then look for the same signal in the spatial data.</p><p><a class="text-link" href="https://github.com/Kays3/geneformer-lung-tcell">View the workflow <span aria-hidden="true">↗</span></a></p></article>
   </div>
 
+</section>
+
+<section class="research-photo-section" aria-labelledby="diagnostic-figures-title">
+  <div class="section-heading"><p class="eyebrow">Figures</p><h2 id="diagnostic-figures-title">From slide to model to microbe</h2></div>
+  <div class="research-photo-grid">
+    <figure class="is-contain"><a href="https://github.com/Kays3/geneformer-lung-tcell"><img src="/images/research/geneformer-in-silico-perturbation.png" alt="Diagram of how ranked Geneformer gene inputs are deleted or overexpressed to estimate predicted cell state shifts" width="1926" height="1082" loading="lazy" decoding="async"></a><figcaption><strong>In silico perturbation</strong><span>Ranked gene inputs are deleted or overexpressed, then the cell is read again to estimate a predicted shift. <a href="https://github.com/Kays3/geneformer-lung-tcell">Workflow</a>.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://github.com/Kays3/geneformer-lung-tcell"><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" width="1400" height="595" loading="lazy" decoding="async"></a><figcaption><strong>Cell state embedding</strong><span>Lung cells organised by type and disease state in the Geneformer representation.</span></figcaption></figure>
+  </div>
+  <figure class="specialty-figure specialty-figure--wide"><img src="/images/research/h-pylori-almaty-resistance.png" alt="Helicobacter pylori antimicrobial resistance in Almaty, Kazakhstan, summarising resistance rates and genomic markers" width="900" height="1157" loading="lazy" decoding="async"><figcaption><strong>From patient to plate to policy.</strong> <em>H. pylori</em> resistance profile from Almaty. <a href="https://github.com/Kays3/H.pylori">Analysis repository</a> · <a href="https://doi.org/10.3389/fmicb.2026.1747006">Paper</a>.</figcaption></figure>
 </section>
 
 <aside class="specialty-bridge specialty-bridge--pathology" aria-labelledby="pathology-bridge-title">
