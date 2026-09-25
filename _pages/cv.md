@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: false
 accent: silver
 redirect_from:
-  - /resume
+  - /resume/
 ---
 
 <p class="page-intro">I am a physician with general practice and residency experience in Kazakhstan and translational research training in Japan, Taiwan, Australia, and the United States.</p>
