@@ -1,7 +1,7 @@
 ---
 permalink: /
 title:
-description: "Kaisar Dauyey is a physician drawn to family medicine and pathology: whole-person primary care, and the tissue, molecular, and microbial evidence that answers clinical questions."
+description: "Kaisar Dauyey is a physician and translational researcher: whole-person patient care, and the tissue, molecular, and microbial evidence that answers clinical questions."
 author_profile: false
 redirect_from:
   - /about/
@@ -13,20 +13,20 @@ redirect_from:
     <div class="about-hero__content">
       <div class="about-hero__identity">
         <img src="/images/kaisar-dauyey-2025.webp" alt="Portrait of Kaisar Dauyey" width="918" height="940" fetchpriority="high" decoding="async">
-        <p class="eyebrow">Physician · Family medicine and pathology · Hokkaido University</p>
+        <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
       </div>
-      <h1 id="home-title">The clinic asks the question. Pathology answers it.</h1>
-      <p class="about-hero__lead">I am a physician drawn to two fields. Family medicine, where I meet the whole person first. Pathology, where disease shows itself in tissue, cells, molecules, and microbes.</p>
+      <h1 id="home-title">From the patient to the tissue, and back.</h1>
+      <p class="about-hero__lead">I am a physician and translational researcher. I have cared for patients as a general practitioner, and I now study disease where it shows itself: in tissue, cells, molecules, and microbes. The best answers travel both ways.</p>
 
       <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">
         <div><dt>Clinical practice</dt><dd>General practitioner · Dau-Med Clinics, Kazakhstan</dd></div>
-        <div><dt>Pathology research</dt><dd>Whole slide imaging and spatial biology · Hokkaido University</dd></div>
+        <div><dt>Research</dt><dd>Whole slide imaging and spatial biology · Hokkaido University</dd></div>
         <div><dt>Training</dt><dd>MD · Nazarbayev University · PhD in Genetics · SOKENDAI · ECFMG Certified</dd></div>
       </dl>
 
       <div class="about-hero__actions">
-        <a class="about-button about-button--primary" href="/family-medicine/">Family Medicine <span aria-hidden="true">→</span></a>
-        <a class="about-button about-button--pathology" href="/pathology/">Pathology <span aria-hidden="true">→</span></a>
+        <a class="about-button about-button--primary" href="/clinical-practice/">Clinical practice <span aria-hidden="true">→</span></a>
+        <a class="about-button about-button--pathology" href="/diagnostic-medicine/">Diagnostic medicine <span aria-hidden="true">→</span></a>
         <a class="about-button about-button--quiet" href="/cv/">View CV</a>
       </div>
     </div>
@@ -34,12 +34,12 @@ redirect_from:
 
   <section class="about-passions" aria-labelledby="passions-title">
     <div class="section-heading">
-      <p class="eyebrow">Two passions, one physician</p>
-      <h2 id="passions-title">Whole-person care and the evidence beneath it</h2>
+      <p class="eyebrow">What I do</p>
+      <h2 id="passions-title">Care for the person. Read the evidence.</h2>
     </div>
     <div class="about-passions__grid">
       <article class="passion-card passion-card--family">
-        <p class="eyebrow">Family medicine</p>
+        <p class="eyebrow">Clinical practice</p>
         <h3>The first physician a person sees, and the one who stays</h3>
         <p>In general practice I cared for adults whose problems did not yet belong to any specialty. I learned to listen first, test sparingly, follow up, and coordinate care so patients did not have to. Continuity and context are the whole point.</p>
         <ul class="passion-card__evidence">
@@ -47,25 +47,25 @@ redirect_from:
           <li>Case reports on late diagnosed colorectal cancer and aspirin intolerance in acute coronary syndrome</li>
           <li>Study of burnout and wellbeing in Kazakhstan's palliative care workforce</li>
         </ul>
-        <a class="about-button" href="/family-medicine/">Why family medicine <span aria-hidden="true">→</span></a>
+        <a class="about-button" href="/clinical-practice/">Clinical practice <span aria-hidden="true">→</span></a>
       </article>
       <article class="passion-card passion-card--pathology">
-        <p class="eyebrow">Pathology</p>
+        <p class="eyebrow">Diagnostic medicine</p>
         <h3>Where disease stops being a story and becomes something you can see</h3>
-        <p>Every biopsy, culture, and genetic test I ordered was waiting on a pathologist. Now I work on that side: whole slide imaging and spatial biology at Hokkaido University, molecular findings in hereditary cancer, and antimicrobial resistance in cultured <em>H. pylori</em>.</p>
+        <p>Every biopsy, culture, and genetic test I ordered was waiting on a laboratory answer. My research now lives there: whole slide imaging and spatial biology at Hokkaido University, molecular findings in hereditary cancer, and antimicrobial resistance in cultured <em>H. pylori</em>.</p>
         <ul class="passion-card__evidence">
           <li>Postdoctoral fellow, whole slide imaging and spatial biology · Hokkaido University</li>
           <li>Co-author on <em>BRCA2</em> and <em>EHBP1</em> variant studies in prostate and colorectal cancer</li>
           <li>First author, culture based <em>H. pylori</em> resistance study with regional meta-analysis</li>
         </ul>
-        <a class="about-button about-button--pathology" href="/pathology/">Why pathology <span aria-hidden="true">→</span></a>
+        <a class="about-button about-button--pathology" href="/diagnostic-medicine/">Diagnostic medicine <span aria-hidden="true">→</span></a>
       </article>
     </div>
   </section>
 
   <section class="about-focus" aria-labelledby="bridge-title">
     <div class="section-heading">
-      <p class="eyebrow">Where the two meet</p>
+      <p class="eyebrow">From clinic to laboratory and back</p>
       <h2 id="bridge-title">Three patients, one loop</h2>
       <p class="section-lead">Each began as a question in a clinic, was answered in a laboratory, and came back as a decision about care.</p>
     </div>
@@ -75,7 +75,7 @@ redirect_from:
         <p class="eyebrow">Clinic → culture → treatment</p>
         <h3>A common infection, a local answer</h3>
         <p><em>Helicobacter pylori</em> is everyday primary care. Recruiting patients, culturing isolates, and measuring antibiotic resistance in Almaty gave clinicians local evidence for first line therapy instead of borrowed guidelines.</p>
-        <div class="tag-row"><span>family medicine</span><span>clinical microbiology</span><span>AMR</span></div>
+        <div class="tag-row"><span>primary care</span><span>clinical microbiology</span><span>AMR</span></div>
         <a class="text-link" href="https://doi.org/10.3389/fmicb.2026.1747006">Read the 2026 study <span aria-hidden="true">↗</span></a>
       </article>
       <article class="about-focus__card">
@@ -83,15 +83,15 @@ redirect_from:
         <p class="eyebrow">Symptom → biopsy → diagnosis</p>
         <h3>A diagnosis that came too late</h3>
         <p>A young woman's colorectal cancer was recognised only after childbirth. The tissue diagnosis was unambiguous. The delay happened upstream, in how symptoms in young patients were weighed. I carry that lesson into both fields.</p>
-        <div class="tag-row"><span>family medicine</span><span>anatomic pathology</span><span>oncology</span></div>
+        <div class="tag-row"><span>primary care</span><span>tissue diagnosis</span><span>oncology</span></div>
         <a class="text-link" href="https://nur.nu.edu.kz/items/87716040-78c3-4c47-a842-906c5421cf60">Read the case report <span aria-hidden="true">↗</span></a>
       </article>
       <article class="about-focus__card">
         <span class="about-focus__number">03</span>
         <p class="eyebrow">Family history → variant → therapy</p>
         <h3>A variant that changed the plan</h3>
-        <p>A pathogenic <em>BRCA2</em> splice variant in a man with metastatic castration resistant prostate cancer. Molecular pathology turned a family history into a treatment option, and a conversation with relatives.</p>
-        <div class="tag-row"><span>molecular pathology</span><span>hereditary cancer</span><span>genetic counselling</span></div>
+        <p>A pathogenic <em>BRCA2</em> splice variant in a man with metastatic castration resistant prostate cancer. Molecular testing turned a family history into a treatment option, and a conversation with relatives.</p>
+        <div class="tag-row"><span>molecular diagnostics</span><span>hereditary cancer</span><span>genetic counselling</span></div>
         <a class="text-link" href="https://doi.org/10.23950/jcmk/16588">Read the case <span aria-hidden="true">↗</span></a>
       </article>
     </div>

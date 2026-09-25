@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Contact Kaisar Dauyey about family medicine, pathology, genomics, tissue imaging, and computational biology."
+description: "Contact Kaisar Dauyey about clinical medicine, diagnostic and laboratory science, genomics, tissue imaging, and computational biology."
 permalink: /contact/
 author_profile: false
 ---
@@ -8,7 +8,7 @@ author_profile: false
 <section class="contact-panel">
   <p class="eyebrow">Collaborate</p>
   <h2>Bring me a question that crosses boundaries.</h2>
-  <p>I welcome serious conversations about family medicine, pathology, infectious disease, genomics, tissue imaging, and computational biology. Clinical, laboratory, and training opportunities are all welcome.</p>
+  <p>I welcome serious conversations about clinical medicine, diagnostic and laboratory science, infectious disease, genomics, and tissue imaging. Clinical, laboratory, and training opportunities are all welcome.</p>
   <div class="contact-list">
     <div><span>Email</span><strong>k.dauyey.bio.nu [at] gmail [dot] com</strong></div>
     <div><span>Code</span><strong><a href="https://github.com/Kays3">github.com/Kays3</a></strong></div>

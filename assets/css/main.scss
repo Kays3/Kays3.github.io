@@ -39,24 +39,24 @@
 ;
 
 /* Kaisar Dauyey — custom academic site
-   Dark ocean, reef teal, pathology plum, and warm coral accents. */
+   Bright, light palette: white paper, teal accent, green for clinical practice, raspberry for diagnostic medicine. */
 
 :root {
-  --kd-ink: #2c342b;
-  --kd-muted: #62675d;
-  --kd-ocean: #456563;
-  --kd-ocean-deep: #304c49;
-  --kd-forest: #526447;
-  --kd-coral: #3d5f5c;
-  --kd-pathology: #7f5369;
-  --kd-pathology-soft: #eadde2;
-  --kd-family: #3f6c56;
-  --kd-family-soft: #dfe9df;
-  --kd-sand: #d8c7a5;
-  --kd-paper: #f4efe1;
-  --kd-surface: #ebe6d8;
-  --kd-line: rgba(67, 57, 39, 0.2);
-  --kd-shadow: 0 6px 18px rgba(67, 57, 39, 0.08);
+  --kd-ink: #1c2a31;
+  --kd-muted: #55666e;
+  --kd-ocean: #0b7c8c;
+  --kd-ocean-deep: #075f6c;
+  --kd-forest: #1f8a5b;
+  --kd-coral: #0b7c8c;
+  --kd-pathology: #b0397a;
+  --kd-pathology-soft: #fbe9f2;
+  --kd-family: #1f8a5b;
+  --kd-family-soft: #e4f6ec;
+  --kd-sand: #f3ead2;
+  --kd-paper: #ffffff;
+  --kd-surface: #f2f8f9;
+  --kd-line: rgba(28, 42, 49, 0.14);
+  --kd-shadow: 0 6px 18px rgba(28, 42, 49, 0.08);
   --global-bg-color: var(--kd-paper);
   --global-text-color: var(--kd-ink);
   --global-link-color: var(--kd-ocean);
@@ -64,42 +64,13 @@
   --global-link-color-visited: var(--kd-ocean);
   --global-masthead-link-color: var(--kd-ink);
   --global-border-color: var(--kd-line);
-  --global-footer-bg-color: #e8e1d1;
-}
-
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --kd-ink: #eef8f8;
-  --kd-muted: #a7c5c8;
-  --kd-ocean: #69d4dc;
-  --kd-ocean-deep: #9be8eb;
-  --kd-forest: #77c4ad;
-  --kd-coral: #7fd1d6;
-  --kd-pathology: #e9a3cf;
-  --kd-pathology-soft: #30233b;
-  --kd-family: #8fd4b0;
-  --kd-family-soft: #12332a;
-  --kd-sand: #735d46;
-  --kd-paper: #061b26;
-  --kd-surface: #0d2a36;
-  --kd-line: rgba(174, 225, 228, 0.18);
-  --kd-shadow: 0 8px 22px rgba(0, 8, 15, 0.3);
-  --global-bg-color: var(--kd-paper);
-  --global-text-color: var(--kd-ink);
-  --global-link-color: var(--kd-ocean);
-  --global-link-color-hover: var(--kd-ink);
-  --global-link-color-visited: var(--kd-ocean);
-  --global-masthead-link-color: var(--kd-ink);
-  --global-border-color: var(--kd-line);
-  --global-footer-bg-color: #04131c;
+  --global-footer-bg-color: #eef5f6;
 }
 
 body {
   background: var(--kd-paper);
   font-feature-settings: "kern" 1, "liga" 1;
 }
-
-html[data-theme="dark"] body { background: var(--kd-paper); }
 
 h1, h2, h3, .page__title, .author__name {
   color: var(--kd-ink);
@@ -124,31 +95,9 @@ h1, h2, h3, .page__title, .author__name {
 }
 
 .masthead {
-  background: rgba(244, 239, 225, 0.93);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-}
-
-html[data-theme="dark"] .masthead {
-  background: rgba(4, 21, 31, 0.9);
-}
-
-html[data-theme="dark"] .about-hero {
-  background: var(--kd-surface);
-}
-
-html[data-theme="dark"] .project-card--featured,
-html[data-theme="dark"] .project-card--quiet,
-html[data-theme="dark"] .history-context {
-  background: rgba(22, 62, 72, 0.58);
-}
-
-@supports (content-visibility: auto) {
-  .about-focus,
-  .research-photo-section {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 720px;
-  }
 }
 
 .masthead::after { background: var(--kd-line); }
@@ -225,7 +174,7 @@ html[data-theme="dark"] .history-context {
 .repo-snippet__heading code { background: transparent; color: var(--kd-muted); font-size: 0.75rem; padding: 0; }
 .topic-row .repo-snippet__body > p,
 .research-photo-section .repo-snippet__body > p { font-size: 0.82rem !important; line-height: 1.6; margin: 0 0 0.8rem !important; }
-.repo-snippet pre { background: #172b2e; border: 0; border-radius: 10px; color: #e7f1ef; font-size: 0.74rem; line-height: 1.6; margin: 0 0 0.85rem; overflow-x: auto; padding: 0.9rem; }
+.repo-snippet pre { background: var(--kd-surface); border: 1px solid var(--kd-line); border-radius: 10px; color: var(--kd-ink); font-size: 0.74rem; line-height: 1.6; margin: 0 0 0.85rem; overflow-x: auto; padding: 0.9rem; }
 .repo-snippet pre code { background: transparent; color: inherit; padding: 0; }
 .page__content .repo-snippet__source { color: var(--kd-ocean); font-size: 0.75rem; font-weight: 800; text-decoration: none; }
 .page__content .repo-snippet__source:hover { color: var(--kd-coral); }
