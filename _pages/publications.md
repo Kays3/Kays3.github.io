@@ -3,6 +3,7 @@ title: "Publications"
 description: "Publications by Kaisar Dauyey across clinical medicine, diagnostic and laboratory science, infectious disease, genomics, and computational biology."
 permalink: /publications/
 author_profile: false
+accent: violet
 ---
 
 <p class="page-intro">Here is my publication record through 2026. You can check the latest identifiers and updates on <a href="https://orcid.org/0000-0003-0533-9778">ORCID</a> or <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dauyey+K%5BAuthor%5D">PubMed</a>.</p>

@@ -3,6 +3,7 @@ title: "Interests"
 description: "Research interests in Okinawan marine biology, environmental genomics, ancient DNA, and population genomics."
 permalink: /interests/
 author_profile: false
+accent: teal
 ---
 
 <p class="page-intro">My earlier work in Okinawan marine biology and ancient genomes still shapes how I think. Both fields taught me to question what the data can really support.</p>

@@ -3,6 +3,7 @@ title: "Curriculum vitae"
 description: "Curriculum vitae of Kaisar Dauyey: clinical practice, translational research, education, credentials, teaching, and methods."
 permalink: /cv/
 author_profile: false
+accent: silver
 redirect_from:
   - /resume
 ---

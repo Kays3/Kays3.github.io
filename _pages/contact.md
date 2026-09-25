@@ -3,6 +3,7 @@ title: "Contact"
 description: "Contact Kaisar Dauyey about clinical medicine, diagnostic and laboratory science, genomics, tissue imaging, and computational biology."
 permalink: /contact/
 author_profile: false
+accent: rose
 ---
 
 <section class="contact-panel">
