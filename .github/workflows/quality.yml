@@ -21,7 +21,9 @@ jobs:
           bundler-cache: true
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build
+        # Build with an empty site url so internal links are root-relative and the
+        # checker tests the built files, not the live site mid-deploy.
+        run: bundle exec jekyll build --config _config.yml,_config_docker.yml
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -47,6 +49,8 @@ jobs:
       - name: Check generated links
         run: >-
           npx --yes linkinator _site --recurse --silent
+          --retry --retry-errors --retry-errors-count 3
+          --skip 'instagram\.com'
           --skip 'github.com/Kays3/H\.pylori'
           --skip 'github.com/Kays3/TE_Anemonefish_Symbiosis'
           --skip 'doi.org/10\.3390/genes16020171'
