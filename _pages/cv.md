@@ -3,7 +3,9 @@ title: "Curriculum vitae"
 description: "Curriculum vitae of Kaisar Dauyey: clinical practice, translational research, education, credentials, teaching, and methods."
 permalink: /cv/
 author_profile: false
-accent: silver
+hero: research/marine/stichodactyla-ocellaris.webp
+hero_position: "center"
+banner_title: "Curriculum vitae"
 redirect_from:
   - /resume/
 ---

@@ -3,6 +3,9 @@ permalink: /
 title:
 description: "Kaisar Dauyey is a physician and translational researcher: whole-person patient care, and the tissue, molecular, and microbial evidence that answers clinical questions."
 author_profile: false
+hero: aka-island-reef.jpg
+hero_position: "center 55%"
+banner_title: "Physician and translational researcher"
 redirect_from:
   - /about/
   - /about.html

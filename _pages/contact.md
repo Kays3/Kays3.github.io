@@ -3,7 +3,8 @@ title: "Contact"
 description: "Contact Kaisar Dauyey about clinical medicine, diagnostic and laboratory science, genomics, tissue imaging, and computational biology."
 permalink: /contact/
 author_profile: false
-accent: rose
+hero: research/marine/aka-jima-ocellaris-1.webp
+hero_position: "center"
 ---
 
 <section class="contact-panel">
