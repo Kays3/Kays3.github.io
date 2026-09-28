@@ -12,7 +12,6 @@
 - `collaborations/field-collaborators.jpg`: field-team photograph supplied by Kaisar Dauyey through a Google-hosted image URL for use on this site.
 - `collaborations/oist-saeki-kakujo-2023.jpg`: photograph from the [OIST SEED program visit by Saeki Kakujo High School](https://www.oist.jp/outreach/update/seed-program-saeki-kakujo-oita-students-visited-oist), © Okinawa Institute of Science and Technology Graduate University, used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - `clinical/almaty-oita-yamaoka-visit-2024.jpg`: Kazakhstan-Japan infectious-disease research exchange photograph supplied directly by Kaisar Dauyey for use on this site.
-- `clinical/nazarbayev-md-graduates-2019.jpg`: photograph of Nazarbayev University School of Medicine’s first MD graduating class in 2019, supplied by Kaisar Dauyey for use on this site. Photo by [Andrey Yershov (@androbaza)](https://www.instagram.com/androbaza/).
 - `research/marine/stichodactyla-ocellaris.jpg`: underwater photograph of ocellaris clownfish and a *Stichodactyla* sea anemone supplied directly by Kaisar Dauyey.
 - `research/marine/entacmaea-tomato-clownfish.jpg`: underwater photograph of tomato clownfish and an *Entacmaea* sea anemone supplied directly by Kaisar Dauyey.
 - `research/marine/aka-jima-ocellaris-1.jpg` and `aka-jima-ocellaris-2.jpg`: underwater field photographs from Aka Island supplied directly by Kaisar Dauyey.
@@ -20,6 +19,7 @@
 
 These images are used only on the repository owner's personal academic website.
 - `papers/palliative-care-themes.png`, `papers/ehbp1-rs721048-enhancer.png`, `papers/crc-case-mri.png`, `papers/mas-jdm-prisma.png`: figure and table excerpts from Kaisar Dauyey's own publications (BMC Palliative Care 2025, CC BY; Genes 2025, CC BY; American Journal of Cancer Case Reports 2020; Rheumatology International 2020), cropped from the author copies on 2026-09-28 and used as thumbnails with links to the papers.
-- `papers/clinical-papers-banner.jpg`: collage of the four excerpts above, used as the Clinical Practice page banner.
+- `papers/gca-study-design.png`, `papers/gca-phenotype-network.png`: study-design overview and gene–phenotype network from De Smit et al., BMC Medical Genomics 2018 (CC BY), extracted from the author copy on 2026-09-28.
+- `papers/clinical-papers-banner.jpg`: Clinical Practice page banner, a collage of the H&E spatial cover (`research/digital-pathology-spatial-cover.webp`) with the two giant cell arteritis figures above.
 - `papers/gca-tcell-heatmap.png`, `papers/gca-expression-trajectories.png` (De Smit et al., BMC Medical Genomics 2018, CC BY) and `papers/stroke-lesion-frequency-map.png`, `papers/stroke-aphasia-nct-differences.png` (Muller et al., Current Topics in Medicinal Chemistry 2020): figures extracted from the author copies of Kaisar Dauyey's co-authored papers on 2026-09-28, used as thumbnails with links to the papers.
 - `papers/diagnostic-papers-banner.jpg`: collage of the four excerpts above, used as the Diagnostic Medicine page banner.
