@@ -38,9 +38,9 @@ banner_size: collage
 </section>
 
 <section class="research-photo-section" aria-labelledby="clinical-photos-title">
-  <div class="section-heading"><p class="eyebrow">People and places</p><h2 id="clinical-photos-title">Where the clinical work happened</h2></div>
+  <div class="section-heading"><p class="eyebrow">Bench and bedside</p><h2 id="clinical-photos-title">Where the clinical work happened</h2></div>
   <div class="research-photo-grid">
-    <figure><img src="/images/clinical/nazarbayev-md-graduates-2019.jpg" alt="Nazarbayev University School of Medicine's first MD graduating class in 2019" width="1136" height="757" loading="lazy" decoding="async"><figcaption><strong>MD class of 2019</strong><span>Nazarbayev University School of Medicine's first graduating class, Astana. Photo: <a href="https://www.instagram.com/androbaza/" rel="noopener noreferrer">Andrey Yershov</a>.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://doi.org/10.1186/s12920-018-0376-4"><img src="/images/papers/gca-study-design.png" alt="Study design of the giant cell arteritis cohort: sixteen patients and sixteen controls, six blood draws over a year, CD4 and CD8 T cell sorting and RNA sequencing" width="1200" height="1028" loading="lazy" decoding="async"></a><figcaption><strong>Sixteen patients, six visits, one year</strong><span>How a clinical cohort becomes a molecular dataset: serial blood draws from biopsy-proven giant cell arteritis, sorted T cells, RNA sequencing. De Smit et al., <em>BMC Medical Genomics</em>, 2018.</span></figcaption></figure>
     <figure><img src="/images/clinical/almaty-oita-yamaoka-visit-2024.jpg" alt="Kazakhstan and Japan infectious disease research collaborators meeting in Almaty in 2024" width="1600" height="1200" loading="lazy" decoding="async"><figcaption><strong>Almaty, 2024</strong><span>Kazakhstan and Japan infectious disease research exchange during the <em>H. pylori</em> patient study.</span></figcaption></figure>
   </div>
 </section>

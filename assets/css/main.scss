@@ -288,7 +288,6 @@ html[data-theme="dark"] .theme-toggle__text--light { display: none; }
 .project-card--with-media { overflow: hidden; }
 .project-card__media img { aspect-ratio: 16 / 9; display: block; object-fit: cover; width: 100%; }
 .project-card--portrait .project-card__media img { object-position: center 28%; }
-.project-card--graduation .project-card__media img { background: #050505; object-fit: contain; }
 .project-card__media figcaption { background: rgba(7, 45, 54, 0.76); border-radius: 999px; bottom: 0.65rem; color: #fff; font-size: 0.68rem; left: 0.7rem; padding: 0.38rem 0.65rem; position: absolute; }
 .page__content .project-card__media figcaption a { color: #fff; text-decoration: underline; }
 
