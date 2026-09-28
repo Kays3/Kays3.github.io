@@ -15,7 +15,7 @@ layout: compress
 
     {% include browser-upgrade.html %}
     {% if page.hero %}
-    <header class="site-banner" style="--banner-image: url('{{ base_path }}/images/{{ page.hero }}');{% if page.hero_position %} --banner-position: {{ page.hero_position }};{% endif %}">
+    <header class="site-banner{% if page.banner_size %} site-banner--{{ page.banner_size }}{% endif %}" style="--banner-image: url('{{ base_path }}/images/{{ page.hero }}');{% if page.hero_position %} --banner-position: {{ page.hero_position }};{% endif %}">
       <div class="site-banner__inner">
         <p class="site-banner__name">{{ site.name }}</p>
         <h1 class="site-banner__title">{{ page.banner_title | default: page.title }}</h1>

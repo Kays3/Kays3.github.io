@@ -19,3 +19,5 @@
 - `projects/pets/digital-pathology-cat.jpg`, `polygenic-risk-cat.mp4`, `polygenic-risk-cat-poster.png`, `infectious-disease-cat.gif`, `clinical-systems-cats.jpg`, `genomics-cats.jpg`, and `marine-science-cat.jpg`: personal cat photographs and short clips supplied directly by Kaisar Dauyey for the homepage “Pet projects” analogy. The HEIC originals for the genomics and marine cards were converted to browser-compatible JPEGs; the polygenic-risk poster is a still frame from the supplied clip.
 
 These images are used only on the repository owner's personal academic website.
+- `papers/palliative-care-themes.png`, `papers/ehbp1-rs721048-enhancer.png`, `papers/crc-case-mri.png`, `papers/mas-jdm-prisma.png`: figure and table excerpts from Kaisar Dauyey's own publications (BMC Palliative Care 2025, CC BY; Genes 2025, CC BY; American Journal of Cancer Case Reports 2020; Rheumatology International 2020), cropped from the author copies on 2026-09-28 and used as thumbnails with links to the papers.
+- `papers/clinical-papers-banner.jpg`: collage of the four excerpts above, used as the Clinical Practice page banner.
