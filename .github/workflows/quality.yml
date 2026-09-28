@@ -51,6 +51,7 @@ jobs:
           npx --yes linkinator _site --recurse --silent
           --retry --retry-errors --retry-errors-count 3
           --skip 'instagram\.com'
+          --skip 'oita-glocal\.jp'
           --skip 'github.com/Kays3/H\.pylori'
           --skip 'github.com/Kays3/TE_Anemonefish_Symbiosis'
           --skip 'doi.org/10\.3390/genes16020171'
