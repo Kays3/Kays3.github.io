@@ -5,7 +5,8 @@ permalink: /diagnostic-medicine/
 redirect_from:
   - /pathology/
 author_profile: false
-accent: magenta
+hero: research/digital-pathology-spatial-cover.webp
+hero_position: "center"
 ---
 
 <p class="page-intro">Diagnostic medicine is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
