@@ -13,6 +13,18 @@ layout: compress
 
   <body>
 
+    <div id="page-loader" class="page-loader" role="status" aria-label="Loading">
+      <svg class="solar" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <circle class="solar__orbit" cx="100" cy="100" r="34"/>
+        <circle class="solar__orbit" cx="100" cy="100" r="58"/>
+        <circle class="solar__orbit" cx="100" cy="100" r="84"/>
+        <circle class="solar__sun" cx="100" cy="100" r="13"/>
+        <g class="solar__planet solar__planet--1"><circle cx="134" cy="100" r="4"/></g>
+        <g class="solar__planet solar__planet--2"><circle cx="158" cy="100" r="6"/><circle class="solar__moon" cx="167" cy="100" r="1.8"/></g>
+        <g class="solar__planet solar__planet--3"><circle cx="184" cy="100" r="5"/></g>
+      </svg>
+    </div>
+
     {% include browser-upgrade.html %}
     {% if page.hero %}
     <header class="site-banner{% if page.banner_size %} site-banner--{{ page.banner_size }}{% endif %}" style="--banner-image: url('{{ base_path }}/images/{{ page.hero }}');{% if page.hero_position %} --banner-position: {{ page.hero_position }};{% endif %}">

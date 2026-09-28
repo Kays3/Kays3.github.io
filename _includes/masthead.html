@@ -19,7 +19,16 @@
             </li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a href="#" role="button" aria-label="Switch to dark theme"><span id="theme-icon" class="theme-toggle__icon" aria-hidden="true"></span><span class="theme-toggle__text theme-toggle__text--light">Night</span><span class="theme-toggle__text theme-toggle__text--dark">Day</span></a>
+            <button type="button" class="theme-switch" role="switch" aria-checked="false" aria-label="Night mode"><span class="theme-switch__track" aria-hidden="true"><span class="theme-switch__sun">&#x2600;</span><span class="theme-switch__moon">&#x263E;</span><span class="theme-switch__knob"></span></span><span class="theme-switch__label" aria-hidden="true">Night</span></button>
+            <script>
+              (function () {
+                var root = document.documentElement, sw = document.querySelector('#theme-toggle .theme-switch');
+                if (!sw) { return; }
+                function sync() { sw.setAttribute('aria-checked', root.getAttribute('data-theme') === 'dark' ? 'true' : 'false'); }
+                sync();
+                if (window.MutationObserver) { new MutationObserver(sync).observe(root, { attributes: true, attributeFilter: ['data-theme'] }); }
+              })();
+            </script>
           </li>
         </ul>
         <ul id="site-nav-links" class="hidden-links hidden"></ul>
