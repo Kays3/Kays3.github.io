@@ -18,6 +18,9 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a href="#" role="button" aria-label="Switch to dark theme"><span id="theme-icon" class="theme-toggle__icon" aria-hidden="true"></span><span class="theme-toggle__text theme-toggle__text--light">Night</span><span class="theme-toggle__text theme-toggle__text--dark">Day</span></a>
+          </li>
         </ul>
         <ul id="site-nav-links" class="hidden-links hidden"></ul>
       </nav>
