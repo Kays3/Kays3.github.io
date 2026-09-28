@@ -20,6 +20,13 @@
     else { document.documentElement.removeAttribute("data-theme"); }
   })();
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var root = document.documentElement, t0 = Date.now();
+    function done() { root.classList.add("is-loaded"); }
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) { done(); return; }
+    window.addEventListener("load", function () { setTimeout(done, Math.max(0, 650 - (Date.now() - t0))); });
+    setTimeout(done, 4000);
+  })();
 </script>
 
 <!-- For all browsers -->
