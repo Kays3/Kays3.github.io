@@ -21,3 +21,5 @@
 These images are used only on the repository owner's personal academic website.
 - `papers/palliative-care-themes.png`, `papers/ehbp1-rs721048-enhancer.png`, `papers/crc-case-mri.png`, `papers/mas-jdm-prisma.png`: figure and table excerpts from Kaisar Dauyey's own publications (BMC Palliative Care 2025, CC BY; Genes 2025, CC BY; American Journal of Cancer Case Reports 2020; Rheumatology International 2020), cropped from the author copies on 2026-09-28 and used as thumbnails with links to the papers.
 - `papers/clinical-papers-banner.jpg`: collage of the four excerpts above, used as the Clinical Practice page banner.
+- `papers/gca-tcell-heatmap.png`, `papers/gca-expression-trajectories.png` (De Smit et al., BMC Medical Genomics 2018, CC BY) and `papers/stroke-lesion-frequency-map.png`, `papers/stroke-aphasia-nct-differences.png` (Muller et al., Current Topics in Medicinal Chemistry 2020): figures extracted from the author copies of Kaisar Dauyey's co-authored papers on 2026-09-28, used as thumbnails with links to the papers.
+- `papers/diagnostic-papers-banner.jpg`: collage of the four excerpts above, used as the Diagnostic Medicine page banner.
