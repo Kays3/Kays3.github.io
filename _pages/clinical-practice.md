@@ -5,8 +5,9 @@ permalink: /clinical-practice/
 redirect_from:
   - /family-medicine/
 author_profile: false
-hero: clinical/nazarbayev-md-graduates-2019.jpg
-hero_position: "center 30%"
+hero: papers/clinical-papers-banner.jpg
+hero_position: "center"
+banner_size: collage
 ---
 
 <p class="page-intro">General practice is where I meet the whole person first. Before a diagnosis has a name, before a specialist is involved, someone walks in with a worry. I love being the physician who hears it first and stays with it.</p>
@@ -24,6 +25,16 @@ hero_position: "center 30%"
     <div><dt>Credentials</dt><dd>MD, Nazarbayev University · ECFMG Certified · USMLE Step 1 and Step 2 CK</dd></div>
     <div><dt>Languages with patients</dt><dd>Kazakh and Russian, native · English, fluent · Japanese, JLPT N2</dd></div>
   </dl>
+</section>
+
+<section class="research-photo-section" aria-labelledby="clinical-papers-title">
+  <div class="section-heading"><p class="eyebrow">Key figures</p><h2 id="clinical-papers-title">Four papers, four kinds of clinical question</h2></div>
+  <div class="research-photo-grid">
+    <figure class="is-contain"><a href="https://doi.org/10.1186/s12904-025-01798-z"><img src="/images/papers/palliative-care-themes.png" alt="Table of themes, sub-themes, and categories derived from interviews with Kazakhstan's palliative care workforce" width="1400" height="603" loading="lazy" decoding="async"></a><figcaption><strong>What burnout looks like from inside</strong><span>Themes from interviews with palliative care professionals: stressors, denial of emotional impact, coping, and attitudes to psychological help. Crape et al., <em>BMC Palliative Care</em>, 2025.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://doi.org/10.3390/genes16020171"><img src="/images/papers/ehbp1-rs721048-enhancer.png" alt="Diagram of the rs721048 variant interacting with an enhancer that regulates OTX1 and EHBP1" width="960" height="710" loading="lazy" decoding="async"></a><figcaption><strong>A variant, an enhancer, two genes</strong><span>How rs721048 in the <em>EHBP1</em> intron may act through an enhancer, in prostate and colorectal cancer in the Kazakh population. Romanova et al., <em>Genes</em>, 2025.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://nur.nu.edu.kz/items/87716040-78c3-4c47-a842-906c5421cf60"><img src="/images/papers/crc-case-mri.png" alt="Pelvic MRI series showing a large rectal mass in a young postpartum patient" width="624" height="369" loading="lazy" decoding="async"></a><figcaption><strong>The scan that came too late</strong><span>Pelvic MRI from a young woman whose colorectal cancer was recognised only after childbirth. Dauyey and Jumadilova, <em>American Journal of Cancer Case Reports</em>, 2020.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://doi.org/10.1007/s00296-019-04442-1"><img src="/images/papers/mas-jdm-prisma.png" alt="PRISMA flow diagram of the systematic search on macrophage activation syndrome in juvenile dermatomyositis" width="1400" height="997" loading="lazy" decoding="async"></a><figcaption><strong>From 253 records to 11 cases</strong><span>PRISMA flow of the systematic review on macrophage activation syndrome in juvenile dermatomyositis. Poddighe and Dauyey, <em>Rheumatology International</em>, 2020.</span></figcaption></figure>
+  </div>
 </section>
 
 <section class="research-photo-section" aria-labelledby="clinical-photos-title">
