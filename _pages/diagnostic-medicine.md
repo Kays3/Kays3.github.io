@@ -5,8 +5,9 @@ permalink: /diagnostic-medicine/
 redirect_from:
   - /pathology/
 author_profile: false
-hero: research/digital-pathology-spatial-cover.webp
+hero: papers/diagnostic-papers-banner.jpg
 hero_position: "center"
+banner_size: collage
 ---
 
 <p class="page-intro">Diagnostic medicine is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
@@ -59,6 +60,16 @@ hero_position: "center"
     <article class="interest-card"><p class="eyebrow">In silico perturbation</p><h2>Ask the model, then check the tissue</h2><p>Geneformer predicts how deleting or overexpressing one gene shifts a T cell representation in small cell lung cancer. I check that each donor points the same way, then look for the same signal in the spatial data.</p><p><a class="text-link" href="https://github.com/Kays3/geneformer-lung-tcell">View the workflow <span aria-hidden="true">↗</span></a></p></article>
   </div>
 
+</section>
+
+<section class="research-photo-section" aria-labelledby="diagnostic-papers-title">
+  <div class="section-heading"><p class="eyebrow">Key figures</p><h2 id="diagnostic-papers-title">Two papers, two ways of reading a signal</h2></div>
+  <div class="research-photo-grid">
+    <figure class="is-contain"><a href="https://doi.org/10.1186/s12920-018-0376-4"><img src="/images/papers/gca-tcell-heatmap.png" alt="Clustered heatmap of the forty most variable transcripts in CD4 and CD8 T cells from patients with giant cell arteritis" width="1200" height="1137" loading="lazy" decoding="async"></a><figcaption><strong>Forty genes, 195 samples</strong><span>Expression of the most variable transcripts in purified CD4+ and CD8+ T cells from 16 patients followed for a year after a biopsy-proven diagnosis of giant cell arteritis. De Smit et al., <em>BMC Medical Genomics</em>, 2018.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://doi.org/10.1186/s12920-018-0376-4"><img src="/images/papers/gca-expression-trajectories.png" alt="Grid of scatter plots showing transcript expression in CD4 T cells over twelve months with fitted polynomial curves" width="1200" height="1296" loading="lazy" decoding="async"></a><figcaption><strong>From active disease to remission</strong><span>Polynomial fits of transcript expression from the acute phase to 12 months, with steroid dose as a covariate: the search for a blood marker that could stand in for a temporal artery biopsy. De Smit et al., 2018.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://doi.org/10.2174/1568026620666200211113824"><img src="/images/papers/stroke-lesion-frequency-map.png" alt="Axial brain slices with a colour overlay showing where strokes overlapped across eighty patients" width="478" height="516" loading="lazy" decoding="async"></a><figcaption><strong>Where 80 strokes overlap</strong><span>Lesion frequency map built automatically from routine native CT scans taken in the acute stage, no MRI required. Muller et al., <em>Current Topics in Medicinal Chemistry</em>, 2020.</span></figcaption></figure>
+    <figure class="is-contain"><a href="https://doi.org/10.2174/1568026620666200211113824"><img src="/images/papers/stroke-aphasia-nct-differences.png" alt="Brain renderings and axial slices highlighting regions where CT values differ between aphasic and non-aphasic patients" width="474" height="400" loading="lazy" decoding="async"></a><figcaption><strong>The signature of aphasia</strong><span>Voxel-based quantification of CT values separates patients with and without language impairment, and the regions match known language areas. Muller et al., 2020.</span></figcaption></figure>
+  </div>
 </section>
 
 <section class="research-photo-section" aria-labelledby="diagnostic-figures-title">
