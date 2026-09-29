@@ -81,8 +81,8 @@ redirect_from:
       <a class="about-story__card" href="/diagnostic-medicine/">
         <figure><img src="/images/research/digital-pathology-spatial-cover.webp" alt="Spatial molecular measurements aligned with whole slide tissue morphology" width="950" height="950" loading="lazy" decoding="async"><figcaption><span>02 · Tissue</span><strong>The slide</strong><small>Test whether a predicted cell state makes sense in the tissue around it. Morphology is the referee.</small></figcaption></figure>
       </a>
-      <a class="about-story__card about-story__card--contain" href="/research/#digital-pathology">
-        <figure><img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer embedding of lung cells organized by cell type and disease" width="1400" height="595" loading="lazy" decoding="async"><figcaption><span>03 · Genome</span><strong>The model</strong><small>Use genomics and computation to propose mechanisms, while keeping every donor and assumption visible.</small></figcaption></figure>
+      <a class="about-story__card about-story__card--contain" href="https://doi.org/10.1038/s10038-022-01039-8">
+        <figure><img src="/images/papers/ancient-genomes-pca-figure3.png" alt="Two principal component plots of intelligence-associated SNPs, 1,402 and 9,128 variants, showing ancient individuals placed among modern populations" width="1306" height="570" loading="lazy" decoding="async"><figcaption><span>03 · Genome</span><strong>The score</strong><small>Polygenic scores for intelligence applied to ancient genomes, with Naruya Saitou. On 1,402 top variants the ancient individuals sit inside modern population structure. <em>Journal of Human Genetics</em>, 2022.</small></figcaption></figure>
       </a>
     </div>
   </section>
