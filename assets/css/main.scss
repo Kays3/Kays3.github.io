@@ -431,12 +431,12 @@ figcaption { font-family: var(--kd-sans); }
   overflow: hidden;
 }
 .about-hero { display: block; }
-.about-hero__content { padding: clamp(2rem, 4vw, 3.5rem); }
+.about-hero__content { margin: 0 auto; max-width: 72rem; padding: clamp(2rem, 4vw, 3.5rem); text-align: center; }
 .about-hero__content > .eyebrow { margin-bottom: 1rem !important; }
 .about-hero__content h1 {
   font-size: clamp(3rem, 4.4vw, 4.1rem);
   line-height: 0.98;
-  margin: 0 0 1.45rem;
+  margin: 0 auto 1.45rem;
   max-width: 9.5em;
 }
 .about-hero__lead {
@@ -444,14 +444,14 @@ figcaption { font-family: var(--kd-sans); }
   font-family: var(--kd-sans); font-weight: 500;
   font-size: clamp(1.05rem, 1.8vw, 1.28rem) !important;
   line-height: 1.68;
-  margin: 0 0 1.8rem !important;
+  margin: 0 auto 1.8rem !important;
   max-width: 39rem;
 }
 .about-hero__affiliations { border-bottom: 1px solid var(--kd-line); border-top: 1px solid var(--kd-line); display: grid; gap: 0.8rem; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 0 1.4rem; padding: 0.85rem 0; }
 .about-hero__affiliations > div { display: block; }
 .about-hero__affiliations dt { color: var(--kd-coral); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .about-hero__affiliations dd { color: var(--kd-ink); font-size: 0.76rem; line-height: 1.45; margin: 0.3rem 0 0; }
-.about-hero__actions { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+.about-hero__actions { display: flex; flex-wrap: wrap; gap: 0.65rem; justify-content: center; }
 .page__content .about-button {
   align-items: center;
   background: transparent;
