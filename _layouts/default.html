@@ -30,7 +30,12 @@ layout: compress
     {% if page.hero %}
     <header class="site-banner{% if page.banner_size %} site-banner--{{ page.banner_size }}{% endif %}" style="--banner-image: url('{{ base_path }}/images/{{ page.hero }}');{% if page.hero_position %} --banner-position: {{ page.hero_position }};{% endif %}">
       <div class="site-banner__inner">
-        <p class="site-banner__name">{{ site.name }}</p>
+        {% if page.banner_quote %}
+        <blockquote class="site-banner__quote">
+          <p>“{{ page.banner_quote | escape }}”</p>
+          <cite><a href="{{ page.banner_quote_source | escape }}">Aldous Huxley</a></cite>
+        </blockquote>
+        {% endif %}
         <h1 class="site-banner__title">{{ page.banner_title | default: page.title }}</h1>
       </div>
     </header>

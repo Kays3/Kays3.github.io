@@ -3,6 +3,8 @@ title: "Publications"
 description: "Publications by Kaisar Dauyey across clinical medicine, diagnostic and laboratory science, infectious disease, genomics, and computational biology."
 permalink: /publications/
 author_profile: false
+banner_quote: "Words form the thread on which we string our experiences."
+banner_quote_source: "https://www.uniba.it/it/docenti/fortunato-elisa/attivita-didattica/WordsandBehaviorHUXLEY.pdf"
 hero: papers/publications-journey-banner.jpg
 hero_position: "center"
 banner_size: collage

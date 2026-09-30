@@ -3,6 +3,8 @@ title: "Interests"
 description: "Research interests in Okinawan marine biology, environmental genomics, ancient DNA, and population genomics."
 permalink: /interests/
 author_profile: false
+banner_quote: "…the more we know the more fantastic the world becomes and the profounder the surrounding darkness."
+banner_quote_source: "https://www.brainyquote.com/quotes/aldous_huxley_400214"
 hero: research/aka-island-coral-turtle.webp
 hero_position: "center 60%"
 ---

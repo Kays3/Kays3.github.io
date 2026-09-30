@@ -5,6 +5,8 @@ permalink: /diagnostic-medicine/
 redirect_from:
   - /pathology/
 author_profile: false
+banner_quote: "Facts do not cease to exist because they are ignored."
+banner_quote_source: "https://en.wikiquote.org/wiki/Aldous_Huxley#Proper_Studies_(1927)"
 hero: papers/diagnostic-medicine-artistic-banner.webp
 hero_position: "center"
 banner_size: diagnostic-art

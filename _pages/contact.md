@@ -3,6 +3,8 @@ title: "Contact"
 description: "Contact Kaisar Dauyey about clinical medicine, diagnostic and laboratory science, genomics, tissue imaging, and computational biology."
 permalink: /contact/
 author_profile: false
+banner_quote: "Try to be a little kinder."
+banner_quote_source: "https://www.latimes.com/archives/la-xpm-1988-11-20-bk-423-story.html"
 hero: contact-reef-turtle.webp
 hero_position: "center 35%"
 banner_size: reef
