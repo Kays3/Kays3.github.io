@@ -396,6 +396,12 @@ figcaption { font-family: var(--kd-sans); }
   color: currentColor;
 }
 
+#main { max-width: 1100px; margin-left: auto; margin-right: auto; }
+#main > .page { min-width: 0; }
+#main > .page .page__inner-wrap { float: none; margin-left: auto; margin-right: auto; max-width: 58rem; }
+.page__content { overflow-wrap: anywhere; }
+.skip-link { background: var(--kd-paper); color: var(--kd-ink); left: 1rem; padding: 0.8rem 1rem; position: absolute; top: -6rem; z-index: 10000; }
+.skip-link:focus { top: 1rem; }
 @media screen and (min-width: 64em) {
   #main > .page { float: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; width: 100%; }
   #main > .sidebar + .page { float: right; padding-left: 2.25rem; width: calc(100% - 235px); }
@@ -434,7 +440,7 @@ figcaption { font-family: var(--kd-sans); }
 .about-hero { display: block; }
 .about-hero__content { margin: 0 auto; max-width: 72rem; padding: clamp(2rem, 4vw, 3.5rem); text-align: center; }
 .about-hero__content > .eyebrow { margin-bottom: 1rem !important; }
-.about-hero__content h1 {
+.about-hero__content h2 {
   font-size: clamp(3rem, 4.4vw, 4.1rem);
   line-height: 0.98;
   margin: 0 auto 1.45rem;
@@ -564,7 +570,7 @@ figcaption { font-family: var(--kd-sans); }
 @media screen and (max-width: 46em) {
   .about-hero { border-radius: 12px; grid-template-columns: 1fr; margin-bottom: 3rem; min-height: 0; }
   .about-hero__content { padding: 1.6rem; }
-  .about-hero__content h1 { font-size: clamp(2.55rem, 12vw, 3.7rem); }
+  .about-hero__content h2 { font-size: clamp(2.55rem, 12vw, 3.7rem); }
   .about-hero__affiliations { grid-template-columns: 1fr; }
   .about-hero__affiliations > div { border-bottom: 1px solid var(--kd-line); display: grid; gap: 0.55rem; grid-template-columns: 5.2rem 1fr; padding-bottom: 0.65rem; }
   .about-hero__affiliations > div:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -585,6 +591,8 @@ figcaption { font-family: var(--kd-sans); }
 .cv-name:hover .cv-portrait, .cv-name:focus .cv-portrait { opacity: 1; visibility: visible; }
 
 @media screen and (max-width: 36em) {
-  .cv-intro { padding-right: 0; }
-  .cv-name { display: block; min-height: 192px; overflow-wrap: anywhere; padding-right: 208px; position: relative; }
+  .cv-intro { min-height: 0; padding-right: 0; }
+  .cv-name { display: block; overflow-wrap: anywhere; position: relative; }
+  .cv-portrait { right: 0; top: 2.2rem; }
+  .cv-name:hover, .cv-name:focus { padding-bottom: 208px; }
 }

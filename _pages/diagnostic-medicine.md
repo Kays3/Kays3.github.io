@@ -5,7 +5,7 @@ permalink: /diagnostic-medicine/
 redirect_from:
   - /pathology/
 author_profile: false
-hero: papers/diagnostic-medicine-artistic-banner.png
+hero: papers/diagnostic-medicine-artistic-banner.webp
 hero_position: "center"
 banner_size: diagnostic-art
 ---
