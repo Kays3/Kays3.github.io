@@ -4,8 +4,8 @@ description: "Contact Kaisar Dauyey about clinical medicine, diagnostic and labo
 permalink: /contact/
 author_profile: false
 hero: contact-reef-turtle.jpeg
-hero_position: "center bottom"
-banner_size: lower-half
+hero_position: "center 35%"
+banner_size: reef
 ---
 
 <section class="contact-panel">
