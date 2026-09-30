@@ -175,15 +175,11 @@ $(document).ready(function () {
     $("body").css("padding-bottom", "0");
     $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
   }
-  $(window).resize(function () {
-    didResize = true;
+  let footerResizeTimer;
+  $(window).on('resize', function () {
+    clearTimeout(footerResizeTimer);
+    footerResizeTimer = setTimeout(bumpIt, 100);
   });
-  setInterval(function () {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
-    }}, 250);
-  var didResize = false;
   bumpIt();
 
   // Follow menu drop down

@@ -23,6 +23,17 @@ Then open `http://localhost:4000`.
 
 The site is deployed from the `master` branch at <https://kays3.github.io/>.
 
+## Downloadable CV
+
+The PDF is generated from `_pages/cv.md`. After editing CV content, regenerate it:
+
+```bash
+python3 -m pip install reportlab
+python3 scripts/build_cv_pdf.py
+```
+
+Commit `files/kaisar-dauyey-cv.pdf` together with the content update.
+
 ## Credits
 
 The theme retains the AcademicPages and Minimal Mistakes licenses and attribution. All biographical copy and styling in this repository are original to this site.
