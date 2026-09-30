@@ -36,3 +36,5 @@ These images are used only on the repository owner's personal academic website.
 
 - `research/cellular-marine-genomics-banner.webp`: revised AI-generated Research banner, created on 2026-09-30 with the built-in image generator. Combines the original cellular artwork with marine genomics, reef coral, anemonefish–host symbiosis, and a conceptual DNA motif; `research/marine/stichodactyla-ocellaris.webp` supplied the marine reference. Artistic impression, not experimental data.
 - `papers/diagnostic-medicine-artistic-banner.png`: AI-generated artistic Diagnostic Medicine banner created on 2026-09-30 using the postpartum CRC H&E biopsy figure and Geneformer diagram as conceptual references. It represents tissue, molecular signals, and spatial diagnostic analysis; artistic impression, not experimental data.
+
+- Optimized WebP delivery copies of the About, Diagnostic Medicine, and Contact banners were created on 2026-09-30. Original files are retained; page banners use the smaller WebP assets.

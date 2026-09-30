@@ -3,7 +3,7 @@ title: "Contact"
 description: "Contact Kaisar Dauyey about clinical medicine, diagnostic and laboratory science, genomics, tissue imaging, and computational biology."
 permalink: /contact/
 author_profile: false
-hero: contact-reef-turtle.jpeg
+hero: contact-reef-turtle.webp
 hero_position: "center 35%"
 banner_size: reef
 ---
@@ -13,7 +13,7 @@ banner_size: reef
   <h2>Bring me a question that crosses boundaries.</h2>
   <p>I welcome serious conversations about clinical medicine, diagnostic and laboratory science, infectious disease, genomics, and tissue imaging. Clinical, laboratory, and training opportunities are all welcome.</p>
   <div class="contact-list">
-    <div><span>Email</span><strong>k.dauyey.bio.nu [at] gmail [dot] com</strong></div>
+    <div><span>Email</span><strong><a href="mailto:k.dauyey.bio.nu@gmail.com">k.dauyey.bio.nu@gmail.com</a></strong></div>
     <div><span>Code</span><strong><a href="https://github.com/Kays3">github.com/Kays3</a></strong></div>
     <div><span>Research ID</span><strong><a href="https://orcid.org/0000-0003-0533-9778">ORCID 0000-0003-0533-9778</a></strong></div>
     <div><span>Laboratory</span><strong><a href="https://altair.sci.hokudai.ac.jp/infmcb/index-e.html">Laboratory of Mathematical Biology</a></strong></div>

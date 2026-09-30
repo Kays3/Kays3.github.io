@@ -169,6 +169,7 @@ include:
   - _pages
   - files
 exclude:
+  - docs
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -250,6 +251,10 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+  - scope:
+      path: "googlec24acd3403b43eb7.html"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""

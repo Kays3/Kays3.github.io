@@ -3,7 +3,7 @@ permalink: /
 title:
 description: "Kaisar Dauyey is a physician and translational researcher: whole-person patient care, and the tissue, molecular, and microbial evidence that answers clinical questions."
 author_profile: false
-hero: research/about-h-pylori-okinawa-banner.png
+hero: research/about-h-pylori-okinawa-banner.webp
 hero_position: "center"
 banner_size: research-art
 banner_title: "From the patient to the tissue, and back."
@@ -16,7 +16,7 @@ redirect_from:
   <section class="about-hero">
     <div class="about-hero__content">
       <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
-      <h1 id="home-title">From the patient to the tissue, and back.</h1>
+      <h2 id="home-title">Care informed by research.</h2>
       <p class="about-hero__lead">I am a physician and translational researcher. I have cared for patients as a general practitioner, and I now study disease where it shows itself: in tissue, cells, molecules, and microbes. The best answers travel both ways.</p>
 
       <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">
