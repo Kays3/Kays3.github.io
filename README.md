@@ -4,7 +4,7 @@ Personal academic website for Kaisar Dauyey, built with [AcademicPages](https://
 
 ## Local preview
 
-Use Ruby 3.1, which matches the stable GitHub Pages toolchain used by this template.
+Use Ruby 3.3, matching `.ruby-version` and the site quality workflow. The locked Bundler 4 requires Ruby 3.2 or newer.
 
 ```bash
 bundle install

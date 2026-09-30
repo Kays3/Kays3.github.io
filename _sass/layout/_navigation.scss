@@ -189,7 +189,7 @@
     }
   }
 
-  button {
+  > button {
     position: absolute;
     height: 2.5rem;
     right: 0;
@@ -200,6 +200,11 @@
     color: var(--global-text-color);
     cursor: pointer;
     z-index: 100;
+  }
+
+  button:focus-visible {
+    outline: 2px solid var(--global-masthead-link-color);
+    outline-offset: 3px;
   }
 
   .visible-links {

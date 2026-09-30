@@ -30,12 +30,6 @@ redirect_from:
         <a class="about-button about-button--quiet" href="/cv/">View CV</a>
       </div>
     </div>
-    <figure class="about-hero__portrait">
-      <picture>
-        <source srcset="/images/kaisar-dauyey-portrait.webp" type="image/webp">
-        <img src="/images/kaisar-dauyey-portrait.jpg" alt="Kaisar Dauyey, professional portrait" width="860" height="900" fetchpriority="high" decoding="async">
-      </picture>
-    </figure>
   </section>
 
   <section class="about-passions" aria-labelledby="passions-title">
