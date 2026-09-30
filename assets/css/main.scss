@@ -160,6 +160,7 @@ figcaption { font-family: var(--kd-sans); }
 .site-banner--compact .site-banner__name { font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
 .site-banner--compact .site-banner__name::after { margin: 0.45rem auto; width: min(8rem, 50%); }
 .site-banner--compact .site-banner__title { font-size: clamp(0.95rem, 1.6vw, 1.2rem); }
+.site-banner.site-banner--histology::before { background: linear-gradient(180deg, rgba(20, 10, 12, 0.38), rgba(20, 10, 12, 0.52)); }
 .site-banner--collage::before { background: linear-gradient(180deg, rgba(20, 10, 12, 0.6), rgba(20, 10, 12, 0.7)); }
 .site-banner::before { background: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.42)); content: ""; inset: 0; position: absolute; }
 .site-banner__inner { color: #fff; padding: 2rem 1rem; position: relative; }

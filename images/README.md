@@ -30,3 +30,5 @@ These images are used only on the repository owner's personal academic website.
 - `contact-reef-turtle.jpeg`: original photograph supplied by Kaisar Dauyey (`G0182943.jpeg`) on 2026-09-30. The Contact banner uses a taller, responsive crop to show the blue water and coral, preserving the original image file.
 
 - `research/geneformer-artistic-banner.webp`: AI-generated artistic impression created with the built-in image generation tool on 2026-09-30, using `research/geneformer-in-silico-perturbation.png` as a conceptual reference. Decorative artwork, not experimental data.
+
+- `papers/postpartum-crc-he-figure1.jpg`: original embedded JPEG of Figure 1, “Hematoxylin and eosin stain of biopsy material from colonoscopy,” extracted without alteration from page 3 of Dauyey and Jumadilova, *Late diagnosis of postpartum colorectal cancer in a young Kazakh woman*, American Journal of Cancer Case Reports 2020, 8:1–5. Local author copy supplied by Kaisar Dauyey; used for the Diagnostic Medicine banner with a link to the paper.
