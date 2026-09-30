@@ -41,6 +41,8 @@ class CircularPortrait(Flowable):
 
 def rich(text):
     # Keep prose and emphasis; translate Markdown links into clickable PDF links.
+    text = re.sub(r'<a\s+href="([^"]+)"[^>]*>(.*?)</a>',
+                  lambda match: f"[{match.group(2)}]({match.group(1)})", text, flags=re.S)
     text = re.sub(r"<(?!/?(?:em|strong)\b)[^>]+>", "", text)
     text = escape(unescape(text))
     for tag, target in [("em", "i"), ("strong", "b")]:

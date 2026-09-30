@@ -33,7 +33,8 @@ redirect_from:
   <div class="timeline-item"><div class="timeline-date">Apr to Aug 2025</div><div><h3>Postdoctoral Scholar</h3><p>Academia Sinica · Taipei, Taiwan</p><p>Genomics and computational biology. Completed the <em>Helicobacter pylori</em> study begun in Kazakhstan and extended computational training before returning to clinical practice.</p></div></div>
   <div class="timeline-item"><div class="timeline-date">Sep 2024 to Mar 2025</div><div><h3>Internal Medicine Resident</h3><p>Nazarbayev University School of Medicine · Astana, Kazakhstan</p><p>Supervised inpatient and outpatient care of adult general medicine patients: admissions, daily rounds, and management planning. I withdrew voluntarily in March 2025 to accept a postdoctoral position that let me complete the <em>H. pylori</em> study I was leading. The withdrawal was unrelated to any professionalism or disciplinary concern.</p></div></div>
   <div class="timeline-item"><div class="timeline-date">Dec 2023 to Sep 2025</div><div><h3>Junior Research Fellow</h3><p>Institute of Genetics and Physiology · Almaty, Kazakhstan</p><p>Led patient oriented <em>Helicobacter pylori</em> research: recruitment, consent, clinical data, culture, epidemiology, antimicrobial resistance, analysis, and manuscripts.</p></div></div>
-  <div class="timeline-item"><div class="timeline-date">2021 to 2022</div><div><h3>Research Stay, Marine Climate Change Unit</h3><p>Okinawa Institute of Science and Technology (OIST) · Okinawa, Japan</p><p>Training in coastal environmental DNA sampling, filtration, research-snorkeling safety, and marine field techniques for studying biodiversity.</p></div></div>
+  <div class="timeline-item"><div class="timeline-date">2021 to 2023</div><div><h3>Special Research Student</h3><p>Okinawa Institute of Science and Technology Graduate University · Japan</p><p>Conducted evolutionary genomics, molecular biology, and computational analysis in OIST’s international and interdisciplinary research environment.</p></div></div>
+  <div class="timeline-item"><div class="timeline-date">Published 2020</div><div><h3>Computational Neuroimaging of Language Impairment after Acute Stroke</h3><p>Laboratory for Research in Neuroimaging, CHUV / University of Lausanne · Switzerland</p><p>Co-authored a computational neuroscience study of neuro-clinical signatures of aphasia using quantitative native CT from 80 patients with acute ischemic stroke and 30 controls.</p><p>Contributed to research combining voxel-based quantification, automated lesion mapping, spatial normalization, and principal component analysis of NIHSS-derived neurological profiles.</p><p>Worked with a multivariate brain–behaviour analysis that associated language impairment with distributed gray- and white-matter abnormalities.</p></div></div>
   <div class="timeline-item"><div class="timeline-date">2019</div><div><h3>Consultative Psychiatry Elective</h3><p>University of Pittsburgh Medical Center · United States</p><p>Psychiatric consultation, structured clinical interviews, and multidisciplinary discussion of medically complex patients.</p></div></div>
   <div class="timeline-item"><div class="timeline-date">2018</div><div><h3>Visiting Researcher</h3><p>The University of Queensland · Australia</p><p>Biomedical research training and international academic collaboration.</p></div></div>
 </div>
@@ -76,4 +77,14 @@ redirect_from:
 
 ## Languages
 
-Kazakh and Russian, native · English, fluent · Japanese, JLPT N2
+- **English:** IELTS 8.5; fluent; scientific working language.
+- **Japanese:** JLPT N2; professional working proficiency.
+- **Russian:** Native.
+- **Kazakh:** Native.
+
+## References
+
+<div class="timeline">
+  <div class="timeline-item"><div class="timeline-date">Current Postdoctoral Supervisor</div><div><h3>Professor Shinji Nakaoka</h3><p>Faculty of Advanced Life Science</p><p>Hokkaido University · Japan</p><p><a href="mailto:snakaoka@sci.hokudai.ac.jp">snakaoka@sci.hokudai.ac.jp</a></p></div></div>
+  <div class="timeline-item"><div class="timeline-date">PhD Supervisor</div><div><h3>Professor Yasukazu Nakamura</h3><p>National Institute of Genetics / SOKENDAI</p><p>Mishima · Japan</p><p><a href="mailto:yn@nig.ac.jp">yn@nig.ac.jp</a></p></div></div>
+</div>
