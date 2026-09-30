@@ -151,6 +151,10 @@ figcaption { font-family: var(--kd-sans); }
 .site-banner { background: var(--banner-image) var(--banner-position, center) / cover no-repeat #222; display: grid; min-height: clamp(16rem, 38vw, 30rem); place-items: center; position: relative; text-align: center; }
 /* A taller reef banner reveals the water above and coral below on all screen sizes. */
 .site-banner--reef { min-height: clamp(20rem, 50vw, 42rem); }
+.site-banner--research-art { min-height: clamp(12rem, 33.333vw, 30rem); }
+@media screen and (max-width: 36em) {
+  .site-banner--research-art { background-position: 20% center; }
+}
 .site-banner--compact { min-height: clamp(7rem, 11vw, 9rem); }
 .site-banner--compact .site-banner__inner { padding: 0.9rem 1rem; }
 .site-banner--compact .site-banner__name { font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
