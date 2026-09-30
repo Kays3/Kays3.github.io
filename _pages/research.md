@@ -3,6 +3,8 @@ title: "Research"
 description: "Research by Kaisar Dauyey across clinical practice, digital and molecular pathology, infectious disease, genomics, and computational biology."
 permalink: /research/
 author_profile: false
+banner_quote: "…the more we know the more fantastic the world becomes and the profounder the surrounding darkness."
+banner_quote_source: "https://www.brainyquote.com/quotes/aldous_huxley_400214"
 hero: research/cellular-marine-genomics-banner.webp
 hero_position: "center"
 banner_size: research-art

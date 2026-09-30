@@ -3,6 +3,8 @@ title: "Curriculum vitae"
 description: "Curriculum vitae of Kaisar Dauyey: clinical practice, translational research, education, credentials, teaching, and methods."
 permalink: /cv/
 author_profile: false
+banner_quote: "Experience is not what happens to a man; it is what a man does with what happens to him."
+banner_quote_source: "https://www.quotationspage.com/quote/24956.html"
 hero: research/marine/stichodactyla-ocellaris.webp
 hero_position: "center"
 banner_title: "Curriculum vitae"

@@ -5,6 +5,8 @@ permalink: /clinical-practice/
 redirect_from:
   - /family-medicine/
 author_profile: false
+banner_quote: "Try to be a little kinder."
+banner_quote_source: "https://www.latimes.com/archives/la-xpm-1988-11-20-bk-423-story.html"
 hero: clinical/almaty-oita-yamaoka-visit-2024.jpg
 hero_position: "center 40%"
 ---

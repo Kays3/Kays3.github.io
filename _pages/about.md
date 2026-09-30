@@ -3,6 +3,8 @@ permalink: /
 title:
 description: "Kaisar Dauyey is a physician and translational researcher: whole-person patient care, and the tissue, molecular, and microbial evidence that answers clinical questions."
 author_profile: false
+banner_quote: "There is only one corner of the universe you can be certain of improving, and that's your own self."
+banner_quote_source: "https://podcasts.apple.com/ca/podcast/aldous-huxley-there-is-only-one-corner-of-the/id1723882003?i=1000774531837"
 hero: research/about-h-pylori-okinawa-banner.webp
 hero_position: "center"
 banner_size: research-art
