@@ -153,7 +153,7 @@ figcaption { font-family: var(--kd-sans); }
 .site-banner--reef { min-height: clamp(20rem, 50vw, 42rem); }
 .site-banner--research-art { min-height: clamp(12rem, 33.333vw, 30rem); }
 @media screen and (max-width: 36em) {
-  .site-banner--research-art { background-position: 20% center; }
+  .site-banner--research-art { background-color: #071725; background-position: center bottom; background-size: 100% auto; }
 }
 .site-banner--compact { min-height: clamp(7rem, 11vw, 9rem); }
 .site-banner--compact .site-banner__inner { padding: 0.9rem 1rem; }

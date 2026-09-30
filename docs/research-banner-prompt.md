@@ -1,5 +1,15 @@
 # Research banner provenance
 
+## Marine genomics revision
+
+Revised on 2026-09-30 with the built-in image generation tool. Current website asset: `images/research/cellular-marine-genomics-banner.webp`. References: the original artistic banner and `images/research/marine/stichodactyla-ocellaris.webp`.
+
+Exact revision prompt:
+
+Use case: style-transfer. Asset type: wide academic Research website banner. Image 1 is the existing banner to revise. Image 2 is supporting reference for the marine subject: anemonefish living in a host sea anemone. Retain the refined luminous scientific editorial illustration style and panoramic 3:1 shape of Image 1, its translucent T cell with nucleus and ranked gene-expression tokens on the left, and the dark quiet central area for a white title overlay. Revise the right third to integrate clearly recognizable orange-and-white anemonefish nestled in a sea anemone with reef coral, flowing blue ocean water, and a delicate luminous DNA double helix that connects the marine organisms to subtle genomic particles. This should visibly represent marine genomics and host symbiosis alongside the cell/computational research, not just decorative fish. Keep some subtle computational state-map particles as the bridge. Preserve palette continuity: deep navy, teal, violet, with natural coral and orange accents. The fish/anemone scene must be large enough to read at banner size. No text, labels, letters, numbers, axes, logos or watermark. No experimental claims or fabricated measured data. One polished opaque artistic impression.
+
+## Original version
+
 Created on 2026-09-30 using the built-in image generation tool.
 
 Reference: `images/research/geneformer-in-silico-perturbation.png`.
