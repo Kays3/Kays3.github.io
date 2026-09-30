@@ -149,8 +149,8 @@ figcaption { font-family: var(--kd-sans); }
 
 /* Full-bleed page banner with the crimson navigation bar beneath it */
 .site-banner { background: var(--banner-image) var(--banner-position, center) / cover no-repeat #222; display: grid; min-height: clamp(16rem, 38vw, 30rem); place-items: center; position: relative; text-align: center; }
-/* Show the lower half of a 4:3 photograph, with a centered crop on narrow screens. */
-.site-banner--lower-half { background-size: auto 200%; min-height: max(16rem, 37.5vw); }
+/* A taller reef banner reveals the water above and coral below on all screen sizes. */
+.site-banner--reef { min-height: clamp(20rem, 50vw, 42rem); }
 .site-banner--compact { min-height: clamp(7rem, 11vw, 9rem); }
 .site-banner--compact .site-banner__inner { padding: 0.9rem 1rem; }
 .site-banner--compact .site-banner__name { font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
