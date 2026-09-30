@@ -5,10 +5,12 @@ permalink: /diagnostic-medicine/
 redirect_from:
   - /pathology/
 author_profile: false
-hero: papers/diagnostic-papers-banner.jpg
+hero: papers/postpartum-crc-he-figure1.jpg
 hero_position: "center"
-banner_size: collage
+banner_size: histology
 ---
+
+<p class="page-note">Banner: H&amp;E-stained colonoscopy biopsy, Figure 1 from my co-authored <a href="https://nur.nu.edu.kz/items/87716040-78c3-4c47-a842-906c5421cf60">postpartum colorectal cancer case report</a> (2020).</p>
 
 <p class="page-intro">Diagnostic medicine is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
 
