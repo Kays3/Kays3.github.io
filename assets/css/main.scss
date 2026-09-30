@@ -399,6 +399,7 @@ figcaption { font-family: var(--kd-sans); }
 @media screen and (min-width: 64em) {
   #main > .page { float: none; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; width: 100%; }
   #main > .sidebar + .page { float: right; padding-left: 2.25rem; width: calc(100% - 235px); }
+  #main > .sidebar + .page .page__inner-wrap { margin-left: auto; margin-right: auto; max-width: 58rem; }
 }
 
 @media screen and (max-width: 78em) {
