@@ -5,9 +5,8 @@ permalink: /clinical-practice/
 redirect_from:
   - /family-medicine/
 author_profile: false
-hero: papers/clinical-papers-banner.jpg
-hero_position: "center"
-banner_size: collage
+hero: clinical/almaty-oita-yamaoka-visit-2024.jpg
+hero_position: "center 40%"
 ---
 
 <p class="page-intro">General practice is where I meet the whole person first. Before a diagnosis has a name, before a specialist is involved, someone walks in with a worry. I love being the physician who hears it first and stays with it.</p>

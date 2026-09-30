@@ -28,3 +28,5 @@ These images are used only on the repository owner's personal academic website.
 - `papers/ancient-genomes-pca-figure3.png`: Figure 3, panel A (1,402 SNPs), cropped to 4:3 from Dauyey and Saitou, Journal of Human Genetics 2022, supplied by Kaisar Dauyey on 2026-09-29 for the home page story card.
 
 - `contact-reef-turtle.jpeg`: original photograph supplied by Kaisar Dauyey (`G0182943.jpeg`) on 2026-09-30. The Contact banner uses a taller, responsive crop to show the blue water and coral, preserving the original image file.
+
+- `research/geneformer-artistic-banner.webp`: AI-generated artistic impression created with the built-in image generation tool on 2026-09-30, using `research/geneformer-in-silico-perturbation.png` as a conceptual reference. Decorative artwork, not experimental data.

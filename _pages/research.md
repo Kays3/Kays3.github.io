@@ -3,9 +3,12 @@ title: "Research"
 description: "Research by Kaisar Dauyey across clinical practice, digital and molecular pathology, infectious disease, genomics, and computational biology."
 permalink: /research/
 author_profile: false
-hero: clinical/almaty-oita-yamaoka-visit-2024.jpg
-hero_position: "center 40%"
+hero: research/geneformer-artistic-banner.webp
+hero_position: "center"
+banner_size: research-art
 ---
+
+<p class="page-note">Banner: an artistic impression of Geneformer in silico perturbation, inspired by the diagram below.</p>
 
 <p class="page-intro">A question from <a href="/clinical-practice/">the clinic</a>, an answer from <a href="/diagnostic-medicine/">tissue, molecules, or microbes</a>, and a result that can return to the patient. Every result should show its assumptions and limits.</p>
 
