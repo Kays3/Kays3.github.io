@@ -84,7 +84,7 @@ redirect_from:
 
 ## References
 
-<div class="timeline">
+<div class="timeline timeline--references">
   <div class="timeline-item"><div class="timeline-date">Current Postdoctoral Supervisor</div><div><h3>Professor Shinji Nakaoka</h3><p>Faculty of Advanced Life Science</p><p>Hokkaido University · Japan</p><p><a href="mailto:snakaoka@sci.hokudai.ac.jp">snakaoka@sci.hokudai.ac.jp</a></p></div></div>
   <div class="timeline-item"><div class="timeline-date">PhD Supervisor</div><div><h3>Professor Yasukazu Nakamura</h3><p>National Institute of Genetics / SOKENDAI</p><p>Mishima · Japan</p><p><a href="mailto:yn@nig.ac.jp">yn@nig.ac.jp</a></p></div></div>
 </div>
