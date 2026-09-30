@@ -9,39 +9,38 @@
 const PLOTLY_URL = "https://cdn.jsdelivr.net/npm/plotly.js@3.6.0/dist/plotly.min.js";
 const MERMAID_URL = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-// Detect OS/browser preference
-const browserPref = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-// Determine the computed theme, which can be "dark" or "light".
-function determineComputedTheme() {
-  // Determine the expected state of the theme toggle, which can be "dark", "light", or default "system"
-  let themeSetting = localStorage.getItem("theme");
-  themeSetting = (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
-
-  // Return the setting if set, or use the browser preference
-  if (themeSetting != "system") {
-    return themeSetting;
+// Follow the system unless a preference is saved; tolerate blocked storage.
+function readThemeSetting() {
+  try {
+    const setting = localStorage.getItem("theme");
+    return ["dark", "light", "system"].includes(setting) ? setting : "system";
+  } catch (error) {
+    return "system";
   }
-  return browserPref ? "dark" : "light";
+}
+
+function determineComputedTheme() {
+  const setting = readThemeSetting();
+  if (setting !== "system") {
+    return setting;
+  }
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
 }
 
 // Set the theme on page load or when explicitly called
 function setTheme(theme) {
-  const use_theme = theme ||
-    $("html").attr("data-theme") ||
-    localStorage.getItem("theme") ||
-    browserPref;
+  const use_theme = theme || determineComputedTheme();
 
   if (use_theme === "dark") {
     $("html").attr("data-theme", "dark");
     $('meta[name="theme-color"]').attr("content", "#061b26");
     $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
-    $("#theme-toggle a").attr("aria-label", "Switch to light theme");
+    $("#theme-toggle").attr("aria-checked", "true");
   } else if (use_theme === "light") {
     $("html").removeAttr("data-theme");
     $('meta[name="theme-color"]').attr("content", "#f4efe1");
     $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
-    $("#theme-toggle a").attr("aria-label", "Switch to dark theme");
+    $("#theme-toggle").attr("aria-checked", "false");
   }
 }
 
@@ -49,7 +48,11 @@ function setTheme(theme) {
 function toggleTheme() {
   const current_theme = $("html").attr("data-theme");
   const new_theme = current_theme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", new_theme);
+  try {
+    localStorage.setItem("theme", new_theme);
+  } catch (error) {
+    // Still allow switching themes for this page when storage is blocked.
+  }
   setTheme(new_theme);
   redrawPlotly();
 }
@@ -147,11 +150,11 @@ $(document).ready(function () {
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
-  // If the user hasn't chosen a theme, follow the OS preference
+  // Restore the saved preference on every page.
   setTheme();
   const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
   const handleColorSchemeChange = (e) => {
-    if (!localStorage.getItem("theme")) {
+    if (readThemeSetting() === "system") {
       setTheme(e.matches ? "dark" : "light");
     }
   };

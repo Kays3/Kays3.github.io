@@ -10,7 +10,10 @@ redirect_from:
   - /resume/
 ---
 
-<p class="page-intro">I am a physician with general practice and residency experience in Kazakhstan and translational research training in Japan, Taiwan, Australia, and the United States.</p>
+<div class="cv-intro">
+  <img class="cv-portrait" src="{{ site.baseurl }}/images/kaisar-dauyey-portrait.webp" alt="Portrait of Kaisar Dauyey" width="48" height="48" decoding="async">
+  <p class="page-intro">I am a physician with general practice and residency experience in Kazakhstan and translational research training in Japan, Taiwan, Australia, and the United States.</p>
+</div>
 
 ## Current appointment
 
