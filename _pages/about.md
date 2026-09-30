@@ -3,7 +3,7 @@ permalink: /
 title:
 description: "Kaisar Dauyey is a physician and translational researcher: whole-person patient care, and the tissue, molecular, and microbial evidence that answers clinical questions."
 author_profile: false
-hero: research/cellular-marine-genomics-banner.webp
+hero: research/about-h-pylori-okinawa-banner.png
 hero_position: "center"
 banner_size: research-art
 banner_title: "From the patient to the tissue, and back."
