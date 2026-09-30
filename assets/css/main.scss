@@ -567,6 +567,9 @@ figcaption { font-family: var(--kd-sans); }
   .people-grid { grid-template-columns: 1fr; }
 }
 
-.cv-intro { align-items: center; display: flex; gap: 1rem; margin-bottom: 2rem; }
-.cv-intro .page-intro { margin: 0; min-width: 0; }
-.cv-portrait { border: 2px solid var(--kd-line); border-radius: 50%; box-shadow: 0 4px 12px rgba(7,45,54,0.16); display: block; flex: 0 0 48px; height: 48px; object-fit: cover; width: 48px; }
+.cv-intro { margin-bottom: 2rem; }
+.cv-intro .page-intro { margin: 0.75rem 0 1rem; }
+.cv-name { color: var(--kd-ink); cursor: default; display: inline-block; font-size: 1.4rem; font-weight: 600; position: relative; }
+.cv-name:focus-visible { outline: 2px solid var(--kd-ocean); outline-offset: 4px; }
+.cv-portrait { background: var(--kd-paper); border: 2px solid var(--kd-line); border-radius: 50%; box-shadow: 0 4px 12px rgba(7,45,54,0.16); height: 192px; left: 0; max-width: none; object-fit: cover; opacity: 0; pointer-events: none; position: absolute; top: 100%; visibility: hidden; width: 192px; z-index: 5; }
+.cv-name:hover .cv-portrait, .cv-name:focus .cv-portrait { opacity: 1; visibility: visible; }
