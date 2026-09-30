@@ -3,8 +3,9 @@ title: "Contact"
 description: "Contact Kaisar Dauyey about clinical medicine, diagnostic and laboratory science, genomics, tissue imaging, and computational biology."
 permalink: /contact/
 author_profile: false
-hero: research/marine/aka-jima-ocellaris-1.webp
-hero_position: "center"
+hero: contact-reef-turtle.jpeg
+hero_position: "center bottom"
+banner_size: lower-half
 ---
 
 <section class="contact-panel">
