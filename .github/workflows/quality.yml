@@ -54,3 +54,4 @@ jobs:
           --skip 'github.com/Kays3/H\.pylori'
           --skip 'github.com/Kays3/TE_Anemonefish_Symbiosis'
           --skip 'doi.org/10\.3390/genes16020171'
+          --skip 'brainyquote\.com'
