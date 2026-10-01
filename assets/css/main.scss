@@ -186,7 +186,7 @@ figcaption { font-family: var(--kd-sans); }
 .greedy-nav .visible-links li.masthead__menu-item--lg { display: none; }
 .greedy-nav button { background: transparent; color: #fff; }
 .greedy-nav button .navicon, .greedy-nav button .navicon::before, .greedy-nav button .navicon::after { background: #fff; }
-.greedy-nav .hidden-links { background: var(--kd-surface); border-color: var(--kd-line); }
+.greedy-nav .hidden-links { background: var(--kd-surface); border-color: var(--kd-line); z-index: 40; }
 .greedy-nav .hidden-links a { color: var(--kd-ink); }
 .greedy-nav .hidden-links a:hover { background: var(--kd-pathology-soft); color: var(--kd-ocean); }
 .greedy-nav .hidden-links::before { border-color: var(--kd-line) transparent; }
@@ -417,7 +417,16 @@ figcaption { font-family: var(--kd-sans); }
   #main > .sidebar + .page .page__inner-wrap { margin-left: auto; margin-right: auto; max-width: 58rem; }
 }
 
-@media screen and (max-width: 78em) {
+/* Overflow menu on phones and tablets: sits in the page flow under the nav bar
+   and pushes the content down instead of floating over it. */
+@media screen and (max-width: 64em) {
+  .masthead__inner-wrap { align-items: flex-start; }
+  .theme-switch { align-self: flex-start; margin-top: 0.47rem; }
+  .greedy-nav .hidden-links { border-radius: 0; border-width: 1px 0 0; box-shadow: none; margin: 0.35rem 0 -0.35rem -1rem; padding: 0.25rem 0; position: static; width: 100vw; }
+  .greedy-nav .hidden-links::before, .greedy-nav .hidden-links::after { display: none; }
+  .greedy-nav .hidden-links li { border: 0; border-bottom: 1px solid var(--kd-line); }
+  .greedy-nav .hidden-links li:last-child { border-bottom: 0; }
+  .greedy-nav .hidden-links a { display: block; font-size: 0.9rem; letter-spacing: 0.06em; padding: 0.85rem 1rem; }
 }
 
 @media screen and (max-width: 46em) {
