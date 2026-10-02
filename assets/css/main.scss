@@ -456,7 +456,7 @@ figcaption { font-family: var(--kd-sans); }
   overflow: hidden;
 }
 .about-hero { display: block; }
-.about-hero__content { margin: 0 auto; max-width: 72rem; padding: clamp(2rem, 4vw, 3.5rem); text-align: center; }
+.about-hero__content { margin: 0 auto; max-width: 72rem; padding: clamp(1.6rem, 4vw, 3.5rem); text-align: center; }
 .about-hero__content > .eyebrow { margin-bottom: 1rem !important; }
 .about-hero__content h2 {
   font-size: clamp(3rem, 4.4vw, 4.1rem);
@@ -602,7 +602,10 @@ figcaption { font-family: var(--kd-sans); }
 }
 
 .cv-intro { margin-bottom: 2rem; }
-.about-profile { min-height: 192px; padding-right: 208px; position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
+.about-profile { min-height: 3rem; position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+.about-profile:has(.cv-name:hover), .about-profile:has(.cv-name:focus) { min-height: 192px; }
+.about-profile .cv-name { color: var(--kd-ocean); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; }
+.about-visual .section-heading { text-align: center; }
 .cv-intro .page-intro { margin: 0.75rem 0 1rem; }
 .cv-name { color: var(--kd-ink); cursor: default; display: inline-block; font-size: 1.4rem; font-weight: 600; }
 .cv-name:focus-visible { outline: 2px solid var(--kd-ocean); outline-offset: 4px; }
@@ -610,7 +613,7 @@ figcaption { font-family: var(--kd-sans); }
 .cv-name:hover .cv-portrait, .cv-name:focus .cv-portrait { opacity: 1; visibility: visible; }
 
 @media screen and (max-width: 36em) {
-  .about-profile { display: block; min-height: 0; padding-right: 0; }
+  .about-profile { display: block; min-height: 0; }
   .cv-intro { min-height: 0; padding-right: 0; }
   .cv-name { display: block; overflow-wrap: anywhere; position: relative; }
   .cv-portrait { right: 0; top: 2.2rem; }
