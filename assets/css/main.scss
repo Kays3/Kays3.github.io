@@ -601,21 +601,15 @@ figcaption { font-family: var(--kd-sans); }
   .people-grid { grid-template-columns: 1fr; }
 }
 
-.cv-intro { margin-bottom: 2rem; }
-.about-profile { min-height: 3rem; position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
-.about-profile:has(.cv-name:hover), .about-profile:has(.cv-name:focus) { min-height: 192px; }
-.about-profile .cv-name { color: var(--kd-ocean); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; }
+/* Permanent CV portrait, with no hover interaction. */
+.cv-intro { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+.cv-intro > p { margin: 0; }
+.cv-photo { order: 2; flex: 0 0 auto; display: block; width: 192px; height: 192px; object-fit: cover; border-radius: 50%; border: 2px solid var(--kd-line); box-shadow: var(--kd-glow); }
+.about-profile { margin-bottom: 1rem; text-align: center; }
+.about-name { color: var(--kd-ocean); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; }
 .about-visual .section-heading { text-align: center; }
-.cv-intro .page-intro { margin: 0.75rem 0 1rem; }
-.cv-name { color: var(--kd-ink); cursor: default; display: inline-block; font-size: 1.4rem; font-weight: 600; }
-.cv-name:focus-visible { outline: 2px solid var(--kd-ocean); outline-offset: 4px; }
-.cv-portrait { background: var(--kd-paper); border: 2px solid var(--kd-line); border-radius: 50%; box-shadow: 0 4px 12px rgba(7,45,54,0.16); height: 192px; right: 0; max-width: none; object-fit: cover; opacity: 0; pointer-events: none; position: absolute; top: 0; visibility: hidden; width: 192px; z-index: 5; }
-.cv-name:hover .cv-portrait, .cv-name:focus .cv-portrait { opacity: 1; visibility: visible; }
-
 @media screen and (max-width: 36em) {
-  .about-profile { display: block; min-height: 0; }
-  .cv-intro { min-height: 0; padding-right: 0; }
-  .cv-name { display: block; overflow-wrap: anywhere; position: relative; }
-  .cv-portrait { right: 0; top: 2.2rem; }
-  .cv-name:hover, .cv-name:focus { padding-bottom: 208px; }
+  .cv-photo { width: 128px; height: 128px; }
+  .cv-intro { flex-wrap: wrap; }
+  .cv-photo { margin-left: auto; }
 }
