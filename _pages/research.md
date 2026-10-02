@@ -10,7 +10,6 @@ hero_position: "center"
 banner_size: research-art
 ---
 
-<p class="page-note">Banner: an artistic impression connecting cellular modelling with marine genomics and anemonefish–host symbiosis.</p>
 
 <p class="page-intro">A question from <a href="/clinical-practice/">the clinic</a>, an answer from <a href="/diagnostic-medicine/">tissue, molecules, or microbes</a>, and a result that can return to the patient. Every result should show its assumptions and limits.</p>
 

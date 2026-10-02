@@ -12,7 +12,6 @@ hero_position: "center"
 banner_size: diagnostic-art
 ---
 
-<p class="page-note">Banner: an artistic impression connecting H&amp;E tissue, molecular evidence, and spatial diagnostic analysis.</p>
 
 <p class="page-intro">Diagnostic medicine is where disease becomes something you can see. A tissue section, a culture plate, a variant call. I am drawn to that moment of evidence and to the responsibility of reading it correctly.</p>
 
