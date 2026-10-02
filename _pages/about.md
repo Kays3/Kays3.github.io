@@ -26,7 +26,7 @@ redirect_from:
       <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
       <h2 id="home-title">Care informed by research.</h2>
       <p class="about-hero__lead">I am a physician with general practice and residency experience in Kazakhstan and translational research training in Japan, Taiwan, Australia, and the United States.</p>
-      <p class="about-hero__lead">I am a physician and translational researcher. I have cared for patients as a general practitioner, and I now study disease where it shows itself: in tissue, cells, molecules, and microbes. The best answers travel both ways.</p>
+      <p class="about-hero__lead">I now study disease where it shows itself: in tissue, cells, molecules, and microbes. The best answers travel both ways.</p>
 
       <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">
         <div><dt>Clinical practice</dt><dd>General practitioner · Dau-Med Clinics, Kazakhstan</dd></div>
