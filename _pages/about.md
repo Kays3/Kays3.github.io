@@ -18,9 +18,8 @@ redirect_from:
   <section class="about-hero">
     <div class="about-hero__content">
       <div class="about-profile">
-        <span class="cv-name" tabindex="0" aria-label="Kaisar Dauyey, show portrait">
+        <span class="about-name">
           Kaisar Dauyey
-          <img class="cv-portrait" src="{{ site.baseurl }}/images/kaisar-dauyey-portrait.webp" alt="Portrait of Kaisar Dauyey" width="192" height="192" decoding="async">
         </span>
       </div>
       <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
