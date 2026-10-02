@@ -601,7 +601,8 @@ figcaption { font-family: var(--kd-sans); }
   .people-grid { grid-template-columns: 1fr; }
 }
 
-.cv-intro { margin-bottom: 2rem; min-height: 192px; padding-right: 208px; position: relative; }
+.cv-intro { margin-bottom: 2rem; }
+.about-profile { min-height: 192px; padding-right: 208px; position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
 .cv-intro .page-intro { margin: 0.75rem 0 1rem; }
 .cv-name { color: var(--kd-ink); cursor: default; display: inline-block; font-size: 1.4rem; font-weight: 600; }
 .cv-name:focus-visible { outline: 2px solid var(--kd-ocean); outline-offset: 4px; }
@@ -609,6 +610,7 @@ figcaption { font-family: var(--kd-sans); }
 .cv-name:hover .cv-portrait, .cv-name:focus .cv-portrait { opacity: 1; visibility: visible; }
 
 @media screen and (max-width: 36em) {
+  .about-profile { display: block; min-height: 0; padding-right: 0; }
   .cv-intro { min-height: 0; padding-right: 0; }
   .cv-name { display: block; overflow-wrap: anywhere; position: relative; }
   .cv-portrait { right: 0; top: 2.2rem; }

@@ -17,8 +17,15 @@ redirect_from:
 <main class="about-visual" aria-labelledby="home-title">
   <section class="about-hero">
     <div class="about-hero__content">
+      <div class="about-profile">
+        <span class="cv-name" tabindex="0" aria-label="Kaisar Dauyey, show portrait">
+          Kaisar Dauyey
+          <img class="cv-portrait" src="{{ site.baseurl }}/images/kaisar-dauyey-portrait.webp" alt="Portrait of Kaisar Dauyey" width="192" height="192" decoding="async">
+        </span>
+      </div>
       <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
       <h2 id="home-title">Care informed by research.</h2>
+      <p class="about-hero__lead">I am a physician with general practice and residency experience in Kazakhstan and translational research training in Japan, Taiwan, Australia, and the United States.</p>
       <p class="about-hero__lead">I am a physician and translational researcher. I have cared for patients as a general practitioner, and I now study disease where it shows itself: in tissue, cells, molecules, and microbes. The best answers travel both ways.</p>
 
       <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">

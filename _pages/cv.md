@@ -13,11 +13,6 @@ redirect_from:
 ---
 
 <div class="cv-intro">
-  <span class="cv-name" tabindex="0" aria-label="Kaisar Dauyey, show portrait">
-    Kaisar Dauyey
-    <img class="cv-portrait" src="{{ site.baseurl }}/images/kaisar-dauyey-portrait.webp" alt="Portrait of Kaisar Dauyey" width="192" height="192" decoding="async">
-  </span>
-  <p class="page-intro">I am a physician with general practice and residency experience in Kazakhstan and translational research training in Japan, Taiwan, Australia, and the United States.</p>
   <p><a class="about-button" href="{{ site.baseurl }}/files/kaisar-dauyey-cv.pdf" download>Download CV (PDF)</a></p>
 </div>
 
