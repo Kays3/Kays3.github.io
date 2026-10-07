@@ -12,6 +12,16 @@ banner_size: collage
 
 <p class="page-intro">Here is my publication record through 2026. You can check the latest identifiers and updates on <a href="https://orcid.org/0000-0003-0533-9778">ORCID</a> or <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dauyey+K%5BAuthor%5D">PubMed</a>.</p>
 
+<section class="writing-guide" aria-labelledby="writing-guide-title">
+  <p class="eyebrow">A guide to the writing</p><h2 id="writing-guide-title">Choose a question, then read the study.</h2>
+  <div class="reading-paths">
+    <a href="/research/#infectious-disease"><span>Infection</span><strong>Local evidence on antibiotic resistance</strong><small>The Almaty culture study and regional comparison.</small><b aria-hidden="true">→</b></a>
+    <a href="/clinical-practice/"><span>Clinical medicine</span><strong>Diagnosis, treatment, and the work of care</strong><small>Case reports, reviews, and palliative care research.</small><b aria-hidden="true">→</b></a>
+    <a href="/research/#polygenic-risk"><span>Population genetics</span><strong>Ancient genomes and modern scores</strong><small>The 2022 paper and the first chapter of my thesis.</small><b aria-hidden="true">→</b></a>
+    <a href="/research/#ocean-acidification"><span>Doctoral thesis</span><strong>Gene expression under environmental change</strong><small>Reef fish transcriptomes and TE related signals.</small><b aria-hidden="true">→</b></a>
+  </div>
+</section>
+<h2 id="publication-record">Publication record</h2>
 <div class="publication-list">
   <article class="publication-item"><div class="pub-year">2026</div><div><h2 class="pub-title"><a href="https://doi.org/10.3389/fmicb.2026.1747006">A single-center culture-based study of <em>Helicobacter pylori</em> in Kazakhstan with regional meta-analysis of prevalence and antibiotic resistance</a></h2><p class="pub-authors"><strong>Kaisar Dauyey</strong>, Gulnur Zhunussova, Jamilya Kaibullayeva, et al.</p><p class="pub-meta"><em>Frontiers in Microbiology</em>, 17 · <a href="https://doi.org/10.3389/fmicb.2026.1747006">DOI</a></p><div class="tag-row pub-tags"><span class="tag tag--family">Clinical</span><span class="tag tag--pathology">Clinical microbiology</span><span class="tag">Antimicrobial resistance</span></div></div></article>
   <article class="publication-item"><div class="pub-year">2025</div><div><h2 class="pub-title"><a href="https://doi.org/10.1186/s12904-025-01798-z">Behind the care: emotional struggles, burnout, and denial in Kazakhstan’s professional palliative care workforce</a></h2><p class="pub-authors">Byron Crape, Pana Akhmetniyaz, Makpal Akhmetova, Faye Foster, <strong>Kaisar Dauyey</strong>, Alessandra Clementi, Lyazzat Toleubekova</p><p class="pub-meta"><em>BMC Palliative Care</em>, 24 · <a href="https://doi.org/10.1186/s12904-025-01798-z">DOI</a></p><div class="tag-row pub-tags"><span class="tag tag--family">Clinical</span><span class="tag">Palliative care</span><span class="tag">Workforce wellbeing</span></div></div></article>
