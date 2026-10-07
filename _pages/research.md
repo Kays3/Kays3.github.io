@@ -11,7 +11,8 @@ banner_size: research-art
 ---
 
 
-<p class="page-intro">A question from <a href="/clinical-practice/">the clinic</a>, an answer from <a href="/diagnostic-medicine/">tissue, molecules, or microbes</a>, and a result that can return to the patient. Every result should show its assumptions and limits.</p>
+<p class="page-intro">My research follows clinical questions into microbiology, genetics, and tissue biology. My thesis adds a wider view: how genomes relate to human history and environmental change.</p>
+<nav class="section-index" aria-label="Research sections"><a href="#digital-pathology">Current work</a><a href="#infectious-disease">Infection</a><a href="#clinical-systems">Clinical studies</a><a href="#polygenic-risk">Ancient genomes</a><a href="#ocean-acidification">Reef fish and TEs</a><a href="#people-title">Collaboration</a></nav>
 
 <p class="page-note">Related public engagement: <a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer">Oita Glocal feature</a> on science, education, and regional collaboration.</p>
 
@@ -43,6 +44,15 @@ same_sign = np.sign(by_donor["mean"]) == overall_sign</code></pre><a class="repo
 }</code></pre><a class="repo-snippet__source" href="https://github.com/Kays3/Ancient_intelligence/blob/master/scripts/pgs_calculator_1402snps.R#L123-L135">Read the source in GitHub <span aria-hidden="true">↗</span></a></div></details><p><a class="text-link" href="https://github.com/Kays3/Ancient_intelligence">Open the Ancient Intelligence repository <span aria-hidden="true">↗</span></a></p></div></article>
   <article class="topic-row" id="machine-learning"><div class="topic-row__number">05</div><div><p class="eyebrow">Model to mechanism</p><h2>Machine Learning and Bioinformatics</h2><p>I write workflows that another researcher can inspect and rerun. I document the inputs, the evaluation boundary, and the failures. Speed helps. Biological meaning matters more.</p><div class="tag-row"><span>Python</span><span>R</span><span>RNA sequencing</span><span>Geneformer</span><span>workflow validation</span></div><div class="research-publications"><p class="eyebrow">Related work</p><ul><li><a href="https://doi.org/10.1186/s12920-018-0376-4">Longitudinal expression profiling of CD4+ and CD8+ cells in giant cell arteritis</a></li><li><a href="https://doi.org/10.2174/1568026620666200211113824">Neuroclinical signatures after acute stroke using quantitative CT and multivariate modelling</a></li><li><a href="https://github.com/Kays3/geneformer-lung-tcell">Current Geneformer lung T cell workflow</a></li></ul></div></div></article>
 </div>
+
+<section class="reading-section" id="ocean-acidification" aria-labelledby="te-title">
+  <p class="eyebrow">Doctoral research · Environment and gene expression</p>
+  <h2 id="te-title">Transposable elements in a changing ocean</h2>
+  <div class="reading-current">
+    <div><p>My thesis examined 72 brain transcriptomes from <em>Acanthochromis polyacanthus</em>, a coral reef damselfish. The dataset compared control, acute, developmental, and transgenerational carbon dioxide exposure, with offspring from tolerant and sensitive parents.</p><p>I examined TE related transcripts alongside broader gene expression patterns. The work suggests questions about genome regulation and brain plasticity that need further investigation. Transcript abundance alone does not establish transposition or a regulatory mechanism.</p><p><a class="text-link" href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence">Explore the public figures and evidence ↗</a><br><a class="text-link" href="https://ir.soken.ac.jp/records/2000266">Read the thesis record ↗</a></p></div>
+    <figure><img src="/images/research/aka-island-coral-turtle.webp" alt="Aka Island reef field context" width="1280" height="960" loading="lazy"><figcaption>Field context from Okinawa. The experimental dataset came from laboratory reared fish with parents collected near Palm Island, Australia.</figcaption></figure>
+  </div>
+</section>
 
 <section class="people-section" aria-labelledby="people-title">
   <div class="section-heading"><p class="eyebrow">People and places</p><h2 id="people-title">Research is a team sport</h2></div>
