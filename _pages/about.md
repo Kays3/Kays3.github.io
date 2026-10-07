@@ -14,124 +14,41 @@ redirect_from:
   - /about.html
 ---
 
-<main class="about-visual" aria-labelledby="home-title">
-  <section class="about-hero">
-    <div class="about-hero__content">
-      <div class="about-profile">
-        <span class="about-name">
-          Kaisar Dauyey
-        </span>
-      </div>
-      <p class="eyebrow">Physician · Translational researcher · Hokkaido University</p>
-      <h2 id="home-title">Care informed by research.</h2>
-      <p class="about-hero__lead">I am a physician with general practice and residency experience in Kazakhstan and translational research training in Japan, Taiwan, Australia, and the United States.</p>
-      <p class="about-hero__lead">I now study disease where it shows itself: in tissue, cells, molecules, and microbes. The best answers travel both ways.</p>
+<div class="reading-home">
+  <section class="reading-intro" aria-labelledby="home-title">
+    <div>
+      <p class="eyebrow">Kaisar Dauyey · Physician and researcher</p>
+      <h2 id="home-title">Questions from medicine.<br>Answers from biology.</h2>
+      <p class="reading-lead">My work starts with a question about a person, a population, or an organism. I use clinical observation, genetics, and computation to understand what the evidence can tell us.</p>
+      <p>My papers follow infections, cancer, immune disease, and the people who provide care. My doctoral thesis brings together ancient human genomes and the response of reef fish to a changing ocean.</p>
+      <div class="reading-actions"><a class="about-button about-button--primary" href="/research/">Explore the research →</a><a class="text-link" href="/publications/">Read the papers →</a></div>
+      <p class="reading-caption">MD, Nazarbayev University · PhD in Genetics, SOKENDAI<br>Postdoctoral research, Hokkaido University</p>
+    </div>
+    <figure class="reading-portrait"><img src="/images/kaisar-dauyey-portrait.webp" alt="Kaisar Dauyey" width="860" height="900" fetchpriority="high"><figcaption>Clinical experience in Kazakhstan. Research shaped by Japan and international collaborations.</figcaption></figure>
+  </section>
 
-      <dl class="about-hero__affiliations" aria-label="Professional affiliations and training">
-        <div><dt>Clinical practice</dt><dd>General practitioner · Dau-Med Clinics, Kazakhstan</dd></div>
-        <div><dt>Research</dt><dd>Whole slide imaging and spatial biology, with AI and in silico gene perturbation in sequencing datasets · Hokkaido University</dd></div>
-        <div><dt>Training</dt><dd>MD · Nazarbayev University · PhD in Genetics · SOKENDAI · ECFMG Certified</dd></div>
-      </dl>
-
-      <div class="about-hero__actions">
-        <a class="about-button about-button--primary" href="/clinical-practice/">Clinical practice <span aria-hidden="true">→</span></a>
-        <a class="about-button about-button--pathology" href="/diagnostic-medicine/">Diagnostic medicine <span aria-hidden="true">→</span></a>
-        <a class="about-button about-button--quiet" href="/cv/">View CV</a>
-      </div>
+  <section class="reading-section" aria-labelledby="work-title">
+    <p class="eyebrow">Start here</p><h2 id="work-title">Follow the question.</h2>
+    <div class="reading-paths">
+      <a href="/research/#infectious-disease"><span>Infection and resistance</span><strong>What local evidence does a clinician need?</strong><small>Patient samples, culture, and antibiotic resistance in Kazakhstan.</small><b aria-hidden="true">↗</b></a>
+      <a href="/research/#clinical-systems"><span>Patients and care</span><strong>Where does care become difficult?</strong><small>Diagnostic delays, cancer genetics, and the experience of palliative care professionals.</small><b aria-hidden="true">↗</b></a>
+      <a href="/research/#polygenic-risk"><span>Ancient genomes</span><strong>How far can a modern genetic score travel?</strong><small>Exploratory comparisons across ancestry and time.</small><b aria-hidden="true">↗</b></a>
+      <a href="/research/#ocean-acidification"><span>Reef fish and adaptation</span><strong>How does a changing ocean reach the genome?</strong><small>Transposable element related transcripts under elevated carbon dioxide.</small><b aria-hidden="true">↗</b></a>
     </div>
   </section>
 
-  <section class="about-passions" aria-labelledby="passions-title">
-    <div class="section-heading">
-      <p class="eyebrow">What I do</p>
-      <h2 id="passions-title">Care for the person. Read the evidence.</h2>
-    </div>
-    <div class="about-passions__grid">
-      <article class="passion-card passion-card--family">
-        <p class="eyebrow">Clinical practice</p>
-        <h3>The first physician a person sees, and the one who stays</h3>
-        <p>In general practice I cared for adults whose problems did not yet belong to any specialty. I learned to listen first, test sparingly, follow up, and coordinate care so patients did not have to. Continuity and context are the whole point.</p>
-        <ul class="passion-card__evidence">
-          <li>General practitioner, Dau-Med Clinics, Shymkent · 2025 to 2026</li>
-          <li>Case reports on late diagnosed colorectal cancer and aspirin intolerance in acute coronary syndrome</li>
-          <li>Study of burnout and wellbeing in Kazakhstan's palliative care workforce</li>
-        </ul>
-        <a class="about-button" href="/clinical-practice/">Clinical practice <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="passion-card passion-card--pathology">
-        <p class="eyebrow">Diagnostic medicine</p>
-        <h3>Where disease stops being a story and becomes something you can see</h3>
-        <p>Every biopsy, culture, and genetic test I ordered was waiting on a laboratory answer. My research now lives there: whole slide imaging and spatial biology at Hokkaido University, molecular findings in hereditary cancer, and antimicrobial resistance in cultured <em>H. pylori</em>.</p>
-        <ul class="passion-card__evidence">
-          <li>Postdoctoral fellow, whole slide imaging and spatial biology · Hokkaido University</li>
-          <li>Co-author on <em>BRCA2</em> and <em>EHBP1</em> variant studies in prostate and colorectal cancer</li>
-          <li>First author, culture based <em>H. pylori</em> resistance study with regional meta-analysis</li>
-        </ul>
-        <a class="about-button about-button--pathology" href="/diagnostic-medicine/">Diagnostic medicine <span aria-hidden="true">→</span></a>
-      </article>
-    </div>
+  <section class="reading-section" aria-labelledby="selected-title">
+    <div class="reading-heading"><div><p class="eyebrow">Selected writing</p><h2 id="selected-title">Read the evidence.</h2></div><a class="text-link" href="/publications/">All publications →</a></div>
+    <article class="reading-study"><img src="/images/research/h-pylori-almaty-resistance.png" alt="Antibiotic resistance results from the Almaty H. pylori study" width="900" height="1157" loading="lazy"><div><p class="eyebrow">Frontiers in Microbiology · 2026</p><h3>Antibiotic resistance in Almaty</h3><p>Our study enrolled 150 patients and recovered 86 viable <em>H. pylori</em> isolates. Testing those isolates gave us a local resistance profile to compare with regional evidence.</p><a class="text-link" href="https://doi.org/10.3389/fmicb.2026.1747006">Read the paper ↗</a></div></article>
+    <article class="reading-study"><img src="/images/papers/palliative-care-themes.png" alt="Themes from the study of Kazakhstan's palliative care workforce" loading="lazy"><div><p class="eyebrow">BMC Palliative Care · 2025</p><h3>The people behind the care</h3><p>Interviews with 60 palliative care professionals in Kazakhstan explored emotional strain, burnout, and how people understood their work.</p><a class="text-link" href="https://doi.org/10.1186/s12904-025-01798-z">Read the paper ↗</a></div></article>
+    <article class="reading-study"><img src="/images/research/aka-island-coral-turtle.webp" alt="Sea turtle among coral at Aka Island, Okinawa, providing field context for marine research" width="1280" height="960" loading="lazy"><div><p class="eyebrow">Doctoral thesis · SOKENDAI · 2024</p><h3>Ancient humans and changing reefs</h3><p>My thesis examines polygenic scores in ancient genomes and TE related expression in 72 reef fish brain transcriptomes. Both ask how genetic signals make sense in their biological context.</p><a class="text-link" href="https://ir.soken.ac.jp/records/2000266">Read the thesis record ↗</a></div></article>
   </section>
 
-  <section class="about-story" aria-labelledby="story-title">
-    <div class="section-heading">
-      <p class="eyebrow">How I work</p>
-      <h2 id="story-title">One question, three scales</h2>
-    </div>
-    <div class="about-story__grid">
-      <a class="about-story__card" href="/clinical-practice/">
-        <figure><img src="/images/research/h-pylori-almaty-resistance.png" alt="Helicobacter pylori antimicrobial resistance summary from patients in Almaty, Kazakhstan" width="900" height="1157" loading="lazy" decoding="async"><figcaption><span>01 · Patient</span><strong>The clinic</strong><small>Start with the person and the question their symptoms raise. Recruit, consent, and document with care.</small></figcaption></figure>
-      </a>
-      <a class="about-story__card" href="/diagnostic-medicine/">
-        <figure><img src="/images/research/digital-pathology-spatial-cover.webp" alt="Spatial molecular measurements aligned with whole slide tissue morphology" width="950" height="950" loading="lazy" decoding="async"><figcaption><span>02 · Tissue</span><strong>The slide</strong><small>Test whether a predicted cell state makes sense in the tissue around it. Morphology is the referee.</small></figcaption></figure>
-      </a>
-      <a class="about-story__card" href="https://doi.org/10.1038/s10038-022-01039-8">
-        <figure><img src="/images/papers/ancient-genomes-pca-figure3.png" alt="Principal component plot of 1,402 intelligence-associated SNPs showing ancient individuals placed among modern populations" width="1200" height="900" loading="lazy" decoding="async"><figcaption><span>03 · Genome</span><strong>The score</strong><small>Polygenic scores for intelligence applied to ancient genomes, with Naruya Saitou. On 1,402 top variants the ancient individuals sit inside modern population structure. <em>Journal of Human Genetics</em>, 2022.</small></figcaption></figure>
-      </a>
-    </div>
+  <section class="reading-section reading-current" aria-labelledby="current-title">
+    <div><p class="eyebrow">Current research</p><h2 id="current-title">From tissue to cell states.</h2><p>At Hokkaido University, I work with whole slide images, spatial biology, and computational models. Geneformer perturbations help propose genes to investigate. Donor consistency and tissue evidence guide the next step.</p><a class="text-link" href="/research/#digital-pathology">Explore the current work →</a></div>
+    <img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer cell embedding grouped by cell type and disease" width="1400" height="595" loading="lazy">
   </section>
 
-  <section class="about-focus" aria-labelledby="bridge-title">
-    <div class="section-heading">
-      <p class="eyebrow">From clinic to laboratory and back</p>
-      <h2 id="bridge-title">Three patients, one loop</h2>
-      <p class="section-lead">Each began as a question in a clinic, was answered in a laboratory, and came back as a decision about care.</p>
-    </div>
-    <div class="about-focus__grid">
-      <article class="about-focus__card">
-        <span class="about-focus__number">01</span>
-        <p class="eyebrow">Clinic → culture → treatment</p>
-        <h3>A common infection, a local answer</h3>
-        <p><em>Helicobacter pylori</em> is everyday primary care. Recruiting patients, culturing isolates, and measuring antibiotic resistance in Almaty gave clinicians local evidence for first line therapy instead of borrowed guidelines.</p>
-        <div class="tag-row"><span>primary care</span><span>clinical microbiology</span><span>AMR</span></div>
-        <a class="text-link" href="https://doi.org/10.3389/fmicb.2026.1747006">Read the 2026 study <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="about-focus__card">
-        <span class="about-focus__number">02</span>
-        <p class="eyebrow">Symptom → biopsy → diagnosis</p>
-        <h3>A diagnosis that came too late</h3>
-        <p>A young woman's colorectal cancer was recognised only after childbirth. The tissue diagnosis was unambiguous. The delay happened upstream, in how symptoms in young patients were weighed. I carry that lesson into both fields.</p>
-        <div class="tag-row"><span>primary care</span><span>tissue diagnosis</span><span>oncology</span></div>
-        <a class="text-link" href="https://nur.nu.edu.kz/items/87716040-78c3-4c47-a842-906c5421cf60">Read the case report <span aria-hidden="true">↗</span></a>
-      </article>
-      <article class="about-focus__card">
-        <span class="about-focus__number">03</span>
-        <p class="eyebrow">Family history → variant → therapy</p>
-        <h3>A variant that changed the plan</h3>
-        <p>A pathogenic <em>BRCA2</em> splice variant in a man with metastatic castration resistant prostate cancer. Molecular testing turned a family history into a treatment option, and a conversation with relatives.</p>
-        <div class="tag-row"><span>molecular diagnostics</span><span>hereditary cancer</span><span>genetic counselling</span></div>
-        <a class="text-link" href="https://doi.org/10.23950/jcmk/16588">Read the case <span aria-hidden="true">↗</span></a>
-      </article>
-    </div>
-  </section>
-
-  <aside class="about-more" aria-label="Additional research areas">
-    <div><p class="eyebrow">Beyond the clinic and the slide</p><h2>Genomics, population risk, and marine biology</h2></div>
-    <p>My PhD in genetics and fieldwork in Okinawa still shape how I read evidence.</p>
-    <a class="about-button" href="/research/">All research</a>
-  </aside>
-
-  <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
-    <div class="section-heading"><h2 id="visitor-tracker-title">Visitor locations worldwide</h2></div>
-    <a class="visitor-tracker__map" href="https://mapmyvisitors.com/web/1c7ga" title="View visitor tracker" rel="noopener noreferrer"><img src="https://mapmyvisitors.com/map.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=EbdIQeVXNWfqNGr9-LK8xxs9Vwb5DnKww9qk4xH2RAQ&amp;co=2d78ad&amp;ct=ffffff" alt="Map showing the countries and regions from which this website has been visited" width="300" loading="lazy" referrerpolicy="no-referrer"></a>
-  </section>
-</main>
+  <section class="reading-next" aria-labelledby="conversation-title"><div><p class="eyebrow">Collaboration</p><h2 id="conversation-title">What question are you working on?</h2><p>Tell me what you want to understand and what evidence you have.</p></div><a class="about-button about-button--primary" href="/contact/">Get in touch →</a></section>
+  <nav class="reading-related" aria-label="More about Kaisar"><a href="/clinical-practice/">Clinical practice</a><a href="/diagnostic-medicine/">Diagnostic medicine</a><a href="/interests/">Fieldwork and interests</a><a href="/cv/">CV and training</a></nav>
+</div>

@@ -8,14 +8,8 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "About"
+  - title: "Home"
     url: /
-
-  - title: "Clinical Practice"
-    url: /clinical-practice/
-
-  - title: "Diagnostic Medicine"
-    url: /diagnostic-medicine/
 
   - title: "Research"
     url: /research/
