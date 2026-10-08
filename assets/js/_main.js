@@ -170,6 +170,28 @@ $(document).ready(function () {
     toggleTheme();
   });
 
+  function setAboutPortrait(button, visible) {
+    $(button).closest('.about-profile').toggleClass('is-portrait-visible', visible);
+    $(button).attr('aria-expanded', String(visible));
+  }
+  $('.about-name').on('mouseenter', function () {
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) setAboutPortrait(this, true);
+  }).on('mouseleave', function () {
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) setAboutPortrait(this, false);
+  }).on('click', function () {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      setAboutPortrait(this, $(this).attr('aria-expanded') !== 'true');
+    }
+  }).on('keydown', function (event) {
+    if (event.key === 'Escape') setAboutPortrait(this, false);
+    if (event.key === 'Enter' || event.key === ' ') {
+      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        event.preventDefault();
+        setAboutPortrait(this, $(this).attr('aria-expanded') !== 'true');
+      }
+    }
+  }).on('blur', function () { setAboutPortrait(this, false); });
+
   // Enable the sticky footer
   var bumpIt = function () {
     $("body").css("padding-bottom", "0");

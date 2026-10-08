@@ -13,7 +13,7 @@ redirect_from:
 ---
 
 <div class="cv-intro">
-  <img class="cv-photo" src="{{ site.baseurl }}/images/kaisar-dauyey-portrait.webp" alt="Portrait of Kaisar Dauyey" width="192" height="192" decoding="async">
+  <img class="cv-photo" src="{{ site.baseurl }}/images/kaisar-golden-kamui-inspired.webp" alt="Anime-style portrait of Kaisar Dauyey beneath cherry blossoms" width="192" height="192" decoding="async">
   <p><a class="about-button" href="{{ site.baseurl }}/files/kaisar-dauyey-cv.pdf" download>Download CV (PDF)</a></p>
 </div>
 

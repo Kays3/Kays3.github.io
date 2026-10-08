@@ -604,7 +604,14 @@ figcaption { font-family: var(--kd-sans); }
 /* Permanent CV portrait, with no hover interaction. */
 .cv-intro { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
 .cv-intro > p { margin: 0; }
-.cv-photo { order: 2; flex: 0 0 auto; display: block; width: 192px; height: 192px; object-fit: cover; border-radius: 50%; border: 2px solid var(--kd-line); box-shadow: var(--kd-glow); }
+.cv-photo { order: 2; flex: 0 0 auto; display: block; width: 192px; height: 192px; object-fit: cover; border-radius: 50%; border: 2px solid var(--kd-line); box-shadow: var(--kd-glow); animation: portrait-float 5s ease-in-out infinite; }
+@keyframes portrait-float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-6px) rotate(1deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cv-photo { animation: none; }
+}
 .about-profile { margin-bottom: 1rem; text-align: center; }
 .about-name { color: var(--kd-ocean); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; }
 
@@ -658,6 +665,16 @@ body { background-image: none; }
   .reading-heading, .reading-next { align-items: flex-start; flex-direction: column; gap: 0.7rem; }
   .reading-section { padding: 2rem 0; }
   .site-banner__inner { padding-top: 1.8rem; padding-bottom: 1.8rem; }
+}
+.about-profile { position: relative; }
+button.about-name { background: transparent; border: 0; cursor: pointer; font-family: inherit; margin: 0; padding: 0.35rem; }
+.about-portrait-slot { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 220ms ease; }
+.about-portrait { width: 192px; height: 192px; object-fit: cover; border-radius: 50%; border: 2px solid var(--kd-line); box-shadow: var(--kd-glow); position: absolute; right: 0; top: 0; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 220ms ease; }
+.about-profile.is-portrait-visible .about-portrait { opacity: 1; visibility: visible; }
+.about-profile.is-portrait-visible .about-portrait-slot { grid-template-rows: 1fr; min-height: 192px; }
+@media screen and (max-width: 46em) {
+  .about-portrait { right: 0; top: 3.5rem; }
+  .about-profile.is-portrait-visible .about-portrait-slot { min-height: 208px; }
 }
 .about-visual .section-heading { text-align: center; }
 @media screen and (max-width: 36em) {
