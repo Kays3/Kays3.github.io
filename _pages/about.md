@@ -17,7 +17,7 @@ redirect_from:
 <div class="reading-home">
   <section class="reading-intro" aria-labelledby="home-title">
     <div>
-      <div class="about-profile"><button class="about-name" type="button" aria-label="Show or hide portrait of Kaisar Dauyey" aria-expanded="false" aria-controls="about-portrait">Kaisar Dauyey</button><div class="about-portrait-slot"><img id="about-portrait" class="about-portrait" src="{{ site.baseurl }}/images/kaisar-golden-kamui-inspired.webp" alt="Anime-style portrait of Kaisar Dauyey beneath cherry blossoms" width="192" height="192" decoding="async"></div></div>
+      <div class="about-profile"><span class="about-name">Kaisar Dauyey</span></div>
       <p class="eyebrow">Physician and researcher</p>
       <h2 id="home-title">Questions from medicine.<br>Answers from biology.</h2>
       <p class="reading-lead">My work starts with a question about a person, a population, or an organism. I use clinical observation, genetics, and computation to understand what the evidence can tell us.</p>
@@ -25,7 +25,18 @@ redirect_from:
       <div class="reading-actions"><a class="about-button about-button--primary" href="/research/">Explore the research →</a><a class="text-link" href="/publications/">Read the papers →</a></div>
       <p class="reading-caption">MD, Nazarbayev University · PhD in Genetics, SOKENDAI<br>Postdoctoral research, Hokkaido University</p>
     </div>
-    <figure class="reading-portrait"><img src="/images/kaisar-golden-kamui-inspired.webp" alt="Kaisar Dauyey" width="860" height="900" fetchpriority="high"><figcaption>Clinical experience in Kazakhstan. Research shaped by Japan and international collaborations.</figcaption></figure>
+    <figure class="reading-portrait reading-cats">
+      <div class="cat-animation">
+        <img src="{{ site.baseurl }}/images/about-cats-golden-kamui.webp" alt="Golden Kamui-inspired collage of black cats, tabbies, a black-and-white cat, and a calico by the Okinawa sea" width="896" height="1120" fetchpriority="high">
+        {% for cat in (1..5) %}
+        <img class="cat-blink cat-blink--{{ cat }}" src="{{ site.baseurl }}/images/about-cats-blink.webp" alt="" aria-hidden="true" width="896" height="1120" decoding="async">
+        {% endfor %}
+      </div>
+      <figcaption>
+        <span>Critical inspiration for research work.</span>
+        <button class="cat-animation-toggle" type="button" aria-pressed="false" hidden>Pause animation</button>
+      </figcaption>
+    </figure>
   </section>
 
   <section class="reading-section" aria-labelledby="work-title">
