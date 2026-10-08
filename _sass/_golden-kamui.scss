@@ -1,0 +1,51 @@
+/* Illustrated adventure journal treatment shared by every page. */
+body {
+  background-color: var(--kd-paper);
+  background-image: repeating-linear-gradient(115deg, var(--kd-paper-grain) 0, var(--kd-paper-grain) 1px, transparent 1px, transparent 5px);
+}
+
+h1, h2, h3, h4, .page__title, .author__name,
+.reading-intro h2, .reading-section h2, .reading-study h3,
+.reading-next h2, .writing-guide h2, .reading-paths strong {
+  font-family: var(--kd-serif);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+.site-banner__title, .site-banner__name { font-family: var(--kd-serif); letter-spacing: -0.015em; }
+.site-banner__quote p { font-family: var(--kd-serif); font-style: italic; }
+.site-banner { border-bottom: 3px solid var(--kd-brass); }
+.masthead { border-bottom: 2px solid var(--kd-brass); box-shadow: 0 3px 16px rgba(21, 29, 20, 0.12); }
+.greedy-nav a { letter-spacing: 0.1em; }
+.greedy-nav .visible-links a::before { background: #dfc58c; }
+.masthead__menu-item.selected a { border-bottom-color: #dfc58c; }
+
+.page__title { border-bottom: 3px double var(--kd-line); }
+.section-heading, .reading-section, .topic-stack, .section-index { border-color: var(--kd-line); }
+.reading-section, .visitor-tracker { border-top-style: double; border-top-width: 3px; }
+.eyebrow { color: var(--kd-forest); letter-spacing: 0.16em; }
+.topic-row__number, .about-focus__number { font-family: var(--kd-serif); color: var(--kd-coral); }
+
+.interest-card, .project-card, .passion-card, .about-focus__card,
+.reading-next, .repo-snippet {
+  background: var(--kd-surface);
+  border-color: var(--kd-line);
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 var(--kd-sand);
+}
+.tag-row span { background: var(--kd-sand); color: var(--kd-ink); border-color: var(--kd-line); border-radius: 3px; }
+.page__content .about-button { border-radius: 3px; box-shadow: 2px 2px 0 var(--kd-line); font-weight: 600; }
+.page__content .about-button:hover { box-shadow: 1px 1px 0 var(--kd-line); }
+.reading-cats .cat-animation { border: 1px solid var(--kd-line); border-radius: 3px; overflow: hidden; box-shadow: 4px 4px 0 var(--kd-sand); }
+.reading-cats figcaption { padding-top: 0.35rem; }
+.cv-photo { border-color: var(--kd-brass); box-shadow: 0 0 0 5px var(--kd-sand); }
+.page__content blockquote { border-left: 3px solid var(--kd-brass); background: var(--kd-surface); }
+.page__content th { background: var(--kd-sand); color: var(--kd-ink); }
+.page__content hr { border-top: 3px double var(--kd-line); }
+.page__footer { background: var(--global-footer-bg-color); color: var(--global-footer-text-color); border-top: 2px solid var(--kd-brass); }
+.page__footer a { color: #f4e9cb; }
+.visitor-tracker h2 { font-family: var(--kd-serif); }
+
+@media print {
+  body { background: #fff; color: #111; }
+  .interest-card, .project-card, .passion-card, .reading-next, .repo-snippet { box-shadow: none; }
+}
