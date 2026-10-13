@@ -19,10 +19,10 @@ banner_size: research-art
 <section class="reading-section" id="research-updates" aria-labelledby="research-updates-title">
   <p class="eyebrow">Research updates · 13 October 2026</p>
   <h2 id="research-updates-title">Illustrating the fish in our comparative mobilome study</h2>
-  <p>The paper's Figure 2 uses the v1 species illustrations. The v3 supplementary animation adds fin and tail motion, independently swaying anemones, upward head-first swimming and an artistic blink. Motion was inspired by my footage of <em>A. ocellaris</em> at Aka Island, Kerama National Park, Okinawa.</p>
+  <p>The v3 species illustration animation adds fin and tail motion, independently swaying anemones, upward head-first swimming and an artistic blink. Motion was inspired by my footage of <em>A. ocellaris</em> at Aka Island, Kerama National Park, Okinawa.</p>
   <video controls playsinline preload="none" style="width:100%;max-width:960px" aria-label="V3 supplementary fish illustration animation" src="/assets/fish-illustrations/animated-v3/supplementary-fish-animation.mp4"></video>
   <p>Artwork generated with OpenAI image generation; movement is illustrative, not recorded behaviour. New contributions are offered under CC BY 4.0 to the extent rights exist; third-party references retain their original terms.</p>
-  <p><a href="/research/fish-illustrations/">Explore all eleven animated species</a> · <a href="/assets/fish-illustrations/CREDITS.md">Source credits and AI disclosure</a> · <a href="/assets/fish-illustrations/figure2-v1.png">View the paper Figure 2 (v1)</a></p>
+  <p><a href="/research/fish-illustrations/">Explore all eleven animated species</a> · <a href="/assets/fish-illustrations/CREDITS.md">Source credits and AI disclosure</a></p>
 </section>
 
 <section class="research-photo-section" aria-labelledby="research-figures-title">

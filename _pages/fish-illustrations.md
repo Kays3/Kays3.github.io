@@ -5,7 +5,7 @@ author_profile: false
 description: "Eleven fish species illustrated for a comparative genomics project, with animated tails, fins and anemones and full source credits."
 ---
 
-<p>Illustrations of eleven species from the TE mobilome project, with head-first swimming, fin and tail movement, and a lightly swaying anemone backdrop for clownfishes. These are artistic animations, including the eye blink, rather than recordings of behaviour.</p>
+<p>Illustrations of eleven species for marine-science communication, with head-first swimming, fin and tail movement, and a lightly swaying anemone backdrop for clownfishes. These are artistic animations, including the eye blink, rather than recordings of behaviour.</p>
 
 <p>The fish and habitat artwork was generated using OpenAI image generation with attributed references. Motion was programmed using field footage filmed by Kaisar Dauyey at Aka Island as qualitative inspiration. New contributions are offered under CC BY 4.0 to the extent rights exist; third-party sources retain their own terms. The original motion-reference photograph by Dr. Giuseppe Mazza is copyright protected and is not redistributed.</p>
 
