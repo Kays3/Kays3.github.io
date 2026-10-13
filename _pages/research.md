@@ -12,9 +12,18 @@ banner_size: research-art
 
 
 <p class="page-intro">My research follows clinical questions into microbiology, genetics, and tissue biology. My thesis adds a wider view: how genomes relate to human history and environmental change.</p>
-<nav class="section-index" aria-label="Research sections"><a href="#digital-pathology">Current work</a><a href="#infectious-disease">Infection</a><a href="#clinical-systems">Clinical studies</a><a href="#polygenic-risk">Ancient genomes</a><a href="#ocean-acidification">Reef fish and TEs</a><a href="#people-title">Collaboration</a></nav>
+<nav class="section-index" aria-label="Research sections"><a href="#research-updates">Research updates</a><a href="#digital-pathology">Current work</a><a href="#infectious-disease">Infection</a><a href="#clinical-systems">Clinical studies</a><a href="#polygenic-risk">Ancient genomes</a><a href="#ocean-acidification">Reef fish and TEs</a><a href="#people-title">Collaboration</a></nav>
 
 <p class="page-note">Related public engagement: <a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer">Oita Glocal feature</a> on science, education, and regional collaboration.</p>
+
+<section class="reading-section" id="research-updates" aria-labelledby="research-updates-title">
+  <p class="eyebrow">Research updates · 13 October 2026</p>
+  <h2 id="research-updates-title">Illustrating the fish in our comparative mobilome study</h2>
+  <p>The paper's Figure 2 uses the v1 species illustrations. The v3 supplementary animation adds fin and tail motion, independently swaying anemones, upward head-first swimming and an artistic blink. Motion was inspired by my footage of <em>A. ocellaris</em> at Aka Island, Kerama National Park, Okinawa.</p>
+  <video controls playsinline preload="none" style="width:100%;max-width:960px" aria-label="V3 supplementary fish illustration animation" src="/assets/fish-illustrations/animated-v3/supplementary-fish-animation.mp4"></video>
+  <p>Artwork generated with OpenAI image generation; movement is illustrative, not recorded behaviour. New contributions are offered under CC BY 4.0 to the extent rights exist; third-party references retain their original terms.</p>
+  <p><a href="/research/fish-illustrations/">Explore all eleven animated species</a> · <a href="/assets/fish-illustrations/CREDITS.md">Source credits and AI disclosure</a> · <a href="https://github.com/Kays3/TE_Mobilome_Paper">Paper repository</a></p>
+</section>
 
 <section class="research-photo-section" aria-labelledby="research-figures-title">
   <div class="section-heading"><p class="eyebrow">Projects at a glance</p><h2 id="research-figures-title">Four questions, four kinds of evidence</h2></div>
