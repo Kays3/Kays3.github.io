@@ -17,3 +17,7 @@ node_modules
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Unpublished genomic figures belong only in the private paper repository.
+/assets/fish-illustrations/figure2-*
+/assets/fish-illustrations/figure-s2-circular.*
