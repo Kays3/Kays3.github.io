@@ -1,9 +1,13 @@
 ---
 ---
 
-.language-switcher { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem 1.2rem; padding: 0.65rem 1rem; background: var(--kd-surface); border-bottom: 1px solid var(--kd-line); }
-.language-switcher a { font-size: 0.85rem; color: var(--kd-ink); padding: 0.25rem; text-decoration: none; }
-.language-switcher a[aria-current="page"] { color: var(--kd-ocean); font-weight: 700; text-decoration: underline; text-underline-offset: 0.3em; }
+.language-switcher { display: flex; justify-content: flex-end; gap: 0.35rem; padding: 0.3rem max(1rem, calc((100vw - 1100px) / 2)); background: var(--kd-surface); border-bottom: 1px solid var(--kd-line); }
+.language-switcher a { position: relative; display: grid; place-items: center; width: 44px; height: 44px; color: var(--kd-ink); border: 1px solid transparent; border-radius: 6px; text-decoration: none; }
+.language-switcher img { display: block; width: 32px; height: 32px; object-fit: contain; margin: 0; }
+.language-switcher a[aria-current="page"] { background: var(--kd-line); border-color: var(--kd-ocean); }
+.language-tooltip { position: absolute; top: 100%; right: 0; z-index: 1000; padding: 0.3rem 0.6rem; border-radius: 4px; color: var(--kd-surface); background: var(--kd-ink); font-size: 0.75rem; white-space: nowrap; visibility: hidden; }
+.language-switcher a:hover .language-tooltip, .language-switcher a:focus-visible .language-tooltip { visibility: visible; }
+html[data-theme="dark"] .language-switcher img { filter: invert(1); }
 .language-switcher a:focus-visible { outline: 2px solid var(--kd-focus); outline-offset: 3px; }
 html[lang="ja"] body { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif; }
 html[lang="ja"] .page__content { line-height: 1.9; overflow-wrap: anywhere; }

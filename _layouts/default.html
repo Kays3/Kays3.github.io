@@ -28,8 +28,8 @@ layout: compress
     </div>
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
     {% include language-switcher.html %}
+    {% include masthead.html %}
     {% if page.hero %}
     <header class="site-banner{% if page.banner_size %} site-banner--{{ page.banner_size }}{% endif %}" style="--banner-image: url('{{ base_path }}/images/{{ page.hero }}');{% if page.hero_position %} --banner-position: {{ page.hero_position }};{% endif %}">
       <div class="site-banner__inner">

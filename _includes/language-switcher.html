@@ -5,7 +5,7 @@
   {% for language in site.data.languages %}
     {% assign code = language[0] %}
     {% assign prefix = '' %}{% unless code == 'en' %}{% assign prefix = '/' | append: code %}{% endunless %}
-    <a href="{{ site.baseurl }}{{ prefix }}{{ language_path }}" lang="{{ code }}" hreflang="{{ code }}"{% if code == active_language %} aria-current="page"{% endif %}>{{ language[1].name }}</a>
+    <a href="{{ site.baseurl }}{{ prefix }}{{ language_path }}" lang="{{ code }}" hreflang="{{ code }}" aria-label="{{ language[1].name }}" title="{{ language[1].name }}"{% if code == active_language %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/languages/{{ code }}.svg" width="32" height="32" alt=""><span class="language-tooltip" aria-hidden="true">{{ language[1].name }}</span></a>
   {% endfor %}
 </nav>
 {% endif %}
