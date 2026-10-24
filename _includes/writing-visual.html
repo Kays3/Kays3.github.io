@@ -1,0 +1,29 @@
+{% assign visual_language = page.lang | default: 'en' %}
+{% assign visual_text = site.data.writing_collage[visual_language] %}
+<div class="writing-visual writing-visual--{{ include.kind }}">
+  <div class="writing-art-panel" aria-hidden="true"></div>
+  <span class="writing-number" aria-hidden="true">{{ include.number }}</span>
+  {% if include.kind == 'infection' %}
+  <a class="writing-stat-sheet" href="https://doi.org/10.3389/fmicb.2026.1747006">
+    <span class="writing-sheet-title"><i>H. pylori</i> · Almaty</span>
+    <span class="writing-stat"><strong>150</strong><span>{{ visual_text.patients }}</span></span>
+    <span class="writing-stat"><strong>86</strong><span>{{ visual_text.isolates }}</span></span>
+    <span class="writing-source-link">{{ visual_text.study }} ↗</span>
+  </a>
+  {% elsif include.kind == 'care' %}
+  <a class="writing-evidence writing-evidence--table" href="{{ '/images/papers/palliative-care-themes.png' | relative_url }}">
+    <span class="writing-sheet-title">{{ visual_text.themes }}</span>
+    <img src="{{ '/images/papers/palliative-care-themes.png' | relative_url }}" alt="{{ visual_text.themes }}" width="1400" height="603" loading="lazy">
+    <span class="writing-source-link">{{ visual_text.source }} ↗</span>
+  </a>
+  {% else %}
+  <a class="writing-field-photo" href="{{ '/images/research/aka-island-coral-turtle.webp' | relative_url }}">
+    <img src="{{ '/images/research/aka-island-coral-turtle.webp' | relative_url }}" alt="{{ visual_text.context }}" width="1280" height="960" loading="lazy">
+  </a>
+  <a class="writing-evidence writing-evidence--genomes" href="https://doi.org/10.1038/s10038-022-01039-8">
+    <span class="writing-sheet-title">{{ visual_text.genomes }}</span>
+    <img src="{{ '/images/papers/ancient-genomes-pca-figure3.png' | relative_url }}" alt="{{ visual_text.genomes }}" width="1200" height="900" loading="lazy">
+    <span class="writing-source-link">{{ visual_text.source }} ↗</span>
+  </a>
+  {% endif %}
+</div>

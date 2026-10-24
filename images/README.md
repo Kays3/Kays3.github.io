@@ -41,3 +41,7 @@ These images are used only on the repository owner's personal academic website.
 - `papers/diagnostic-medicine-artistic-banner.png`: AI-generated artistic Diagnostic Medicine banner created on 2026-09-30 using the postpartum CRC H&E biopsy figure and Geneformer diagram as conceptual references. It represents tissue, molecular signals, and spatial diagnostic analysis; artistic impression, not experimental data.
 
 - Optimized WebP delivery copies of the About, Diagnostic Medicine, and Contact banners were created on 2026-09-30. Original files are retained; page banners use the smaller WebP assets.
+
+## Selected Writing artwork
+
+The editorial background at `writing/selected-writing-art.webp` was created with the built-in image generation tool on 25 October 2026. It is artistic context for the homepage collage. Original paper figures are displayed separately and link to their sources. The prompt and source decisions are recorded in `docs/selected-writing-collage.md`.

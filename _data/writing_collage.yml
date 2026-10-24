@@ -1,0 +1,36 @@
+en:
+  patients: patients
+  isolates: cultured isolates
+  study: Published study
+  source: View the source
+  themes: Interview themes · Table 2
+  genomes: Ancient genomes · Published PCA
+  context: Okinawa field context
+  caption: Illustrative artwork surrounds the research. Open a figure to see its original source.
+ja:
+  patients: 対象患者
+  isolates: 培養分離株
+  study: 発表論文
+  source: 出典を見る
+  themes: インタビューのテーマ · 表2
+  genomes: 古代ゲノム · 発表済みのPCA図
+  context: 沖縄のフィールド
+  caption: 研究をイメージしたアートを添えています。図を開くと元の資料を確認できます。
+ru:
+  patients: пациентов
+  isolates: выделенных культур
+  study: Опубликованное исследование
+  source: Открыть источник
+  themes: Темы интервью · Таблица 2
+  genomes: Древние геномы · Опубликованный график PCA
+  context: Полевая работа на Окинаве
+  caption: Художественные образы обрамляют исследование. Нажмите на рисунок, чтобы открыть первоисточник.
+kk:
+  patients: науқас
+  isolates: бөлінген өсінді
+  study: Жарияланған зерттеу
+  source: Дереккөзді ашу
+  themes: Сұхбат тақырыптары · 2-кесте
+  genomes: Ежелгі геномдар · Жарияланған PCA графигі
+  context: Окинавадағы далалық жұмыс
+  caption: Көркем бейнелер зерттеудің мазмұнын ашады. Суретті бассаңыз, түпнұсқа дереккөзін көресіз.
