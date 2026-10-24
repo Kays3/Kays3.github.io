@@ -1,28 +1,32 @@
 {% include base_path %}
+{% assign current_language = page.lang | default: 'en' %}
+{% assign navigation_text = site.data.languages[current_language] %}
+{% assign language_prefix = '' %}{% unless current_language == 'en' %}{% assign language_prefix = '/' | append: current_language %}{% endunless %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button type="button" aria-label="Open navigation menu" aria-controls="site-nav-links" aria-expanded="false"><span class="navicon" aria-hidden="true"></span></button>
+        <button type="button" aria-label="{{ navigation_text.menu }}" aria-controls="site-nav-links" aria-expanded="false"><span class="navicon" aria-hidden="true"></span></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
+            <a href="{{ base_path }}{{ language_prefix }}/">{{ site.title }}</a>
           </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
-              {% assign domain = base_path %}
+              {% assign domain = base_path | append: language_prefix %}
             {% endif %}
             <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              {% assign navigation_key = link.url | remove: '/' %}{% if navigation_key == '' %}{% assign navigation_key = 'home' %}{% endif %}
+              <a href="{{ domain }}{{ link.url }}">{{ navigation_text[navigation_key] | default: link.title }}</a>
             </li>
           {% endfor %}
         </ul>
         <ul id="site-nav-links" class="hidden-links hidden"></ul>
       </nav>
     </div>
-    <button type="button" id="theme-toggle" class="theme-switch" role="switch" aria-checked="false" aria-label="Night mode"><span class="theme-switch__track" aria-hidden="true"><span class="theme-switch__sun">&#x2600;</span><span class="theme-switch__moon">&#x263E;</span><span class="theme-switch__knob"></span></span><span class="theme-switch__label" aria-hidden="true">Night</span></button>
+    <button type="button" id="theme-toggle" class="theme-switch" role="switch" aria-checked="false" aria-label="{{ navigation_text.night }}"><span class="theme-switch__track" aria-hidden="true"><span class="theme-switch__sun">&#x2600;</span><span class="theme-switch__moon">&#x263E;</span><span class="theme-switch__knob"></span></span><span class="theme-switch__label" aria-hidden="true">{{ navigation_text.night }}</span></button>
     <script>
       (function () {
         var root = document.documentElement, sw = document.getElementById('theme-toggle');

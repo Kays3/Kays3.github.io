@@ -114,7 +114,9 @@
 <!-- end SEO -->
 
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
-<meta property="og:locale" content="{{ site.locale | default: "en" }}">
+{% assign seo_language = page.lang | default: 'en' %}
+{% case seo_language %}{% when 'ja' %}{% assign og_language = 'ja_JP' %}{% when 'ru' %}{% assign og_language = 'ru_RU' %}{% when 'kk' %}{% assign og_language = 'kk_KZ' %}{% else %}{% assign og_language = 'en_US' %}{% endcase %}
+<meta property="og:locale" content="{{ og_language }}">
 <meta property="og:site_name" content="{{ site.title }}"> 
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 {% if page.date %}

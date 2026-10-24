@@ -1,0 +1,68 @@
+en:
+  name: English
+  home: Home
+  research: Research
+  publications: Publications
+  cv: CV
+  contact: Contact
+  menu: Open navigation menu
+  skip: Skip to content
+  loading: Loading
+  night: Night
+  switch: Language
+  original: English version
+  updated: Site last updated
+  sitemap: Sitemap
+  powered_by: Powered by
+  follow: Follow
+ja:
+  name: 日本語
+  home: ホーム
+  research: 研究
+  publications: 論文
+  cv: 経歴
+  contact: お問い合わせ
+  menu: ナビゲーションを開く
+  skip: 本文へ移動
+  loading: 読み込み中
+  night: 夜間
+  switch: 言語
+  original: 英語版
+  updated: 最終更新日
+  sitemap: サイトマップ
+  powered_by: サイト構築
+  follow: リンク
+ru:
+  name: Русский
+  home: Главная
+  research: Исследования
+  publications: Публикации
+  cv: Резюме
+  contact: Контакты
+  menu: Открыть меню
+  skip: Перейти к содержанию
+  loading: Загрузка
+  night: Ночь
+  switch: Язык
+  original: Английская версия
+  updated: Последнее обновление
+  sitemap: Карта сайта
+  powered_by: Создано на
+  follow: Ссылки
+kk:
+  name: Қазақша
+  home: Басты бет
+  research: Зерттеулер
+  publications: Жарияланымдар
+  cv: Түйіндеме
+  contact: Байланыс
+  menu: Мәзірді ашу
+  skip: Мазмұнға өту
+  loading: Жүктелуде
+  night: Түн
+  switch: Тіл
+  original: Ағылшын тіліндегі нұсқа
+  updated: Соңғы жаңарту
+  sitemap: Сайт картасы
+  powered_by: Негізі
+  follow: Сілтемелер

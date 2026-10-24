@@ -5,16 +5,17 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="{{ page.lang | default: 'en' }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    {% assign language_code = page.lang | default: 'en' %}
+    <a class="skip-link" href="#main">{{ site.data.languages[language_code].skip }}</a>
 
-    <div id="page-loader" class="page-loader" role="status" aria-label="Loading">
+    <div id="page-loader" class="page-loader" role="status" aria-label="{{ site.data.languages[language_code].loading }}">
       <svg class="solar" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
         <circle class="solar__orbit" cx="100" cy="100" r="34"/>
         <circle class="solar__orbit" cx="100" cy="100" r="58"/>
@@ -28,12 +29,13 @@ layout: compress
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
+    {% include language-switcher.html %}
     {% if page.hero %}
     <header class="site-banner{% if page.banner_size %} site-banner--{{ page.banner_size }}{% endif %}" style="--banner-image: url('{{ base_path }}/images/{{ page.hero }}');{% if page.hero_position %} --banner-position: {{ page.hero_position }};{% endif %}">
       <div class="site-banner__inner">
         {% if page.banner_quote %}
         <blockquote class="site-banner__quote">
-          <p>“{{ page.banner_quote | escape }}”</p>
+          <p lang="en">“{{ page.banner_quote | escape }}”</p>
           <cite><a href="{{ page.banner_quote_source | escape }}">Aldous Huxley</a></cite>
         </blockquote>
         {% endif %}
