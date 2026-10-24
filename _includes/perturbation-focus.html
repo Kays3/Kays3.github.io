@@ -1,0 +1,8 @@
+{% assign focus_language = page.lang | default: 'en' %}
+{% assign focus = site.data.current_research[focus_language] %}
+<section class="reading-section" id="digital-pathology">
+<p class="eyebrow">{{ focus.eyebrow }}</p><h2>{{ focus.gene_title }}</h2>
+<p>{{ focus.body }}</p><p>{{ focus.gene_body }}</p>
+<h3 id="celloracle">{{ focus.bulk_title }}</h3><p>{{ focus.bulk_body }}</p>
+<h3>{{ focus.te_title }}</h3><p>{{ focus.te_body }}</p>
+</section>

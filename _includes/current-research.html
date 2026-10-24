@@ -7,23 +7,20 @@
   <div class="current-research-grid">
     <div class="current-research-collage">
       <div class="current-research-art" aria-hidden="true"></div>
-      <span class="current-research-motif" aria-hidden="true">{{ research_text.te_title }}</span>
-      <a class="current-evidence current-evidence--tissue" href="{{ '/images/research/digital-pathology-spatial-cover.webp' | relative_url }}">
-        <span>{{ research_text.tissue }} ↗</span>
-        <img src="{{ '/images/research/digital-pathology-spatial-cover.webp' | relative_url }}" alt="{{ research_text.tissue }}" width="950" height="950" loading="lazy">
+      <span class="current-research-motif" aria-hidden="true">{{ research_text.motif }}</span>
+      <a class="current-evidence current-evidence--method" href="{{ '/images/research/geneformer-in-silico-perturbation.png' | relative_url }}">
+        <span>{{ research_text.diagram }} ↗</span>
+        <img src="{{ '/images/research/geneformer-in-silico-perturbation.png' | relative_url }}" alt="{{ research_text.diagram }}" width="1926" height="1082" loading="lazy">
       </a>
-      <a class="current-evidence current-evidence--embedding" href="{{ '/images/projects/geneformer-celltype-umap.png' | relative_url }}">
-        <span>{{ research_text.embedding }}</span>
-        <img src="{{ '/images/projects/geneformer-celltype-umap.png' | relative_url }}" alt="{{ research_text.embedding }}" width="1400" height="595" loading="lazy">
-        <small>{{ research_text.source }} ↗</small>
-      </a>
+      <div class="current-evidence current-evidence--bulk"><h3>{{ research_text.bulk_title }}</h3><ol>{% for step in research_text.steps %}<li>{{ step }}</li>{% endfor %}</ol></div>
     </div>
     <div class="current-research-copy">
       <p>{{ research_text.body }}</p>
+      <h3>{{ research_text.gene_title }}</h3><p>{{ research_text.gene_body }}</p>
+      <h3>{{ research_text.bulk_title }}</h3><p>{{ research_text.bulk_body }}</p>
       <div class="current-te-question"><h3>{{ research_text.te_title }}</h3><p>{{ research_text.te_body }}</p></div>
       <div class="reading-actions">
         <a class="text-link" href="{{ research_prefix | append: '/research/' | relative_url }}#digital-pathology">{{ research_text.explore }} →</a>
-        <a class="text-link" href="{{ research_prefix | append: '/research/' | relative_url }}#ocean-acidification">{{ research_text.te_link }} →</a>
       </div>
     </div>
   </div>
