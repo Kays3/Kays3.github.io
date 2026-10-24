@@ -1,0 +1,9 @@
+{% assign alternate_path = page.english_url | default: page.url | replace: 'index.html', '' %}
+{% if site.data.translated_routes contains alternate_path %}
+{% for language in site.data.languages %}
+{% assign code = language[0] %}
+{% assign prefix = '' %}{% unless code == 'en' %}{% assign prefix = '/' | append: code %}{% endunless %}
+<link rel="alternate" hreflang="{{ code }}" href="{{ prefix | append: alternate_path | absolute_url }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ alternate_path | absolute_url }}">
+{% endif %}

@@ -1,0 +1,11 @@
+{% assign language_path = page.english_url | default: page.url | replace: 'index.html', '' %}
+{% if site.data.translated_routes contains language_path %}
+{% assign active_language = page.lang | default: 'en' %}
+<nav class="language-switcher" aria-label="{{ site.data.languages[active_language].switch }}">
+  {% for language in site.data.languages %}
+    {% assign code = language[0] %}
+    {% assign prefix = '' %}{% unless code == 'en' %}{% assign prefix = '/' | append: code %}{% endunless %}
+    <a href="{{ site.baseurl }}{{ prefix }}{{ language_path }}" lang="{{ code }}" hreflang="{{ code }}"{% if code == active_language %} aria-current="page"{% endif %}>{{ language[1].name }}</a>
+  {% endfor %}
+</nav>
+{% endif %}

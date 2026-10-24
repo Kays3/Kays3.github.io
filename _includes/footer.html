@@ -1,10 +1,13 @@
 {% include base_path %}
+{% assign footer_language = page.lang | default: 'en' %}
+{% assign footer_text = site.data.languages[footer_language] %}
+{% assign footer_prefix = '' %}{% unless footer_language == 'en' %}{% assign footer_prefix = '/' | append: footer_language %}{% endunless %}
 
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+      <li><strong>{{ footer_text.follow }}</strong></li>
     {% endif %}
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
@@ -20,6 +23,6 @@
 {% endif %}
 
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}, <a href="/sitemap/" style="text-transform: uppercase;">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a>
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ footer_text.powered_by }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a> / <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  {{ footer_text.updated }} {{ "now" | date: '%Y-%m-%d' }}, <a href="{{ site.baseurl }}{{ footer_prefix }}/sitemap/" style="text-transform: uppercase;">{{ footer_text.sitemap }}</a>
 </div>

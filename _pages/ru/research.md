@@ -1,0 +1,23 @@
+---
+layout: "translated"
+title: "Исследования"
+description: "Клинические вопросы приводят меня к микробиологии, генетике и биологии тканей. Диссертация расширяет этот взгляд: как геномы связаны с историей человека и изменениями среды."
+permalink: "/ru/research/"
+lang: "ru"
+english_url: "/research/"
+author_profile: false
+hero: "research/cellular-marine-genomics-banner.webp"
+hero_position: "center"
+banner_size: "research-art"
+banner_quote: "…the more we know the more fantastic the world becomes and the profounder the surrounding darkness."
+banner_quote_source: "https://www.brainyquote.com/quotes/aldous_huxley_400214"
+---
+
+<p class="page-intro">Клинические вопросы приводят меня к микробиологии, генетике и биологии тканей. Диссертация расширяет этот взгляд: как геномы связаны с историей человека и изменениями среды.</p><nav class="section-index" aria-label="Исследования"><a href="#digital-pathology">Цифровая патология и возмущения генов in silico</a><a href="#infectious-disease">Инфекции и устойчивость к антибиотикам</a><a href="#clinical-systems">Пациенты и медицинская помощь</a><a href="#polygenic-risk">Древние геномы и полигенные оценки</a><a href="#ocean-acidification">Океаническое закисление и транспозоны (TE)</a><a href="#machine-learning">Машинное обучение и биоинформатика</a><a href="#people-title">Сотрудничество</a></nav>
+<section class="reading-section" id="digital-pathology"><h2>Цифровая патология и возмущения генов in silico</h2><p>В Университете Хоккайдо я изучаю изображения тканей и пространственную биологию мелкоклеточного рака лёгкого. Geneformer позволяет моделировать удаление или сверхэкспрессию гена и предсказывать изменение представления T-клетки. Я проверяю согласованность между донорами и данные тканей. Одно предсказание модели не доказывает функцию гена.</p><p><a href="https://github.com/Kays3/geneformer-sclc-tcell">Открытый репозиторий ↗</a></p></section>
+<section class="reading-section" id="infectious-disease"><h2>Инфекции и устойчивость к антибиотикам</h2><p>Работа с H. pylori начинается с пациентов в Казахстане. Я связываю клинические сведения с культурой, эпидемиологией и чувствительностью к антибиотикам, чтобы получить местные данные для наблюдения за устойчивостью и выбора лечения.</p><p><a href="https://github.com/Kays3/H.pylori">Открытый репозиторий ↗</a> · <a href="https://doi.org/10.3389/fmicb.2026.1747006">Статья ↗</a></p></section>
+<section class="reading-section" id="clinical-systems"><h2>Пациенты и медицинская помощь</h2><p>Мои работы затрагивают задержки диагностики, наследственный рак, иммунные заболевания и паллиативную помощь. Клинический вопрос остаётся в центре исследования от планирования до анализа и интерпретации.</p></section>
+<section class="reading-section" id="polygenic-risk"><h2>Древние геномы и полигенные оценки</h2><p>Я сравниваю полигенные оценки древних и современных геномов. При интерпретации учитываю неполноту древней ДНК, различия популяций и ограничения переноса современных оценок эффектов между происхождением и эпохами.</p><p><a href="https://github.com/Kays3/Ancient_intelligence">Открытый репозиторий ↗</a></p></section>
+<section class="reading-section" id="ocean-acidification"><h2>Океаническое закисление и транспозоны (TE)</h2><p>В диссертации я анализировал 72 транскриптома мозга Acanthochromis polyacanthus. Сравнивались контроль, острое воздействие, воздействие в ходе развития и межпоколенное воздействие CO₂ с учётом чувствительности родителей. Различия количества транскриптов сами по себе не доказывают транспозицию или регуляторный механизм.</p><p><a href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence">Открытый репозиторий ↗</a> · <a href="https://ir.soken.ac.jp/records/2000266">Запись о диссертации ↗</a></p><p>Фотографии Окинавы показывают полевой контекст. Экспериментальные данные получены от выращенного в лаборатории потомства рыб, чьи родители были собраны у острова Палм в Австралии.</p><p><a href="{{ site.baseurl }}/ru/research/fish-illustrations/">Иллюстрации рыб</a></p></section>
+<section class="reading-section" id="machine-learning"><h2>Машинное обучение и биоинформатика</h2><p>Я создаю рабочие процессы, которые другой исследователь может проверить и повторить. Документирую входные данные, границы оценки и неудачные шаги. Биологический смысл остаётся главным.</p><p><a href="https://github.com/Kays3">Открытый репозиторий ↗</a></p></section>
+<section class="reading-section" id="people-title"><h2>Сотрудничество</h2><p>Работа развивается в сотрудничестве с исследователями и наставниками из Казахстана, Японии, Австралии и США.</p><p><a href="{{ site.baseurl }}/ru/contact/">Связаться →</a></p></section>
