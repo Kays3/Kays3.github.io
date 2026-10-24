@@ -11,6 +11,6 @@ description: "Eleven fish species illustrated for a comparative genomics project
 
 <p><a href="/assets/fish-illustrations/index.html">Open the animated gallery, downloads and full credits →</a></p>
 
-<iframe src="/assets/fish-illustrations/index.html" title="Eleven fish species: animations and credits" loading="lazy" style="width:100%;height:1400px;border:0;border-radius:12px;"></iframe>
+<iframe src="/assets/fish-illustrations/index.html" title="Eleven fish species: animations and credits" loading="eager" style="width:100%;height:1400px;border:0;border-radius:12px;"></iframe>
 
 <p><a href="/assets/fish-illustrations/CREDITS.md">Full credits, source licences and AI disclosure</a> · <a href="/assets/fish-illustrations/animated-v3/supplementary-fish-animation.mp4">Supplementary video</a></p>
