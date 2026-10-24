@@ -9,3 +9,7 @@ The language switcher uses english_url to preserve the current section. The rout
 Huxley quotations remain in English with lang="en" and keep the same source links. Original article titles, journal names, author lists, code, and DOI records remain in English. The bibliography is shared through _includes/publication-record.html so references remain identical across languages. External journal pages, repositories, the downloadable CV PDF, and source credits keep their original languages.
 
 Unpublished pages and private figures are not published by this change.
+
+## Russian and Kazakh prose
+
+Russian copy follows a restrained literary register inspired by Chekhov: concrete observation, humane attention, and plain sentences. Kazakh copy draws on the clarity and reflective cadence of Abai's prose. These are editorial principles, not quotations or claims of authorship. Keep scientific qualifications, career details, and study counts intact. Avoid literal English phrasing and ornate imitation. Short navigation text should remain practical.

@@ -1,7 +1,7 @@
 ---
 layout: "translated"
 title: "Публикации"
-description: "Публикации расположены по годам. Официальные названия статей, имена авторов, названия журналов и DOI сохранены на языке оригинала."
+description: "Здесь собраны мои статьи по годам. Названия, имена авторов, журналы и DOI оставлены в оригинале, чтобы нужную работу было легче найти."
 permalink: "/ru/publications/"
 lang: "ru"
 english_url: "/publications/"
@@ -13,4 +13,4 @@ banner_quote: "Words form the thread on which we string our experiences."
 banner_quote_source: "https://www.uniba.it/it/docenti/fortunato-elisa/attivita-didattica/WordsandBehaviorHUXLEY.pdf"
 ---
 
-<p class="page-intro">Публикации расположены по годам. Официальные названия статей, имена авторов, названия журналов и DOI сохранены на языке оригинала.</p><p>На странице исследований можно выбрать работы об инфекциях, клинической медицине, древних геномах и морской биологии.</p><p><a href="{{ site.baseurl }}/ru/research/">Посмотреть исследования →</a></p><p><a href="https://orcid.org/0000-0003-0533-9778">ORCID</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dauyey+K%5BAuthor%5D">PubMed</a></p><p class="source-note">Ниже приведены библиографические записи на английском языке. Ссылки ведут к первоисточникам.</p><div lang="en">{% include publication-record.html %}</div>
+<p class="page-intro">Здесь собраны мои статьи по годам. Названия, имена авторов, журналы и DOI оставлены в оригинале, чтобы нужную работу было легче найти.</p><p>Если удобнее начать с темы, откройте раздел исследований. Там я рассказываю о клинической работе, инфекциях, древних геномах и морской биологии.</p><p><a href="{{ site.baseurl }}/ru/research/">О моих исследованиях →</a></p><p><a href="https://orcid.org/0000-0003-0533-9778">ORCID</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Dauyey+K%5BAuthor%5D">PubMed</a></p><p class="source-note">Библиографические сведения приведены на английском языке. По ссылкам можно перейти к самим статьям.</p><div lang="en">{% include publication-record.html %}</div>

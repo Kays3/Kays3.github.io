@@ -1,14 +1,14 @@
 ---
 layout: "translated"
 title: "Балық иллюстрациялары"
-description: "Мобиломды салыстырмалы зерттеуге арналған он бір балық түрінің иллюстрациялары мен анимациялары. Қозғалысқа Окинавадағы Ака аралында түсірілген бейнелер шабыт берді."
+description: "Мұнда мобиломды салыстырмалы зерттеуге қатысты он бір балық түрінің суреті мен анимациясы берілген. Қимылдарын жасағанда Окинавадағы Ака аралында түсірген бейнелеріме сүйендім."
 permalink: "/kk/research/fish-illustrations/"
 lang: "kk"
 english_url: "/research/fish-illustrations/"
 author_profile: false
 ---
 
-<p class="page-intro">Мобиломды салыстырмалы зерттеуге арналған он бір балық түрінің иллюстрациялары мен анимациялары. Қозғалысқа Окинавадағы Ака аралында түсірілген бейнелер шабыт берді.</p><video controls playsinline preload="none" style="width:100%;max-width:960px" aria-label="Балық иллюстрациялары" src="{{ site.baseurl }}/assets/fish-illustrations/animated-v3/supplementary-fish-animation.mp4"></video><p>Суреттер OpenAI кескін генерациясы арқылы жасалды. Қозғалыс түсіндіру үшін берілген, жануарлардың нақты мінез-құлқының жазбасы емес. Жаңа материалдар тиісті құқықтар бар шамада CC BY 4.0 бойынша ұсынылады. Үшінші тарап материалдарына бастапқы шарттары қолданылады.</p><p><a href="{{ site.baseurl }}/assets/fish-illustrations/index.html">Барлық 11 түрдің галереясы, ағылшын тілінде ↗</a> · <a href="{{ site.baseurl }}/assets/fish-illustrations/CREDITS.md">Дереккөздер және жасанды интеллекті қолдану туралы ↗</a></p>
+<p class="page-intro">Мұнда мобиломды салыстырмалы зерттеуге қатысты он бір балық түрінің суреті мен анимациясы берілген. Қимылдарын жасағанда Окинавадағы Ака аралында түсірген бейнелеріме сүйендім.</p><video controls playsinline preload="none" style="width:100%;max-width:960px" aria-label="Балық иллюстрациялары" src="{{ site.baseurl }}/assets/fish-illustrations/animated-v3/supplementary-fish-animation.mp4"></video><p>Суреттер OpenAI кескін жасау құралымен әзірленді. Қимылдары көрнекілік үшін берілген, балықтың табиғи мінез-құлқының бейнежазбасы емес. Жаңа материалдар тиісті құқықтар қолданылатын шекте CC BY 4.0 лицензиясымен ұсынылады. Өзге авторлардың материалдарына бастапқы пайдалану шарттары сақталады.</p><p><a href="{{ site.baseurl }}/assets/fish-illustrations/index.html">Барлық 11 түрдің галереясы, ағылшын тілінде ↗</a> · <a href="{{ site.baseurl }}/assets/fish-illustrations/CREDITS.md">Дереккөздер және жасанды интеллекті қолдану туралы ↗</a></p>
 <div class="research-photo-grid"><figure><img src="{{ site.baseurl }}/assets/fish-illustrations/animated-v3/A_polyacanthus.webp" alt="A polyacanthus" loading="lazy"><figcaption><i>A polyacanthus</i></figcaption></figure>
 <figure><img src="{{ site.baseurl }}/assets/fish-illustrations/animated-v3/A_ocellaris.webp" alt="A ocellaris" loading="lazy"><figcaption><i>A ocellaris</i></figcaption></figure>
 <figure><img src="{{ site.baseurl }}/assets/fish-illustrations/animated-v3/A_percula.webp" alt="A percula" loading="lazy"><figcaption><i>A percula</i></figcaption></figure>
