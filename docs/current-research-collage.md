@@ -1,14 +1,13 @@
 # Current Research collage
 
-The Current Research feature uses the same editorial collage approach as Selected Writing. The copy introduces a developing research direction on transposable elements and cell states, without claiming completed TE findings.
+The Current Research feature uses the same editorial collage approach as Selected Writing. The copy focuses on Geneformer in silico perturbation and CellOracle-style regulatory networks adapted to bulk RNA-seq. TE expression is a related application. Predictions are assessed against measured responses and baseline controls.
 
 ## Assets and sources
 
 - Generated background: images/writing/current-research-art.webp. Created with the built-in image generation tool on 25 October 2026, then compressed to WebP for the site. The microscopic and DNA imagery is conceptual artwork, not an experimental image or a regulatory diagram.
-- Tissue panel: the existing images/research/digital-pathology-spatial-cover.webp, identified in the site source notes as a web crop of the user-supplied spatial T-cell and dysfunction figure using GSE263196 tissue imagery. The original asset is unaltered and opens directly.
-- Embedding panel: the existing images/projects/geneformer-celltype-umap.png, showing lung cell types and disease groups in a Geneformer representation. The original asset is unaltered and opens directly.
-- The tissue and embedding panels come from separate analyses and are presented as method examples. Neither is presented as a TE analysis result.
-- The TE link leads to the existing public research section, rather than an unpublished working repository.
+- Geneformer panel: the existing images/research/geneformer-in-silico-perturbation.png, a conceptual method explanation. The original image opens directly.
+- Bulk RNA panel: localized HTML text explains expression measurement, network fitting, simulated transcription factor changes, and comparison with measured responses. It contains no empirical plot.
+- The panels explain methods rather than reporting validated regulators or unpublished results. Current working repositories remain private and are not linked from the site.
 - The layout and explanations are shared across all four languages.
 
 ## Generation prompt

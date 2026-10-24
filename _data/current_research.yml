@@ -1,48 +1,60 @@
 en:
-  eyebrow: Current research
-  title: From tissue to cell states.
-  body: At Hokkaido University, I connect whole slide images, spatial biology, and computational models to study cell states. Geneformer perturbations help propose genes to investigate. Donor consistency and tissue evidence guide the next step.
-  te_title: Transposable elements
-  te_body: I am also developing work on transposable elements (TEs), asking how their expression relates to cell states and which regulators may influence those patterns.
-  tissue: Spatial tissue view · SCLC
-  embedding: Lung cell embedding
-  source: Open the original
-  explore: Explore the current work
-  te_link: Explore TE research
-  caption: Tissue and embedding views come from separate analyses. The artwork is illustrative; no TE results are shown.
+  eyebrow: "Current research"
+  title: "Can a model predict what a gene change will do?"
+  body: "My current work focuses on Geneformer in silico perturbation and CellOracle-style perturbation models adapted to bulk RNA-seq. I test their predictions against measured responses, with controls that ask whether the model learns more than a simple baseline."
+  gene_title: "Geneformer in silico perturbation"
+  gene_body: "I simulate gene deletion and overexpression in single cell transcriptomes, then test predicted cell state shifts across held out donors and independent datasets. Random gene controls help separate a specific signal from a general model response."
+  bulk_title: "Bulk RNA expression perturbation"
+  bulk_body: "I adapt CellOracle-style regulatory networks to bulk RNA-seq, simulate changes in transcription factors, and compare predicted expression changes with measured knockout or knockdown responses. Shuffled networks and coexpression models provide a test of what the network adds."
+  te_title: "Transposable elements"
+  te_body: "TE expression is a related application of this work. I ask which regulators may shape those patterns, while checking whether the signal reflects TE transcription or transcription passing through nearby sequences."
+  motif: "In silico perturbation"
+  diagram: "Geneformer · Method illustration"
+  steps: ["Measure bulk RNA expression","Fit a regulatory network","Simulate a transcription factor change","Compare with the measured response"]
+  explore: "Explore the perturbation work"
+  caption: "The Geneformer diagram and bulk RNA workflow explain the methods. The background is illustrative. These panels do not show experimental results."
 ja:
-  eyebrow: 現在の研究
-  title: 組織から細胞の状態へ。
-  body: 北海道大学では、全スライド画像、空間生物学、計算モデルを組み合わせて細胞の状態を研究しています。Geneformerによる摂動予測から候補遺伝子を選び、ドナー間の一貫性と組織での証拠を確認します。
-  te_title: 転移因子
-  te_body: 転移因子（TE）の発現と細胞の状態との関係、そしてそのパターンに影響しうる制御因子を問う、新たな研究にも取り組もうとしています。
-  tissue: 空間的な組織解析 · 小細胞肺がん
-  embedding: 肺細胞の埋め込み表現
-  source: 元の図を見る
-  explore: 現在の研究を見る
-  te_link: TE研究を見る
-  caption: 組織と埋め込み表現の図は別々の解析例です。アートは研究のイメージであり、TEの解析結果は示していません。
+  eyebrow: "現在の研究"
+  title: "遺伝子を変えたときの応答を、モデルは予測できるか。"
+  body: "現在は、Geneformerによるin silico摂動と、bulk RNA-seqに応用したCellOracle型の摂動モデルに取り組んでいます。予測を実測の応答と照合し、単純な基準モデルを上回る情報が得られるかを検証しています。"
+  gene_title: "Geneformerによるin silico摂動"
+  gene_body: "単一細胞のトランスクリプトームで遺伝子の欠失や過剰発現を模擬し、細胞状態の変化を予測します。学習に使っていないドナーや独立したデータで確かめ、無作為に選んだ遺伝子への応答とも比較します。"
+  bulk_title: "bulk RNA発現の摂動予測"
+  bulk_body: "CellOracle型の遺伝子制御ネットワークをbulk RNA-seqに応用し、転写因子の変化を模擬します。予測した発現変化をノックアウトやノックダウンの実測値と比較し、接続を入れ替えたネットワークや共発現モデルでも検証します。"
+  te_title: "転移因子"
+  te_body: "転移因子（TE）の発現も、この研究の対象です。どの制御因子が関わるかを調べるとともに、TE自体の転写と周辺領域からの転写の読み通しを区別して解釈します。"
+  motif: "In silico摂動"
+  diagram: "Geneformer · 手法の模式図"
+  steps: ["bulk RNAの発現を測定","制御ネットワークを学習","転写因子の変化を模擬","実測の応答と比較"]
+  explore: "摂動予測の研究を見る"
+  caption: "Geneformerの図とbulk RNAの流れは手法の説明です。背景はイメージであり、実験結果を示すものではありません。"
 ru:
-  eyebrow: Над чем я работаю сейчас
-  title: От ткани к состоянию клетки.
-  body: В Университете Хоккайдо я сопоставляю цифровые изображения тканей с пространственными молекулярными данными и вычислительными моделями. Geneformer помогает выбрать гены для дальнейшей проверки. Его предсказания я сверяю с результатами разных доноров и с тем, что видно в ткани.
-  te_title: Транспозоны
-  te_body: Ещё одно направление, которое я сейчас разрабатываю, связано с транспозонами (TE). Меня интересует, как их экспрессия соотносится с состоянием клетки и какие регуляторы могут на неё влиять.
-  tissue: Пространственный анализ ткани · SCLC
-  embedding: Вычислительное представление клеток лёгкого
-  source: Открыть исходный рисунок
-  explore: О текущей работе
-  te_link: Об исследованиях транспозонов
-  caption: Здесь показаны примеры из отдельных анализов ткани и клеток. Художественный фон служит иллюстрацией, а не результатом исследования TE.
+  eyebrow: "Над чем я работаю сейчас"
+  title: "Можно ли предсказать ответ клетки на изменение гена?"
+  body: "Сейчас я занимаюсь моделированием генетических воздействий в Geneformer и адаптацией сетей типа CellOracle к данным bulk RNA-seq. Предсказания я сверяю с измеренным ответом. Главный вопрос прост: даёт ли сложная модель больше, чем простой способ сравнения?"
+  gene_title: "Моделирование воздействий в Geneformer"
+  gene_body: "В данных отдельных клеток я имитирую удаление гена или усиление его экспрессии и оцениваю предсказанный сдвиг состояния клетки. Проверяю результат на донорах, не участвовавших в обучении, и на независимых данных. Сравнение со случайными генами помогает понять, насколько ответ специфичен."
+  bulk_title: "Предсказание изменений экспрессии в bulk RNA"
+  bulk_body: "Я адаптирую регуляторные сети типа CellOracle к bulk RNA-seq, моделирую изменение транскрипционных факторов и сравниваю прогноз с измеренным ответом на выключение или подавление гена. Сети с перемешанными связями и модели коэкспрессии позволяют проверить, что именно добавляет структура сети."
+  te_title: "Транспозоны"
+  te_body: "Экспрессия транспозонов (TE) служит ещё одной областью применения этих методов. Я изучаю возможные регуляторы и проверяю, отражает ли сигнал транскрипцию самого TE или прочитывание соседних участков."
+  motif: "Вычислительное воздействие"
+  diagram: "Geneformer · Схема метода"
+  steps: ["Измерить экспрессию bulk RNA","Построить регуляторную сеть","Смоделировать изменение транскрипционного фактора","Сравнить с измеренным ответом"]
+  explore: "О моделировании воздействий"
+  caption: "Схема Geneformer и последовательность работы с bulk RNA объясняют методы. Фон является иллюстрацией. Экспериментальные результаты здесь не показаны."
 kk:
-  eyebrow: Бүгінгі ізденісім
-  title: Тіннен жасуша күйіне.
-  body: Хоккайдо университетінде тіннің цифрлық кескіндерін кеңістіктік молекулалық деректермен және есептеу модельдерімен салыстырамын. Geneformer әрі қарай тексеретін гендерді таңдауға көмектеседі. Болжамын әр донордың нәтижесімен және тінде көрінген құбылыспен тексеремін.
-  te_title: Транспозондар
-  te_body: Транспозондар (TE) бойынша да жаңа зерттеу бағытын әзірлеп жүрмін. Олардың экспрессиясының жасуша күйімен байланысын және оған ықпал етуі мүмкін реттеушілерді қарастырмақпын.
-  tissue: Тіннің кеңістіктік талдауы · SCLC
-  embedding: Өкпе жасушаларының есептеу үлгісі
-  source: Түпнұсқа суретті ашу
-  explore: Қазіргі жұмысым туралы
-  te_link: Транспозондарды зерттеу туралы
-  caption: Тін мен жасуша кескіндері бөлек талдаулардан алынған. Көркем бейне зерттеудің мазмұнын таныстырады, TE бойынша алынған нәтиже емес.
+  eyebrow: "Бүгінгі ізденісім"
+  title: "Ген өзгерсе, жасуша жауабын болжай аламыз ба?"
+  body: "Қазір Geneformer арқылы генге ықпал етуді модельдеуге және CellOracle үлгісіндегі желілерді bulk RNA-seq деректеріне бейімдеуге ден қойып жүрмін. Болжамды тәжірибеде өлшенген жауаппен салыстырамын. Күрделі модель қарапайым тәсілден артық не береді? Негізгі сұрағым осы."
+  gene_title: "Geneformer арқылы генге ықпал етуді модельдеу"
+  gene_body: "Жеке жасушалардың транскриптомында генді жоюды немесе оның экспрессиясын күшейтуді модельдеп, жасуша күйінің болжамды өзгерісін бағалаймын. Нәтижені модельді үйретуге қатыспаған донорлар мен тәуелсіз деректерде тексеремін. Кездейсоқ таңдалған гендермен салыстыру жауаптың сол генге тән екенін бағалауға көмектеседі."
+  bulk_title: "Bulk RNA экспрессиясының өзгерісін болжау"
+  bulk_body: "CellOracle үлгісіндегі реттеуші желілерді bulk RNA-seq деректеріне бейімдеп, транскрипциялық фактордың өзгерісін модельдеймін. Болжамды генді өшіру не оның белсенділігін басу тәжірибесінің нәтижесімен салыстырамын. Байланыстары араластырылған желілер мен коэкспрессия модельдері желі құрылымының үлесін тексеруге мүмкіндік береді."
+  te_title: "Транспозондар"
+  te_body: "Транспозондардың (TE) экспрессиясы да осы әдістермен қарастыратын мәселелерімнің бірі. Ықтимал реттеушілерді зерттеп, сигнал TE транскрипциясынан ба, әлде көршілес бөліктерден жалғасқан транскрипциядан ба, соны тексеремін."
+  motif: "Есептеу арқылы модельдеу"
+  diagram: "Geneformer · Әдіс сызбасы"
+  steps: ["Bulk RNA экспрессиясын өлшеу","Реттеуші желіні құру","Транскрипциялық фактор өзгерісін модельдеу","Өлшенген жауаппен салыстыру"]
+  explore: "Генге ықпал етуді модельдеу туралы"
+  caption: "Geneformer сызбасы мен bulk RNA жұмыс реті әдістерді түсіндіреді. Көркем фон зерттеу нәтижесі емес. Мұнда тәжірибеден алынған нәтижелер көрсетілмеген."
