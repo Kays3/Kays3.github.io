@@ -56,10 +56,7 @@ redirect_from:
     <article class="reading-study writing-card writing-card--thesis">{% include writing-visual.html kind="thesis" number="03" %}<div><p class="eyebrow">Doctoral thesis · SOKENDAI · 2024</p><h3>Ancient humans and changing reefs</h3><p>My thesis examines polygenic scores in ancient genomes and TE related expression in 72 reef fish brain transcriptomes. Both ask how genetic signals make sense in their biological context.</p><a class="text-link" href="https://ir.soken.ac.jp/records/2000266">Read the thesis record ↗</a></div></article></div>{% assign collage_language = page.lang | default: 'en' %}<p class="writing-caption">{{ site.data.writing_collage[collage_language].caption }}</p>
   </section>
 
-  <section class="reading-section reading-current" aria-labelledby="current-title">
-    <div><p class="eyebrow">Current research</p><h2 id="current-title">From tissue to cell states.</h2><p>At Hokkaido University, I work with whole slide images, spatial biology, and computational models. Geneformer perturbations help propose genes to investigate. Donor consistency and tissue evidence guide the next step.</p><a class="text-link" href="/research/#digital-pathology">Explore the current work →</a></div>
-    <img src="/images/projects/geneformer-celltype-umap.png" alt="Geneformer cell embedding grouped by cell type and disease" width="1400" height="595" loading="lazy">
-  </section>
+{% include current-research.html %}
 
   <section class="reading-next" aria-labelledby="conversation-title"><div><p class="eyebrow">Collaboration</p><h2 id="conversation-title">What question are you working on?</h2><p>Tell me what you want to understand and what evidence you have.</p></div><a class="about-button about-button--primary" href="/contact/">Get in touch →</a></section>
   <nav class="reading-related" aria-label="More about Kaisar"><a href="/clinical-practice/">Clinical practice</a><a href="/diagnostic-medicine/">Diagnostic medicine</a><a href="/interests/">Fieldwork and interests</a><a href="/cv/">CV and training</a></nav>

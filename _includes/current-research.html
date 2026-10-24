@@ -1,0 +1,31 @@
+{% assign research_language = page.lang | default: 'en' %}
+{% assign research_text = site.data.current_research[research_language] %}
+{% assign research_prefix = '' %}{% unless research_language == 'en' %}{% assign research_prefix = '/' | append: research_language %}{% endunless %}
+<section class="reading-section current-research-feature" id="current" aria-labelledby="current-title">
+  <p class="eyebrow">{{ research_text.eyebrow }}</p>
+  <h2 id="current-title">{{ research_text.title }}</h2>
+  <div class="current-research-grid">
+    <div class="current-research-collage">
+      <div class="current-research-art" aria-hidden="true"></div>
+      <span class="current-research-motif" aria-hidden="true">{{ research_text.te_title }}</span>
+      <a class="current-evidence current-evidence--tissue" href="{{ '/images/research/digital-pathology-spatial-cover.webp' | relative_url }}">
+        <span>{{ research_text.tissue }} ↗</span>
+        <img src="{{ '/images/research/digital-pathology-spatial-cover.webp' | relative_url }}" alt="{{ research_text.tissue }}" width="950" height="950" loading="lazy">
+      </a>
+      <a class="current-evidence current-evidence--embedding" href="{{ '/images/projects/geneformer-celltype-umap.png' | relative_url }}">
+        <span>{{ research_text.embedding }}</span>
+        <img src="{{ '/images/projects/geneformer-celltype-umap.png' | relative_url }}" alt="{{ research_text.embedding }}" width="1400" height="595" loading="lazy">
+        <small>{{ research_text.source }} ↗</small>
+      </a>
+    </div>
+    <div class="current-research-copy">
+      <p>{{ research_text.body }}</p>
+      <div class="current-te-question"><h3>{{ research_text.te_title }}</h3><p>{{ research_text.te_body }}</p></div>
+      <div class="reading-actions">
+        <a class="text-link" href="{{ research_prefix | append: '/research/' | relative_url }}#digital-pathology">{{ research_text.explore }} →</a>
+        <a class="text-link" href="{{ research_prefix | append: '/research/' | relative_url }}#ocean-acidification">{{ research_text.te_link }} →</a>
+      </div>
+    </div>
+  </div>
+  <p class="writing-caption">{{ research_text.caption }}</p>
+</section>
