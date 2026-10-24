@@ -680,6 +680,44 @@ body { background-image: none; }
 .reading-study { display: grid; grid-template-columns: 14rem 1fr; gap: 2.5rem; padding: 2rem 0; border-bottom: 1px solid var(--kd-line); align-items: center; }
 .reading-study img { width: 100%; height: 12rem; object-fit: contain; background: #fff; border-radius: 4px; }
 .reading-study h3 { font-family: Georgia, serif; font-size: 1.65rem; font-weight: 400; margin: 0.3rem 0 0.8rem; }
+
+/* Selected writing: an editorial collage, with original evidence kept separate. */
+.writing-collage { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.6rem; margin-top: 1rem; }
+.writing-collage .writing-card { display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 0; border: 1px solid var(--kd-line); border-radius: 8px; background: var(--kd-surface); overflow: hidden; }
+.writing-collage .writing-card > div:last-child:not(.writing-visual) { padding: 1.6rem 1.8rem 1.8rem; }
+.writing-collage .writing-card h3 { font-size: clamp(1.55rem, 2.5vw, 2.15rem); line-height: 1.2; }
+.writing-collage .writing-card p:not(.eyebrow) { font-size: 0.92rem !important; line-height: 1.7; }
+.writing-collage .writing-card--thesis { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; }
+.writing-visual { position: relative; isolation: isolate; width: 100%; height: 23rem; flex-shrink: 0; overflow: hidden; background: #234b48; }
+.writing-art-panel { position: absolute; z-index: -1; inset: 0; background-image: url("{{ site.baseurl }}/images/writing/selected-writing-art.webp"); background-size: 300% 100%; background-position: left center; }
+.writing-visual--care .writing-art-panel { background-position: center; }
+.writing-visual--thesis .writing-art-panel { background-position: right center; }
+.writing-visual::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(10, 29, 30, 0.22)); pointer-events: none; }
+.writing-number { position: absolute; top: 0.6rem; right: 1rem; color: rgba(255,255,255,0.8); font: 400 4.8rem/1 Georgia,serif; letter-spacing: -0.08em; }
+.writing-stat-sheet, .writing-evidence { position: absolute; display: block; background: #fffdf7; color: #203834 !important; text-decoration: none !important; padding: 1rem; box-shadow: 0 10px 28px rgba(8,25,25,0.25); border: 1px solid rgba(37,62,55,0.16); }
+.writing-stat-sheet { bottom: 1.5rem; left: 1.5rem; width: min(18rem, calc(100% - 3rem)); display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; transform: rotate(-3deg); }
+.writing-sheet-title { display: block; color: #30453f; font-size: 0.72rem; font-weight: 650; line-height: 1.5; margin-bottom: 0.65rem; }
+.writing-stat-sheet .writing-sheet-title, .writing-stat-sheet .writing-source-link { grid-column: 1 / -1; margin: 0; }
+.writing-stat { display: flex; flex-direction: column; gap: 0.2rem; }
+.writing-stat strong { font: 400 3.2rem/1 Georgia,serif; color: #284e48; }
+.writing-stat > span { color: #425850; font-size: 0.8rem; line-height: 1.4; }
+.writing-source-link { display: block; font-size: 0.7rem; font-weight: 650; line-height: 1.5; color: #355a50; margin-top: 0.65rem; }
+.writing-collage .writing-evidence img { display: block; width: 100%; height: auto; max-height: none; margin: 0; object-fit: contain; border-radius: 0; background: #fff; }
+.writing-evidence--table { width: 86%; left: 7%; bottom: 1.5rem; transform: rotate(2deg); }
+.writing-evidence--genomes { width: 55%; right: 5%; bottom: 1.2rem; transform: rotate(3deg); }
+.writing-field-photo { display: block; position: absolute; width: 46%; left: 4%; top: 15%; padding: 0.55rem 0.55rem 1.6rem; background: #fffdf7; box-shadow: 0 8px 24px rgba(8,25,25,0.28); transform: rotate(-8deg); }
+.writing-collage .writing-field-photo img { width: 100%; height: auto; margin: 0; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0; }
+.writing-stat-sheet:hover, .writing-evidence:hover, .writing-field-photo:hover { box-shadow: 0 14px 36px rgba(8,25,25,0.4); }
+.writing-visual a:focus-visible { outline: 3px solid #d89d37; outline-offset: 3px; z-index: 3; }
+.writing-caption { color: var(--kd-muted); font-size: 0.76rem !important; line-height: 1.6; margin-top: 1rem; max-width: 65ch; }
+@media screen and (max-width: 46em) {
+  .writing-collage { grid-template-columns: 1fr; gap: 1.25rem; }
+  .writing-collage .writing-card--thesis { grid-column: auto; display: flex; }
+  .writing-visual { height: 22rem; }
+  .writing-collage .writing-card > div:last-child:not(.writing-visual) { padding: 1.3rem; }
+  .writing-evidence--genomes { width: 56%; padding: 0.7rem; }
+  .writing-field-photo { left: 4%; top: 18%; }
+}
 .reading-current { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
 .reading-current > img, .reading-current figure img { display: block; width: 100%; border-radius: 4px; }
 .reading-current figure { margin: 0; }
