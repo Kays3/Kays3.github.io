@@ -1,0 +1,15 @@
+# Reef fish transposable element artwork
+
+Created with the built-in image generation tool on 25 October 2026. Original conceptual illustration for the research website. The fish, DNA and protein motifs are artwork, not experimental evidence. Amber segments represent repeat sequences schematically; they do not indicate genomic loci, repeat fractions, transposition or demonstrated regulatory function. Protein motifs do not reproduce AlphaFold structures.
+
+Source reviewed: Kays3/TE_Mobilome_Paper, branch figures/graphical-abstract-style2-20261025, projects/mobilome/graphical-abstract/README.md and graphical-abstract.png. The abstract was supplied as subject and palette reference, not as an edit target. No original source plots or structural models were incorporated.
+
+Files: images/research/reef-fish-transposable-elements-art.png and images/research/reef-fish-transposable-elements-art.webp.
+
+## Final generation prompt
+
+Use case: stylized-concept.
+Asset type: original editorial artwork for a research website, landscape 3:2, detailed high resolution.
+Primary request: Transposable elements in coral reef fish genomes. Interpret the supplied graphical abstract as scientific subject reference, NOT as an edit target or a layout to reproduce.
+Reference image role: subject and restrained watercolor palette reference only. It concerns Acanthochromis polyacanthus, coral reef damselfish comparative genomics, repeat sequences and encoded proteins.
+Create a striking natural history plate meeting a contemporary scientific journal cover. A large anatomically convincing blue grey spiny chromis damselfish (Acanthochromis polyacanthus), laterally compressed oval body, small mouth, continuous spiny dorsal fin and pale forked tail, swims above delicate branching reef coral. A smaller orange and white ocellaris clownfish appears deeper in the reef as a comparative reef species. The reef gradually dissolves into elegant looping DNA double helices with occasional amber segments integrated along the strands, representing repetitive genomic elements symbolically. Fine translucent ribbons and folded paper-like molecular contours drift through the upper water as abstract protein motifs, explicitly nonstructural decorative forms, not protein model reproductions. Ocean and genome share a single flowing composition, no panel boxes. A luminous teal sea washes into warm ivory archival paper with deep evergreen, blue grey, muted coral and amber details. Fine etched contours, restrained watercolor washes, tactile paper grain, intricate fins and coral branches, atmospheric light through shallow water. Sophisticated and calm, strong visual hierarchy, generous breathing room around the fish, suitable as a beautiful web feature and standalone research artwork. No text, letters, titles, numbers, labels, axes, charts, logos or watermarks. No zebrafish in the coral habitat. No invented experimental results, no arrows or depictions of active transposition, no claim of causal gene regulation. Do not copy the source protein structures or exact fish drawings. Original conceptual illustration only.
