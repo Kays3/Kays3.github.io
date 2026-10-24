@@ -22,5 +22,7 @@ banner_quote_source: "https://podcasts.apple.com/ca/podcast/aldous-huxley-there-
 <article class="reading-study writing-card writing-card--care">{% include writing-visual.html kind="care" number="02" %}<div><h3>ケアを支える人々</h3><p>カザフスタンの緩和ケア従事者60人へのインタビューから、精神的負担、バーンアウト、仕事の受け止め方を検討しました。</p><a href="https://doi.org/10.1186/s12904-025-01798-z">論文 ↗</a></div></article>
 <article class="reading-study writing-card writing-card--thesis">{% include writing-visual.html kind="thesis" number="03" %}<div><h3>古代人と変わりゆくサンゴ礁</h3><p>古代人のゲノムにおけるポリジェニックスコアと、サンゴ礁魚類72個体の脳トランスクリプトームにおけるTE関連転写産物を解析しました。</p><a href="https://ir.soken.ac.jp/records/2000266">博士論文の記録 ↗</a></div></article></div>{% assign collage_language = page.lang | default: 'en' %}<p class="writing-caption">{{ site.data.writing_collage[collage_language].caption }}</p></section>
 {% include current-research.html %}
+
+{% include reef-feature.html %}
 <section class="reading-next"><div><h2>共同研究</h2><p>取り組んでいる問いと、手元にあるデータや試料についてお聞かせください。</p></div><a href="{{ site.baseurl }}/ja/contact/">お問い合わせ →</a></section>
 <nav class="reading-related"><a href="{{ site.baseurl }}/ja/clinical-practice/">臨床診療</a> <a href="{{ site.baseurl }}/ja/diagnostic-medicine/">診断医学</a> <a href="{{ site.baseurl }}/ja/interests/">フィールドワークと関心分野</a> <a href="{{ site.baseurl }}/ja/cv/">経歴と教育</a></nav></div>

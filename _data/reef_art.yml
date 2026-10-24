@@ -1,0 +1,28 @@
+en:
+  eyebrow: "Reef fish genomics"
+  title: "Transposable elements in coral reef fish genomes"
+  body: "Reef fish carry a rich record of repeated sequences in their genomes. My work examines these elements alongside gene expression and the response to changing ocean conditions."
+  caption: "Conceptual artwork of reef fish, DNA and repeat sequences. Amber segments are symbolic; the image does not show genomic locations or active transposition."
+  link: "Explore the reef fish research"
+  alt: "Blue grey damselfish above coral beside DNA helices with amber repeat motifs"
+ja:
+  eyebrow: "サンゴ礁魚類のゲノム"
+  title: "サンゴ礁魚類ゲノムの転移因子"
+  body: "サンゴ礁魚類のゲノムには、多様な反復配列が含まれています。これらの配列と遺伝子発現、海洋環境の変化への応答との関係を調べています。"
+  caption: "魚類、DNA、反復配列を描いた概念的なイラストです。琥珀色の部分は模式表現であり、ゲノム上の位置や転移活性を示しません。"
+  link: "サンゴ礁魚類の研究を見る"
+  alt: "サンゴの上を泳ぐ青灰色の魚と、反復配列を琥珀色で表したDNA"
+ru:
+  eyebrow: "Геномика рифовых рыб"
+  title: "Транспозоны в геномах рифовых рыб"
+  body: "Геномы рифовых рыб хранят множество повторяющихся последовательностей. Я изучаю их вместе с экспрессией генов и ответом на изменения морской среды."
+  caption: "Художественная иллюстрация рифовых рыб, ДНК и повторяющихся последовательностей. Янтарные участки условны: они не показывают положение в геноме или активное перемещение транспозонов."
+  link: "Об исследованиях рифовых рыб"
+  alt: "Серо голубая рыба над кораллами рядом со спиралями ДНК с янтарными участками"
+kk:
+  eyebrow: "Риф балықтарының геномикасы"
+  title: "Риф балықтарының геномындағы транспозондар"
+  body: "Риф балықтарының геномында қайталанатын тізбектер көп. Оларды ген экспрессиясымен және теңіз ортасының өзгерісіне берілетін жауаппен байланыстыра зерттеймін."
+  caption: "Риф балықтары, ДНҚ және қайталанатын тізбектер бейнеленген көркем иллюстрация. Сары бөліктер шартты түрде берілген: олар геномдағы орынды не транспозондардың қозғалысын көрсетпейді."
+  link: "Риф балықтарын зерттеу туралы"
+  alt: "Маржан үстіндегі көкшіл сұр балық пен сары бөліктері бар ДНҚ шиыршықтары"

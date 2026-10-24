@@ -1,0 +1,6 @@
+{% assign reef_language = page.lang | default: 'en' %}
+{% assign reef = site.data.reef_art[reef_language] %}
+<figure class="reef-art">
+  <a href="{{ '/images/research/reef-fish-transposable-elements-art.png' | relative_url }}"><img src="{{ '/images/research/reef-fish-transposable-elements-art.webp' | relative_url }}" alt="{{ reef.alt }}" width="1535" height="1024" loading="lazy" decoding="async"></a>
+  <figcaption>{{ reef.caption }}</figcaption>
+</figure>
