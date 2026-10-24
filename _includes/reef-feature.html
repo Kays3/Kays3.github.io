@@ -1,0 +1,9 @@
+{% assign reef_language = page.lang | default: 'en' %}
+{% assign reef = site.data.reef_art[reef_language] %}
+{% assign reef_prefix = '' %}{% unless reef_language == 'en' %}{% assign reef_prefix = '/' | append: reef_language %}{% endunless %}
+<section class="reading-section reef-feature" aria-labelledby="reef-title">
+<p class="eyebrow">{{ reef.eyebrow }}</p><h2 id="reef-title">{{ reef.title }}</h2>
+{% include reef-art.html %}
+<p>{{ reef.body }}</p>
+<a class="text-link" href="{{ reef_prefix | append: '/research/' | relative_url }}#ocean-acidification">{{ reef.link }} →</a>
+</section>

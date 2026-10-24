@@ -58,6 +58,8 @@ redirect_from:
 
 {% include current-research.html %}
 
+{% include reef-feature.html %}
+
   <section class="reading-next" aria-labelledby="conversation-title"><div><p class="eyebrow">Collaboration</p><h2 id="conversation-title">What question are you working on?</h2><p>Tell me what you want to understand and what evidence you have.</p></div><a class="about-button about-button--primary" href="/contact/">Get in touch →</a></section>
   <nav class="reading-related" aria-label="More about Kaisar"><a href="/clinical-practice/">Clinical practice</a><a href="/diagnostic-medicine/">Diagnostic medicine</a><a href="/interests/">Fieldwork and interests</a><a href="/cv/">CV and training</a></nav>
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">

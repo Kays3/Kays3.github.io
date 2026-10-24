@@ -748,6 +748,10 @@ body { background-image: none; }
 .reading-current { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
 .reading-current > img, .reading-current figure img { display: block; width: 100%; border-radius: 4px; }
 .reading-current figure { margin: 0; }
+.reef-art { margin: 1.5rem 0; }
+.reef-art img { display: block; width: 100%; height: auto; border-radius: 5px; }
+.reef-art figcaption { margin-top: 0.7rem; color: var(--kd-muted); font-size: 0.78rem; line-height: 1.6; }
+.reef-feature > p:not(.eyebrow) { max-width: 65ch; color: var(--kd-muted); line-height: 1.75; }
 .reading-next { background: var(--kd-surface); border: 1px solid var(--kd-line); padding: 2rem; margin: 1.5rem 0; }
 .reading-next h2 { margin-bottom: 0.8rem; }
 .reading-related, .section-index { display: flex; flex-wrap: wrap; gap: 0.8rem 1.6rem; padding: 1.2rem 0; }
