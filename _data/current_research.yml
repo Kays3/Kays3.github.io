@@ -1,0 +1,48 @@
+en:
+  eyebrow: Current research
+  title: From tissue to cell states.
+  body: At Hokkaido University, I connect whole slide images, spatial biology, and computational models to study cell states. Geneformer perturbations help propose genes to investigate. Donor consistency and tissue evidence guide the next step.
+  te_title: Transposable elements
+  te_body: I am also developing work on transposable elements (TEs), asking how their expression relates to cell states and which regulators may influence those patterns.
+  tissue: Spatial tissue view · SCLC
+  embedding: Lung cell embedding
+  source: Open the original
+  explore: Explore the current work
+  te_link: Explore TE research
+  caption: Tissue and embedding views come from separate analyses. The artwork is illustrative; no TE results are shown.
+ja:
+  eyebrow: 現在の研究
+  title: 組織から細胞の状態へ。
+  body: 北海道大学では、全スライド画像、空間生物学、計算モデルを組み合わせて細胞の状態を研究しています。Geneformerによる摂動予測から候補遺伝子を選び、ドナー間の一貫性と組織での証拠を確認します。
+  te_title: 転移因子
+  te_body: 転移因子（TE）の発現と細胞の状態との関係、そしてそのパターンに影響しうる制御因子を問う、新たな研究にも取り組もうとしています。
+  tissue: 空間的な組織解析 · 小細胞肺がん
+  embedding: 肺細胞の埋め込み表現
+  source: 元の図を見る
+  explore: 現在の研究を見る
+  te_link: TE研究を見る
+  caption: 組織と埋め込み表現の図は別々の解析例です。アートは研究のイメージであり、TEの解析結果は示していません。
+ru:
+  eyebrow: Над чем я работаю сейчас
+  title: От ткани к состоянию клетки.
+  body: В Университете Хоккайдо я сопоставляю цифровые изображения тканей с пространственными молекулярными данными и вычислительными моделями. Geneformer помогает выбрать гены для дальнейшей проверки. Его предсказания я сверяю с результатами разных доноров и с тем, что видно в ткани.
+  te_title: Транспозоны
+  te_body: Ещё одно направление, которое я сейчас разрабатываю, связано с транспозонами (TE). Меня интересует, как их экспрессия соотносится с состоянием клетки и какие регуляторы могут на неё влиять.
+  tissue: Пространственный анализ ткани · SCLC
+  embedding: Вычислительное представление клеток лёгкого
+  source: Открыть исходный рисунок
+  explore: О текущей работе
+  te_link: Об исследованиях транспозонов
+  caption: Здесь показаны примеры из отдельных анализов ткани и клеток. Художественный фон служит иллюстрацией, а не результатом исследования TE.
+kk:
+  eyebrow: Бүгінгі ізденісім
+  title: Тіннен жасуша күйіне.
+  body: Хоккайдо университетінде тіннің цифрлық кескіндерін кеңістіктік молекулалық деректермен және есептеу модельдерімен салыстырамын. Geneformer әрі қарай тексеретін гендерді таңдауға көмектеседі. Болжамын әр донордың нәтижесімен және тінде көрінген құбылыспен тексеремін.
+  te_title: Транспозондар
+  te_body: Транспозондар (TE) бойынша да жаңа зерттеу бағытын әзірлеп жүрмін. Олардың экспрессиясының жасуша күйімен байланысын және оған ықпал етуі мүмкін реттеушілерді қарастырмақпын.
+  tissue: Тіннің кеңістіктік талдауы · SCLC
+  embedding: Өкпе жасушаларының есептеу үлгісі
+  source: Түпнұсқа суретті ашу
+  explore: Қазіргі жұмысым туралы
+  te_link: Транспозондарды зерттеу туралы
+  caption: Тін мен жасуша кескіндері бөлек талдаулардан алынған. Көркем бейне зерттеудің мазмұнын таныстырады, TE бойынша алынған нәтиже емес.

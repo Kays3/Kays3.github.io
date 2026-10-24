@@ -44,4 +44,6 @@ These images are used only on the repository owner's personal academic website.
 
 ## Selected Writing artwork
 
+Current Research also uses `writing/current-research-art.webp`, generated with the built-in image tool on 25 October 2026. It is a conceptual tissue and DNA backdrop; original research images remain separate and unaltered. Prompt and sources: `docs/current-research-collage.md`.
+
 The editorial background at `writing/selected-writing-art.webp` was created with the built-in image generation tool on 25 October 2026. It is artistic context for the homepage collage. Original paper figures are displayed separately and link to their sources. The prompt and source decisions are recorded in `docs/selected-writing-collage.md`.
