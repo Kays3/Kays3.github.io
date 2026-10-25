@@ -63,7 +63,7 @@ banner_size: research-art
   <div class="section-heading"><p class="eyebrow">People and places</p><h2 id="people-title">Research is a team sport</h2></div>
   <p class="section-lead">Collaborators and mentors across Kazakhstan, Japan, Australia, and the United States.</p>
   <div class="people-grid">
-    <article class="people-card"><p class="eyebrow">Current base</p><h3>Hokkaido University</h3><p>Postdoctoral research in digital pathology, whole slide imaging, genomics, bioinformatics, and translational medicine.</p></article>
+    <article class="people-card"><p class="eyebrow">Current base</p><h3>Hokkaido University</h3><p>Postdoctoral research on Geneformer in silico perturbation and CellOracle-style regulatory networks adapted to bulk RNA-seq.</p></article>
     <article class="people-card"><p class="eyebrow">Clinical and regional collaboration</p><h3>Kazakhstan and Japan</h3><p>Clinical research and infectious-disease partnerships connect patient questions with microbiology and epidemiology.</p></article>
     <article class="people-card"><p class="eyebrow">Field and methods</p><h3>OIST and international teams</h3><p>Marine fieldwork and computational collaborations keep samples, methods, and interpretation connected.</p></article>
   </div>

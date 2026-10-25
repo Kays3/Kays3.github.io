@@ -13,7 +13,7 @@ banner_quote_source: "https://www.quotationspage.com/quote/24956.html"
 ---
 
 <p class="page-intro">臨床経験、研究歴、教育、資格の概要です。</p><p><a href="{{ site.baseurl }}/files/kaisar-dauyey-cv.pdf">英文CVをダウンロード（PDF）</a></p>
-<section class="reading-section"><h2>現在の役職</h2><h3>北海道大学 博士研究員</h3><p>2026年から現在</p><p>小細胞肺がんの組織画像、空間生物学、ゲノミクス、バイオインフォマティクス、橋渡し研究。</p></section>
+<section class="reading-section"><h2>現在の役職</h2><h3>北海道大学 博士研究員</h3><p>2026年から現在</p><p>{% assign cv_language = page.lang | default: 'en' %}{{ site.data.current_research[cv_language].body }}</p></section>
 <section class="reading-section"><h2>臨床・研究歴</h2><div class="timeline"><div class="timeline-item"><div class="timeline-date">2026年から現在</div><div><h3>IQVIA クリニカルスペシャリスト（リモート）</h3><p>国際臨床試験で、標準化された神経・精神医学的評価尺度による遠隔評価を担当。</p></div></div>
 <div class="timeline-item"><div class="timeline-date">2025年9月から2026年3月</div><div><h3>Dau-Med Clinics 総合診療医</h3><p>カザフスタンのシムケントで成人の外来診療、治療計画、経過観察、専門医との連携を担当。</p></div></div>
 <div class="timeline-item"><div class="timeline-date">2025年4月から8月</div><div><h3>中央研究院 博士研究員</h3><p>台湾・台北でゲノミクスと計算生物学を研究し、カザフスタンで開始した H. pylori 研究を完了。</p></div></div>

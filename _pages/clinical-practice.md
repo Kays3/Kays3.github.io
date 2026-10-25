@@ -20,12 +20,7 @@ hero_position: "center center"
     <p>In general practice I saw adults with symptoms that did not yet belong to any specialty. Sorting them out means listening well, examining carefully, choosing the few tests that matter, and following up. It also means coordinating with other specialists so the patient does not carry that burden alone.</p>
     <p>That work taught me to respect uncertainty and to value continuity. A result that looks clean in a paper is only useful if it fits a ten minute visit, a family's circumstances, and the resources of the clinic.</p>
   </div>
-  <dl class="specialty-facts" aria-label="Clinical training and credentials">
-    <div><dt>Practice</dt><dd>General Practitioner · Dau-Med Clinics, Shymkent, Kazakhstan · 2025 to 2026</dd></div>
-    <div><dt>Licence</dt><dd>Certificate of General Medical Practice, Republic of Kazakhstan</dd></div>
-    <div><dt>Credentials</dt><dd>MD, Nazarbayev University · ECFMG Certified · USMLE Step 1 and Step 2 CK</dd></div>
-    <div><dt>Languages with patients</dt><dd>Kazakh and Russian, native · English, fluent · Japanese, JLPT N2</dd></div>
-  </dl>
+  {% include clinical-credentials.html %}
 </section>
 
 <section class="research-photo-section" aria-labelledby="clinical-papers-title">
