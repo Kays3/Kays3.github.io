@@ -11,6 +11,9 @@ main:
   - title: "Home"
     url: /
 
+  - title: "Clinical Practice"
+    url: /clinical-practice/
+
   - title: "Research"
     url: /research/
 

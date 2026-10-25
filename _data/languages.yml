@@ -1,5 +1,6 @@
 en:
   name: English
+  clinical-practice: Clinical Practice
   home: Home
   research: Research
   publications: Publications
@@ -17,6 +18,7 @@ en:
   follow: Follow
 ja:
   name: 日本語
+  clinical-practice: 臨床診療
   home: ホーム
   research: 研究
   publications: 論文
@@ -34,6 +36,7 @@ ja:
   follow: リンク
 ru:
   name: Русский
+  clinical-practice: Клиническая практика
   home: Главная
   research: Исследования
   publications: Публикации
@@ -51,6 +54,7 @@ ru:
   follow: Ссылки
 kk:
   name: Қазақша
+  clinical-practice: Клиникалық тәжірибе
   home: Басты бет
   research: Зерттеулер
   publications: Жарияланымдар
