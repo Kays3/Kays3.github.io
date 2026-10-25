@@ -20,7 +20,7 @@ redirect_from:
 ## Current appointment
 
 <div class="timeline">
-  <div class="timeline-item"><div class="timeline-date">2026 to present</div><div><h3>Postdoctoral Research Fellow</h3><p>Hokkaido University · Japan</p><p>Whole slide imaging and spatial biology in small cell lung cancer, with genomics, bioinformatics, and translational medicine.</p></div></div>
+  <div class="timeline-item"><div class="timeline-date">2026 to present</div><div><h3>Postdoctoral Research Fellow</h3><p>Hokkaido University · Japan</p><p>{% assign cv_language = page.lang | default: 'en' %}{{ site.data.current_research[cv_language].body }}</p></div></div>
 </div>
 
 ## Clinical practice and research

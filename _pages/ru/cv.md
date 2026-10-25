@@ -13,7 +13,7 @@ banner_quote_source: "https://www.quotationspage.com/quote/24956.html"
 ---
 
 <p class="page-intro">Мой путь в медицине и науке: образование, работа, преподавание и профессиональная подготовка.</p><p><a href="{{ site.baseurl }}/files/kaisar-dauyey-cv.pdf">Скачать CV на английском (PDF)</a></p>
-<section class="reading-section"><h2>Текущая должность</h2><h3>Постдокторант, Университет Хоккайдо</h3><p>С 2026 года</p><p>Ткань под микроскопом и в цифровой модели</p></section>
+<section class="reading-section"><h2>Текущая должность</h2><h3>Постдокторант, Университет Хоккайдо</h3><p>С 2026 года</p><p>{% assign cv_language = page.lang | default: 'en' %}{{ site.data.current_research[cv_language].body }}</p></section>
 <section class="reading-section"><h2>Клинический и исследовательский опыт</h2><div class="timeline"><div class="timeline-item"><div class="timeline-date">С 2026 года</div><div><h3>Клинический специалист, IQVIA, удалённо</h3><p>Оцениваю состояние участников международных клинических исследований с помощью стандартных неврологических и психиатрических шкал.</p></div></div>
 <div class="timeline-item"><div class="timeline-date">С сентября 2025 года по март 2026 года</div><div><h3>Врач общей практики, Dau-Med Clinics</h3><p>Приём взрослых пациентов в Шымкенте. Обследование при острых и хронических заболеваниях, планирование лечения, последующее наблюдение и связь с другими специалистами.</p></div></div>
 <div class="timeline-item"><div class="timeline-date">С апреля по август 2025 года</div><div><h3>Постдокторант, Academia Sinica</h3><p>Занимался геномикой и вычислительной биологией в Тайбэе. Завершил исследование H. pylori, начатое в Казахстане.</p></div></div>
