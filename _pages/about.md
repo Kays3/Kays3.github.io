@@ -54,7 +54,7 @@ redirect_from:
 
   <section class="reading-section reading-current" aria-labelledby="anemone-snapshot-title">
     <div><p class="eyebrow">Research snapshot · Taiwan</p><h2 id="anemone-snapshot-title">Anemones and their symbiotic partners</h2><p>At Academia Sinica, I worked on the bubble-tip anemone <em>Entacmaea quadricolor</em>, its symbionts, and associated anemonefishes. The work includes transcriptome assembly, separating host and symbiont sequences, and genome annotation.</p><p><a class="text-link" href="/research/#anemone-symbiosis">Explore the research →</a><br><a class="text-link" href="https://github.com/Kays3/entacmea-research">Open the research notebook ↗</a></p></div>
-    <figure><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish among the tentacles of a bubble-tip anemone" loading="lazy" decoding="async"><figcaption>Bubble-tip anemone and associated anemonefish.</figcaption></figure>
+    {% include entacmaea-gallery.html %}
   </section>
 
   <section class="reading-section" aria-labelledby="work-title">

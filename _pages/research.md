@@ -66,6 +66,7 @@ banner_size: research-art
   <p>My computational work covered constructing and assessing reference transcriptomes, distinguishing host transcripts from symbiont-derived sequences, and improving genome annotation with RNA-seq evidence and gene-prediction workflows. I also explored expression patterns and candidate fluorescent-protein genes.</p>
   <div class="tag-row"><span><em>Entacmaea quadricolor</em></span><span>host–symbiont separation</span><span>transcriptome assembly</span><span>genome annotation</span><span>marine symbiosis</span></div>
   <p>The public research notebook preserves dated computational notes and methods for follow-up. It is an evolving record of exploratory work.</p>
+  {% include entacmaea-gallery.html extended=true %}
   <p><a class="text-link" href="https://github.com/Kays3/entacmea-research">Explore the Entacmaea research notebook <span aria-hidden="true">↗</span></a></p>
 </section>
 
