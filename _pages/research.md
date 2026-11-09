@@ -12,7 +12,7 @@ banner_size: research-art
 
 
 <p class="page-intro">My research follows clinical questions into microbiology, genetics, and tissue biology. My thesis adds a wider view: how genomes relate to human history and environmental change.</p>
-<nav class="section-index" aria-label="Research sections"><a href="#research-updates">Research updates</a><a href="#digital-pathology">Current work</a><a href="#infectious-disease">Infection</a><a href="#clinical-systems">Clinical studies</a><a href="#polygenic-risk">Ancient genomes</a><a href="#ocean-acidification">Reef fish and TEs</a><a href="#people-title">Collaboration</a></nav>
+<nav class="section-index" aria-label="Research sections"><a href="#research-updates">Research updates</a><a href="#digital-pathology">Current work</a><a href="#infectious-disease">Infection</a><a href="#clinical-systems">Clinical studies</a><a href="#polygenic-risk">Ancient genomes</a><a href="#ocean-acidification">Reef fish and TEs</a><a href="#anemone-symbiosis">Anemones and symbionts</a><a href="#people-title">Collaboration</a></nav>
 
 <p class="page-note">Related public engagement: <a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer">Oita Glocal feature</a> on science, education, and regional collaboration.</p>
 
@@ -59,12 +59,23 @@ banner_size: research-art
   </div>
 </section>
 
+<section class="reading-section" id="anemone-symbiosis" aria-labelledby="anemone-title">
+  <p class="eyebrow">Taiwan postdoc · Academia Sinica · April–August 2025</p>
+  <h2 id="anemone-title">Anemone genomes and their symbiotic partners</h2>
+  <p>During my postdoctoral work at Academia Sinica in Taipei, I worked on the bubble-tip anemone, <em>Entacmaea quadricolor</em>, and its symbiotic partners. This extended my marine genomics experience to a system that brings together an anemone host, dinoflagellate and microbial partners, and associated anemonefishes, including <em>Amphiprion frenatus</em> and <em>A. clarkii</em>.</p>
+  <p>My computational work covered constructing and assessing reference transcriptomes, distinguishing host transcripts from symbiont-derived sequences, and improving genome annotation with RNA-seq evidence and gene-prediction workflows. I also explored expression patterns and candidate fluorescent-protein genes.</p>
+  <div class="tag-row"><span><em>Entacmaea quadricolor</em></span><span>host–symbiont separation</span><span>transcriptome assembly</span><span>genome annotation</span><span>marine symbiosis</span></div>
+  <p>The public research notebook preserves dated computational notes and methods for follow-up. It is an evolving record of exploratory work.</p>
+  <p><a class="text-link" href="https://github.com/Kays3/entacmea-research">Explore the Entacmaea research notebook <span aria-hidden="true">↗</span></a></p>
+</section>
+
 <section class="people-section" aria-labelledby="people-title">
   <div class="section-heading"><p class="eyebrow">People and places</p><h2 id="people-title">Research is a team sport</h2></div>
-  <p class="section-lead">Collaborators and mentors across Kazakhstan, Japan, Australia, and the United States.</p>
+  <p class="section-lead">Collaborators and mentors across Kazakhstan, Japan, Taiwan, Australia, and the United States.</p>
   <div class="people-grid">
     <article class="people-card"><p class="eyebrow">Current base</p><h3>Hokkaido University</h3><p>Postdoctoral research on Geneformer in silico perturbation and CellOracle-style regulatory networks adapted to bulk RNA-seq.</p></article>
     <article class="people-card"><p class="eyebrow">Clinical and regional collaboration</p><h3>Kazakhstan and Japan</h3><p>Clinical research and infectious-disease partnerships connect patient questions with microbiology and epidemiology.</p></article>
+    <article class="people-card"><p class="eyebrow">Marine genomics and symbiosis</p><h3>Academia Sinica · Taiwan</h3><p>Postdoctoral work on <em>Entacmaea quadricolor</em>, host and symbiont transcriptomes, and genome annotation. <a href="#anemone-symbiosis">Read about the work</a>.</p></article>
     <article class="people-card"><p class="eyebrow">Field and methods</p><h3>OIST and international teams</h3><p>Marine fieldwork and computational collaborations keep samples, methods, and interpretation connected.</p></article>
   </div>
   <div class="research-photo-grid research-photo-grid--three">

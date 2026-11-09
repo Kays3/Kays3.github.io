@@ -39,6 +39,24 @@ redirect_from:
     </figure>
   </section>
 
+  <section class="reading-section" aria-labelledby="activities-title">
+    <p class="eyebrow">Research and practice</p><h2 id="activities-title">Current and past activities</h2>
+    <div class="reading-paths">
+      <a href="/research/#digital-pathology"><span>Current · Hokkaido University</span><strong>Digital pathology and cell states</strong><small>Whole slide imaging, spatial biology, and computational analysis of small cell lung cancer.</small><b aria-hidden="true">↗</b></a>
+      <a href="/cv/"><span>Current · IQVIA</span><strong>Clinical trial assessments</strong><small>Remote neurological and psychiatric assessments for international clinical trials.</small><b aria-hidden="true">↗</b></a>
+      <a href="/research/#anemone-symbiosis"><span>2025 · Academia Sinica, Taiwan</span><strong>Anemones and their symbionts</strong><small><em>Entacmaea quadricolor</em> transcriptomes, host–symbiont separation, and genome annotation.</small><b aria-hidden="true">↗</b></a>
+      <a href="/research/#infectious-disease"><span>Earlier research · Kazakhstan</span><strong><em>H. pylori</em> and antibiotic resistance</strong><small>Patient-oriented research connecting clinical data, microbiology, and epidemiology.</small><b aria-hidden="true">↗</b></a>
+      <a href="/research/#ocean-acidification"><span>Doctoral research · Japan and Australia</span><strong>Reef fish and a changing ocean</strong><small>Transposable element-related expression under elevated carbon dioxide.</small><b aria-hidden="true">↗</b></a>
+      <a href="/clinical-practice/"><span>Past practice · Kazakhstan</span><strong>General practice and internal medicine</strong><small>Outpatient care, inpatient training, and clinical research.</small><b aria-hidden="true">↗</b></a>
+    </div>
+    <p><a class="text-link" href="/cv/">View the full career timeline →</a></p>
+  </section>
+
+  <section class="reading-section reading-current" aria-labelledby="anemone-snapshot-title">
+    <div><p class="eyebrow">Research snapshot · Taiwan</p><h2 id="anemone-snapshot-title">Anemones and their symbiotic partners</h2><p>At Academia Sinica, I worked on the bubble-tip anemone <em>Entacmaea quadricolor</em>, its symbionts, and associated anemonefishes. The work includes transcriptome assembly, separating host and symbiont sequences, and genome annotation.</p><p><a class="text-link" href="/research/#anemone-symbiosis">Explore the research →</a><br><a class="text-link" href="https://github.com/Kays3/entacmea-research">Open the research notebook ↗</a></p></div>
+    <figure><img src="/images/research/marine/entacmaea-tomato-clownfish.webp" alt="Tomato clownfish among the tentacles of a bubble-tip anemone" loading="lazy" decoding="async"><figcaption>Bubble-tip anemone and associated anemonefish.</figcaption></figure>
+  </section>
+
   <section class="reading-section" aria-labelledby="work-title">
     <p class="eyebrow">Start here</p><h2 id="work-title">Follow the question.</h2>
     <div class="reading-paths">
