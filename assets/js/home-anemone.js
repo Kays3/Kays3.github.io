@@ -1,5 +1,5 @@
 // Home intro illustration: a hypothesis drawn as a scene. Transposons pass from an anemonefish
-// to a symbiotic alga to the host anemone, and back.
+// to a symbiotic alga to a host anemone, and back. Two hosts: a bubble-tip anemone and a carpet anemone.
 // Decorative only. Drawn in the browser; it does not show data.
 (function () {
   'use strict';
@@ -16,16 +16,18 @@
   // One transfer cycle: fish -> alga -> anemone, then anemone -> alga -> fish.
   var LEGS = [['fish', 'alga'], ['alga', 'anemone'], ['anemone', 'alga'], ['alga', 'fish']];
   var LEG_TIME = 1.9, REST = 1.1;
-  var transfer = { leg: 0, t: 0.8, alga: 0, color: 0, fish: 0 }, flash = null;
+  var transfer = { leg: 0, t: 0.8, alga: 0, color: 0, fish: 1, host: 'bubble' }, flash = null;
+  var BUBBLE = { x: 0.38, k: 0.85 }, CARPET = { x: 0.8, y: 0.87 };
   // Residents. The first four are anemonefish and take part in the transfer; the damsel only visits.
+  // The ocellaris (first) keeps to the carpet anemone; the others keep to the bubble-tip anemone.
   var FISH = [
-    { cx: 0.5, ax: 0.27, y: 0.085, ay: 0.025, speed: 0.32, phase: 0, size: 0.9, rx: 30, ry: 16, body: '#e07b2e', fin: '#e07b2e', tail: '#e07b2e', bands: [[-20, 5], [-1, 8], [17, 6]] },
-    { cx: 0.27, ax: 0.14, y: 0.215, ay: 0.02, speed: 0.26, phase: 1.3, size: 0.8, rx: 29, ry: 17, body: '#c23a26', fin: '#a92f20', tail: '#c23a26', bands: [[15, 5]] },
-    { cx: 0.73, ax: 0.14, y: 0.225, ay: 0.02, speed: 0.22, phase: 3.4, size: 0.85, rx: 30, ry: 17, body: '#2b2421', fin: '#e9a62c', tail: '#f0c33c', face: '#e9a62c', bands: [[-23, 4], [-2, 8], [15, 6]] },
-    { cx: 0.5, ax: 0.07, y: 0.2, ay: 0.015, speed: 0.36, phase: 5, size: 0.7, rx: 29, ry: 15, body: '#f2a58e', fin: '#f6c7b4', tail: '#f6c7b4', stripe: true, plain: true, bands: [[14, 3.5]] },
-    { cx: 0.87, ax: 0.05, y: 0.4, ay: 0.025, speed: 0.5, phase: 2, size: 0.55, rx: 23, ry: 18, body: '#1e2224', fin: '#1e2224', tail: '#1e2224', bands: [], spots: [[11, -11, 3.4], [-3, -3, 4]] }
+    { cx: 0.8, ax: 0.09, y: 0.775, ay: 0.012, speed: 0.32, phase: 0, size: 0.85, rx: 30, ry: 16, body: '#e07b2e', fin: '#e07b2e', tail: '#e07b2e', bands: [[-20, 5], [-1, 8], [17, 6]] },
+    { cx: 0.2, ax: 0.13, y: 0.2, ay: 0.02, speed: 0.26, phase: 1.3, size: 0.8, rx: 29, ry: 17, body: '#c23a26', fin: '#a92f20', tail: '#c23a26', bands: [[15, 5]] },
+    { cx: 0.62, ax: 0.14, y: 0.24, ay: 0.02, speed: 0.22, phase: 3.4, size: 0.85, rx: 30, ry: 17, body: '#2b2421', fin: '#e9a62c', tail: '#f0c33c', face: '#e9a62c', bands: [[-23, 4], [-2, 8], [15, 6]] },
+    { cx: 0.4, ax: 0.08, y: 0.13, ay: 0.02, speed: 0.36, phase: 5, size: 0.7, rx: 29, ry: 15, body: '#f2a58e', fin: '#f6c7b4', tail: '#f6c7b4', stripe: true, plain: true, bands: [[14, 3.5]] },
+    { cx: 0.74, ax: 0.05, y: 0.47, ay: 0.025, speed: 0.5, phase: 2, size: 0.55, rx: 23, ry: 18, body: '#1e2224', fin: '#1e2224', tail: '#1e2224', bands: [], spots: [[11, -11, 3.4], [-3, -3, 4]] }
   ];
-  var algae = [{ x: 0.2, y: 0.35 }, { x: 0.5, y: 0.33 }, { x: 0.68, y: 0.36 }];
+  var algae = [{ x: 0.14, y: 0.36 }, { x: 0.42, y: 0.33 }, { x: 0.8, y: 0.6 }];
   var tentacles = [], motes = [];
 
   function seeded(n) { var x = Math.sin(n * 127.1) * 43758.5453; return x - Math.floor(x); }
@@ -54,7 +56,8 @@
     ref = ref || transfer;
     if (name === 'fish') { return fishAt(ref.fish, t); }
     if (name === 'alga') { return algaAt(ref.alga, t); }
-    return { x: w / 2, y: h * 0.6 };
+    if (ref.host === 'carpet') { return { x: w * CARPET.x, y: h * CARPET.y }; }
+    return { x: w * BUBBLE.x, y: h * (1 - 0.4 * BUBBLE.k) };
   }
 
   function block(x, y, s, color, tilt) {
@@ -158,6 +161,30 @@
     ctx.beginPath(); ctx.arc(tip[0], tip[1] - 3 * s, (tn.back ? 2 : 2.6) * s, 0, 6.2832); ctx.fill();
   }
 
+  // Carpet anemone (Stichodactyla): a wide, wavy disc covered in very short tentacles.
+  function drawCarpet(t, s) {
+    var x = w * CARPET.x, y = h * CARPET.y, a, r, i, j;
+    var stalk = ctx.createLinearGradient(0, y, 0, h);
+    stalk.addColorStop(0, '#6d4a63'); stalk.addColorStop(1, '#3f2a3a');
+    ctx.fillStyle = stalk; ctx.beginPath();
+    ctx.moveTo(x - 30 * s, y); ctx.lineTo(x - 24 * s, h + 2); ctx.lineTo(x + 24 * s, h + 2); ctx.lineTo(x + 30 * s, y); ctx.fill();
+    ctx.fillStyle = '#5f8560'; ctx.beginPath();
+    for (a = 0; a <= 6.2832; a += 0.1) {
+      r = 1 + 0.07 * Math.sin(a * 6 + t * 0.8);
+      ctx.lineTo(x + Math.cos(a) * 64 * s * r, y + Math.sin(a) * 15 * s * r);
+    }
+    ctx.closePath(); ctx.fill();
+    for (j = -3; j <= 3; j += 1) {
+      for (i = -11; i <= 11; i += 1) {
+        var px = (i + (j % 2 ? 0.5 : 0)) * 5.4, py = j * 3.6;
+        if (px * px / 3600 + py * py / 170 < 1) {
+          ctx.fillStyle = j < 0 ? '#8fae79' : '#b4cd8e';
+          ctx.beginPath(); ctx.arc(x + (px + Math.sin(t * 1.6 + i * 0.7 + j) * 0.9) * s, y + (py - 1.5) * s, 2.3 * s, 0, 6.2832); ctx.fill();
+        }
+      }
+    }
+  }
+
   function draw() {
     var t = clock, s = w / 360, cx = w / 2, discY = h * 0.74;
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
@@ -170,6 +197,7 @@
       ctx.beginPath(); ctx.arc(mote.x * w + Math.sin(t * 0.4 + mote.y * 9) * 6 * s, my * h, mote.r * s, 0, 6.2832); ctx.fill();
     });
     drawAlgae(t, s);
+    ctx.save(); ctx.translate(w * BUBBLE.x, h); ctx.scale(BUBBLE.k, BUBBLE.k); ctx.translate(-cx, -h);
     tentacles.forEach(function (tn) { if (tn.back) { drawTentacle(tn, t, s, cx, discY); } });
     var body = ctx.createLinearGradient(0, discY, 0, h);
     body.addColorStop(0, '#b5613f'); body.addColorStop(1, '#6e3322');
@@ -179,6 +207,8 @@
     ctx.fillStyle = '#c9744e'; ctx.beginPath(); ctx.ellipse(cx, discY, 64 * s, 15 * s, 0, 0, 6.2832); ctx.fill();
     tentacles.forEach(function (tn) { if (!tn.back) { drawTentacle(tn, t, s, cx, discY); } });
     drawShrimp(t, s, cx + 30 * s, discY - 20 * s);
+    ctx.restore();
+    drawCarpet(t, s);
     FISH.forEach(function (kind, i) { drawFish(i, t, s); });
     drawTransfer(t, s);
   }
@@ -186,11 +216,12 @@
   function advance(dt) {
     clock += dt;
     if (clock - transfer.t < LEG_TIME) { return; }
-    flash = { at: LEGS[transfer.leg][1], t: clock, fish: transfer.fish, alga: transfer.alga };
+    flash = { at: LEGS[transfer.leg][1], t: clock, fish: transfer.fish, alga: transfer.alga, host: transfer.host };
     transfer.leg = (transfer.leg + 1) % LEGS.length;
     transfer.t = clock + REST;
     if (transfer.leg === 0) { transfer.color = (transfer.color + 1) % TE_COLORS.length; }
     if (transfer.leg % 2 === 0) { transfer.alga = Math.floor(Math.random() * algae.length); transfer.fish = Math.floor(Math.random() * 4); }
+    if (transfer.leg === 0) { transfer.host = transfer.fish === 0 ? 'carpet' : 'bubble'; }
   }
 
   function tick(now) {
