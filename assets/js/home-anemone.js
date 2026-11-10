@@ -20,7 +20,7 @@
   var transfer = { leg: 0, t: 0.8, alga: 0, color: 0, fish: 1, host: 'bubble' }, flash = null;
   var HOSTS = { bubble: { x: 0.27, y: 0.6 }, carpet: { x: 0.75, y: 0.8 } };
   // Sprite rectangles in reef-animals.webp: x, y, width, height. All face right.
-  var SPRITES = { tomato: [2, 2, 171, 107], skunk: [2, 113, 182, 98], shrimp: [2, 215, 172, 99], ocellaris: [2, 318, 220, 107], clarkii: [2, 429, 220, 109], damsel: [2, 542, 220, 132] };
+  var SPRITES = { tomato: [2, 2, 340, 215], skunk: [2, 221, 340, 185], shrimp: [2, 410, 340, 248], ocellaris: [2, 662, 340, 165], clarkii: [2, 831, 340, 168], damsel: [2, 1003, 340, 205] };
   // Residents. The first four are anemonefish and take part in the transfer; the damsel only visits.
   // The ocellaris (first) keeps to the carpet anemone; the others keep to the bubble-tip anemone.
   var FISH = [
@@ -132,7 +132,7 @@
       ctx.beginPath(); ctx.arc(mote.x * w + Math.sin(t * 0.4 + mote.y * 9) * 6 * s, my * h, mote.r * s, 0, 6.2832); ctx.fill();
     });
     drawAlgae(t, s);
-    drawSprite('shrimp', w * 0.36, h * (0.665 + Math.sin(t * 0.9) * 0.004), w * 0.13, -1, t, false);
+    drawSprite('shrimp', w * 0.37, h * (0.65 + Math.sin(t * 0.9) * 0.004), w * 0.17, -1, t, false);
     FISH.forEach(function (kind, i) { var f = fishAt(i, t); drawSprite(kind.art, f.x, f.y, w * kind.size, f.dir, t + i, true); });
     drawTransfer(t, s);
   }
