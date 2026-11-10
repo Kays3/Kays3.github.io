@@ -1,4 +1,5 @@
-// Home intro illustration: a bubble-tip anemone under a DNA strand with jumping transposons.
+// Home intro illustration: a hypothesis drawn as a scene. Transposons pass from an anemonefish
+// to a symbiotic alga to the host anemone, and back.
 // Decorative only. Drawn in the browser; it does not show data.
 (function () {
   'use strict';
@@ -11,9 +12,12 @@
   var intro = figure.closest('.reading-intro');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var w = 0, h = 0, ratio = 1, frame = 0, visible = true, paused = false, clock = 0, last = 0;
-  var TE_COLORS = ['#f0c98a', '#f0a37f', '#8fc5bc'];
-  var elements = [0.16, 0.5, 0.84].map(function (p, i) { return { p: p, color: TE_COLORS[i] }; });
-  var jump = null, nextJump = 1.5, flash = null;
+  var TE_COLORS = ['#f0c98a', '#8fc5bc', '#f0a37f'];
+  // One transfer cycle: fish -> alga -> anemone, then anemone -> alga -> fish.
+  var LEGS = [['fish', 'alga'], ['alga', 'anemone'], ['anemone', 'alga'], ['alga', 'fish']];
+  var LEG_TIME = 1.9, REST = 1.1;
+  var transfer = { leg: 0, t: 0.8, alga: 0, color: 0 }, flash = null;
+  var algae = [{ x: 0.22, y: 0.34 }, { x: 0.5, y: 0.31 }, { x: 0.78, y: 0.35 }];
   var tentacles = [], motes = [];
 
   function seeded(n) { var x = Math.sin(n * 127.1) * 43758.5453; return x - Math.floor(x); }
@@ -31,56 +35,72 @@
     draw();
   }
 
-  function strandY(x, t) { return h * 0.2 + Math.sin(x / w * 5 + t * 0.5) * h * 0.018; }
+  function fishAt(t) {
+    return { x: w * (0.5 + Math.cos(t * 0.32) * 0.27), y: h * (0.15 + Math.sin(t * 0.64) * 0.04), dir: Math.sin(t * 0.32) > 0 ? -1 : 1 };
+  }
+  function algaAt(i, t) {
+    return { x: algae[i].x * w + Math.sin(t * 0.5 + i * 2) * 5 * w / 360, y: algae[i].y * h + Math.cos(t * 0.6 + i) * 6 * w / 360 };
+  }
+  function place(name, t) {
+    if (name === 'fish') { return fishAt(t); }
+    if (name === 'alga') { return algaAt(transfer.alga, t); }
+    return { x: w / 2, y: h * 0.6 };
+  }
 
-  function block(x, y, s, color, lift) {
-    var bw = 34 * s, bh = 13 * s;
-    ctx.save(); ctx.translate(x, y); ctx.rotate(lift * 0.5);
+  function block(x, y, s, color, tilt) {
+    var bw = 26 * s, bh = 11 * s;
+    ctx.save(); ctx.translate(x, y); ctx.rotate(tilt);
     ctx.fillStyle = color; ctx.beginPath();
     if (ctx.roundRect) { ctx.roundRect(-bw / 2, -bh / 2, bw, bh, 3 * s); } else { ctx.rect(-bw / 2, -bh / 2, bw, bh); }
     ctx.fill();
-    ctx.fillStyle = 'rgba(15,42,44,0.55)';
-    ctx.beginPath(); ctx.moveTo(-bw / 2 + 4 * s, -bh / 4); ctx.lineTo(-bw / 2 + 9 * s, 0); ctx.lineTo(-bw / 2 + 4 * s, bh / 4); ctx.fill();
-    ctx.beginPath(); ctx.moveTo(bw / 2 - 4 * s, -bh / 4); ctx.lineTo(bw / 2 - 9 * s, 0); ctx.lineTo(bw / 2 - 4 * s, bh / 4); ctx.fill();
+    ctx.fillStyle = 'rgba(15,42,44,0.6)';
+    ctx.beginPath(); ctx.moveTo(-bw / 2 + 3 * s, -bh / 4); ctx.lineTo(-bw / 2 + 8 * s, 0); ctx.lineTo(-bw / 2 + 3 * s, bh / 4); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(bw / 2 - 3 * s, -bh / 4); ctx.lineTo(bw / 2 - 8 * s, 0); ctx.lineTo(bw / 2 - 3 * s, bh / 4); ctx.fill();
     ctx.restore();
   }
 
-  function drawStrand(t, s) {
-    var x, a = 7 * s, step = 13 * s;
-    ctx.lineWidth = 1.6 * s; ctx.lineCap = 'round';
-    for (var side = -1; side <= 1; side += 2) {
-      ctx.strokeStyle = 'rgba(255,249,233,0.55)'; ctx.beginPath();
-      for (x = -4; x <= w + 4; x += 4) {
-        var y = strandY(x, t) + side * Math.sin(x / (22 * s) + t * 0.8) * a;
-        if (x === -4) { ctx.moveTo(x, y); } else { ctx.lineTo(x, y); }
-      }
-      ctx.stroke();
-    }
-    ctx.strokeStyle = 'rgba(255,249,233,0.22)'; ctx.lineWidth = 1 * s;
-    for (x = step / 2; x < w; x += step) {
-      var d = Math.sin(x / (22 * s) + t * 0.8) * a, mid = strandY(x, t);
-      ctx.beginPath(); ctx.moveTo(x, mid - d); ctx.lineTo(x, mid + d); ctx.stroke();
-    }
-    elements.forEach(function (el) {
-      if (jump && jump.el === el) { return; }
-      var ex = el.p * w; block(ex, strandY(ex, t), s, el.color, 0);
+  function drawFish(t, s) {
+    var f = fishAt(t), wag = Math.sin(t * 6) * 0.25;
+    ctx.save(); ctx.translate(f.x, f.y); ctx.scale(f.dir * s, s);
+    ctx.fillStyle = '#e07b2e';
+    ctx.beginPath(); ctx.moveTo(-26, 0); ctx.lineTo(-44, -13 + wag * 14); ctx.lineTo(-40, wag * 10); ctx.lineTo(-44, 13 + wag * 14); ctx.closePath(); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(-6, -14); ctx.quadraticCurveTo(2, -27, 14, -13); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(-2, 13); ctx.quadraticCurveTo(4, 25, 12, 12); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(0, 0, 30, 16, 0, 0, 6.2832); ctx.fill();
+    ctx.save(); ctx.clip();
+    [[-20, 5], [-1, 8], [17, 6]].forEach(function (band) {
+      ctx.fillStyle = '#1b2326'; ctx.fillRect(band[0] - band[1] / 2 - 1.5, -18, band[1] + 3, 36);
+      ctx.fillStyle = '#fff9e9'; ctx.fillRect(band[0] - band[1] / 2, -18, band[1], 36);
     });
-    if (jump) {
-      var u = Math.min(1, (t - jump.t) / 1.7), e = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
-      var jx = (jump.from + (jump.to - jump.from) * e) * w;
-      var jy = strandY(jx, t) - Math.sin(e * Math.PI) * h * 0.11;
-      ctx.strokeStyle = 'rgba(240,201,138,0.35)'; ctx.setLineDash([3 * s, 5 * s]); ctx.lineWidth = 1 * s;
-      ctx.beginPath(); ctx.moveTo(jump.from * w, strandY(jump.from * w, t));
-      ctx.quadraticCurveTo((jump.from + jump.to) / 2 * w, strandY(w / 2, t) - h * 0.22, jump.to * w, strandY(jump.to * w, t)); ctx.stroke(); ctx.setLineDash([]);
-      block(jx, jy, s, jump.el.color, Math.sin(e * Math.PI) * (jump.to > jump.from ? 1 : -1));
+    ctx.restore();
+    ctx.fillStyle = '#1b2326'; ctx.beginPath(); ctx.arc(23, -3, 2.4, 0, 6.2832); ctx.fill();
+    ctx.restore();
+  }
+
+  function drawAlgae(t, s) {
+    algae.forEach(function (cell, i) {
+      var a = algaAt(i, t);
+      ctx.fillStyle = 'rgba(185,194,106,0.25)'; ctx.beginPath(); ctx.arc(a.x, a.y, 13 * s, 0, 6.2832); ctx.fill();
+      ctx.fillStyle = '#b9c26a'; ctx.beginPath(); ctx.arc(a.x, a.y, 8.5 * s, 0, 6.2832); ctx.fill();
+      ctx.fillStyle = '#7d8a3c'; ctx.beginPath(); ctx.arc(a.x + 2 * s, a.y + 1.5 * s, 4 * s, 0, 6.2832); ctx.fill();
+    });
+  }
+
+  function drawTransfer(t, s) {
+    if (flash && t - flash.t < 0.9) {
+      var age = t - flash.t, spot = place(flash.at, t);
+      ctx.strokeStyle = 'rgba(240,201,138,' + (1 - age / 0.9) + ')'; ctx.lineWidth = 1.5 * s;
+      ctx.beginPath(); ctx.arc(spot.x, spot.y, (12 + age * 34) * s, 0, 6.2832); ctx.stroke();
     }
-    if (flash) {
-      var age = t - flash.t;
-      if (age < 0.8) {
-        ctx.strokeStyle = 'rgba(240,201,138,' + (1 - age / 0.8) + ')'; ctx.lineWidth = 1.5 * s;
-        ctx.beginPath(); ctx.arc(flash.p * w, strandY(flash.p * w, t), (10 + age * 30) * s, 0, 6.2832); ctx.stroke();
-      }
-    }
+    var u = (t - transfer.t) / LEG_TIME;
+    if (u < 0 || u > 1) { return; }
+    var leg = LEGS[transfer.leg], from = place(leg[0], t), to = place(leg[1], t);
+    var e = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2, side = transfer.leg < 2 ? 1 : -1;
+    var dx = to.x - from.x, dy = to.y - from.y, bow = Math.sin(e * Math.PI) * 26 * s * side, len = Math.sqrt(dx * dx + dy * dy) || 1;
+    var x = from.x + dx * e - dy / len * bow, y = from.y + dy * e + dx / len * bow;
+    ctx.strokeStyle = 'rgba(240,201,138,0.4)'; ctx.setLineDash([3 * s, 5 * s]); ctx.lineWidth = 1 * s;
+    ctx.beginPath(); ctx.moveTo(from.x, from.y); ctx.quadraticCurveTo(from.x + dx / 2 - dy / len * 52 * s * side, from.y + dy / 2 + dx / len * 52 * s * side, to.x, to.y); ctx.stroke(); ctx.setLineDash([]);
+    block(x, y, s, TE_COLORS[transfer.color], Math.atan2(dy, dx) * 0.25);
   }
 
   function drawTentacle(tn, t, s, cx, discY) {
@@ -99,7 +119,7 @@
     var tip = points[parts];
     ctx.fillStyle = tn.back ? '#c98c66' : '#f0c98a';
     ctx.beginPath(); ctx.arc(tip[0], tip[1], (tn.back ? 7 : 9.5) * s, 0, 6.2832); ctx.fill();
-    ctx.fillStyle = tn.back ? '#a8654a' : '#fff3d6';
+    ctx.fillStyle = tn.back ? '#a8654a' : '#9aa550';
     ctx.beginPath(); ctx.arc(tip[0], tip[1] - 3 * s, (tn.back ? 2 : 2.6) * s, 0, 6.2832); ctx.fill();
   }
 
@@ -114,7 +134,7 @@
       ctx.fillStyle = 'rgba(255,249,233,0.22)';
       ctx.beginPath(); ctx.arc(mote.x * w + Math.sin(t * 0.4 + mote.y * 9) * 6 * s, my * h, mote.r * s, 0, 6.2832); ctx.fill();
     });
-    drawStrand(t, s);
+    drawAlgae(t, s);
     tentacles.forEach(function (tn) { if (tn.back) { drawTentacle(tn, t, s, cx, discY); } });
     var body = ctx.createLinearGradient(0, discY, 0, h);
     body.addColorStop(0, '#b5613f'); body.addColorStop(1, '#6e3322');
@@ -123,19 +143,18 @@
     ctx.lineTo(cx + 54 * s, h + 2); ctx.quadraticCurveTo(cx + 40 * s, h * 0.9, cx + 62 * s, discY); ctx.fill();
     ctx.fillStyle = '#c9744e'; ctx.beginPath(); ctx.ellipse(cx, discY, 64 * s, 15 * s, 0, 0, 6.2832); ctx.fill();
     tentacles.forEach(function (tn) { if (!tn.back) { drawTentacle(tn, t, s, cx, discY); } });
+    drawFish(t, s);
+    drawTransfer(t, s);
   }
 
   function advance(dt) {
     clock += dt;
-    if (jump && clock - jump.t >= 1.7) { jump.el.p = jump.to; flash = { p: jump.to, t: clock }; jump = null; nextJump = clock + 1.8; }
-    if (!jump && clock >= nextJump) {
-      var el = elements[Math.floor(Math.random() * elements.length)], to = 0, tries = 0, clear = false;
-      while (!clear && tries < 30) {
-        to = 0.08 + Math.random() * 0.84; tries += 1;
-        clear = Math.abs(to - el.p) > 0.18 && elements.every(function (other) { return other === el || Math.abs(other.p - to) > 0.12; });
-      }
-      if (clear) { jump = { el: el, from: el.p, to: to, t: clock }; } else { nextJump = clock + 0.5; }
-    }
+    if (clock - transfer.t < LEG_TIME) { return; }
+    flash = { at: LEGS[transfer.leg][1], t: clock };
+    transfer.leg = (transfer.leg + 1) % LEGS.length;
+    transfer.t = clock + REST;
+    if (transfer.leg === 0) { transfer.color = (transfer.color + 1) % TE_COLORS.length; }
+    if (transfer.leg % 2 === 0) { transfer.alga = Math.floor(Math.random() * algae.length); }
   }
 
   function tick(now) {
