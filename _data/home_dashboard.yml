@@ -1,107 +1,28 @@
-# Home page dashboard. Every number is taken from the publication record, the or the thesis.
-shared:
-  papers_max: 4
-  papers:
-    - { year: 2018, n: 1 }
-    - { year: 2019, n: 1 }
-    - { year: 2020, n: 3 }
-    - { year: 2021, n: 0 }
-    - { year: 2022, n: 1 }
-    - { year: 2023, n: 0 }
-    - { year: 2024, n: 0, thesis: true }
-    - { year: 2025, n: 4 }
-    - { year: 2026, n: 1 }
-  stats:
-    - { key: papers, value: 11, url: "/publications/" }
-    - { key: patients, value: 150, url: "/research/#infectious-disease" }
-    - { key: isolates, value: 86, url: "/research/#infectious-disease" }
-    - { key: interviews, value: 60, url: "/research/#clinical-systems" }
-    - { key: transcriptomes, value: 72, url: "/research/#ocean-acidification" }
-    - { key: stroke, value: 80, url: "/research/#neuroscience" }
+# Text for the two home illustrations (home-anemone.html and home-isp.html).
 en:
-  eyebrow: "At a glance"
-  title: "The work in numbers."
-  intro: "Every figure here comes from a published paper or my thesis."
-  stats:
-    papers: "peer-reviewed papers, 2018 to 2026"
-    patients: "patients enrolled in the Almaty <em>H. pylori</em> study"
-    isolates: "viable isolates tested for antibiotic resistance"
-    interviews: "palliative care professionals interviewed"
-    transcriptomes: "reef fish brain transcriptomes"
-    stroke: "patients with acute stroke in the quantitative CT study"
-  papers_title: "Papers by year"
-  papers_note: "Peer-reviewed papers. The 2024 doctoral thesis is marked separately."
-  papers_link: "All publications"
-  thesis: "PhD thesis"
   pause: "Pause animation"
   play: "Play animation"
-  caption: "The moving network is decorative. It is drawn in the browser and does not show data."
   anemone_alt: "Animated painting: tomato, Clark's and pink skunk anemonefish, a three-spot damsel, and a shrimp around a bubble-tip sea anemone, and an ocellaris anemonefish over a carpet anemone. Small transposon blocks pass from a fish to a symbiotic alga and on to an anemone, then back again."
   anemone_caption: "A hypothesis, drawn: transposons passing between anemonefish, symbiotic algae, and their host anemones over evolutionary time. An illustration, not data. Shown: tomato, Clark's and pink skunk anemonefish, a three-spot damsel, and a shrimp at a bubble-tip anemone; an ocellaris at a carpet anemone (<em>Stichodactyla</em>). The backdrop and some animals are AI-generated (Canva); the other fish reuse illustrations from the TE Mobilome Paper project."
   isp_alt: "Animated painting: a row of gene tokens above drifting cells. One token is crossed out and removed, the row closes up, and a glow spreads through a network of genes."
   isp_caption: "Geneformer in silico perturbation, drawn: delete one gene from a cell's ranked list and follow the predicted shift. An illustration, not data. Backdrop AI-generated (Canva)."
 ja:
-  eyebrow: "数字で見る"
-  title: "研究を数字で。"
-  intro: "ここに示す数字は、発表論文と博士論文に基づいています。"
-  stats:
-    papers: "査読付き論文（2018〜2026年）"
-    patients: "アルマトイの<em>H. pylori</em>研究の対象患者"
-    isolates: "薬剤耐性を調べた培養分離株"
-    interviews: "インタビューした緩和ケア専門職"
-    transcriptomes: "サンゴ礁魚類の脳トランスクリプトーム"
-    stroke: "定量的CT研究の急性期脳梗塞患者"
-  papers_title: "年別の論文数"
-  papers_note: "査読付き論文の数です。2024年の博士論文は別に示しています。"
-  papers_link: "すべての論文"
-  thesis: "博士論文"
   pause: "アニメーションを停止"
   play: "アニメーションを再生"
-  caption: "動くネットワークは装飾です。ブラウザ上で描いており、データを示すものではありません。"
   anemone_alt: "アニメーション：サンゴイソギンチャクの周りにクマノミ類3種、ミツボシクロスズメダイ、エビがいて、ハタゴイソギンチャクの仲間の上をカクレクマノミが泳ぎます。転移因子を表す小さなブロックが魚から共生藻へ、さらにイソギンチャクへと移り、また戻ります。"
   anemone_caption: "仮説のイメージ図：進化の過程で、転移因子がクマノミ類、共生藻、宿主イソギンチャクの間を行き来した可能性。データではありません。サンゴイソギンチャクにはハマクマノミ、クマノミ、ハナビラクマノミ、ミツボシクロスズメダイ、エビを、ハタゴイソギンチャクの仲間（<em>Stichodactyla</em>）にはカクレクマノミを描いています。 背景と一部の生き物はAI（Canva）で生成し、ほかの魚はTE Mobilome Paperのイラストを再利用しています。"
   isp_alt: "アニメーション：漂う細胞の上に遺伝子トークンの列が並びます。1つのトークンに×印が付いて取り除かれ、列が詰まり、遺伝子ネットワークに光が広がります。"
   isp_caption: "Geneformerによるin silico摂動のイメージ図：細胞の遺伝子順位リストから1つの遺伝子を取り除き、予測される変化を追います。データではありません。背景はAI（Canva）で生成しました。"
 ru:
-  eyebrow: "Коротко"
-  title: "Работа в цифрах."
-  intro: "Все цифры взяты из опубликованных статей и диссертации."
-  stats:
-    papers: "рецензируемых статей, 2018–2026"
-    patients: "пациентов в исследовании <em>H. pylori</em> в Алматы"
-    isolates: "жизнеспособных культур, проверенных на устойчивость к антибиотикам"
-    interviews: "интервью со специалистами паллиативной помощи"
-    transcriptomes: "транскриптома мозга рифовых рыб"
-    stroke: "пациентов с острым инсультом в исследовании количественной КТ"
-  papers_title: "Статьи по годам"
-  papers_note: "Рецензируемые статьи. Диссертация 2024 года отмечена отдельно."
-  papers_link: "Все публикации"
-  thesis: "Диссертация"
   pause: "Остановить анимацию"
   play: "Запустить анимацию"
-  caption: "Движущаяся сеть служит украшением. Она рисуется в браузере и не отображает данные."
   anemone_alt: "Анимированный рисунок: у пузырчатой актинии плавают три вида рыб-клоунов, трёхпятнистый дасцилл и креветка, а над ковровой актинией — клоун-оцеллярис. Небольшие блоки-транспозоны переходят от рыбы к симбиотической водоросли и дальше к актинии, а затем обратно."
   anemone_caption: "Гипотеза в рисунке: в ходе эволюции транспозоны могли переходить между рыбами-клоунами, симбиотическими водорослями и актиниями-хозяевами. Это иллюстрация, а не данные. У пузырчатой актинии: томатный клоун, клоун Кларка, розовый клоун, трёхпятнистый дасцилл и креветка. У ковровой актинии (<em>Stichodactyla</em>): клоун-оцеллярис. Фон и часть животных созданы с помощью ИИ (Canva); остальные рыбы взяты из иллюстраций проекта TE Mobilome Paper."
   isp_alt: "Анимированный рисунок: над плавающими клетками расположен ряд генных токенов. Один токен зачёркивается и исчезает, ряд смыкается, и по сети генов расходится свечение."
   isp_caption: "Моделирование воздействий в Geneformer в рисунке: из ранжированного списка генов клетки удаляется один ген, и модель предсказывает сдвиг. Это иллюстрация, а не данные. Фон создан с помощью ИИ (Canva)."
 kk:
-  eyebrow: "Қысқаша"
-  title: "Жұмыс сандар тілінде."
-  intro: "Мұндағы сандардың бәрі жарияланған мақалалар мен диссертациядан алынған."
-  stats:
-    papers: "рецензияланған мақала, 2018–2026"
-    patients: "Алматыдағы <em>H. pylori</em> зерттеуіне қатысқан науқас"
-    isolates: "антибиотикке төзімділігі тексерілген тірі өсінді"
-    interviews: "сұхбат берген паллиативтік көмек маманы"
-    transcriptomes: "риф балықтары миының транскриптомы"
-    stroke: "сандық КТ зерттеуіндегі жіті инсультпен науқас"
-  papers_title: "Жылдар бойынша мақалалар"
-  papers_note: "Рецензияланған мақалалар. 2024 жылғы диссертация бөлек белгіленген."
-  papers_link: "Барлық жарияланым"
-  thesis: "Диссертация"
   pause: "Анимацияны тоқтату"
   play: "Анимацияны қосу"
-  caption: "Қозғалатын желі тек безендіру үшін берілген. Ол браузерде салынады және дерек көрсетпейді."
   anemone_alt: "Анимациялық сурет: көпіршікті актинияның маңында клоун-балықтың үш түрі, үш дақты дасцилл және асшаян бар, ал кілем тәрізді актинияның үстінде оцеллярис жүзіп жүр. Транспозондарды бейнелейтін шағын блоктар балықтан симбионт балдырға, одан актинияға өтіп, кейін кері қайтады."
   anemone_caption: "Суретпен берілген болжам: эволюция барысында транспозондар клоун-балықтар, симбионт балдырлар және оларды паналататын актиниялар арасында ауысуы мүмкін. Бұл көркем бейне, дерек емес. Көпіршікті актинияда: қызанақ түсті клоун-балық, Кларк клоун-балығы, қызғылт клоун-балық, үш дақты дасцилл және асшаян. Кілем тәрізді актинияда (<em>Stichodactyla</em>): оцеллярис. Фон мен кейбір жануарлар жасанды интеллект (Canva) арқылы жасалған; қалған балықтар TE Mobilome Paper жобасының суреттерінен алынған."
   isp_alt: "Анимациялық сурет: қалқып жүрген жасушалардың үстінде ген токендерінің қатары тұр. Бір токен сызылып алынып тасталады, қатар жинақталады, ал гендер желісі бойымен жарық тарайды."
