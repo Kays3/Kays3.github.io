@@ -16,8 +16,16 @@
   // One transfer cycle: fish -> alga -> anemone, then anemone -> alga -> fish.
   var LEGS = [['fish', 'alga'], ['alga', 'anemone'], ['anemone', 'alga'], ['alga', 'fish']];
   var LEG_TIME = 1.9, REST = 1.1;
-  var transfer = { leg: 0, t: 0.8, alga: 0, color: 0 }, flash = null;
-  var algae = [{ x: 0.22, y: 0.34 }, { x: 0.5, y: 0.31 }, { x: 0.78, y: 0.35 }];
+  var transfer = { leg: 0, t: 0.8, alga: 0, color: 0, fish: 0 }, flash = null;
+  // Residents. The first four are anemonefish and take part in the transfer; the damsel only visits.
+  var FISH = [
+    { cx: 0.5, ax: 0.27, y: 0.085, ay: 0.025, speed: 0.32, phase: 0, size: 0.9, rx: 30, ry: 16, body: '#e07b2e', fin: '#e07b2e', tail: '#e07b2e', bands: [[-20, 5], [-1, 8], [17, 6]] },
+    { cx: 0.27, ax: 0.14, y: 0.215, ay: 0.02, speed: 0.26, phase: 1.3, size: 0.8, rx: 29, ry: 17, body: '#c23a26', fin: '#a92f20', tail: '#c23a26', bands: [[15, 5]] },
+    { cx: 0.73, ax: 0.14, y: 0.225, ay: 0.02, speed: 0.22, phase: 3.4, size: 0.85, rx: 30, ry: 17, body: '#2b2421', fin: '#e9a62c', tail: '#f0c33c', face: '#e9a62c', bands: [[-23, 4], [-2, 8], [15, 6]] },
+    { cx: 0.5, ax: 0.07, y: 0.2, ay: 0.015, speed: 0.36, phase: 5, size: 0.7, rx: 29, ry: 15, body: '#f2a58e', fin: '#f6c7b4', tail: '#f6c7b4', stripe: true, plain: true, bands: [[14, 3.5]] },
+    { cx: 0.87, ax: 0.05, y: 0.4, ay: 0.025, speed: 0.5, phase: 2, size: 0.55, rx: 23, ry: 18, body: '#1e2224', fin: '#1e2224', tail: '#1e2224', bands: [], spots: [[11, -11, 3.4], [-3, -3, 4]] }
+  ];
+  var algae = [{ x: 0.2, y: 0.35 }, { x: 0.5, y: 0.33 }, { x: 0.68, y: 0.36 }];
   var tentacles = [], motes = [];
 
   function seeded(n) { var x = Math.sin(n * 127.1) * 43758.5453; return x - Math.floor(x); }
@@ -35,15 +43,17 @@
     draw();
   }
 
-  function fishAt(t) {
-    return { x: w * (0.5 + Math.cos(t * 0.32) * 0.27), y: h * (0.15 + Math.sin(t * 0.64) * 0.04), dir: Math.sin(t * 0.32) > 0 ? -1 : 1 };
+  function fishAt(i, t) {
+    var f = FISH[i], a = t * f.speed + f.phase;
+    return { x: w * (f.cx + Math.cos(a) * f.ax), y: h * (f.y + Math.sin(a * 2) * f.ay), dir: Math.sin(a) > 0 ? -1 : 1 };
   }
   function algaAt(i, t) {
     return { x: algae[i].x * w + Math.sin(t * 0.5 + i * 2) * 5 * w / 360, y: algae[i].y * h + Math.cos(t * 0.6 + i) * 6 * w / 360 };
   }
-  function place(name, t) {
-    if (name === 'fish') { return fishAt(t); }
-    if (name === 'alga') { return algaAt(transfer.alga, t); }
+  function place(name, t, ref) {
+    ref = ref || transfer;
+    if (name === 'fish') { return fishAt(ref.fish, t); }
+    if (name === 'alga') { return algaAt(ref.alga, t); }
     return { x: w / 2, y: h * 0.6 };
   }
 
@@ -59,21 +69,46 @@
     ctx.restore();
   }
 
-  function drawFish(t, s) {
-    var f = fishAt(t), wag = Math.sin(t * 6) * 0.25;
-    ctx.save(); ctx.translate(f.x, f.y); ctx.scale(f.dir * s, s);
-    ctx.fillStyle = '#e07b2e';
-    ctx.beginPath(); ctx.moveTo(-26, 0); ctx.lineTo(-44, -13 + wag * 14); ctx.lineTo(-40, wag * 10); ctx.lineTo(-44, 13 + wag * 14); ctx.closePath(); ctx.fill();
-    ctx.beginPath(); ctx.moveTo(-6, -14); ctx.quadraticCurveTo(2, -27, 14, -13); ctx.fill();
-    ctx.beginPath(); ctx.moveTo(-2, 13); ctx.quadraticCurveTo(4, 25, 12, 12); ctx.fill();
-    ctx.beginPath(); ctx.ellipse(0, 0, 30, 16, 0, 0, 6.2832); ctx.fill();
+  function drawFish(i, t, s) {
+    var kind = FISH[i], f = fishAt(i, t), wag = Math.sin(t * 6 + i) * 0.25, rx = kind.rx, ry = kind.ry;
+    ctx.save(); ctx.translate(f.x, f.y); ctx.scale(f.dir * s * kind.size, s * kind.size);
+    ctx.fillStyle = kind.tail;
+    ctx.beginPath(); ctx.moveTo(-rx + 4, 0); ctx.lineTo(-rx - 14, -13 + wag * 14); ctx.lineTo(-rx - 10, wag * 10); ctx.lineTo(-rx - 14, 13 + wag * 14); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = kind.fin;
+    ctx.beginPath(); ctx.moveTo(-6, -ry + 2); ctx.quadraticCurveTo(2, -ry - 11, 14, -ry + 3); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(-2, ry - 3); ctx.quadraticCurveTo(4, ry + 9, 12, ry - 4); ctx.fill();
+    ctx.fillStyle = kind.body;
+    ctx.beginPath(); ctx.ellipse(0, 0, rx, ry, 0, 0, 6.2832); ctx.fill();
     ctx.save(); ctx.clip();
-    [[-20, 5], [-1, 8], [17, 6]].forEach(function (band) {
-      ctx.fillStyle = '#1b2326'; ctx.fillRect(band[0] - band[1] / 2 - 1.5, -18, band[1] + 3, 36);
-      ctx.fillStyle = '#fff9e9'; ctx.fillRect(band[0] - band[1] / 2, -18, band[1], 36);
+    if (kind.face) { ctx.fillStyle = kind.face; ctx.fillRect(rx - 11, -ry, 12, ry * 2); ctx.fillRect(-rx, ry - 6, rx * 2, 6); }
+    kind.bands.forEach(function (band) {
+      if (!kind.plain) { ctx.fillStyle = '#1b2326'; ctx.fillRect(band[0] - band[1] / 2 - 1.5, -ry - 2, band[1] + 3, ry * 2 + 4); }
+      ctx.fillStyle = '#fff9e9'; ctx.fillRect(band[0] - band[1] / 2, -ry - 2, band[1], ry * 2 + 4);
     });
+    if (kind.stripe) { ctx.fillStyle = '#fff9e9'; ctx.fillRect(-rx, -ry, rx * 2, 4.5); }
     ctx.restore();
-    ctx.fillStyle = '#1b2326'; ctx.beginPath(); ctx.arc(23, -3, 2.4, 0, 6.2832); ctx.fill();
+    (kind.spots || []).forEach(function (spot) { ctx.fillStyle = '#fff9e9'; ctx.beginPath(); ctx.arc(spot[0], spot[1], spot[2], 0, 6.2832); ctx.fill(); });
+    ctx.fillStyle = '#fff9e9'; ctx.beginPath(); ctx.arc(rx - 7, -3, 3.2, 0, 6.2832); ctx.fill();
+    ctx.fillStyle = '#1b2326'; ctx.beginPath(); ctx.arc(rx - 6.5, -3, 2, 0, 6.2832); ctx.fill();
+    ctx.restore();
+  }
+
+  // An anemone shrimp resting on the oral disc: translucent, with pale spots and long antennae.
+  function drawShrimp(t, s, x, y) {
+    var sway = Math.sin(t * 1.4) * 0.12;
+    ctx.save(); ctx.translate(x, y + Math.sin(t * 0.9) * 1.5 * s); ctx.scale(s, s); ctx.rotate(-0.25);
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = 'rgba(255,249,233,0.6)'; ctx.lineWidth = 0.9;
+    ctx.beginPath(); ctx.moveTo(12, -3); ctx.quadraticCurveTo(26, -16 + sway * 30, 40, -20 + sway * 50); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(12, -2); ctx.quadraticCurveTo(28, -6 + sway * 20, 42, -4 + sway * 40); ctx.stroke();
+    ctx.lineWidth = 1.2;
+    [[4, 8], [-1, 9], [-6, 8]].forEach(function (leg) { ctx.beginPath(); ctx.moveTo(leg[0], 2); ctx.lineTo(leg[0] + 2, leg[1]); ctx.stroke(); });
+    ctx.beginPath(); ctx.moveTo(9, 2); ctx.lineTo(18, 7 + sway * 8); ctx.stroke();
+    ctx.strokeStyle = 'rgba(255,249,233,0.55)'; ctx.lineWidth = 6.5;
+    ctx.beginPath(); ctx.moveTo(11, -1); ctx.quadraticCurveTo(-2, -7, -13, 1); ctx.quadraticCurveTo(-17, 5, -14, 9); ctx.stroke();
+    ctx.fillStyle = '#fff9e9'; [[6, -3], [-2, -5], [-10, -1]].forEach(function (dot) { ctx.beginPath(); ctx.arc(dot[0], dot[1], 1.5, 0, 6.2832); ctx.fill(); });
+    ctx.fillStyle = '#b9a2e0'; [[2, -4.5], [-6, -4], [-14, 5]].forEach(function (dot) { ctx.beginPath(); ctx.arc(dot[0], dot[1], 1.2, 0, 6.2832); ctx.fill(); });
+    ctx.fillStyle = '#1b2326'; ctx.beginPath(); ctx.arc(11.5, -3.5, 1.1, 0, 6.2832); ctx.fill();
     ctx.restore();
   }
 
@@ -88,7 +123,7 @@
 
   function drawTransfer(t, s) {
     if (flash && t - flash.t < 0.9) {
-      var age = t - flash.t, spot = place(flash.at, t);
+      var age = t - flash.t, spot = place(flash.at, t, flash);
       ctx.strokeStyle = 'rgba(240,201,138,' + (1 - age / 0.9) + ')'; ctx.lineWidth = 1.5 * s;
       ctx.beginPath(); ctx.arc(spot.x, spot.y, (12 + age * 34) * s, 0, 6.2832); ctx.stroke();
     }
@@ -143,18 +178,19 @@
     ctx.lineTo(cx + 54 * s, h + 2); ctx.quadraticCurveTo(cx + 40 * s, h * 0.9, cx + 62 * s, discY); ctx.fill();
     ctx.fillStyle = '#c9744e'; ctx.beginPath(); ctx.ellipse(cx, discY, 64 * s, 15 * s, 0, 0, 6.2832); ctx.fill();
     tentacles.forEach(function (tn) { if (!tn.back) { drawTentacle(tn, t, s, cx, discY); } });
-    drawFish(t, s);
+    drawShrimp(t, s, cx + 30 * s, discY - 20 * s);
+    FISH.forEach(function (kind, i) { drawFish(i, t, s); });
     drawTransfer(t, s);
   }
 
   function advance(dt) {
     clock += dt;
     if (clock - transfer.t < LEG_TIME) { return; }
-    flash = { at: LEGS[transfer.leg][1], t: clock };
+    flash = { at: LEGS[transfer.leg][1], t: clock, fish: transfer.fish, alga: transfer.alga };
     transfer.leg = (transfer.leg + 1) % LEGS.length;
     transfer.t = clock + REST;
     if (transfer.leg === 0) { transfer.color = (transfer.color + 1) % TE_COLORS.length; }
-    if (transfer.leg % 2 === 0) { transfer.alga = Math.floor(Math.random() * algae.length); }
+    if (transfer.leg % 2 === 0) { transfer.alga = Math.floor(Math.random() * algae.length); transfer.fish = Math.floor(Math.random() * 4); }
   }
 
   function tick(now) {
