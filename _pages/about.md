@@ -25,7 +25,8 @@ redirect_from:
       <div class="reading-actions"><a class="about-button about-button--primary" href="/research/">Explore the research →</a><a class="text-link" href="/publications/">Read the papers →</a></div>
       <p class="reading-caption">MD, Nazarbayev University · PhD in Genetics, SOKENDAI<br>Postdoctoral research, Hokkaido University</p>
     </div>
-  {% include home-anemone.html %}</section>
+  </section>
+<div class="reading-duo">{% include home-anemone.html %}{% include home-isp.html %}</div>
 
 {% include home-dashboard.html %}
 
