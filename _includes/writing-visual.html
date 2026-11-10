@@ -6,8 +6,7 @@
   {% if include.kind == 'infection' %}
   <a class="writing-stat-sheet" href="https://doi.org/10.3389/fmicb.2026.1747006">
     <span class="writing-sheet-title"><i>H. pylori</i> · Almaty</span>
-    <span class="writing-stat"><strong>150</strong><span>{{ visual_text.patients }}</span></span>
-    <span class="writing-stat"><strong>86</strong><span>{{ visual_text.isolates }}</span></span>
+    <span class="writing-approach">{{ visual_text.approach }}</span>
     <span class="writing-source-link">{{ visual_text.study }} ↗</span>
   </a>
   {% elsif include.kind == 'care' %}

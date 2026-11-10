@@ -1,6 +1,5 @@
 en:
-  patients: patients
-  isolates: cultured isolates
+  approach: Patient samples, culture, and susceptibility testing
   study: Published study
   source: View the source
   themes: Interview themes · Table 2
@@ -8,8 +7,7 @@ en:
   context: Okinawa field context
   caption: Illustrative artwork surrounds the research. Open a figure to see its original source.
 ja:
-  patients: 対象患者
-  isolates: 培養分離株
+  approach: 患者検体、培養、薬剤感受性試験
   study: 発表論文
   source: 出典を見る
   themes: インタビューのテーマ · 表2
@@ -17,8 +15,7 @@ ja:
   context: 沖縄のフィールド
   caption: 研究をイメージしたアートを添えています。図を開くと元の資料を確認できます。
 ru:
-  patients: пациентов
-  isolates: выделенных культур
+  approach: Образцы пациентов, посев и определение чувствительности
   study: Опубликованное исследование
   source: Открыть источник
   themes: Темы интервью · Таблица 2
@@ -26,8 +23,7 @@ ru:
   context: Полевая работа на Окинаве
   caption: Художественные образы обрамляют исследование. Нажмите на рисунок, чтобы открыть первоисточник.
 kk:
-  patients: науқас
-  isolates: бөлінген өсінді
+  approach: Науқас үлгілері, өсінді алу және сезімталдықты анықтау
   study: Жарияланған зерттеу
   source: Дереккөзді ашу
   themes: Сұхбат тақырыптары · 2-кесте

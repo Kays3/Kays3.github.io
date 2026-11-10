@@ -15,7 +15,6 @@ banner_quote_source: "https://podcasts.apple.com/ca/podcast/aldous-huxley-there-
 
 <div class="reading-home"><section class="reading-intro reading-intro--solo" aria-labelledby="home-title"><div><div class="about-profile"><span class="about-name">Kaisar Dauyey</span></div><p class="eyebrow">医師・研究者</p><h2 id="home-title">医学から問いを。生物学から答えを。</h2><p class="reading-lead">私の研究は、人、集団、あるいは生物についての問いから始まります。臨床での観察、遺伝学、計算解析を通じて、得られた証拠が何を示すのかを考えます。</p><p>感染症、がん、免疫疾患、脳、そしてケアを担う人々について研究してきました。博士論文では、古代人のゲノムと、海洋環境の変化に対するサンゴ礁魚類の応答を扱いました。</p><div class="reading-actions"><a href="{{ site.baseurl }}/ja/research/">研究を見る →</a> <a href="{{ site.baseurl }}/ja/publications/">論文を読む →</a></div><p class="reading-caption">医学の学位：Nazarbayev University。遺伝学博士：総合研究大学院大学（SOKENDAI）。現在は北海道大学で博士研究員として研究しています。</p></div></section>
 <div class="reading-duo">{% include home-anemone.html %}{% include home-isp.html %}</div>
-{% include home-dashboard.html %}
 
 <section class="reading-section"><h2>問いから研究をたどる</h2><div class="reading-paths"><a href="{{ site.baseurl }}/ja/research/#infectious-disease"><strong>感染症と抗菌薬耐性</strong><small>150人の患者を対象とした研究で、生存する H. pylori 分離株86株を得ました。感受性試験から地域の耐性状況を調べ、周辺地域の研究と比較しました。</small><b aria-hidden="true">→</b></a>
 <a href="{{ site.baseurl }}/ja/research/#clinical-systems"><strong>患者とケアに関する研究</strong><small>総合診療では、診断名がつく前から患者の話を聴き、経過を見守ります。症状だけでなく、その人の生活に合うケアを考えます。</small><b aria-hidden="true">→</b></a>
