@@ -17,6 +17,7 @@ shared:
     - { key: isolates, value: 86, url: "/research/#infectious-disease" }
     - { key: interviews, value: 60, url: "/research/#clinical-systems" }
     - { key: transcriptomes, value: 72, url: "/research/#ocean-acidification" }
+    - { key: stroke, value: 80, url: "/research/#neuroscience" }
 en:
   eyebrow: "At a glance"
   title: "The work in numbers."
@@ -27,6 +28,7 @@ en:
     isolates: "viable isolates tested for antibiotic resistance"
     interviews: "palliative care professionals interviewed"
     transcriptomes: "reef fish brain transcriptomes"
+    stroke: "patients with acute stroke in the quantitative CT study"
   papers_title: "Papers by year"
   papers_note: "Peer-reviewed papers. The 2024 doctoral thesis is marked separately."
   papers_link: "All publications"
@@ -48,6 +50,7 @@ ja:
     isolates: "薬剤耐性を調べた培養分離株"
     interviews: "インタビューした緩和ケア専門職"
     transcriptomes: "サンゴ礁魚類の脳トランスクリプトーム"
+    stroke: "定量的CT研究の急性期脳梗塞患者"
   papers_title: "年別の論文数"
   papers_note: "査読付き論文の数です。2024年の博士論文は別に示しています。"
   papers_link: "すべての論文"
@@ -69,6 +72,7 @@ ru:
     isolates: "жизнеспособных культур, проверенных на устойчивость к антибиотикам"
     interviews: "интервью со специалистами паллиативной помощи"
     transcriptomes: "транскриптома мозга рифовых рыб"
+    stroke: "пациентов с острым инсультом в исследовании количественной КТ"
   papers_title: "Статьи по годам"
   papers_note: "Рецензируемые статьи. Диссертация 2024 года отмечена отдельно."
   papers_link: "Все публикации"
@@ -90,6 +94,7 @@ kk:
     isolates: "антибиотикке төзімділігі тексерілген тірі өсінді"
     interviews: "сұхбат берген паллиативтік көмек маманы"
     transcriptomes: "риф балықтары миының транскриптомы"
+    stroke: "сандық КТ зерттеуіндегі жіті инсультпен науқас"
   papers_title: "Жылдар бойынша мақалалар"
   papers_note: "Рецензияланған мақалалар. 2024 жылғы диссертация бөлек белгіленген."
   papers_link: "Барлық жарияланым"
