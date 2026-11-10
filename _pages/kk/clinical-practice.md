@@ -6,7 +6,7 @@ permalink: "/kk/clinical-practice/"
 lang: "kk"
 english_url: "/clinical-practice/"
 author_profile: false
-hero: "clinical/clinical-practice-art.webp"
+hero: "clinical/clinical-practice-still-life.webp"
 hero_position: "center center"
 banner_quote: "Try to be a little kinder."
 banner_quote_source: "https://www.latimes.com/archives/la-xpm-1988-11-20-bk-423-story.html"
