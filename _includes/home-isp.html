@@ -1,0 +1,10 @@
+{% assign isp_language = page.lang | default: 'en' %}
+{% assign isp = site.data.home_dashboard[isp_language] %}
+<figure class="reading-portrait reading-anemone reading-isp" hidden>
+  <canvas role="img" aria-label="{{ isp.isp_alt }}" data-backdrop="{{ '/images/home-anemone/cells-backdrop.webp' | relative_url }}"></canvas>
+  <figcaption>
+    <span>{{ isp.isp_caption }}</span>
+    <button class="cat-animation-toggle anemone-toggle" type="button" aria-pressed="false" data-pause="{{ isp.pause }}" data-play="{{ isp.play }}" hidden>{{ isp.pause }}</button>
+  </figcaption>
+  <script defer src="{{ '/assets/js/home-isp.js' | relative_url }}"></script>
+</figure>

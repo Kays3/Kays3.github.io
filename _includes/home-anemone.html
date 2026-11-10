@@ -1,7 +1,7 @@
 {% assign scene_language = page.lang | default: 'en' %}
 {% assign scene = site.data.home_dashboard[scene_language] %}
 <figure class="reading-portrait reading-anemone" hidden>
-  <canvas role="img" aria-label="{{ scene.anemone_alt }}"></canvas>
+  <canvas role="img" aria-label="{{ scene.anemone_alt }}" data-backdrop="{{ '/images/home-anemone/reef-backdrop.webp' | relative_url }}" data-animals="{{ '/images/home-anemone/reef-animals.webp' | relative_url }}"></canvas>
   <figcaption>
     <span>{{ scene.anemone_caption }}</span>
     <button class="cat-animation-toggle anemone-toggle" type="button" aria-pressed="false" data-pause="{{ scene.pause }}" data-play="{{ scene.play }}" hidden>{{ scene.pause }}</button>
