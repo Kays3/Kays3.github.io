@@ -1,0 +1,48 @@
+{% assign dash_language = page.lang | default: 'en' %}
+{% assign dash = site.data.home_dashboard[dash_language] %}
+{% assign dash_shared = site.data.home_dashboard.shared %}
+{% assign dash_prefix = '' %}{% unless dash_language == 'en' %}{% assign dash_prefix = '/' | append: dash_language %}{% endunless %}
+{% assign dash_span = dash_shared.axis_end | minus: dash_shared.axis_start %}
+<section class="reading-section home-dashboard" id="at-a-glance" aria-labelledby="dashboard-title">
+  <p class="eyebrow">{{ dash.eyebrow }}</p>
+  <h2 id="dashboard-title">{{ dash.title }}</h2>
+  <p class="home-dashboard__intro">{{ dash.intro }}</p>
+  <div class="dash-stage">
+    <canvas class="dash-network" aria-hidden="true"></canvas>
+    <ul class="dash-stats">
+      {% for stat in dash_shared.stats %}
+      <li><a href="{{ dash_prefix | append: stat.url | relative_url }}"><strong class="dash-count" data-count="{{ stat.value }}">{{ stat.value }}</strong><span>{{ dash.stats[stat.key] }}</span></a></li>
+      {% endfor %}
+    </ul>
+    <button class="dash-toggle" type="button" aria-pressed="false" data-pause="{{ dash.pause }}" data-play="{{ dash.play }}" hidden>{{ dash.pause }}</button>
+  </div>
+  <div class="dash-panels">
+    <div class="dash-panel">
+      <h3>{{ dash.papers_title }}</h3>
+      <ol class="dash-bars" style="--max: {{ dash_shared.papers_max }}">
+        {% for item in dash_shared.papers %}
+        <li class="{% if item.n == 0 %}is-zero{% endif %}{% if item.thesis %} has-thesis{% endif %}" style="--n: {{ item.n }}; --i: {{ forloop.index0 }}"><span class="dash-bar__value">{% if item.n > 0 %}{{ item.n }}{% endif %}</span><span class="dash-bar__bar"></span>{% if item.thesis %}<span class="dash-bar__thesis">{{ dash.thesis }}</span>{% endif %}<span class="dash-bar__year">{{ item.year }}</span></li>
+        {% endfor %}
+      </ol>
+      <p class="dash-note">{{ dash.papers_note }} <span class="dash-key"><i aria-hidden="true"></i>{{ dash.thesis }}</span></p>
+      <p><a class="text-link" href="{{ dash_prefix | append: '/publications/' | relative_url }}">{{ dash.papers_link }} →</a></p>
+    </div>
+    <div class="dash-panel">
+      <h3>{{ dash.places_title }}</h3>
+      <div class="dash-lanes" style="--start: {{ dash_shared.axis_start }}; --span: {{ dash_span }}">
+        {% for lane in dash_shared.lanes %}
+        <div class="dash-lane dash-lane--{{ lane.key }}" style="--i: {{ forloop.index0 }}">
+          <span class="dash-lane__name">{{ dash.lanes[lane.key].name }}</span>
+          <span class="dash-lane__track" aria-hidden="true">{% for span in lane.spans %}<i class="dash-span{% if span.open %} is-open{% endif %}" style="--s: {{ span.s }}; --e: {{ span.e }}"></i>{% endfor %}{% for point in lane.points %}<i class="dash-point" style="--s: {{ point }}"></i>{% endfor %}</span>
+          <span class="dash-lane__note">{{ dash.lanes[lane.key].note }}</span>
+        </div>
+        {% endfor %}
+        <div class="dash-axis" aria-hidden="true">{% for tick in dash_shared.axis_ticks %}<span style="--s: {{ tick }}">{{ tick }}</span>{% endfor %}</div>
+      </div>
+      <p class="dash-note">{{ dash.places_note }}</p>
+      <p><a class="text-link" href="{{ dash_prefix | append: '/cv/' | relative_url }}">{{ dash.places_link }} →</a></p>
+    </div>
+  </div>
+  <p class="writing-caption">{{ dash.caption }}</p>
+  <script defer src="{{ '/assets/js/home-dashboard.js' | relative_url }}"></script>
+</section>

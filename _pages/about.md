@@ -39,6 +39,8 @@ redirect_from:
     </figure>
   </section>
 
+{% include home-dashboard.html %}
+
   <section class="reading-section" aria-labelledby="activities-title">
     <p class="eyebrow">Research and practice</p><h2 id="activities-title">Current and past activities</h2>
     <div class="reading-paths">

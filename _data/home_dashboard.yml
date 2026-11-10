@@ -1,0 +1,138 @@
+# Home page dashboard. Every number is taken from the publication record, the thesis, or the CV.
+# Dates given only as years in the CV are drawn at mid-year (x.5); months are used where the CV gives them.
+shared:
+  axis_start: 2010
+  axis_end: 2027
+  axis_ticks: [2010, 2015, 2020, 2025]
+  papers_max: 4
+  papers:
+    - { year: 2018, n: 1 }
+    - { year: 2019, n: 1 }
+    - { year: 2020, n: 3 }
+    - { year: 2021, n: 0 }
+    - { year: 2022, n: 1 }
+    - { year: 2023, n: 0 }
+    - { year: 2024, n: 0, thesis: true }
+    - { year: 2025, n: 4 }
+    - { year: 2026, n: 1 }
+  stats:
+    - { key: papers, value: 11, url: "/publications/" }
+    - { key: patients, value: 150, url: "/research/#infectious-disease" }
+    - { key: isolates, value: 86, url: "/research/#infectious-disease" }
+    - { key: interviews, value: 60, url: "/research/#clinical-systems" }
+    - { key: transcriptomes, value: 72, url: "/research/#ocean-acidification" }
+  lanes:
+    - key: kz
+      spans: [{ s: 2010.5, e: 2019.5 }, { s: 2023.92, e: 2026.25 }]
+    - key: jp
+      spans: [{ s: 2019.5, e: 2024.5 }, { s: 2026.5, e: 2026.86, open: true }]
+    - key: au
+      points: [2018.5]
+    - key: us
+      points: [2019.5]
+    - key: tw
+      spans: [{ s: 2025.25, e: 2025.67 }]
+en:
+  eyebrow: "At a glance"
+  title: "The work in numbers."
+  intro: "Every figure here comes from a published paper, my thesis, or my CV."
+  stats:
+    papers: "peer-reviewed papers, 2018 to 2026"
+    patients: "patients enrolled in the Almaty <em>H. pylori</em> study"
+    isolates: "viable isolates tested for antibiotic resistance"
+    interviews: "palliative care professionals interviewed"
+    transcriptomes: "reef fish brain transcriptomes"
+  papers_title: "Papers by year"
+  papers_note: "Peer-reviewed papers. The 2024 doctoral thesis is marked separately."
+  papers_link: "All publications"
+  thesis: "PhD thesis"
+  places_title: "Where the work happened"
+  places_note: "Training, research, and practice, 2010 to 2026. Dates given only as years are drawn at mid-year."
+  places_link: "Full career timeline"
+  lanes:
+    kz: { name: "Kazakhstan", note: "BSc and MD · H. pylori research · residency · general practice" }
+    jp: { name: "Japan", note: "PhD in Genetics, SOKENDAI · OIST · postdoctoral research, Hokkaido University" }
+    au: { name: "Australia", note: "Visiting researcher, The University of Queensland, 2018" }
+    us: { name: "United States", note: "Psychiatry elective, University of Pittsburgh Medical Center, 2019" }
+    tw: { name: "Taiwan", note: "Postdoctoral scholar, Academia Sinica, 2025" }
+  pause: "Pause animation"
+  play: "Play animation"
+  caption: "The moving network is decorative. It is drawn in the browser and does not show data."
+ja:
+  eyebrow: "数字で見る"
+  title: "研究を数字で。"
+  intro: "ここに示す数字は、発表論文、博士論文、履歴書に基づいています。"
+  stats:
+    papers: "査読付き論文（2018〜2026年）"
+    patients: "アルマトイの<em>H. pylori</em>研究の対象患者"
+    isolates: "薬剤耐性を調べた培養分離株"
+    interviews: "インタビューした緩和ケア専門職"
+    transcriptomes: "サンゴ礁魚類の脳トランスクリプトーム"
+  papers_title: "年別の論文数"
+  papers_note: "査読付き論文の数です。2024年の博士論文は別に示しています。"
+  papers_link: "すべての論文"
+  thesis: "博士論文"
+  places_title: "研究と診療の場所"
+  places_note: "教育・研究・診療の歩み（2010〜2026年）。年のみ分かる期間は年の中央を基準に描いています。"
+  places_link: "経歴の全体を見る"
+  lanes:
+    kz: { name: "カザフスタン", note: "学士・MD · H. pylori研究 · 内科研修 · 総合診療" }
+    jp: { name: "日本", note: "遺伝学の博士課程（総研大）· OIST · 北海道大学 博士研究員" }
+    au: { name: "オーストラリア", note: "クイーンズランド大学 訪問研究員（2018年）" }
+    us: { name: "アメリカ", note: "ピッツバーグ大学医療センター 精神科実習（2019年）" }
+    tw: { name: "台湾", note: "中央研究院 博士研究員（2025年）" }
+  pause: "アニメーションを停止"
+  play: "アニメーションを再生"
+  caption: "動くネットワークは装飾です。ブラウザ上で描いており、データを示すものではありません。"
+ru:
+  eyebrow: "Коротко"
+  title: "Работа в цифрах."
+  intro: "Все цифры взяты из опубликованных статей, диссертации и резюме."
+  stats:
+    papers: "рецензируемых статей, 2018–2026"
+    patients: "пациентов в исследовании <em>H. pylori</em> в Алматы"
+    isolates: "жизнеспособных культур, проверенных на устойчивость к антибиотикам"
+    interviews: "интервью со специалистами паллиативной помощи"
+    transcriptomes: "транскриптома мозга рифовых рыб"
+  papers_title: "Статьи по годам"
+  papers_note: "Рецензируемые статьи. Диссертация 2024 года отмечена отдельно."
+  papers_link: "Все публикации"
+  thesis: "Диссертация"
+  places_title: "Где шла работа"
+  places_note: "Учёба, исследования и практика, 2010–2026. Если известен только год, период отсчитывается от середины года."
+  places_link: "Вся хронология"
+  lanes:
+    kz: { name: "Казахстан", note: "Бакалавриат и MD · исследование H. pylori · резидентура · общая практика" }
+    jp: { name: "Япония", note: "Докторантура по генетике, SOKENDAI · OIST · постдокторантура в Университете Хоккайдо" }
+    au: { name: "Австралия", note: "Приглашённый исследователь, Университет Квинсленда, 2018" }
+    us: { name: "США", note: "Электив по психиатрии, Медицинский центр Питтсбургского университета, 2019" }
+    tw: { name: "Тайвань", note: "Постдокторант, Academia Sinica, 2025" }
+  pause: "Остановить анимацию"
+  play: "Запустить анимацию"
+  caption: "Движущаяся сеть служит украшением. Она рисуется в браузере и не отображает данные."
+kk:
+  eyebrow: "Қысқаша"
+  title: "Жұмыс сандар тілінде."
+  intro: "Мұндағы сандардың бәрі жарияланған мақалалардан, диссертациядан және түйіндемеден алынған."
+  stats:
+    papers: "рецензияланған мақала, 2018–2026"
+    patients: "Алматыдағы <em>H. pylori</em> зерттеуіне қатысқан науқас"
+    isolates: "антибиотикке төзімділігі тексерілген тірі өсінді"
+    interviews: "сұхбат берген паллиативтік көмек маманы"
+    transcriptomes: "риф балықтары миының транскриптомы"
+  papers_title: "Жылдар бойынша мақалалар"
+  papers_note: "Рецензияланған мақалалар. 2024 жылғы диссертация бөлек белгіленген."
+  papers_link: "Барлық жарияланым"
+  thesis: "Диссертация"
+  places_title: "Жұмыс өткен елдер"
+  places_note: "Оқу, зерттеу және тәжірибе, 2010–2026. Тек жылы белгілі кезеңдер жылдың ортасынан бастап сызылған."
+  places_link: "Толық өмірбаян"
+  lanes:
+    kz: { name: "Қазақстан", note: "Бакалавр және MD · H. pylori зерттеуі · резидентура · жалпы тәжірибе" }
+    jp: { name: "Жапония", note: "Генетика бойынша PhD, SOKENDAI · OIST · Хоккайдо университетіндегі постдокторантура" }
+    au: { name: "Аустралия", note: "Шақырылған зерттеуші, Квинсленд университеті, 2018" }
+    us: { name: "АҚШ", note: "Психиатрия элективі, Питтсбург университетінің медициналық орталығы, 2019" }
+    tw: { name: "Тайвань", note: "Постдокторант, Academia Sinica, 2025" }
+  pause: "Анимацияны тоқтату"
+  play: "Анимацияны қосу"
+  caption: "Қозғалатын желі тек безендіру үшін берілген. Ол браузерде салынады және дерек көрсетпейді."
