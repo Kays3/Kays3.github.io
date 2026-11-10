@@ -21,7 +21,7 @@ redirect_from:
       <p class="eyebrow">Physician and researcher</p>
       <h2 id="home-title">Questions from medicine.<br>Answers from biology.</h2>
       <p class="reading-lead">My work starts with a question about a person, a population, or an organism. I use clinical observation, genetics, and computation to understand what the evidence can tell us.</p>
-      <p>My papers follow infections, cancer, immune disease, and the people who provide care. My doctoral thesis brings together ancient human genomes and the response of reef fish to a changing ocean.</p>
+      <p>My papers follow infections, cancer, immune disease, the brain, and the people who provide care. My doctoral thesis brings together ancient human genomes and the response of reef fish to a changing ocean.</p>
       <div class="reading-actions"><a class="about-button about-button--primary" href="/research/">Explore the research →</a><a class="text-link" href="/publications/">Read the papers →</a></div>
       <p class="reading-caption">MD, Nazarbayev University · PhD in Genetics, SOKENDAI<br>Postdoctoral research, Hokkaido University</p>
     </div>
@@ -55,6 +55,7 @@ redirect_from:
       <a href="/research/#clinical-systems"><span>Patients and care</span><strong>Where does care become difficult?</strong><small>Diagnostic delays, cancer genetics, and the experience of palliative care professionals.</small><b aria-hidden="true">↗</b></a>
       <a href="/research/#polygenic-risk"><span>Ancient genomes</span><strong>How far can a modern genetic score travel?</strong><small>Exploratory comparisons across ancestry and time.</small><b aria-hidden="true">↗</b></a>
       <a href="/research/#ocean-acidification"><span>Reef fish and adaptation</span><strong>How does a changing ocean reach the genome?</strong><small>Transposable element related transcripts under elevated carbon dioxide.</small><b aria-hidden="true">↗</b></a>
+      <a href="/research/#neuroscience"><span>Brain and behaviour</span><strong>What changes in the brain?</strong><small>Stroke imaging, reef fish brain transcriptomes, cognitive genetics, and clinical trial assessments.</small><b aria-hidden="true">↗</b></a>
     </div>
   </section>
 

@@ -19,6 +19,7 @@ banner_size: collage
     <a href="/clinical-practice/"><span>Clinical medicine</span><strong>Diagnosis, treatment, and the work of care</strong><small>Case reports, reviews, and palliative care research.</small><b aria-hidden="true">→</b></a>
     <a href="/research/#polygenic-risk"><span>Population genetics</span><strong>Ancient genomes and modern scores</strong><small>The 2022 paper and the first chapter of my thesis.</small><b aria-hidden="true">→</b></a>
     <a href="/research/#ocean-acidification"><span>Doctoral thesis</span><strong>Gene expression under environmental change</strong><small>Reef fish transcriptomes and TE related signals.</small><b aria-hidden="true">→</b></a>
+    <a href="/research/#neuroscience"><span>Neuroscience</span><strong>The brain after stroke and under environmental change</strong><small>The 2020 quantitative CT study and the reef fish brain transcriptomes in my thesis.</small><b aria-hidden="true">→</b></a>
   </div>
 </section>
 <h2 id="publication-record">Publication record</h2>

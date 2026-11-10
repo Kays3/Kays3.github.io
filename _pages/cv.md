@@ -56,6 +56,7 @@ redirect_from:
 - **Whole-person care.** Primary care, continuity, undifferentiated presentations, palliative care, and evidence that fits real clinics. [Read more](/clinical-practice/).
 - **Diagnostic medicine.** Tissue and digital pathology, molecular testing in hereditary cancer, and clinical microbiology. [Read more](/diagnostic-medicine/).
 - **Infectious disease and genomics.** Antimicrobial resistance, host and pathogen genomics, and population genetics.
+- **Neuroscience.** Stroke imaging, brain transcriptomics, cognitive genetics, and neurological and psychiatric assessment in clinical trials. [Read more](/research/#neuroscience).
 
 ## Medical credentials
 
