@@ -128,19 +128,6 @@
         if (!paused) { run(); }
       });
     }
-    var lastPointer = 0;
-    stage.addEventListener('pointermove', function (event) {
-      var now = performance.now();
-      if (paused || now - lastPointer < 700) { return; }
-      lastPointer = now;
-      var box = stage.getBoundingClientRect();
-      pulseFrom(event.clientX - box.left, event.clientY - box.top, now);
-    });
-    stage.addEventListener('focusin', function (event) {
-      if (paused || !event.target.getBoundingClientRect) { return; }
-      var box = stage.getBoundingClientRect(), item = event.target.getBoundingClientRect();
-      pulseFrom(item.left - box.left + item.width / 2, item.top - box.top + item.height / 2, performance.now());
-    });
     document.addEventListener('visibilitychange', run);
   }
 
@@ -148,13 +135,9 @@
     root.classList.add('is-animated');
     new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.target === stage) { visible = entry.isIntersecting; if (visible) { countUp(); run(); } }
-        if (entry.target === root && entry.isIntersecting) { root.classList.add('is-live'); }
+        if (entry.target === stage) { visible = entry.isIntersecting; if (visible) { root.classList.add('is-live'); countUp(); run(); } }
       });
     }, { threshold: 0.15 }).observe(stage);
-    new IntersectionObserver(function (entries, observer) {
-      entries.forEach(function (entry) { if (entry.isIntersecting) { root.classList.add('is-live'); observer.disconnect(); } });
-    }, { rootMargin: '0px 0px -10% 0px' }).observe(root.querySelector('.dash-panels'));
   } else {
     visible = true; run();
   }

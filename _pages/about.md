@@ -15,7 +15,7 @@ redirect_from:
 ---
 
 <div class="reading-home">
-  <section class="reading-intro" aria-labelledby="home-title">
+  <section class="reading-intro reading-intro--solo" aria-labelledby="home-title">
     <div>
       <div class="about-profile"><span class="about-name">Kaisar Dauyey</span></div>
       <p class="eyebrow">Physician and researcher</p>
@@ -25,18 +25,6 @@ redirect_from:
       <div class="reading-actions"><a class="about-button about-button--primary" href="/research/">Explore the research →</a><a class="text-link" href="/publications/">Read the papers →</a></div>
       <p class="reading-caption">MD, Nazarbayev University · PhD in Genetics, SOKENDAI<br>Postdoctoral research, Hokkaido University</p>
     </div>
-    <figure class="reading-portrait reading-cats">
-      <div class="cat-animation">
-        <img src="{{ site.baseurl }}/images/about-cats-golden-kamui.webp" alt="Golden Kamui-inspired collage of black cats, tabbies, a black-and-white cat, and a calico by the Okinawa sea" width="896" height="1120" fetchpriority="high">
-        {% for cat in (1..5) %}
-        <img class="cat-blink cat-blink--{{ cat }}" src="{{ site.baseurl }}/images/about-cats-blink.webp" alt="" aria-hidden="true" width="896" height="1120" decoding="async">
-        {% endfor %}
-      </div>
-      <figcaption>
-        <span>Critical inspiration for research work.</span>
-        <button class="cat-animation-toggle" type="button" aria-pressed="false" hidden>Pause animation</button>
-      </figcaption>
-    </figure>
   </section>
 
 {% include home-dashboard.html %}
@@ -80,7 +68,7 @@ redirect_from:
 
 {% include reef-feature.html %}
 
-  <section class="reading-next" aria-labelledby="conversation-title"><div><p class="eyebrow">Collaboration</p><h2 id="conversation-title">What question are you working on?</h2><p>Tell me what you want to understand and what evidence you have.</p></div><a class="about-button about-button--primary" href="/contact/">Get in touch →</a></section>
+  <section class="reading-next reading-next--cats" aria-labelledby="conversation-title"><figure class="reading-portrait reading-cats"><div class="cat-animation"><img src="{{ site.baseurl }}/images/about-cats-golden-kamui.webp" alt="Golden Kamui-inspired collage of black cats, tabbies, a black-and-white cat, and a calico by the Okinawa sea" width="896" height="1120" loading="lazy">{% for cat in (1..5) %}<img class="cat-blink cat-blink--{{ cat }}" src="{{ site.baseurl }}/images/about-cats-blink.webp" alt="" aria-hidden="true" width="896" height="1120" decoding="async">{% endfor %}</div><figcaption><span>Critical inspiration for research work.</span><button class="cat-animation-toggle" type="button" aria-pressed="false" hidden>Pause animation</button></figcaption></figure><div><p class="eyebrow">Collaboration</p><h2 id="conversation-title">What question are you working on?</h2><p>Tell me what you want to understand and what evidence you have.</p></div><a class="about-button about-button--primary" href="/contact/">Get in touch →</a></section>
   <nav class="reading-related" aria-label="More about Kaisar"><a href="/clinical-practice/">Clinical practice</a><a href="/diagnostic-medicine/">Diagnostic medicine</a><a href="/interests/">Fieldwork and interests</a><a href="/cv/">CV and training</a></nav>
   <section class="visitor-tracker" aria-labelledby="visitor-tracker-title">
     <p class="eyebrow">Across borders</p>
