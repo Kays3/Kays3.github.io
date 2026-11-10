@@ -841,3 +841,9 @@ body { background-image: none; }
   .reading-next--cats { grid-template-columns: 1fr; gap: 1.2rem; }
   .reading-next--cats .reading-cats { max-width: 15rem; }
 }
+
+/* Intro illustration: anemone and transposons, drawn by home-anemone.js. */
+.reading-anemone canvas { display: block; width: 100%; aspect-ratio: 4 / 5; border-radius: 4px; background: #17393a; }
+.reading-anemone figcaption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.35rem 0.75rem; }
+@media screen and (max-width: 46em) { .reading-anemone { max-width: 22rem; } }
+@media (prefers-reduced-motion: reduce) { .anemone-toggle { display: none; } }

@@ -1,0 +1,10 @@
+{% assign scene_language = page.lang | default: 'en' %}
+{% assign scene = site.data.home_dashboard[scene_language] %}
+<figure class="reading-portrait reading-anemone" hidden>
+  <canvas role="img" aria-label="{{ scene.anemone_alt }}"></canvas>
+  <figcaption>
+    <span>{{ scene.anemone_caption }}</span>
+    <button class="cat-animation-toggle anemone-toggle" type="button" aria-pressed="false" data-pause="{{ scene.pause }}" data-play="{{ scene.play }}" hidden>{{ scene.pause }}</button>
+  </figcaption>
+  <script defer src="{{ '/assets/js/home-anemone.js' | relative_url }}"></script>
+</figure>

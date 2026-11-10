@@ -34,6 +34,8 @@ en:
   pause: "Pause animation"
   play: "Play animation"
   caption: "The moving network is decorative. It is drawn in the browser and does not show data."
+  anemone_alt: "Animated drawing of a bubble-tip sea anemone swaying under a DNA strand, where coloured transposons jump from one position to another."
+  anemone_caption: "A bubble-tip anemone, and transposons jumping along a genome. An illustration, not data."
 ja:
   eyebrow: "数字で見る"
   title: "研究を数字で。"
@@ -51,6 +53,8 @@ ja:
   pause: "アニメーションを停止"
   play: "アニメーションを再生"
   caption: "動くネットワークは装飾です。ブラウザ上で描いており、データを示すものではありません。"
+  anemone_alt: "DNA鎖の下で揺れるサンゴイソギンチャクのアニメーション。色のついた転移因子がDNA上の別の位置へ移動します。"
+  anemone_caption: "サンゴイソギンチャクと、ゲノム上を移動する転移因子。イメージ図であり、データではありません。"
 ru:
   eyebrow: "Коротко"
   title: "Работа в цифрах."
@@ -68,6 +72,8 @@ ru:
   pause: "Остановить анимацию"
   play: "Запустить анимацию"
   caption: "Движущаяся сеть служит украшением. Она рисуется в браузере и не отображает данные."
+  anemone_alt: "Анимированный рисунок: пузырчатая актиния колышется под цепью ДНК, по которой цветные транспозоны перемещаются с места на место."
+  anemone_caption: "Пузырчатая актиния и транспозоны, которые перемещаются по геному. Это иллюстрация, а не данные."
 kk:
   eyebrow: "Қысқаша"
   title: "Жұмыс сандар тілінде."
@@ -85,3 +91,5 @@ kk:
   pause: "Анимацияны тоқтату"
   play: "Анимацияны қосу"
   caption: "Қозғалатын желі тек безендіру үшін берілген. Ол браузерде салынады және дерек көрсетпейді."
+  anemone_alt: "Анимациялық сурет: ДНҚ тізбегінің астында көпіршікті актиния тербеліп тұр, ал түрлі түсті транспозондар тізбек бойымен бір орыннан екінші орынға ауысады."
+  anemone_caption: "Көпіршікті актиния және геном бойымен орын ауыстыратын транспозондар. Бұл көркем бейне, дерек емес."
