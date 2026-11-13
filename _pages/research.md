@@ -15,6 +15,7 @@ banner_size: research-art
 <nav class="section-index" aria-label="Research sections"><a href="#research-updates">Research updates</a><a href="#digital-pathology">Current work</a><a href="#infectious-disease">Infection</a><a href="#clinical-systems">Clinical studies</a><a href="#polygenic-risk">Ancient genomes</a><a href="#neuroscience">Neuroscience</a><a href="#ocean-acidification">Reef fish and TEs</a><a href="#anemone-symbiosis">Anemones and symbionts</a><a href="#people-title">Collaboration</a></nav>
 
 <p class="page-note">Related public engagement: <a href="https://www.oita-glocal.jp/2026/05/3162/" rel="noopener noreferrer">Oita Glocal feature</a> on science, education, and regional collaboration.</p>
+<p class="page-note">Computational methods: <a href="https://github.com/Kays3/geneformer-research-methods">Geneformer research methods notebook</a>.</p>
 
 <section class="reading-section" id="research-updates" aria-labelledby="research-updates-title">
   <p class="eyebrow">Research updates · 13 October 2026</p>
@@ -69,6 +70,7 @@ banner_size: research-art
   <p>The public research notebook preserves dated computational notes and methods for follow-up. It is an evolving record of exploratory work.</p>
   {% include entacmaea-gallery.html extended=true %}
   <p><a class="text-link" href="https://github.com/Kays3/entacmea-research">Explore the Entacmaea research notebook <span aria-hidden="true">↗</span></a></p>
+  <p>Related public projects: <a href="https://github.com/Kays3/TE_Anemonefish_Symbiosis">anemonefish–anemone transposable-element hypothesis</a> and <a href="https://github.com/Kays3/TE_Ocean_Acidification_Evidence">reef fish and ocean acidification</a>. The anemonefish project is an early-stage hypothesis.</p>
 </section>
 
 <section class="people-section" aria-labelledby="people-title">
